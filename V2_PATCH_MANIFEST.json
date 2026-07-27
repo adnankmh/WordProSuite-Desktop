@@ -1,0 +1,124 @@
+{
+  "version": "2.0.0",
+  "command_count": 206,
+  "categories": {
+    "العربية والاتجاه": 18,
+    "النص والتحرير": 31,
+    "التنسيق والأنماط": 33,
+    "الجداول": 35,
+    "المستند والصفحات": 34,
+    "المراجعة والأمان": 13,
+    "الملفات وPDF": 13,
+    "القوالب": 18,
+    "الأدوات الذكية": 5,
+    "النظام والترخيص": 6
+  },
+  "public_key_sha256": "1c7b644147029288622079da2c193d76d00a7213d0e545cd12eaafd10d087726",
+  "files": [
+    {
+      "path": ".github/workflows/build-windows.yml",
+      "sha256": "3bf07348727cfc59faf866fce01f9276a921424cc76b8460c17edc08309d7e64",
+      "bytes": 1407
+    },
+    {
+      "path": "README_AR.md",
+      "sha256": "c76420c740a45aa20f5629d92a0f3c1b9d46c4712900074e103d869cee64fc63",
+      "bytes": 1754
+    },
+    {
+      "path": "V2_FEATURES_AR.md",
+      "sha256": "a1a34107a692a591822843057ee45a6112942f89500daddaf85c3bddc92a54ac",
+      "bytes": 10684
+    },
+    {
+      "path": "V2_INSTALLATION_AR.md",
+      "sha256": "52d4a22886416833d4632367778ff842ec91abc2b275d8cb51ba184fbf113ed6",
+      "bytes": 883
+    },
+    {
+      "path": "V2_LICENSING_SECURITY_AR.md",
+      "sha256": "fdaa848807cc562003e58d3ca5788325dc74881000de987267ea0e1e6394cd44",
+      "bytes": 886
+    },
+    {
+      "path": "scripts/build-release.ps1",
+      "sha256": "24b4dbc5788eea7855560886112cd1725d556e929d6ae5337a4526755d715aa1",
+      "bytes": 2643
+    },
+    {
+      "path": "scripts/test-office2024.ps1",
+      "sha256": "d6f4d847e106c7719d0da829e546dc52a3e2b444fd9c2f8a52ed15f1c45bb09a",
+      "bytes": 1636
+    },
+    {
+      "path": "scripts/validate-source.ps1",
+      "sha256": "7345be11aa3c8244549f56fd8db5987256b39552ea0e9f3c30eb5831ea42504c",
+      "bytes": 2118
+    },
+    {
+      "path": "src/WordProSuite.AddIn/Commands/AdvancedCommands.cs",
+      "sha256": "3be23a0783e6d8ae2d802e336f27576bdd8579cabd0fb24882815d6b9742a878",
+      "bytes": 49012
+    },
+    {
+      "path": "src/WordProSuite.AddIn/Commands/CommandRouter.cs",
+      "sha256": "886f7c5c44f72eb75bdbedfd8c6badfeef9fac2710d9ee71b52c1bd805ff39bd",
+      "bytes": 43222
+    },
+    {
+      "path": "src/WordProSuite.AddIn/Commands/CommandUsageStore.cs",
+      "sha256": "26b9b26ad47158a46a8809db1f62030efde390cfd1a19bf4e8bd225dcf436661",
+      "bytes": 1876
+    },
+    {
+      "path": "src/WordProSuite.AddIn/Commands/SystemCommands.cs",
+      "sha256": "1c42fb1e7e9b85ef27b9870ec767fdbd19660a30a2d291a7e16e5e1362d48013",
+      "bytes": 1725
+    },
+    {
+      "path": "src/WordProSuite.AddIn/Licensing/ActivationForm.cs",
+      "sha256": "d590076d3a8b61e130c92a6d930dd5a26124c31b964cead3b58a73de1b27157b",
+      "bytes": 5059
+    },
+    {
+      "path": "src/WordProSuite.AddIn/Licensing/LicenseManager.cs",
+      "sha256": "f3c735fd210f24ffecd51387b62538f8354d80a7bb74f0da19627a15644cb28b",
+      "bytes": 11174
+    },
+    {
+      "path": "src/WordProSuite.AddIn/Ribbon/RibbonXml.cs",
+      "sha256": "0800d233095a7e54119922b85f7b3635d401f2d1be37df8cc391189531e8dc82",
+      "bytes": 27609
+    },
+    {
+      "path": "src/WordProSuite.AddIn/UI/CommandCenterForm.cs",
+      "sha256": "b83ea55884da80831d7df756fda179bd702db508b1d0363c832de20e0fb4dc3a",
+      "bytes": 12088
+    },
+    {
+      "path": "src/WordProSuite.AddIn/UI/Prompt.cs",
+      "sha256": "73132483908dab993e367beb2bf08b72cecce9e84d066ba76f2de37f571048dc",
+      "bytes": 2018
+    },
+    {
+      "path": "src/WordProSuite.AddIn/WordProAddIn.cs",
+      "sha256": "48c4b6d3c46871f7679491d06680ec3d1a2a39d7bb90b0621d7d88a916f1a3b6",
+      "bytes": 3222
+    },
+    {
+      "path": "src/WordProSuite.AddIn/WordProSuite.AddIn.csproj",
+      "sha256": "ab07ea27e34b2f68a40d726bb31d53989960eeef6de95cec80112c65c0f84cab",
+      "bytes": 923
+    },
+    {
+      "path": "src/WordProSuite.SetupLauncher/Program.cs",
+      "sha256": "ea9d20a23d56f68ac6d3640a0b1269dd126a3486886af3586e19fdf44b55d088",
+      "bytes": 15650
+    },
+    {
+      "path": "src/WordProSuite.SetupLauncher/WordProSuite.SetupLauncher.csproj",
+      "sha256": "baa52500e76a164fd2d5d97e9f40f43c7e80c77ffb54e6f4f3884279dc06fc55",
+      "bytes": 780
+    }
+  ]
+}

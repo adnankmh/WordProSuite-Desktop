@@ -1,55 +1,36 @@
-# WordPro Suite Desktop V1 — حزمة البناء الاحترافية
+# WordPro Suite Desktop Pro v2
 
-هذه إعادة بناء مستقلة لبرنامج WordPro Suite كإضافة سطح مكتب حقيقية لـMicrosoft Word.
+إضافة COM مكتبية احترافية لـ Microsoft Word تعمل محليًا بالكامل دون Node.js أو localhost أو VBA.
 
-## ما الذي تغيّر؟
+## أبرز ما في الإصدار 2
 
-- لا تستخدم VBA أو DOTM.
-- لا تستخدم Office.js.
-- لا تستخدم Node.js.
-- لا تستخدم localhost.
-- لا توجد نافذة أوامر أثناء تشغيل الإضافة.
-- Ribbon ثابت داخل Word.
-- مركز أدوات WinForms كبير بأزرار وخطوط واضحة.
-- تسجيل تلقائي مع بدء Word.
-- MSI منفصل لـOffice 32-bit وOffice 64-bit.
-- مشغّل EXE يكتشف معمارية Office.
-- دعم Install / Repair / Uninstall.
-- سجل تشخيص داخل `%LOCALAPPDATA%\WordProSuite\Logs`.
+- أكثر من 200 أداة مسجلة ومنظمة.
+- أدوات عربية واتجاه RTL/LTR وتصحيح لوحة المفاتيح.
+- تنظيف النصوص واستخراج البريد والروابط والهواتف.
+- تنسيقات عربية ورسمية وأكاديمية.
+- حزمة جداول متقدمة للحساب والفرز والتنظيف والتحويل.
+- أدوات صفحات ومقاطع ورؤوس وتذييلات وفهارس.
+- حماية وخصوصية ومراجعة وتنظيف نهائي.
+- تصدير PDF وPDF/A وتحويل دفعي ودمج مستندات.
+- أكثر من 18 قالبًا جاهزًا.
+- مركز أدوات احترافي مع بحث ومفضلة وآخر استخدام.
+- Setup واحد يعمل للحساب الحالي ويسجل COM في 32 و64 بت.
+- نظام Serial Number موقّع تشفيريًا مع ترخيص دائم أو منتهي أو مربوط بجهاز.
 
-## الأدوات
+## البناء
 
-عدد الأوامر المسجلة في المصدر: **67**.
-
-تشمل العربية وRTL، تنظيف النص، التنسيق، الأنماط، الجداول، الصفحات، المراجعة، الخصوصية، PDF، النسخ الاحتياطي، القوالب، وتجهيز النسخة النهائية.
-
-## البناء على Windows
-
-```powershell
-choco install wixtoolset --version=3.14.1 -y
-.\scripts\build-release.ps1
-```
-
-الناتج المتوقع:
+يُبنى المشروع على Windows Server 2022 عبر GitHub Actions. الناتج:
 
 ```text
-release\WordProSuite_Setup.exe
-release\Installers\WordProSuite.Desktop.x86.msi
-release\Installers\WordProSuite.Desktop.x64.msi
+WordProSuite_Setup.exe
+Payload/WordProSuite.AddIn.dll
+WordProSuite_Desktop_Pro_V2_Windows.zip
 ```
 
-## الاختبار الحقيقي
+## التثبيت
 
-لا يوصف الناتج بأنه نهائي قبل تشغيل Workflow `Test on Office 2024` على جهاز Windows يحتوي Office 2024 فعليًا.
+حافظ على مجلد `Payload` بجانب `WordProSuite_Setup.exe`، ثم شغّل Setup واضغط «تثبيت».
 
-## البناء التلقائي عبر GitHub Actions
+## الترخيص
 
-بعد رفع محتويات هذا المجلد إلى الفرع `main`، يبدأ Workflow تلقائيًا. عند نجاحه:
-
-1. افتح تبويب **Actions**.
-2. افتح آخر تشغيل ناجح بعلامة خضراء.
-3. من قسم **Artifacts** حمّل `WordProSuite-Desktop-Windows`.
-4. فك الضغط ثم شغّل `WordProSuite_Setup.exe`.
-5. أغلق Microsoft Word وافتحه من جديد بعد التثبيت.
-
-لا يحتاج المستخدم إلى Node.js أو localhost أو نافذة أوامر.
+المستودع يحتوي المفتاح العام فقط. المفتاح الخاص وأداة إنشاء Serial Numbers محفوظان في حزمة مالك منفصلة ويُمنع رفعهما إلى GitHub.
