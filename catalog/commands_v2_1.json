@@ -1,0 +1,1815 @@
+[
+  {
+    "id": "rtl",
+    "category": "العربية والاتجاه",
+    "title": "اتجاه RTL",
+    "description": "تطبيق اتجاه الكتابة من اليمين إلى اليسار.",
+    "keywords": "عربي يمين"
+  },
+  {
+    "id": "ltr",
+    "category": "العربية والاتجاه",
+    "title": "اتجاه LTR",
+    "description": "تطبيق اتجاه الكتابة من اليسار إلى اليمين.",
+    "keywords": "انجليزي يسار"
+  },
+  {
+    "id": "auto-direction",
+    "category": "العربية والاتجاه",
+    "title": "اكتشاف الاتجاه تلقائيًا",
+    "description": "اختيار RTL أو LTR حسب النص المحدد.",
+    "keywords": "تلقائي لغة"
+  },
+  {
+    "id": "remove-diacritics",
+    "category": "العربية والاتجاه",
+    "title": "حذف التشكيل",
+    "description": "حذف الحركات والعلامات العربية.",
+    "keywords": "حركات"
+  },
+  {
+    "id": "remove-tatweel",
+    "category": "العربية والاتجاه",
+    "title": "حذف التطويل",
+    "description": "حذف الكشيدة ـ من النص.",
+    "keywords": "كشيدة"
+  },
+  {
+    "id": "normalize-arabic",
+    "category": "العربية والاتجاه",
+    "title": "توحيد الحروف العربية",
+    "description": "توحيد أشكال الألف والياء والهمزات.",
+    "keywords": "الف همزة ياء"
+  },
+  {
+    "id": "normalize-arabic-punctuation",
+    "category": "العربية والاتجاه",
+    "title": "ترقيم عربي ذكي",
+    "description": "تحويل الفاصلة والفاصلة المنقوطة وعلامة السؤال إلى العربية وضبط المسافات.",
+    "keywords": "فاصلة ترقيم"
+  },
+  {
+    "id": "arabic-quotes",
+    "category": "العربية والاتجاه",
+    "title": "علامات اقتباس عربية",
+    "description": "تحويل علامات الاقتباس إلى « ».",
+    "keywords": "اقتباس"
+  },
+  {
+    "id": "remove-zero-width",
+    "category": "العربية والاتجاه",
+    "title": "حذف المحارف المخفية",
+    "description": "حذف محارف zero-width وBOM من النص.",
+    "keywords": "مخفي"
+  },
+  {
+    "id": "digits-eastern",
+    "category": "العربية والاتجاه",
+    "title": "أرقام عربية",
+    "description": "تحويل الأرقام الغربية إلى ٠١٢٣.",
+    "keywords": "ارقام"
+  },
+  {
+    "id": "digits-western",
+    "category": "العربية والاتجاه",
+    "title": "أرقام غربية",
+    "description": "تحويل الأرقام العربية والفارسية إلى 0123.",
+    "keywords": "ارقام"
+  },
+  {
+    "id": "keyboard-ar-to-en",
+    "category": "العربية والاتجاه",
+    "title": "تصحيح كتابة عربية إلى إنجليزية",
+    "description": "إصلاح نص كُتب بلوحة مفاتيح عربية بدل الإنجليزية.",
+    "keywords": "كيبورد لوحة"
+  },
+  {
+    "id": "keyboard-en-to-ar",
+    "category": "العربية والاتجاه",
+    "title": "تصحيح كتابة إنجليزية إلى عربية",
+    "description": "إصلاح نص كُتب بلوحة مفاتيح إنجليزية بدل العربية.",
+    "keywords": "كيبورد لوحة"
+  },
+  {
+    "id": "insert-arabic-date",
+    "category": "العربية والاتجاه",
+    "title": "إدراج التاريخ بالعربية",
+    "description": "إدراج التاريخ الميلادي بأسماء الأشهر العربية.",
+    "keywords": "تاريخ"
+  },
+  {
+    "id": "insert-hijri-date",
+    "category": "العربية والاتجاه",
+    "title": "إدراج التاريخ الهجري",
+    "description": "إدراج تاريخ أم القرى الحالي.",
+    "keywords": "هجري تاريخ"
+  },
+  {
+    "id": "reverse-text",
+    "category": "العربية والاتجاه",
+    "title": "عكس النص",
+    "description": "عكس ترتيب الأحرف في النص المحدد.",
+    "keywords": "عكس"
+  },
+  {
+    "id": "number-arabic-words",
+    "category": "العربية والاتجاه",
+    "title": "رقم إلى كلمات عربية",
+    "description": "تحويل الرقم المحدد إلى كلمات عربية.",
+    "keywords": "تفقيط أرقام"
+  },
+  {
+    "id": "arabic-clean-all",
+    "category": "العربية والاتجاه",
+    "title": "تنظيف عربي شامل",
+    "description": "حذف التشكيل والتطويل وضبط RTL وArial 14.",
+    "keywords": "تنظيف شامل"
+  },
+  {
+    "id": "collapse-spaces",
+    "category": "النص والتحرير",
+    "title": "تنظيف المسافات",
+    "description": "حذف المسافات المتكررة.",
+    "keywords": "مسافة"
+  },
+  {
+    "id": "trim-lines",
+    "category": "النص والتحرير",
+    "title": "قص حواف الأسطر",
+    "description": "حذف المسافات من بداية ونهاية كل سطر.",
+    "keywords": "trim"
+  },
+  {
+    "id": "remove-empty-paragraphs",
+    "category": "النص والتحرير",
+    "title": "حذف الفقرات الفارغة",
+    "description": "اختصار الفقرات الفارغة المتكررة.",
+    "keywords": "فراغ"
+  },
+  {
+    "id": "join-paragraphs",
+    "category": "النص والتحرير",
+    "title": "دمج الفقرات",
+    "description": "تحويل الفقرات المحددة إلى فقرة واحدة.",
+    "keywords": "دمج"
+  },
+  {
+    "id": "tabs-to-spaces",
+    "category": "النص والتحرير",
+    "title": "Tabs إلى مسافات",
+    "description": "استبدال علامات الجدولة بمسافات.",
+    "keywords": "tab"
+  },
+  {
+    "id": "linebreaks-to-paragraphs",
+    "category": "النص والتحرير",
+    "title": "فواصل الأسطر إلى فقرات",
+    "description": "تحويل line breaks إلى paragraph breaks.",
+    "keywords": "سطر فقرة"
+  },
+  {
+    "id": "remove-duplicate-lines",
+    "category": "النص والتحرير",
+    "title": "حذف الأسطر المكررة",
+    "description": "الاحتفاظ بأول ظهور لكل سطر.",
+    "keywords": "مكرر"
+  },
+  {
+    "id": "remove-duplicate-paragraphs",
+    "category": "النص والتحرير",
+    "title": "حذف الفقرات المكررة",
+    "description": "حذف الفقرات المتكررة مع تجاهل اختلاف المسافات.",
+    "keywords": "تكرار"
+  },
+  {
+    "id": "remove-duplicate-words",
+    "category": "النص والتحرير",
+    "title": "حذف الكلمات المتتابعة المكررة",
+    "description": "تحويل كلمة كلمة إلى كلمة واحدة.",
+    "keywords": "مكرر كلمات"
+  },
+  {
+    "id": "sort-lines-asc",
+    "category": "النص والتحرير",
+    "title": "فرز تصاعدي",
+    "description": "فرز الأسطر تصاعديًا.",
+    "keywords": "ترتيب"
+  },
+  {
+    "id": "sort-lines-desc",
+    "category": "النص والتحرير",
+    "title": "فرز تنازلي",
+    "description": "فرز الأسطر تنازليًا.",
+    "keywords": "ترتيب"
+  },
+  {
+    "id": "prefix-lines",
+    "category": "النص والتحرير",
+    "title": "إضافة بادئة للأسطر",
+    "description": "إضافة نص قبل كل سطر.",
+    "keywords": "بادئة"
+  },
+  {
+    "id": "suffix-lines",
+    "category": "النص والتحرير",
+    "title": "إضافة لاحقة للأسطر",
+    "description": "إضافة نص بعد كل سطر.",
+    "keywords": "لاحقة"
+  },
+  {
+    "id": "split-by-delimiter",
+    "category": "النص والتحرير",
+    "title": "تقسيم حسب فاصل",
+    "description": "استبدال فاصل محدد بفواصل فقرات.",
+    "keywords": "تقسيم"
+  },
+  {
+    "id": "paragraphs-bullets",
+    "category": "النص والتحرير",
+    "title": "تحويل إلى نقاط",
+    "description": "تحويل الفقرات إلى قائمة نقطية.",
+    "keywords": "قائمة"
+  },
+  {
+    "id": "paragraphs-numbers",
+    "category": "النص والتحرير",
+    "title": "تحويل إلى ترقيم",
+    "description": "تحويل الفقرات إلى قائمة مرقمة.",
+    "keywords": "قائمة أرقام"
+  },
+  {
+    "id": "clear-list",
+    "category": "النص والتحرير",
+    "title": "إزالة تنسيق القائمة",
+    "description": "إزالة الترقيم أو التعداد من الفقرات.",
+    "keywords": "قائمة"
+  },
+  {
+    "id": "uppercase",
+    "category": "النص والتحرير",
+    "title": "UPPERCASE",
+    "description": "تحويل الأحرف الإنجليزية إلى كبيرة.",
+    "keywords": "case"
+  },
+  {
+    "id": "lowercase",
+    "category": "النص والتحرير",
+    "title": "lowercase",
+    "description": "تحويل الأحرف الإنجليزية إلى صغيرة.",
+    "keywords": "case"
+  },
+  {
+    "id": "titlecase",
+    "category": "النص والتحرير",
+    "title": "Title Case",
+    "description": "تكبير بدايات الكلمات الإنجليزية.",
+    "keywords": "case"
+  },
+  {
+    "id": "sentence-case",
+    "category": "النص والتحرير",
+    "title": "Sentence case",
+    "description": "تكبير بداية كل جملة.",
+    "keywords": "case"
+  },
+  {
+    "id": "invert-case",
+    "category": "النص والتحرير",
+    "title": "Invert Case",
+    "description": "عكس حالة الأحرف الكبيرة والصغيرة.",
+    "keywords": "case"
+  },
+  {
+    "id": "smart-quotes",
+    "category": "النص والتحرير",
+    "title": "اقتباس ذكي",
+    "description": "تحويل الاقتباسات المستقيمة إلى ذكية.",
+    "keywords": "quotes"
+  },
+  {
+    "id": "normalize-dashes",
+    "category": "النص والتحرير",
+    "title": "توحيد الشرطات",
+    "description": "توحيد hyphen وen dash وem dash.",
+    "keywords": "شرطة"
+  },
+  {
+    "id": "remove-nonprinting",
+    "category": "النص والتحرير",
+    "title": "حذف المحارف غير المطبوعة",
+    "description": "حذف المحارف التحكمية غير المرئية.",
+    "keywords": "control"
+  },
+  {
+    "id": "remove-hyperlinks",
+    "category": "النص والتحرير",
+    "title": "إزالة الروابط",
+    "description": "حذف الارتباطات مع إبقاء النص.",
+    "keywords": "روابط"
+  },
+  {
+    "id": "extract-emails",
+    "category": "النص والتحرير",
+    "title": "استخراج البريد الإلكتروني",
+    "description": "استخراج عناوين البريد من النص.",
+    "keywords": "email"
+  },
+  {
+    "id": "extract-urls",
+    "category": "النص والتحرير",
+    "title": "استخراج الروابط",
+    "description": "استخراج الروابط من النص.",
+    "keywords": "url"
+  },
+  {
+    "id": "extract-phones",
+    "category": "النص والتحرير",
+    "title": "استخراج أرقام الهواتف",
+    "description": "استخراج أرقام الهواتف المحتملة.",
+    "keywords": "phone"
+  },
+  {
+    "id": "text-statistics",
+    "category": "النص والتحرير",
+    "title": "إحصاءات النص",
+    "description": "عرض الكلمات والأحرف والفقرات والجمل.",
+    "keywords": "عدد احصاء"
+  },
+  {
+    "id": "paste-plain",
+    "category": "النص والتحرير",
+    "title": "لصق كنص فقط",
+    "description": "لصق محتوى الحافظة دون تنسيق.",
+    "keywords": "لصق"
+  },
+  {
+    "id": "font-arial-14",
+    "category": "التنسيق والأنماط",
+    "title": "Arial 14",
+    "description": "تطبيق Arial 14 عربي وإنجليزي.",
+    "keywords": "خط"
+  },
+  {
+    "id": "font-tahoma-12",
+    "category": "التنسيق والأنماط",
+    "title": "Tahoma 12",
+    "description": "تطبيق Tahoma 12.",
+    "keywords": "خط"
+  },
+  {
+    "id": "font-times-12",
+    "category": "التنسيق والأنماط",
+    "title": "Times New Roman 12",
+    "description": "تطبيق Times New Roman 12.",
+    "keywords": "خط"
+  },
+  {
+    "id": "font-calibri-11",
+    "category": "التنسيق والأنماط",
+    "title": "Calibri 11",
+    "description": "تطبيق Calibri 11.",
+    "keywords": "خط"
+  },
+  {
+    "id": "clear-formatting",
+    "category": "التنسيق والأنماط",
+    "title": "إزالة التنسيق المباشر",
+    "description": "إرجاع النص إلى تنسيق النمط.",
+    "keywords": "تنسيق"
+  },
+  {
+    "id": "align-right",
+    "category": "التنسيق والأنماط",
+    "title": "محاذاة يمين",
+    "description": "محاذاة الفقرات إلى اليمين.",
+    "keywords": "محاذاة"
+  },
+  {
+    "id": "align-left",
+    "category": "التنسيق والأنماط",
+    "title": "محاذاة يسار",
+    "description": "محاذاة الفقرات إلى اليسار.",
+    "keywords": "محاذاة"
+  },
+  {
+    "id": "align-center",
+    "category": "التنسيق والأنماط",
+    "title": "توسيط",
+    "description": "توسيط الفقرات.",
+    "keywords": "محاذاة"
+  },
+  {
+    "id": "align-justify",
+    "category": "التنسيق والأنماط",
+    "title": "ضبط كامل",
+    "description": "ضبط الفقرات من الطرفين.",
+    "keywords": "محاذاة"
+  },
+  {
+    "id": "line-spacing-1",
+    "category": "التنسيق والأنماط",
+    "title": "تباعد مفرد",
+    "description": "تباعد أسطر مفرد.",
+    "keywords": "تباعد"
+  },
+  {
+    "id": "line-spacing-115",
+    "category": "التنسيق والأنماط",
+    "title": "تباعد 1.15",
+    "description": "تباعد أسطر 1.15.",
+    "keywords": "تباعد"
+  },
+  {
+    "id": "line-spacing-15",
+    "category": "التنسيق والأنماط",
+    "title": "تباعد 1.5",
+    "description": "تباعد أسطر 1.5.",
+    "keywords": "تباعد"
+  },
+  {
+    "id": "line-spacing-2",
+    "category": "التنسيق والأنماط",
+    "title": "تباعد مزدوج",
+    "description": "تباعد أسطر مزدوج.",
+    "keywords": "تباعد"
+  },
+  {
+    "id": "space-after-0",
+    "category": "التنسيق والأنماط",
+    "title": "مسافة بعد 0",
+    "description": "إلغاء المسافة بعد الفقرة.",
+    "keywords": "فقرة"
+  },
+  {
+    "id": "space-after-6",
+    "category": "التنسيق والأنماط",
+    "title": "مسافة بعد 6",
+    "description": "تعيين 6 نقاط بعد الفقرة.",
+    "keywords": "فقرة"
+  },
+  {
+    "id": "space-after-12",
+    "category": "التنسيق والأنماط",
+    "title": "مسافة بعد 12",
+    "description": "تعيين 12 نقطة بعد الفقرة.",
+    "keywords": "فقرة"
+  },
+  {
+    "id": "indent-first-line",
+    "category": "التنسيق والأنماط",
+    "title": "مسافة بادئة للسطر الأول",
+    "description": "تطبيق مسافة بادئة 0.75 سم.",
+    "keywords": "indent"
+  },
+  {
+    "id": "indent-remove",
+    "category": "التنسيق والأنماط",
+    "title": "إزالة المسافات البادئة",
+    "description": "إزالة إزاحات الفقرة.",
+    "keywords": "indent"
+  },
+  {
+    "id": "keep-with-next",
+    "category": "التنسيق والأنماط",
+    "title": "إبقاء مع التالي",
+    "description": "منع فصل العنوان عن الفقرة التالية.",
+    "keywords": "صفحة"
+  },
+  {
+    "id": "page-break-before",
+    "category": "التنسيق والأنماط",
+    "title": "بدء الفقرة في صفحة جديدة",
+    "description": "تطبيق Page break before.",
+    "keywords": "صفحة"
+  },
+  {
+    "id": "highlight-yellow",
+    "category": "التنسيق والأنماط",
+    "title": "تمييز أصفر",
+    "description": "تمييز النص باللون الأصفر.",
+    "keywords": "لون"
+  },
+  {
+    "id": "highlight-clear",
+    "category": "التنسيق والأنماط",
+    "title": "إزالة التمييز",
+    "description": "إزالة لون التمييز.",
+    "keywords": "لون"
+  },
+  {
+    "id": "border-box",
+    "category": "التنسيق والأنماط",
+    "title": "إطار حول النص",
+    "description": "إضافة حدود حول الفقرات المحددة.",
+    "keywords": "حدود"
+  },
+  {
+    "id": "border-clear",
+    "category": "التنسيق والأنماط",
+    "title": "إزالة الحدود",
+    "description": "إزالة حدود الفقرات.",
+    "keywords": "حدود"
+  },
+  {
+    "id": "heading-1",
+    "category": "التنسيق والأنماط",
+    "title": "عنوان 1",
+    "description": "تطبيق Heading 1.",
+    "keywords": "نمط"
+  },
+  {
+    "id": "heading-2",
+    "category": "التنسيق والأنماط",
+    "title": "عنوان 2",
+    "description": "تطبيق Heading 2.",
+    "keywords": "نمط"
+  },
+  {
+    "id": "heading-3",
+    "category": "التنسيق والأنماط",
+    "title": "عنوان 3",
+    "description": "تطبيق Heading 3.",
+    "keywords": "نمط"
+  },
+  {
+    "id": "style-normal",
+    "category": "التنسيق والأنماط",
+    "title": "نمط عادي",
+    "description": "تطبيق Normal.",
+    "keywords": "نمط"
+  },
+  {
+    "id": "format-arabic-report",
+    "category": "التنسيق والأنماط",
+    "title": "تقرير عربي",
+    "description": "تنسيق تقرير عربي احترافي.",
+    "keywords": "تقرير"
+  },
+  {
+    "id": "format-official-letter",
+    "category": "التنسيق والأنماط",
+    "title": "خطاب رسمي",
+    "description": "ضبط الصفحة والخط والفقرات لخطاب عربي رسمي.",
+    "keywords": "خطاب"
+  },
+  {
+    "id": "format-academic",
+    "category": "التنسيق والأنماط",
+    "title": "تنسيق أكاديمي",
+    "description": "ضبط الصفحة والخطوط والتباعد لبحث أكاديمي.",
+    "keywords": "بحث"
+  },
+  {
+    "id": "format-copy",
+    "category": "التنسيق والأنماط",
+    "title": "حفظ لقطة تنسيق",
+    "description": "حفظ تنسيق النص الحالي داخل الجلسة.",
+    "keywords": "نسخ تنسيق"
+  },
+  {
+    "id": "format-apply",
+    "category": "التنسيق والأنماط",
+    "title": "تطبيق لقطة التنسيق",
+    "description": "تطبيق آخر تنسيق محفوظ.",
+    "keywords": "لصق تنسيق"
+  },
+  {
+    "id": "table-rtl",
+    "category": "الجداول",
+    "title": "جدول RTL",
+    "description": "اتجاه الجدول من اليمين إلى اليسار.",
+    "keywords": "جدول"
+  },
+  {
+    "id": "table-ltr",
+    "category": "الجداول",
+    "title": "جدول LTR",
+    "description": "اتجاه الجدول من اليسار إلى اليمين.",
+    "keywords": "جدول"
+  },
+  {
+    "id": "table-professional",
+    "category": "الجداول",
+    "title": "تنسيق جدول احترافي",
+    "description": "حدود وعنوان وتوسيط وملاءمة الصفحة.",
+    "keywords": "فخم جدول"
+  },
+  {
+    "id": "table-header-style",
+    "category": "الجداول",
+    "title": "تنسيق صف العنوان",
+    "description": "تظليل وتغليظ وتكرار الصف الأول.",
+    "keywords": "عنوان"
+  },
+  {
+    "id": "table-banded-rows",
+    "category": "الجداول",
+    "title": "صفوف متبادلة",
+    "description": "تظليل صفوف الجدول بالتناوب.",
+    "keywords": "تظليل"
+  },
+  {
+    "id": "table-autofit-window",
+    "category": "الجداول",
+    "title": "ملاءمة الصفحة",
+    "description": "ملاءمة عرض الجدول للصفحة.",
+    "keywords": "عرض"
+  },
+  {
+    "id": "table-autofit-content",
+    "category": "الجداول",
+    "title": "ملاءمة المحتوى",
+    "description": "ملاءمة عرض الأعمدة للمحتوى.",
+    "keywords": "عرض"
+  },
+  {
+    "id": "table-distribute-columns",
+    "category": "الجداول",
+    "title": "توزيع الأعمدة",
+    "description": "توزيع الأعمدة بالتساوي.",
+    "keywords": "أعمدة"
+  },
+  {
+    "id": "table-distribute-rows",
+    "category": "الجداول",
+    "title": "توزيع الصفوف",
+    "description": "توزيع الصفوف بالتساوي.",
+    "keywords": "صفوف"
+  },
+  {
+    "id": "table-repeat-header",
+    "category": "الجداول",
+    "title": "تكرار صف العنوان",
+    "description": "تكرار الصف الأول في كل صفحة.",
+    "keywords": "عنوان"
+  },
+  {
+    "id": "table-remove-empty-rows",
+    "category": "الجداول",
+    "title": "حذف الصفوف الفارغة",
+    "description": "حذف الصفوف التي لا تحتوي بيانات.",
+    "keywords": "صفوف"
+  },
+  {
+    "id": "table-remove-duplicate-rows",
+    "category": "الجداول",
+    "title": "حذف الصفوف المكررة",
+    "description": "حذف الصفوف المتطابقة.",
+    "keywords": "مكرر"
+  },
+  {
+    "id": "table-trim-cells",
+    "category": "الجداول",
+    "title": "تنظيف الخلايا",
+    "description": "حذف المسافات الزائدة داخل الخلايا.",
+    "keywords": "تنظيف"
+  },
+  {
+    "id": "table-center-cells",
+    "category": "الجداول",
+    "title": "توسيط الخلايا",
+    "description": "توسيط أفقي وعمودي.",
+    "keywords": "توسيط"
+  },
+  {
+    "id": "table-number-first-column",
+    "category": "الجداول",
+    "title": "ترقيم العمود الأول",
+    "description": "إضافة تسلسل رقمي للصفوف.",
+    "keywords": "ترقيم"
+  },
+  {
+    "id": "table-sum-column",
+    "category": "الجداول",
+    "title": "مجموع العمود",
+    "description": "إضافة صف مجموع للعمود الحالي.",
+    "keywords": "حساب"
+  },
+  {
+    "id": "table-average-column",
+    "category": "الجداول",
+    "title": "متوسط العمود",
+    "description": "إضافة صف متوسط للعمود الحالي.",
+    "keywords": "حساب"
+  },
+  {
+    "id": "table-sort-asc",
+    "category": "الجداول",
+    "title": "فرز الجدول تصاعديًا",
+    "description": "فرز الصفوف حسب العمود الحالي.",
+    "keywords": "ترتيب"
+  },
+  {
+    "id": "table-sort-desc",
+    "category": "الجداول",
+    "title": "فرز الجدول تنازليًا",
+    "description": "فرز الصفوف تنازليًا حسب العمود الحالي.",
+    "keywords": "ترتيب"
+  },
+  {
+    "id": "table-row-above",
+    "category": "الجداول",
+    "title": "صف أعلى",
+    "description": "إضافة صف فوق الخلية الحالية.",
+    "keywords": "إضافة صف"
+  },
+  {
+    "id": "table-row-below",
+    "category": "الجداول",
+    "title": "صف أسفل",
+    "description": "إضافة صف في نهاية الجدول.",
+    "keywords": "إضافة صف"
+  },
+  {
+    "id": "table-col-left",
+    "category": "الجداول",
+    "title": "عمود يسار",
+    "description": "إضافة عمود قبل العمود الحالي.",
+    "keywords": "إضافة عمود"
+  },
+  {
+    "id": "table-col-right",
+    "category": "الجداول",
+    "title": "عمود يمين",
+    "description": "إضافة عمود في نهاية الجدول.",
+    "keywords": "إضافة عمود"
+  },
+  {
+    "id": "table-delete-row",
+    "category": "الجداول",
+    "title": "حذف الصف",
+    "description": "حذف الصف الحالي.",
+    "keywords": "حذف"
+  },
+  {
+    "id": "table-delete-column",
+    "category": "الجداول",
+    "title": "حذف العمود",
+    "description": "حذف العمود الحالي.",
+    "keywords": "حذف"
+  },
+  {
+    "id": "table-merge-cells",
+    "category": "الجداول",
+    "title": "دمج الخلايا",
+    "description": "دمج الخلايا المحددة.",
+    "keywords": "دمج"
+  },
+  {
+    "id": "table-split-cell",
+    "category": "الجداول",
+    "title": "تقسيم الخلية",
+    "description": "تقسيم الخلية إلى صفوف وأعمدة.",
+    "keywords": "تقسيم"
+  },
+  {
+    "id": "table-borders-all",
+    "category": "الجداول",
+    "title": "كل الحدود",
+    "description": "إظهار جميع حدود الجدول.",
+    "keywords": "حدود"
+  },
+  {
+    "id": "table-borders-none",
+    "category": "الجداول",
+    "title": "بدون حدود",
+    "description": "إخفاء حدود الجدول.",
+    "keywords": "حدود"
+  },
+  {
+    "id": "table-vertical-top",
+    "category": "الجداول",
+    "title": "محاذاة عمودية أعلى",
+    "description": "محاذاة محتوى الخلايا للأعلى.",
+    "keywords": "عمودي"
+  },
+  {
+    "id": "table-vertical-middle",
+    "category": "الجداول",
+    "title": "محاذاة عمودية وسط",
+    "description": "محاذاة محتوى الخلايا للوسط.",
+    "keywords": "عمودي"
+  },
+  {
+    "id": "table-vertical-bottom",
+    "category": "الجداول",
+    "title": "محاذاة عمودية أسفل",
+    "description": "محاذاة محتوى الخلايا للأسفل.",
+    "keywords": "عمودي"
+  },
+  {
+    "id": "text-to-table",
+    "category": "الجداول",
+    "title": "تحويل نص إلى جدول",
+    "description": "تحويل نص مفصول بعلامات إلى جدول.",
+    "keywords": "تحويل"
+  },
+  {
+    "id": "table-to-text",
+    "category": "الجداول",
+    "title": "تحويل جدول إلى نص",
+    "description": "تحويل الجدول إلى نص مفصول.",
+    "keywords": "تحويل"
+  },
+  {
+    "id": "table-transpose",
+    "category": "الجداول",
+    "title": "تبديل الصفوف والأعمدة",
+    "description": "Transpose للجدول الحالي.",
+    "keywords": "تبديل"
+  },
+  {
+    "id": "update-fields",
+    "category": "المستند والصفحات",
+    "title": "تحديث جميع الحقول",
+    "description": "تحديث الحقول والفهارس.",
+    "keywords": "حقول"
+  },
+  {
+    "id": "insert-toc",
+    "category": "المستند والصفحات",
+    "title": "إضافة فهرس محتويات",
+    "description": "إدراج فهرس من العناوين 1 إلى 3.",
+    "keywords": "فهرس"
+  },
+  {
+    "id": "page-numbers-add",
+    "category": "المستند والصفحات",
+    "title": "إضافة أرقام الصفحات",
+    "description": "إضافة الترقيم إلى التذييل.",
+    "keywords": "ترقيم صفحة"
+  },
+  {
+    "id": "page-numbers-remove",
+    "category": "المستند والصفحات",
+    "title": "حذف أرقام الصفحات",
+    "description": "حذف حقول PAGE من التذييلات.",
+    "keywords": "ترقيم صفحة"
+  },
+  {
+    "id": "insert-page-break",
+    "category": "المستند والصفحات",
+    "title": "فاصل صفحة",
+    "description": "إدراج فاصل صفحة يدوي.",
+    "keywords": "فاصل"
+  },
+  {
+    "id": "insert-section-next",
+    "category": "المستند والصفحات",
+    "title": "مقطع صفحة جديدة",
+    "description": "إدراج Section Break Next Page.",
+    "keywords": "مقطع"
+  },
+  {
+    "id": "insert-section-continuous",
+    "category": "المستند والصفحات",
+    "title": "مقطع مستمر",
+    "description": "إدراج Section Break Continuous.",
+    "keywords": "مقطع"
+  },
+  {
+    "id": "remove-page-breaks",
+    "category": "المستند والصفحات",
+    "title": "حذف فواصل الصفحات",
+    "description": "حذف جميع فواصل الصفحات اليدوية.",
+    "keywords": "فاصل"
+  },
+  {
+    "id": "remove-section-breaks",
+    "category": "المستند والصفحات",
+    "title": "حذف فواصل المقاطع",
+    "description": "حذف جميع فواصل المقاطع.",
+    "keywords": "مقطع"
+  },
+  {
+    "id": "page-a4",
+    "category": "المستند والصفحات",
+    "title": "حجم A4",
+    "description": "ضبط الورق على A4.",
+    "keywords": "ورق"
+  },
+  {
+    "id": "page-a3",
+    "category": "المستند والصفحات",
+    "title": "حجم A3",
+    "description": "ضبط الورق على A3.",
+    "keywords": "ورق"
+  },
+  {
+    "id": "page-letter",
+    "category": "المستند والصفحات",
+    "title": "حجم Letter",
+    "description": "ضبط الورق على Letter.",
+    "keywords": "ورق"
+  },
+  {
+    "id": "page-portrait",
+    "category": "المستند والصفحات",
+    "title": "اتجاه عمودي",
+    "description": "جعل الصفحة عمودية.",
+    "keywords": "اتجاه"
+  },
+  {
+    "id": "page-landscape",
+    "category": "المستند والصفحات",
+    "title": "اتجاه أفقي",
+    "description": "جعل الصفحة أفقية.",
+    "keywords": "اتجاه"
+  },
+  {
+    "id": "margins-normal",
+    "category": "المستند والصفحات",
+    "title": "هوامش عادية",
+    "description": "ضبط الهوامش إلى 2.54 سم.",
+    "keywords": "هوامش"
+  },
+  {
+    "id": "margins-narrow",
+    "category": "المستند والصفحات",
+    "title": "هوامش ضيقة",
+    "description": "ضبط الهوامش إلى 1.27 سم.",
+    "keywords": "هوامش"
+  },
+  {
+    "id": "columns-1",
+    "category": "المستند والصفحات",
+    "title": "عمود واحد",
+    "description": "إرجاع النص إلى عمود واحد.",
+    "keywords": "أعمدة"
+  },
+  {
+    "id": "columns-2",
+    "category": "المستند والصفحات",
+    "title": "عمودان",
+    "description": "تقسيم الصفحة إلى عمودين.",
+    "keywords": "أعمدة"
+  },
+  {
+    "id": "columns-3",
+    "category": "المستند والصفحات",
+    "title": "ثلاثة أعمدة",
+    "description": "تقسيم الصفحة إلى ثلاثة أعمدة.",
+    "keywords": "أعمدة"
+  },
+  {
+    "id": "line-numbers-on",
+    "category": "المستند والصفحات",
+    "title": "تشغيل أرقام الأسطر",
+    "description": "إظهار ترقيم الأسطر.",
+    "keywords": "أسطر"
+  },
+  {
+    "id": "line-numbers-off",
+    "category": "المستند والصفحات",
+    "title": "إيقاف أرقام الأسطر",
+    "description": "إخفاء ترقيم الأسطر.",
+    "keywords": "أسطر"
+  },
+  {
+    "id": "header-text",
+    "category": "المستند والصفحات",
+    "title": "نص رأس الصفحة",
+    "description": "كتابة رأس موحد في جميع المقاطع.",
+    "keywords": "هيدر"
+  },
+  {
+    "id": "footer-text",
+    "category": "المستند والصفحات",
+    "title": "نص تذييل الصفحة",
+    "description": "كتابة تذييل موحد في جميع المقاطع.",
+    "keywords": "فوتر"
+  },
+  {
+    "id": "clear-headers-footers",
+    "category": "المستند والصفحات",
+    "title": "مسح الرؤوس والتذييلات",
+    "description": "حذف نصوص الرؤوس والتذييلات.",
+    "keywords": "هيدر فوتر"
+  },
+  {
+    "id": "insert-date-time",
+    "category": "المستند والصفحات",
+    "title": "إدراج تاريخ ووقت",
+    "description": "إدراج التاريخ والوقت الحاليين.",
+    "keywords": "تاريخ"
+  },
+  {
+    "id": "insert-file-name",
+    "category": "المستند والصفحات",
+    "title": "إدراج اسم ومسار الملف",
+    "description": "إدراج حقل FILENAME مع المسار.",
+    "keywords": "مسار"
+  },
+  {
+    "id": "document-statistics",
+    "category": "المستند والصفحات",
+    "title": "إحصاءات المستند",
+    "description": "عرض الصفحات والكلمات والجداول والصور.",
+    "keywords": "احصاء"
+  },
+  {
+    "id": "list-fonts",
+    "category": "المستند والصفحات",
+    "title": "قائمة خطوط الأنماط",
+    "description": "عرض الخطوط المستخدمة في أنماط المستند.",
+    "keywords": "خطوط"
+  },
+  {
+    "id": "replace-font",
+    "category": "المستند والصفحات",
+    "title": "استبدال خط",
+    "description": "استبدال خط بآخر في المستند.",
+    "keywords": "خط"
+  },
+  {
+    "id": "remove-hidden-text",
+    "category": "المستند والصفحات",
+    "title": "حذف النص المخفي",
+    "description": "حذف كل النصوص ذات خاصية Hidden.",
+    "keywords": "مخفي"
+  },
+  {
+    "id": "unlink-fields",
+    "category": "المستند والصفحات",
+    "title": "تحويل الحقول إلى نص",
+    "description": "إلغاء ارتباط الحقول مع إبقاء النتائج.",
+    "keywords": "حقول"
+  },
+  {
+    "id": "remove-bookmarks",
+    "category": "المستند والصفحات",
+    "title": "حذف الإشارات المرجعية",
+    "description": "حذف جميع Bookmarks.",
+    "keywords": "bookmark"
+  },
+  {
+    "id": "insert-cover",
+    "category": "المستند والصفحات",
+    "title": "إنشاء صفحة غلاف",
+    "description": "إضافة غلاف منسق في بداية المستند.",
+    "keywords": "غلاف"
+  },
+  {
+    "id": "insert-signature",
+    "category": "المستند والصفحات",
+    "title": "كتلة توقيع",
+    "description": "إدراج اسم وصفة وتوقيع وتاريخ.",
+    "keywords": "توقيع"
+  },
+  {
+    "id": "track-on",
+    "category": "المراجعة والأمان",
+    "title": "تشغيل تعقب التغييرات",
+    "description": "تشغيل Track Changes.",
+    "keywords": "تعقب"
+  },
+  {
+    "id": "track-off",
+    "category": "المراجعة والأمان",
+    "title": "إيقاف تعقب التغييرات",
+    "description": "إيقاف Track Changes.",
+    "keywords": "تعقب"
+  },
+  {
+    "id": "remove-comments",
+    "category": "المراجعة والأمان",
+    "title": "حذف التعليقات",
+    "description": "حذف جميع التعليقات.",
+    "keywords": "تعليقات"
+  },
+  {
+    "id": "accept-revisions",
+    "category": "المراجعة والأمان",
+    "title": "قبول كل التعديلات",
+    "description": "قبول جميع التغييرات المتعقبة.",
+    "keywords": "تعديلات"
+  },
+  {
+    "id": "reject-revisions",
+    "category": "المراجعة والأمان",
+    "title": "رفض كل التعديلات",
+    "description": "رفض جميع التغييرات المتعقبة.",
+    "keywords": "تعديلات"
+  },
+  {
+    "id": "protect-readonly",
+    "category": "المراجعة والأمان",
+    "title": "حماية للقراءة فقط",
+    "description": "حماية المستند بكلمة مرور ضد التحرير.",
+    "keywords": "حماية"
+  },
+  {
+    "id": "protect-forms",
+    "category": "المراجعة والأمان",
+    "title": "حماية تعبئة النماذج",
+    "description": "السماح بتعبئة النماذج فقط.",
+    "keywords": "حماية"
+  },
+  {
+    "id": "unprotect",
+    "category": "المراجعة والأمان",
+    "title": "إلغاء الحماية",
+    "description": "إلغاء حماية المستند بكلمة المرور.",
+    "keywords": "حماية"
+  },
+  {
+    "id": "remove-metadata",
+    "category": "المراجعة والأمان",
+    "title": "إزالة البيانات الشخصية",
+    "description": "حذف معلومات المستند الشخصية.",
+    "keywords": "خصوصية"
+  },
+  {
+    "id": "clean-properties",
+    "category": "المراجعة والأمان",
+    "title": "تنظيف الخصائص المخصصة",
+    "description": "حذف البيانات الشخصية والخصائص المخصصة.",
+    "keywords": "خصوصية"
+  },
+  {
+    "id": "remove-external-links",
+    "category": "المراجعة والأمان",
+    "title": "فصل الروابط الخارجية",
+    "description": "فصل روابط البيانات الخارجية.",
+    "keywords": "روابط"
+  },
+  {
+    "id": "workflow-final-delivery",
+    "category": "المراجعة والأمان",
+    "title": "تجهيز نسخة نهائية",
+    "description": "نسخة احتياطية ثم قبول التعديلات وحذف التعليقات وتحديث الحقول.",
+    "keywords": "نهائي"
+  },
+  {
+    "id": "workflow-final-share",
+    "category": "المراجعة والأمان",
+    "title": "تنظيف شامل قبل المشاركة",
+    "description": "نسخة احتياطية وتنظيف مراجعة وخصوصية ونص مخفي.",
+    "keywords": "مشاركة"
+  },
+  {
+    "id": "save-backup",
+    "category": "الملفات وPDF",
+    "title": "نسخة احتياطية مؤرخة",
+    "description": "حفظ نسخة احتياطية دون تغيير المستند المفتوح.",
+    "keywords": "حفظ"
+  },
+  {
+    "id": "save-version",
+    "category": "الملفات وPDF",
+    "title": "حفظ إصدار جديد",
+    "description": "حفظ نسخة باسم يحتوي التاريخ والوقت.",
+    "keywords": "نسخة"
+  },
+  {
+    "id": "save-docx-copy",
+    "category": "الملفات وPDF",
+    "title": "نسخة DOCX",
+    "description": "إنشاء نسخة DOCX مستقلة.",
+    "keywords": "docx"
+  },
+  {
+    "id": "save-all",
+    "category": "الملفات وPDF",
+    "title": "حفظ كل المستندات",
+    "description": "حفظ جميع مستندات Word المفتوحة.",
+    "keywords": "حفظ"
+  },
+  {
+    "id": "export-pdf",
+    "category": "الملفات وPDF",
+    "title": "تصدير PDF",
+    "description": "تصدير المستند إلى PDF.",
+    "keywords": "pdf"
+  },
+  {
+    "id": "export-pdfa",
+    "category": "الملفات وPDF",
+    "title": "تصدير PDF/A",
+    "description": "تصدير أرشيفي PDF/A.",
+    "keywords": "pdfa"
+  },
+  {
+    "id": "export-selection-pdf",
+    "category": "الملفات وPDF",
+    "title": "تصدير التحديد PDF",
+    "description": "تصدير الجزء المحدد فقط إلى PDF.",
+    "keywords": "pdf تحديد"
+  },
+  {
+    "id": "export-sections-pdf",
+    "category": "الملفات وPDF",
+    "title": "كل مقطع PDF مستقل",
+    "description": "تصدير كل Section إلى ملف PDF منفصل.",
+    "keywords": "pdf مقاطع"
+  },
+  {
+    "id": "batch-pdf",
+    "category": "الملفات وPDF",
+    "title": "تحويل مجلد إلى PDF",
+    "description": "تحويل ملفات Word داخل مجلد إلى PDF دفعة واحدة.",
+    "keywords": "دفعي"
+  },
+  {
+    "id": "merge-documents",
+    "category": "الملفات وPDF",
+    "title": "دمج مستندات",
+    "description": "إدراج عدة مستندات في المستند الحالي.",
+    "keywords": "دمج ملفات"
+  },
+  {
+    "id": "open-document-folder",
+    "category": "الملفات وPDF",
+    "title": "فتح موقع المستند",
+    "description": "فتح Explorer وتحديد الملف الحالي.",
+    "keywords": "مجلد"
+  },
+  {
+    "id": "copy-document-path",
+    "category": "الملفات وPDF",
+    "title": "نسخ مسار المستند",
+    "description": "نسخ المسار الكامل إلى الحافظة.",
+    "keywords": "مسار"
+  },
+  {
+    "id": "archive-package",
+    "category": "الملفات وPDF",
+    "title": "حزمة أرشيف",
+    "description": "إنشاء مجلد يحتوي نسخة Word وPDF ومعلومات الحزمة.",
+    "keywords": "أرشيف"
+  },
+  {
+    "id": "template-agenda",
+    "category": "القوالب",
+    "title": "جدول أعمال",
+    "description": "إدراج قالب جدول أعمال اجتماع.",
+    "keywords": "اجتماع"
+  },
+  {
+    "id": "template-minutes",
+    "category": "القوالب",
+    "title": "محضر اجتماع",
+    "description": "إدراج قالب محضر اجتماع.",
+    "keywords": "اجتماع"
+  },
+  {
+    "id": "template-official-letter",
+    "category": "القوالب",
+    "title": "خطاب رسمي",
+    "description": "إدراج قالب خطاب رسمي.",
+    "keywords": "خطاب"
+  },
+  {
+    "id": "template-medical-report",
+    "category": "القوالب",
+    "title": "تقرير طبي",
+    "description": "إدراج قالب تقرير طبي.",
+    "keywords": "طبي"
+  },
+  {
+    "id": "template-project-report",
+    "category": "القوالب",
+    "title": "تقرير مشروع",
+    "description": "إدراج قالب تقرير مشروع.",
+    "keywords": "مشروع"
+  },
+  {
+    "id": "template-handover",
+    "category": "القوالب",
+    "title": "تسليم واستلام",
+    "description": "إدراج محضر تسليم واستلام.",
+    "keywords": "تسليم"
+  },
+  {
+    "id": "template-memo",
+    "category": "القوالب",
+    "title": "مذكرة داخلية",
+    "description": "إدراج قالب مذكرة.",
+    "keywords": "مذكرة"
+  },
+  {
+    "id": "template-quotation",
+    "category": "القوالب",
+    "title": "عرض سعر",
+    "description": "إدراج قالب عرض سعر.",
+    "keywords": "سعر"
+  },
+  {
+    "id": "template-invoice",
+    "category": "القوالب",
+    "title": "فاتورة",
+    "description": "إدراج قالب فاتورة.",
+    "keywords": "فاتورة"
+  },
+  {
+    "id": "template-certificate",
+    "category": "القوالب",
+    "title": "شهادة تقدير",
+    "description": "إدراج قالب شهادة.",
+    "keywords": "شهادة"
+  },
+  {
+    "id": "template-attendance",
+    "category": "القوالب",
+    "title": "كشف حضور",
+    "description": "إدراج كشف حضور.",
+    "keywords": "حضور"
+  },
+  {
+    "id": "template-tor",
+    "category": "القوالب",
+    "title": "شروط مرجعية ToR",
+    "description": "إدراج هيكل شروط مرجعية.",
+    "keywords": "tor"
+  },
+  {
+    "id": "template-concept-note",
+    "category": "القوالب",
+    "title": "مذكرة مفاهيمية",
+    "description": "إدراج هيكل Concept Note.",
+    "keywords": "مشروع"
+  },
+  {
+    "id": "template-donor-report",
+    "category": "القوالب",
+    "title": "تقرير جهة مانحة",
+    "description": "إدراج هيكل تقرير مانحين.",
+    "keywords": "مانح"
+  },
+  {
+    "id": "template-sop",
+    "category": "القوالب",
+    "title": "إجراء تشغيلي SOP",
+    "description": "إدراج هيكل SOP.",
+    "keywords": "اجراء"
+  },
+  {
+    "id": "template-risk-register",
+    "category": "القوالب",
+    "title": "سجل مخاطر",
+    "description": "إدراج جدول سجل مخاطر.",
+    "keywords": "خطر"
+  },
+  {
+    "id": "template-action-plan",
+    "category": "القوالب",
+    "title": "خطة عمل",
+    "description": "إدراج جدول خطة عمل.",
+    "keywords": "خطة"
+  },
+  {
+    "id": "template-cover-letter",
+    "category": "القوالب",
+    "title": "خطاب تغطية",
+    "description": "إدراج قالب Cover Letter عربي.",
+    "keywords": "خطاب"
+  },
+  {
+    "id": "calculator",
+    "category": "الأدوات الذكية",
+    "title": "حاسبة التحديد",
+    "description": "حساب تعبير رياضي محدد وإدراج النتيجة.",
+    "keywords": "حساب"
+  },
+  {
+    "id": "insert-guid",
+    "category": "الأدوات الذكية",
+    "title": "إدراج UUID",
+    "description": "إدراج معرف فريد عالمي.",
+    "keywords": "guid uuid"
+  },
+  {
+    "id": "insert-lorem-arabic",
+    "category": "الأدوات الذكية",
+    "title": "نص عربي تجريبي",
+    "description": "إدراج فقرات عربية لتجربة التصميم.",
+    "keywords": "lorem"
+  },
+  {
+    "id": "insert-checklist",
+    "category": "الأدوات الذكية",
+    "title": "قائمة مهام بمربعات",
+    "description": "تحويل بنود إلى قائمة ☐.",
+    "keywords": "checklist"
+  },
+  {
+    "id": "open-log",
+    "category": "الأدوات الذكية",
+    "title": "فتح سجل الإضافة",
+    "description": "فتح أحدث ملف Log.",
+    "keywords": "سجل"
+  },
+  {
+    "id": "normalize-unicode-spaces",
+    "category": "النص الاحترافي",
+    "title": "توحيد المسافات Unicode",
+    "description": "تحويل المسافات غير القياسية إلى مسافات عادية.",
+    "keywords": "unicode nbsp مسافات"
+  },
+  {
+    "id": "remove-leading-spaces",
+    "category": "النص الاحترافي",
+    "title": "حذف مسافات بداية الأسطر",
+    "description": "تنظيف بداية كل سطر.",
+    "keywords": "بداية trim"
+  },
+  {
+    "id": "remove-trailing-spaces",
+    "category": "النص الاحترافي",
+    "title": "حذف مسافات نهاية الأسطر",
+    "description": "تنظيف نهاية كل سطر.",
+    "keywords": "نهاية trim"
+  },
+  {
+    "id": "remove-all-blank-paragraphs",
+    "category": "النص الاحترافي",
+    "title": "حذف كل الفقرات الفارغة",
+    "description": "إزالة جميع الفقرات الخالية من التحديد.",
+    "keywords": "فراغ فقرات"
+  },
+  {
+    "id": "sentences-to-paragraphs",
+    "category": "النص الاحترافي",
+    "title": "الجمل إلى فقرات",
+    "description": "وضع كل جملة في فقرة مستقلة.",
+    "keywords": "جمل تقسيم"
+  },
+  {
+    "id": "paragraphs-semicolon-list",
+    "category": "النص الاحترافي",
+    "title": "الفقرات إلى قائمة منقوطة",
+    "description": "دمج الفقرات بفواصل منقوطة عربية.",
+    "keywords": "قائمة منقوطة"
+  },
+  {
+    "id": "wrap-arabic-quotes",
+    "category": "النص الاحترافي",
+    "title": "إحاطة باقتباس عربي",
+    "description": "إحاطة التحديد بعلامتي « ».",
+    "keywords": "اقتباس"
+  },
+  {
+    "id": "wrap-parentheses",
+    "category": "النص الاحترافي",
+    "title": "إحاطة بأقواس",
+    "description": "إحاطة التحديد بقوسين.",
+    "keywords": "أقواس"
+  },
+  {
+    "id": "wrap-brackets",
+    "category": "النص الاحترافي",
+    "title": "إحاطة بأقواس مربعة",
+    "description": "إحاطة التحديد بـ [ ].",
+    "keywords": "brackets"
+  },
+  {
+    "id": "strip-html-tags",
+    "category": "النص الاحترافي",
+    "title": "حذف وسوم HTML",
+    "description": "إزالة وسوم HTML وفك الكيانات النصية.",
+    "keywords": "html تنظيف"
+  },
+  {
+    "id": "extract-numbers",
+    "category": "النص الاحترافي",
+    "title": "استخراج الأرقام",
+    "description": "إنشاء مستند جديد بالأرقام الموجودة.",
+    "keywords": "أرقام استخراج"
+  },
+  {
+    "id": "extract-hashtags",
+    "category": "النص الاحترافي",
+    "title": "استخراج الوسوم",
+    "description": "استخراج Hashtags إلى مستند جديد.",
+    "keywords": "هاشتاق hashtag"
+  },
+  {
+    "id": "extract-mentions",
+    "category": "النص الاحترافي",
+    "title": "استخراج الإشارات",
+    "description": "استخراج @mentions إلى مستند جديد.",
+    "keywords": "mentions"
+  },
+  {
+    "id": "word-frequency-top",
+    "category": "التحليل والإحصاء",
+    "title": "أكثر الكلمات تكرارًا",
+    "description": "إنشاء تقرير بأعلى الكلمات تكرارًا.",
+    "keywords": "frequency تكرار"
+  },
+  {
+    "id": "find-replace-prompt",
+    "category": "النص الاحترافي",
+    "title": "بحث واستبدال سريع",
+    "description": "بحث واستبدال داخل التحديد أو المستند.",
+    "keywords": "بحث استبدال"
+  },
+  {
+    "id": "highlight-term",
+    "category": "النص الاحترافي",
+    "title": "تمييز كلمة أو عبارة",
+    "description": "تمييز جميع مرات ظهور النص.",
+    "keywords": "highlight تمييز"
+  },
+  {
+    "id": "clear-highlight-pro",
+    "category": "النص الاحترافي",
+    "title": "إزالة التمييز",
+    "description": "إزالة لون التمييز من التحديد.",
+    "keywords": "highlight"
+  },
+  {
+    "id": "duplicate-selection",
+    "category": "النص الاحترافي",
+    "title": "تكرار التحديد",
+    "description": "نسخ النص المحدد مباشرة بعده.",
+    "keywords": "duplicate"
+  },
+  {
+    "id": "sort-paragraphs-length",
+    "category": "النص الاحترافي",
+    "title": "فرز الفقرات حسب الطول",
+    "description": "ترتيب الفقرات من الأقصر إلى الأطول.",
+    "keywords": "فرز طول"
+  },
+  {
+    "id": "remove-short-paragraphs",
+    "category": "النص الاحترافي",
+    "title": "حذف الفقرات القصيرة",
+    "description": "حذف الفقرات الأقل من عدد أحرف تختاره.",
+    "keywords": "قصيرة"
+  },
+  {
+    "id": "unique-words-only",
+    "category": "النص الاحترافي",
+    "title": "الكلمات الفريدة فقط",
+    "description": "الاحتفاظ بأول ظهور لكل كلمة.",
+    "keywords": "unique كلمات"
+  },
+  {
+    "id": "comma-list-bullets",
+    "category": "النص الاحترافي",
+    "title": "قائمة مفصولة إلى نقاط",
+    "description": "تحويل العناصر المفصولة بفواصل إلى قائمة نقطية.",
+    "keywords": "فواصل نقاط"
+  },
+  {
+    "id": "insert-current-time",
+    "category": "الإدراج والحقول",
+    "title": "إدراج الوقت الحالي",
+    "description": "إدراج الوقت بصيغة HH:mm.",
+    "keywords": "وقت"
+  },
+  {
+    "id": "insert-iso-date",
+    "category": "الإدراج والحقول",
+    "title": "إدراج تاريخ ISO",
+    "description": "إدراج التاريخ بصيغة yyyy-MM-dd.",
+    "keywords": "iso تاريخ"
+  },
+  {
+    "id": "insert-timestamp",
+    "category": "الإدراج والحقول",
+    "title": "إدراج طابع زمني",
+    "description": "إدراج التاريخ والوقت الكامل.",
+    "keywords": "timestamp"
+  },
+  {
+    "id": "insert-page-x-of-y",
+    "category": "الإدراج والحقول",
+    "title": "صفحة X من Y",
+    "description": "إضافة ترقيم صفحة من إجمالي الصفحات في التذييل.",
+    "keywords": "ترقيم صفحات"
+  },
+  {
+    "id": "insert-checkbox-symbols",
+    "category": "الإدراج والحقول",
+    "title": "مربعات اختيار جاهزة",
+    "description": "إدراج عدد من مربعات الاختيار.",
+    "keywords": "checkbox"
+  },
+  {
+    "id": "insert-document-info",
+    "category": "الإدراج والحقول",
+    "title": "كتلة معلومات المستند",
+    "description": "إدراج العنوان والمؤلف واسم الملف والتاريخ.",
+    "keywords": "خصائص معلومات"
+  },
+  {
+    "id": "insert-decision-log",
+    "category": "أطر العمل المؤسسية",
+    "title": "سجل القرارات",
+    "description": "إدراج جدول احترافي لتوثيق القرارات.",
+    "keywords": "قرار log"
+  },
+  {
+    "id": "insert-raci-matrix",
+    "category": "أطر العمل المؤسسية",
+    "title": "مصفوفة RACI",
+    "description": "إدراج جدول توزيع المسؤوليات RACI.",
+    "keywords": "raci مسؤوليات"
+  },
+  {
+    "id": "insert-swot-matrix",
+    "category": "أطر العمل المؤسسية",
+    "title": "تحليل SWOT",
+    "description": "إدراج جدول نقاط القوة والضعف والفرص والتهديدات.",
+    "keywords": "swot"
+  },
+  {
+    "id": "insert-kpi-table",
+    "category": "أطر العمل المؤسسية",
+    "title": "جدول مؤشرات KPI",
+    "description": "إدراج إطار مؤشرات أداء ونتائج.",
+    "keywords": "kpi مؤشرات"
+  },
+  {
+    "id": "insert-budget-table",
+    "category": "أطر العمل المؤسسية",
+    "title": "جدول ميزانية",
+    "description": "إدراج جدول ميزانية تفصيلي.",
+    "keywords": "budget ميزانية"
+  },
+  {
+    "id": "insert-timeline-table",
+    "category": "أطر العمل المؤسسية",
+    "title": "جدول زمني",
+    "description": "إدراج جدول أنشطة ومواعيد ومسؤوليات.",
+    "keywords": "timeline"
+  },
+  {
+    "id": "insert-yes-no-table",
+    "category": "أطر العمل المؤسسية",
+    "title": "قائمة تحقق نعم/لا",
+    "description": "إدراج جدول Checklist مؤسسي.",
+    "keywords": "checklist تحقق"
+  },
+  {
+    "id": "table-currency-format",
+    "category": "الجداول المتقدمة",
+    "title": "تنسيق خلايا كعملة",
+    "description": "تنسيق القيم الرقمية برمز عملة تختاره.",
+    "keywords": "عملة currency"
+  },
+  {
+    "id": "table-percentage-format",
+    "category": "الجداول المتقدمة",
+    "title": "تنسيق خلايا كنسبة",
+    "description": "تنسيق الأرقام كنسب مئوية.",
+    "keywords": "percentage نسبة"
+  },
+  {
+    "id": "table-digits-eastern-pro",
+    "category": "الجداول المتقدمة",
+    "title": "أرقام الجدول عربية",
+    "description": "تحويل أرقام جميع خلايا الجدول إلى ٠١٢٣.",
+    "keywords": "جدول أرقام"
+  },
+  {
+    "id": "table-digits-western-pro",
+    "category": "الجداول المتقدمة",
+    "title": "أرقام الجدول غربية",
+    "description": "تحويل أرقام جميع خلايا الجدول إلى 0123.",
+    "keywords": "جدول أرقام"
+  },
+  {
+    "id": "table-remove-cell-breaks",
+    "category": "الجداول المتقدمة",
+    "title": "حذف فواصل الخلايا",
+    "description": "إزالة فواصل الأسطر من داخل الخلايا.",
+    "keywords": "تنظيف خلايا"
+  },
+  {
+    "id": "table-bold-first-row",
+    "category": "الجداول المتقدمة",
+    "title": "صف أول بارز",
+    "description": "تغليظ الصف الأول وتكراره كرأس.",
+    "keywords": "header عنوان"
+  },
+  {
+    "id": "table-auto-row-height",
+    "category": "الجداول المتقدمة",
+    "title": "ارتفاع صفوف تلقائي",
+    "description": "إعادة ارتفاع الصفوف إلى الوضع التلقائي.",
+    "keywords": "ارتفاع"
+  },
+  {
+    "id": "table-column-width-prompt",
+    "category": "الجداول المتقدمة",
+    "title": "عرض أعمدة مخصص",
+    "description": "ضبط عرض الأعمدة بالسنتيمتر.",
+    "keywords": "عرض عمود"
+  },
+  {
+    "id": "document-dashboard",
+    "category": "التحليل والإحصاء",
+    "title": "لوحة المستند",
+    "description": "عرض الصفحات والكلمات والجداول والصور والروابط والمراجعات.",
+    "keywords": "dashboard احصاء"
+  },
+  {
+    "id": "list-document-headings",
+    "category": "التحليل والإحصاء",
+    "title": "قائمة العناوين",
+    "description": "إنشاء مستند جديد بجميع العناوين وأنماطها.",
+    "keywords": "headings عناوين"
+  },
+  {
+    "id": "list-bookmarks",
+    "category": "التحليل والإحصاء",
+    "title": "قائمة الإشارات المرجعية",
+    "description": "إنشاء قائمة بأسماء Bookmarks.",
+    "keywords": "bookmarks"
+  },
+  {
+    "id": "export-plain-text",
+    "category": "الملفات وPDF",
+    "title": "تصدير المستند TXT",
+    "description": "تصدير محتوى المستند كنص UTF-8.",
+    "keywords": "txt text"
+  },
+  {
+    "id": "export-selection-text",
+    "category": "الملفات وPDF",
+    "title": "تصدير التحديد TXT",
+    "description": "حفظ النص المحدد في ملف TXT.",
+    "keywords": "selection txt"
+  },
+  {
+    "id": "copy-as-markdown",
+    "category": "الملفات وPDF",
+    "title": "نسخ كـ Markdown",
+    "description": "نسخ التحديد كنص Markdown بسيط.",
+    "keywords": "markdown"
+  },
+  {
+    "id": "unlink-selection-fields",
+    "category": "المراجعة والأمان",
+    "title": "فصل حقول التحديد",
+    "description": "تحويل الحقول الموجودة في التحديد إلى نص ثابت.",
+    "keywords": "fields unlink"
+  },
+  {
+    "id": "remove-footnotes",
+    "category": "المراجعة والأمان",
+    "title": "حذف الحواشي السفلية",
+    "description": "حذف جميع Footnotes من المستند.",
+    "keywords": "footnotes"
+  },
+  {
+    "id": "remove-endnotes",
+    "category": "المراجعة والأمان",
+    "title": "حذف الحواشي الختامية",
+    "description": "حذف جميع Endnotes من المستند.",
+    "keywords": "endnotes"
+  },
+  {
+    "id": "move-selection-new-document",
+    "category": "الملفات وPDF",
+    "title": "التحديد إلى مستند جديد",
+    "description": "نسخ التحديد مع تنسيقه إلى مستند مستقل.",
+    "keywords": "مستند جديد"
+  },
+  {
+    "id": "command-center",
+    "category": "النظام والترخيص",
+    "title": "مركز الأدوات الاحترافي",
+    "description": "بحث وفئات ومفضلة وآخر استخدام لكل الأدوات.",
+    "keywords": "مركز"
+  },
+  {
+    "id": "activate",
+    "category": "النظام والترخيص",
+    "title": "تفعيل البرنامج",
+    "description": "إدخال Serial Number وتفعيل النسخة.",
+    "keywords": "ترخيص"
+  },
+  {
+    "id": "license-info",
+    "category": "النظام والترخيص",
+    "title": "حالة الترخيص",
+    "description": "عرض حالة الترخيص ومعرّف الجهاز.",
+    "keywords": "ترخيص"
+  },
+  {
+    "id": "machine-id",
+    "category": "النظام والترخيص",
+    "title": "نسخ معرّف الجهاز",
+    "description": "نسخ Machine ID لإرساله إلى مالك البرنامج.",
+    "keywords": "ترخيص"
+  },
+  {
+    "id": "health-check",
+    "category": "النظام والترخيص",
+    "title": "فحص الإضافة",
+    "description": "عرض حالة الاتصال وإصدار Word والسجل.",
+    "keywords": "فحص"
+  },
+  {
+    "id": "about",
+    "category": "النظام والترخيص",
+    "title": "حول WordPro Suite",
+    "description": "معلومات الإصدار والتقنية.",
+    "keywords": "حول"
+  }
+]

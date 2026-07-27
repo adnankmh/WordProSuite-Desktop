@@ -168,7 +168,9 @@ namespace WordProSuite.Desktop.Commands
         internal static void TrimLines()
         {
             dynamic r = WordContext.TargetRange;
-            r.Text = String.Join("\r", TextTransforms.Lines(Convert.ToString(r.Text)).Select(x => x.Trim()));
+            string text = Convert.ToString(r.Text) ?? "";
+            string[] lines = TextTransforms.Lines(text);
+            r.Text = String.Join("\r", lines.Select((Func<string, string>)(x => x.Trim())));
         }
 
         internal static void JoinParagraphs()
@@ -219,7 +221,9 @@ namespace WordProSuite.Desktop.Commands
             string prefix = Prompt.Show("بادئة الأسطر", "اكتب النص الذي سيضاف قبل كل سطر:");
             if (prefix == null) return;
             dynamic r = WordContext.TargetRange;
-            r.Text = String.Join("\r", TextTransforms.Lines(Convert.ToString(r.Text)).Select(x => prefix + x));
+            string text = Convert.ToString(r.Text) ?? "";
+            string[] lines = TextTransforms.Lines(text);
+            r.Text = String.Join("\r", lines.Select((Func<string, string>)(x => prefix + x)));
         }
 
         internal static void SuffixLines()
@@ -227,7 +231,9 @@ namespace WordProSuite.Desktop.Commands
             string suffix = Prompt.Show("لاحقة الأسطر", "اكتب النص الذي سيضاف بعد كل سطر:");
             if (suffix == null) return;
             dynamic r = WordContext.TargetRange;
-            r.Text = String.Join("\r", TextTransforms.Lines(Convert.ToString(r.Text)).Select(x => x + suffix));
+            string text = Convert.ToString(r.Text) ?? "";
+            string[] lines = TextTransforms.Lines(text);
+            r.Text = String.Join("\r", lines.Select((Func<string, string>)(x => x + suffix)));
         }
 
         internal static void ParagraphsToBullets() => WordContext.TargetRange.ListFormat.ApplyBulletDefault();

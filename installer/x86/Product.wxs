@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="7D0EA817-EA75-45E6-BBA3-083B1B7ABCC6"
-           Name="WordPro Suite Desktop (x86)"
-           Language="1033"
-           Version="1.0.1.0"
-           Manufacturer="WordPro Suite"
-           UpgradeCode="28E743B1-B338-4D8E-BE74-1410581B20DF">
-
-    <Package InstallerVersion="500"
-             Compressed="yes"
-             InstallScope="perMachine"
-             Platform="x86" />
-
+  <Product Id="A4629D41-3345-44A9-B2E4-0EEBD39D3F1C" Name="WordPro Suite Desktop (x86)" Language="1033"
+           Version="1.0.0.0" Manufacturer="WordPro Suite" UpgradeCode="28E743B1-B338-4D8E-BE74-1410581B20DF">
+    <Package InstallerVersion="500" Compressed="yes" InstallScope="perUser" Platform="x86" />
     <MajorUpgrade DowngradeErrorMessage="A newer version is already installed." />
     <MediaTemplate EmbedCab="yes" />
-
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
         <Directory Id="CompanyFolder" Name="WordPro Suite">
@@ -22,72 +12,39 @@
         </Directory>
       </Directory>
     </Directory>
-
     <DirectoryRef Id="INSTALLFOLDER">
-      <Component Id="cmpAddInBinary" Guid="71C83263-3477-47BF-A416-BC6270310F21" Win64="no">
-        <File Id="filAddIn"
-              Source="$(var.AddInBin)\WordProSuite.AddIn.dll"
-              KeyPath="yes" />
-      </Component>
-    </DirectoryRef>
-
-    <!-- Office recommends the Word Addins registration under HKCU. It is kept
-         in a separate component so it is not mixed with Program Files data. -->
-    <DirectoryRef Id="TARGETDIR">
-      <Component Id="cmpCurrentUserWordRegistration" Guid="8B1FAE21-84A0-4446-A17D-E96B675C86EC" Win64="no">
-        <RegistryKey Root="HKCU"
-                     Key="Software\Microsoft\Office\Word\Addins\WordProSuite.Desktop.AddIn">
-          <RegistryValue Name="FriendlyName"
-                         Type="string"
-                         Value="WordPro Suite Desktop" />
-          <RegistryValue Name="Description"
-                         Type="string"
-                         Value="Professional productivity tools for Microsoft Word." />
-          <RegistryValue Name="LoadBehavior"
-                         Type="integer"
-                         Value="3"
-                         KeyPath="yes" />
-          <RegistryValue Name="CommandLineSafe"
-                         Type="integer"
-                         Value="0" />
+      <Component Id="cmpAddIn" Guid="623E2FFB-D214-478E-9145-7F605F9CAB7A" Win64="no">
+        <File Id="filAddIn" Source="$(var.AddInBin)\WordProSuite.AddIn.dll" KeyPath="yes" />
+        <RegistryKey Root="HKCU" Key="Software\Classes\CLSID\{79D9E91D-88D5-4C41-B805-82D64D1348B2}">
+          <RegistryValue Type="string" Value="WordPro Suite Desktop Add-in" />
+          <RegistryKey Key="InprocServer32">
+            <RegistryValue Type="string" Value="mscoree.dll" />
+            <RegistryValue Name="ThreadingModel" Type="string" Value="Both" />
+            <RegistryValue Name="Class" Type="string" Value="WordProSuite.Desktop.WordProAddIn" />
+            <RegistryValue Name="Assembly" Type="string" Value="WordProSuite.AddIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            <RegistryValue Name="RuntimeVersion" Type="string" Value="v4.0.30319" />
+            <RegistryValue Name="CodeBase" Type="string" Value="file:///[INSTALLFOLDER]WordProSuite.AddIn.dll" />
+            <RegistryKey Key="1.0.0.0">
+              <RegistryValue Name="Class" Type="string" Value="WordProSuite.Desktop.WordProAddIn" />
+              <RegistryValue Name="Assembly" Type="string" Value="WordProSuite.AddIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+              <RegistryValue Name="RuntimeVersion" Type="string" Value="v4.0.30319" />
+              <RegistryValue Name="CodeBase" Type="string" Value="file:///[INSTALLFOLDER]WordProSuite.AddIn.dll" />
+            </RegistryKey>
+          </RegistryKey>
+          <RegistryKey Key="ProgId"><RegistryValue Type="string" Value="WordProSuite.Desktop.AddIn" /></RegistryKey>
         </RegistryKey>
-
-        <!-- Remove stale Office resiliency entries for this product name when
-             the MSI repairs/installs for the current user. -->
-        <RemoveRegistryKey Id="removeOldAddinRegistration"
-                           Root="HKCU"
-                           Key="Software\Microsoft\Office\Word\Addins\WordProSuite.Desktop.AddIn"
-                           Action="removeOnUninstall" />
+        <RegistryKey Root="HKCU" Key="Software\Classes\WordProSuite.Desktop.AddIn">
+          <RegistryValue Type="string" Value="WordPro Suite Desktop Add-in" />
+          <RegistryKey Key="CLSID"><RegistryValue Type="string" Value="{79D9E91D-88D5-4C41-B805-82D64D1348B2}" /></RegistryKey>
+        </RegistryKey>
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\Office\Word\Addins\WordProSuite.Desktop.AddIn">
+          <RegistryValue Name="FriendlyName" Type="string" Value="WordPro Suite Desktop" />
+          <RegistryValue Name="Description" Type="string" Value="Professional productivity tools for Microsoft Word." />
+          <RegistryValue Name="LoadBehavior" Type="integer" Value="3" />
+          <RegistryValue Name="CommandLineSafe" Type="integer" Value="0" />
+        </RegistryKey>
       </Component>
     </DirectoryRef>
-
-    <!-- RegAsm creates the complete and correct managed COM registration:
-         CLSID, InprocServer32=mscoree.dll, Assembly, Class, RuntimeVersion,
-         CodeBase and version subkeys. -->
-    <CustomAction Id="RegisterManagedCom"
-                  Directory="TARGETDIR"
-                  ExeCommand="&quot;[WindowsFolder]Microsoft.NET\Framework\v4.0.30319\RegAsm.exe&quot; &quot;[INSTALLFOLDER]WordProSuite.AddIn.dll&quot; /nologo /codebase"
-                  Execute="deferred"
-                  Impersonate="no"
-                  Return="check" />
-
-    <CustomAction Id="UnregisterManagedCom"
-                  Directory="TARGETDIR"
-                  ExeCommand="&quot;[WindowsFolder]Microsoft.NET\Framework\v4.0.30319\RegAsm.exe&quot; &quot;[INSTALLFOLDER]WordProSuite.AddIn.dll&quot; /nologo /unregister"
-                  Execute="deferred"
-                  Impersonate="no"
-                  Return="ignore" />
-
-    <InstallExecuteSequence>
-      <Custom Action="UnregisterManagedCom"
-              Before="RemoveFiles">REMOVE="ALL"</Custom>
-      <Custom Action="RegisterManagedCom"
-              After="InstallFiles">NOT REMOVE</Custom>
-    </InstallExecuteSequence>
-
-    <Feature Id="MainFeature" Title="WordPro Suite Desktop" Level="1">
-      <ComponentRef Id="cmpAddInBinary" />
-      <ComponentRef Id="cmpCurrentUserWordRegistration" />
-    </Feature>
+    <Feature Id="MainFeature" Title="WordPro Suite Desktop" Level="1"><ComponentRef Id="cmpAddIn" /></Feature>
   </Product>
 </Wix>

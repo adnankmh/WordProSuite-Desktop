@@ -1,4 +1,4 @@
-name: Build WordPro Suite Desktop Pro v2
+name: Build WordPro Suite Desktop Pro 2.1
 
 on:
   workflow_dispatch:
@@ -21,32 +21,43 @@ jobs:
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v2
 
-      - name: Validate source and licensing boundary
+      - name: Validate source
         shell: powershell
         run: .\scripts\validate-source.ps1
 
-      - name: Build professional release
+      - name: Build single-file professional release
         shell: powershell
         run: .\scripts\build-release.ps1 -Configuration Release
 
-      - name: Validate setup package
+      - name: Validate release package
         shell: powershell
         run: |
           $files = @(
             ".\release\WordProSuite_Setup.exe",
-            ".\release\Payload\WordProSuite.AddIn.dll",
-            ".\WordProSuite_Desktop_Pro_V2_Windows.zip"
+            ".\release\INSTALL_AR.txt",
+            ".\release\SHA256_SETUP.txt",
+            ".\WordProSuite_Desktop_Pro_V2_1_Windows.zip"
           )
+
           foreach ($file in $files) {
-            if (-not (Test-Path $file)) { throw "Missing $file" }
-            if ((Get-Item $file).Length -lt 1024) { throw "File is unexpectedly small: $file" }
+            if (-not (Test-Path $file)) {
+              throw "Missing $file"
+            }
+
+            if ((Get-Item $file).Length -lt 32) {
+              throw "File is unexpectedly small: $file"
+            }
           }
 
-      - name: Upload Windows setup package
+          if ((Get-Item ".\release\WordProSuite_Setup.exe").Length -lt 50000) {
+            throw "Setup EXE is too small to contain the embedded add-in."
+          }
+
+      - name: Upload Windows setup
         uses: actions/upload-artifact@v4
         with:
-          name: WordProSuite-Desktop-Pro-v2-Windows
+          name: WordProSuite-Desktop-Pro-2.1-Windows
           path: |
             release/**
-            WordProSuite_Desktop_Pro_V2_Windows.zip
+            WordProSuite_Desktop_Pro_V2_1_Windows.zip
           if-no-files-found: error

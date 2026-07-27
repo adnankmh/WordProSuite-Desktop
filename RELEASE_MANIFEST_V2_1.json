@@ -1,0 +1,16 @@
+{
+  "product": "WordPro Suite Desktop Pro",
+  "version": "2.1.0",
+  "generated_at": "2026-07-27T19:41:10.506436",
+  "registered_commands": 259,
+  "ribbon_commands": 201,
+  "categories": 15,
+  "single_file_setup": true,
+  "serial_activation_in_setup": true,
+  "known_cs1977_fixed": true,
+  "private_key_in_public_source": false,
+  "build_output": [
+    "release/WordProSuite_Setup.exe",
+    "WordProSuite_Desktop_Pro_V2_1_Windows.zip"
+  ]
+}

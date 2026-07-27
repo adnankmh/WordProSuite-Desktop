@@ -1,0 +1,19 @@
+WordPro Suite Desktop Pro 2.1 - Static Validation Report
+Generated: 2026-07-27T19:41:10.506217
+
+[PASS] required files
+[PASS] command count — 259
+[PASS] unique command ids
+[PASS] ribbon mapping — set()
+[PASS] CS1977 regression
+[PASS] router method refs — []
+[PASS] embedded setup resource
+[PASS] setup activation
+[PASS] com activation verify
+[PASS] private key absent
+[PASS] brace balance — []
+
+Notes:
+- Static validation completed in the artifact environment.
+- Windows/.NET Framework compilation is performed by GitHub Actions.
+- Actual Word loading is verified by scripts/test-office2024.ps1 on a Windows Office runner.

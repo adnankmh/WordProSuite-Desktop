@@ -249,6 +249,71 @@ namespace WordProSuite.Desktop.Commands
             A("insert-checklist", "الأدوات الذكية", "قائمة مهام بمربعات", "تحويل بنود إلى قائمة ☐.", "checklist", AdvancedCommands.InsertChecklist);
             A("open-log", "الأدوات الذكية", "فتح سجل الإضافة", "فتح أحدث ملف Log.", "سجل", AdvancedCommands.OpenLog, false);
 
+
+            // الحزمة الاحترافية — تنظيف النص والتحرير المتقدم
+            A("normalize-unicode-spaces", "النص الاحترافي", "توحيد المسافات Unicode", "تحويل المسافات غير القياسية إلى مسافات عادية.", "unicode nbsp مسافات", EnterpriseCommands.NormalizeUnicodeSpaces);
+            A("remove-leading-spaces", "النص الاحترافي", "حذف مسافات بداية الأسطر", "تنظيف بداية كل سطر.", "بداية trim", EnterpriseCommands.RemoveLeadingSpaces);
+            A("remove-trailing-spaces", "النص الاحترافي", "حذف مسافات نهاية الأسطر", "تنظيف نهاية كل سطر.", "نهاية trim", EnterpriseCommands.RemoveTrailingSpaces);
+            A("remove-all-blank-paragraphs", "النص الاحترافي", "حذف كل الفقرات الفارغة", "إزالة جميع الفقرات الخالية من التحديد.", "فراغ فقرات", EnterpriseCommands.RemoveAllBlankParagraphs);
+            A("sentences-to-paragraphs", "النص الاحترافي", "الجمل إلى فقرات", "وضع كل جملة في فقرة مستقلة.", "جمل تقسيم", EnterpriseCommands.SentencesToParagraphs);
+            A("paragraphs-semicolon-list", "النص الاحترافي", "الفقرات إلى قائمة منقوطة", "دمج الفقرات بفواصل منقوطة عربية.", "قائمة منقوطة", EnterpriseCommands.ParagraphsToSemicolonList);
+            A("wrap-arabic-quotes", "النص الاحترافي", "إحاطة باقتباس عربي", "إحاطة التحديد بعلامتي « ».", "اقتباس", EnterpriseCommands.WrapArabicQuotes);
+            A("wrap-parentheses", "النص الاحترافي", "إحاطة بأقواس", "إحاطة التحديد بقوسين.", "أقواس", EnterpriseCommands.WrapParentheses);
+            A("wrap-brackets", "النص الاحترافي", "إحاطة بأقواس مربعة", "إحاطة التحديد بـ [ ].", "brackets", EnterpriseCommands.WrapBrackets);
+            A("strip-html-tags", "النص الاحترافي", "حذف وسوم HTML", "إزالة وسوم HTML وفك الكيانات النصية.", "html تنظيف", EnterpriseCommands.StripHtmlTags);
+            A("extract-numbers", "النص الاحترافي", "استخراج الأرقام", "إنشاء مستند جديد بالأرقام الموجودة.", "أرقام استخراج", EnterpriseCommands.ExtractNumbers);
+            A("extract-hashtags", "النص الاحترافي", "استخراج الوسوم", "استخراج Hashtags إلى مستند جديد.", "هاشتاق hashtag", EnterpriseCommands.ExtractHashtags);
+            A("extract-mentions", "النص الاحترافي", "استخراج الإشارات", "استخراج @mentions إلى مستند جديد.", "mentions", EnterpriseCommands.ExtractMentions);
+            A("word-frequency-top", "التحليل والإحصاء", "أكثر الكلمات تكرارًا", "إنشاء تقرير بأعلى الكلمات تكرارًا.", "frequency تكرار", EnterpriseCommands.WordFrequencyTop);
+            A("find-replace-prompt", "النص الاحترافي", "بحث واستبدال سريع", "بحث واستبدال داخل التحديد أو المستند.", "بحث استبدال", EnterpriseCommands.FindReplacePrompt);
+            A("highlight-term", "النص الاحترافي", "تمييز كلمة أو عبارة", "تمييز جميع مرات ظهور النص.", "highlight تمييز", EnterpriseCommands.HighlightTerm);
+            A("clear-highlight-pro", "النص الاحترافي", "إزالة التمييز", "إزالة لون التمييز من التحديد.", "highlight", EnterpriseCommands.ClearHighlight);
+            A("duplicate-selection", "النص الاحترافي", "تكرار التحديد", "نسخ النص المحدد مباشرة بعده.", "duplicate", EnterpriseCommands.DuplicateSelection);
+            A("sort-paragraphs-length", "النص الاحترافي", "فرز الفقرات حسب الطول", "ترتيب الفقرات من الأقصر إلى الأطول.", "فرز طول", EnterpriseCommands.SortParagraphsByLength);
+            A("remove-short-paragraphs", "النص الاحترافي", "حذف الفقرات القصيرة", "حذف الفقرات الأقل من عدد أحرف تختاره.", "قصيرة", EnterpriseCommands.RemoveShortParagraphs);
+            A("unique-words-only", "النص الاحترافي", "الكلمات الفريدة فقط", "الاحتفاظ بأول ظهور لكل كلمة.", "unique كلمات", EnterpriseCommands.UniqueWordsOnly);
+            A("comma-list-bullets", "النص الاحترافي", "قائمة مفصولة إلى نقاط", "تحويل العناصر المفصولة بفواصل إلى قائمة نقطية.", "فواصل نقاط", EnterpriseCommands.CommaListToBullets);
+
+            // إدراجات وحقول احترافية
+            A("insert-current-time", "الإدراج والحقول", "إدراج الوقت الحالي", "إدراج الوقت بصيغة HH:mm.", "وقت", EnterpriseCommands.InsertCurrentTime);
+            A("insert-iso-date", "الإدراج والحقول", "إدراج تاريخ ISO", "إدراج التاريخ بصيغة yyyy-MM-dd.", "iso تاريخ", EnterpriseCommands.InsertIsoDate);
+            A("insert-timestamp", "الإدراج والحقول", "إدراج طابع زمني", "إدراج التاريخ والوقت الكامل.", "timestamp", EnterpriseCommands.InsertTimestamp);
+            A("insert-page-x-of-y", "الإدراج والحقول", "صفحة X من Y", "إضافة ترقيم صفحة من إجمالي الصفحات في التذييل.", "ترقيم صفحات", EnterpriseCommands.InsertPageXOfY);
+            A("insert-checkbox-symbols", "الإدراج والحقول", "مربعات اختيار جاهزة", "إدراج عدد من مربعات الاختيار.", "checkbox", EnterpriseCommands.InsertCheckboxSymbols);
+            A("insert-document-info", "الإدراج والحقول", "كتلة معلومات المستند", "إدراج العنوان والمؤلف واسم الملف والتاريخ.", "خصائص معلومات", EnterpriseCommands.InsertDocumentInfoBlock);
+
+            // أطر العمل والجداول المؤسسية
+            A("insert-decision-log", "أطر العمل المؤسسية", "سجل القرارات", "إدراج جدول احترافي لتوثيق القرارات.", "قرار log", EnterpriseCommands.InsertDecisionLog);
+            A("insert-raci-matrix", "أطر العمل المؤسسية", "مصفوفة RACI", "إدراج جدول توزيع المسؤوليات RACI.", "raci مسؤوليات", EnterpriseCommands.InsertRaciMatrix);
+            A("insert-swot-matrix", "أطر العمل المؤسسية", "تحليل SWOT", "إدراج جدول نقاط القوة والضعف والفرص والتهديدات.", "swot", EnterpriseCommands.InsertSwotMatrix);
+            A("insert-kpi-table", "أطر العمل المؤسسية", "جدول مؤشرات KPI", "إدراج إطار مؤشرات أداء ونتائج.", "kpi مؤشرات", EnterpriseCommands.InsertKpiTable);
+            A("insert-budget-table", "أطر العمل المؤسسية", "جدول ميزانية", "إدراج جدول ميزانية تفصيلي.", "budget ميزانية", EnterpriseCommands.InsertBudgetTable);
+            A("insert-timeline-table", "أطر العمل المؤسسية", "جدول زمني", "إدراج جدول أنشطة ومواعيد ومسؤوليات.", "timeline", EnterpriseCommands.InsertTimelineTable);
+            A("insert-yes-no-table", "أطر العمل المؤسسية", "قائمة تحقق نعم/لا", "إدراج جدول Checklist مؤسسي.", "checklist تحقق", EnterpriseCommands.InsertYesNoTable);
+
+            // الجداول المتقدمة
+            A("table-currency-format", "الجداول المتقدمة", "تنسيق خلايا كعملة", "تنسيق القيم الرقمية برمز عملة تختاره.", "عملة currency", EnterpriseCommands.TableCurrencyFormat);
+            A("table-percentage-format", "الجداول المتقدمة", "تنسيق خلايا كنسبة", "تنسيق الأرقام كنسب مئوية.", "percentage نسبة", EnterpriseCommands.TablePercentageFormat);
+            A("table-digits-eastern-pro", "الجداول المتقدمة", "أرقام الجدول عربية", "تحويل أرقام جميع خلايا الجدول إلى ٠١٢٣.", "جدول أرقام", EnterpriseCommands.TableDigitsEastern);
+            A("table-digits-western-pro", "الجداول المتقدمة", "أرقام الجدول غربية", "تحويل أرقام جميع خلايا الجدول إلى 0123.", "جدول أرقام", EnterpriseCommands.TableDigitsWestern);
+            A("table-remove-cell-breaks", "الجداول المتقدمة", "حذف فواصل الخلايا", "إزالة فواصل الأسطر من داخل الخلايا.", "تنظيف خلايا", EnterpriseCommands.TableRemoveCellBreaks);
+            A("table-bold-first-row", "الجداول المتقدمة", "صف أول بارز", "تغليظ الصف الأول وتكراره كرأس.", "header عنوان", EnterpriseCommands.TableBoldFirstRow);
+            A("table-auto-row-height", "الجداول المتقدمة", "ارتفاع صفوف تلقائي", "إعادة ارتفاع الصفوف إلى الوضع التلقائي.", "ارتفاع", EnterpriseCommands.TableAutoRowHeight);
+            A("table-column-width-prompt", "الجداول المتقدمة", "عرض أعمدة مخصص", "ضبط عرض الأعمدة بالسنتيمتر.", "عرض عمود", EnterpriseCommands.TableColumnWidthPrompt);
+
+            // التحليل والتصدير
+            A("document-dashboard", "التحليل والإحصاء", "لوحة المستند", "عرض الصفحات والكلمات والجداول والصور والروابط والمراجعات.", "dashboard احصاء", EnterpriseCommands.DocumentDashboard);
+            A("list-document-headings", "التحليل والإحصاء", "قائمة العناوين", "إنشاء مستند جديد بجميع العناوين وأنماطها.", "headings عناوين", EnterpriseCommands.ListDocumentHeadings);
+            A("list-bookmarks", "التحليل والإحصاء", "قائمة الإشارات المرجعية", "إنشاء قائمة بأسماء Bookmarks.", "bookmarks", EnterpriseCommands.ListBookmarks);
+            A("export-plain-text", "الملفات وPDF", "تصدير المستند TXT", "تصدير محتوى المستند كنص UTF-8.", "txt text", EnterpriseCommands.ExportPlainText);
+            A("export-selection-text", "الملفات وPDF", "تصدير التحديد TXT", "حفظ النص المحدد في ملف TXT.", "selection txt", EnterpriseCommands.ExportSelectionText);
+            A("copy-as-markdown", "الملفات وPDF", "نسخ كـ Markdown", "نسخ التحديد كنص Markdown بسيط.", "markdown", EnterpriseCommands.CopyAsMarkdown);
+            A("unlink-selection-fields", "المراجعة والأمان", "فصل حقول التحديد", "تحويل الحقول الموجودة في التحديد إلى نص ثابت.", "fields unlink", EnterpriseCommands.UnlinkSelectionFields);
+            A("remove-footnotes", "المراجعة والأمان", "حذف الحواشي السفلية", "حذف جميع Footnotes من المستند.", "footnotes", EnterpriseCommands.RemoveFootnotes);
+            A("remove-endnotes", "المراجعة والأمان", "حذف الحواشي الختامية", "حذف جميع Endnotes من المستند.", "endnotes", EnterpriseCommands.RemoveEndnotes);
+            A("move-selection-new-document", "الملفات وPDF", "التحديد إلى مستند جديد", "نسخ التحديد مع تنسيقه إلى مستند مستقل.", "مستند جديد", EnterpriseCommands.MoveSelectionToNewDocument);
+
+
             // النظام والترخيص
             A("command-center", "النظام والترخيص", "مركز الأدوات الاحترافي", "بحث وفئات ومفضلة وآخر استخدام لكل الأدوات.", "مركز", CommandCenterForm.ShowCenter, false);
             A("activate", "النظام والترخيص", "تفعيل البرنامج", "إدخال Serial Number وتفعيل النسخة.", "ترخيص", AdvancedCommands.Activate, false);

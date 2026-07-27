@@ -228,6 +228,38 @@ namespace WordProSuite.Desktop.Ribbon
           </menu>
         </group>
 
+
+        <group id=""grpEnterprise"" label=""الحزمة الاحترافية"">
+          <button id=""btnDocumentDashboard"" tag=""document-dashboard"" label=""لوحة المستند"" size=""large"" imageMso=""ReviewDisplayForReview"" onAction=""RibbonOnAction""/>
+          <menu id=""menuProText"" label=""نص احترافي"" size=""large"" imageMso=""FindDialog"">
+            <button id=""btnUnicodeSpaces"" tag=""normalize-unicode-spaces"" label=""توحيد المسافات Unicode"" onAction=""RibbonOnAction""/>
+            <button id=""btnLeadingSpaces"" tag=""remove-leading-spaces"" label=""حذف مسافات البداية"" onAction=""RibbonOnAction""/>
+            <button id=""btnTrailingSpaces"" tag=""remove-trailing-spaces"" label=""حذف مسافات النهاية"" onAction=""RibbonOnAction""/>
+            <button id=""btnSentencesParagraphs"" tag=""sentences-to-paragraphs"" label=""الجمل إلى فقرات"" onAction=""RibbonOnAction""/>
+            <button id=""btnStripHtml"" tag=""strip-html-tags"" label=""حذف HTML"" onAction=""RibbonOnAction""/>
+            <button id=""btnWordFrequency"" tag=""word-frequency-top"" label=""أكثر الكلمات تكرارًا"" onAction=""RibbonOnAction""/>
+            <button id=""btnFastReplace"" tag=""find-replace-prompt"" label=""بحث واستبدال سريع"" onAction=""RibbonOnAction""/>
+            <button id=""btnHighlightTerm"" tag=""highlight-term"" label=""تمييز كلمة"" onAction=""RibbonOnAction""/>
+          </menu>
+          <menu id=""menuEnterpriseFrames"" label=""أطر مؤسسية"" size=""large"" imageMso=""TableInsertDialogWord"">
+            <button id=""btnDecisionLog"" tag=""insert-decision-log"" label=""سجل القرارات"" onAction=""RibbonOnAction""/>
+            <button id=""btnRaci"" tag=""insert-raci-matrix"" label=""مصفوفة RACI"" onAction=""RibbonOnAction""/>
+            <button id=""btnSwot"" tag=""insert-swot-matrix"" label=""تحليل SWOT"" onAction=""RibbonOnAction""/>
+            <button id=""btnKpi"" tag=""insert-kpi-table"" label=""جدول KPI"" onAction=""RibbonOnAction""/>
+            <button id=""btnBudget"" tag=""insert-budget-table"" label=""جدول ميزانية"" onAction=""RibbonOnAction""/>
+            <button id=""btnTimeline"" tag=""insert-timeline-table"" label=""جدول زمني"" onAction=""RibbonOnAction""/>
+            <button id=""btnYesNo"" tag=""insert-yes-no-table"" label=""قائمة تحقق"" onAction=""RibbonOnAction""/>
+          </menu>
+          <menu id=""menuProExport"" label=""تحليل وتصدير"" imageMso=""FileSaveAs"">
+            <button id=""btnListHeadings"" tag=""list-document-headings"" label=""قائمة العناوين"" onAction=""RibbonOnAction""/>
+            <button id=""btnListBookmarks"" tag=""list-bookmarks"" label=""قائمة الإشارات"" onAction=""RibbonOnAction""/>
+            <button id=""btnExportTxt"" tag=""export-plain-text"" label=""تصدير TXT"" onAction=""RibbonOnAction""/>
+            <button id=""btnExportSelectionTxt"" tag=""export-selection-text"" label=""التحديد إلى TXT"" onAction=""RibbonOnAction""/>
+            <button id=""btnCopyMarkdown"" tag=""copy-as-markdown"" label=""نسخ Markdown"" onAction=""RibbonOnAction""/>
+            <button id=""btnPageXofY"" tag=""insert-page-x-of-y"" label=""صفحة X من Y"" onAction=""RibbonOnAction""/>
+          </menu>
+        </group>
+
         <group id=""grpTemplates"" label=""القوالب والأدوات"">
           <menu id=""menuTemplates"" label=""قوالب جاهزة"" size=""large"" imageMso=""NewDocumentOrTemplate"">
             <button id=""btnAgenda"" tag=""template-agenda"" label=""جدول أعمال"" onAction=""RibbonOnAction""/>
