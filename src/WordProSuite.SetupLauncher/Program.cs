@@ -72,7 +72,7 @@ namespace WordProSuite.SetupLauncher
 
         internal SetupForm()
         {
-            Text = "WordPro Suite Desktop Pro 2.1 Setup";
+            Text = "WordPro Suite Desktop Pro 2.2 Setup";
             RightToLeft = RightToLeft.Yes;
             RightToLeftLayout = true;
             StartPosition = FormStartPosition.CenterScreen;
@@ -91,7 +91,7 @@ namespace WordProSuite.SetupLauncher
 
             var title = new Label
             {
-                Text = "WordPro Suite Desktop Pro 2.1",
+                Text = "WordPro Suite Desktop Pro 2.2",
                 Dock = DockStyle.Top,
                 Height = 54,
                 ForeColor = Color.White,
@@ -459,7 +459,7 @@ namespace WordProSuite.SetupLauncher
 
                 using (RegistryKey addin = root.CreateSubKey(@"Software\Microsoft\Office\Word\Addins\" + ProgId))
                 {
-                    addin.SetValue("FriendlyName", "WordPro Suite Desktop Pro 2.1");
+                    addin.SetValue("FriendlyName", "WordPro Suite Desktop Pro 2.2");
                     addin.SetValue("Description", "Professional productivity suite for Microsoft Word.");
                     addin.SetValue("LoadBehavior", 3, RegistryValueKind.DWord);
                     addin.SetValue("CommandLineSafe", 0, RegistryValueKind.DWord);

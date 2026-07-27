@@ -9,7 +9,7 @@ Set-StrictMode -Version Latest
 $Root = Split-Path -Parent $PSScriptRoot
 $Release = Join-Path $Root 'release'
 $EmbeddedPayload = Join-Path $Root 'src\WordProSuite.SetupLauncher\EmbeddedPayload'
-$ZipPath = Join-Path $Root 'WordProSuite_Desktop_Pro_V2_1_Windows.zip'
+$ZipPath = Join-Path $Root 'WordProSuite_Desktop_Pro_V2_2_Windows.zip'
 
 if (Test-Path $Release) { Remove-Item $Release -Recurse -Force }
 if (Test-Path $EmbeddedPayload) { Remove-Item $EmbeddedPayload -Recurse -Force }
@@ -19,8 +19,12 @@ New-Item $Release -ItemType Directory -Force | Out-Null
 New-Item $EmbeddedPayload -ItemType Directory -Force | Out-Null
 
 Write-Host 'Validating source...'
-& (Join-Path $Root 'scripts\validate-source.ps1')
-if ($LASTEXITCODE -ne 0) { throw "Source validation failed: $LASTEXITCODE" }
+try {
+    & (Join-Path $Root 'scripts\validate-source.ps1')
+}
+catch {
+    throw "Source validation failed: $($_.Exception.Message)"
+}
 
 Write-Host 'Restoring projects...'
 dotnet restore (Join-Path $Root 'WordProSuite.Desktop.sln')
@@ -52,7 +56,7 @@ $ReleaseSetup = Join-Path $Release 'WordProSuite_Setup.exe'
 Copy-Item $SetupExe $ReleaseSetup -Force
 
 $install = @'
-WordPro Suite Desktop Pro 2.1
+WordPro Suite Desktop Pro 2.2
 
 طريقة الاستخدام:
 1. أغلق Microsoft Word.
@@ -65,7 +69,7 @@ WordPro Suite Desktop Pro 2.1
 '@
 Set-Content -Path (Join-Path $Release 'INSTALL_AR.txt') -Value $install -Encoding UTF8
 
-$features = Join-Path $Root 'V2_1_FEATURES_AR.md'
+$features = Join-Path $Root 'V2_2_FEATURES_AR.md'
 if (Test-Path $features) {
     Copy-Item $features (Join-Path $Release 'FEATURES_AR.md') -Force
 }
@@ -95,7 +99,7 @@ foreach ($file in $required) {
 
 Write-Host ''
 Write-Host '============================================================'
-Write-Host 'WordPro Suite Desktop Pro 2.1 build completed successfully.'
+Write-Host 'WordPro Suite Desktop Pro 2.2 build completed successfully.'
 Write-Host "Setup: $ReleaseSetup"
 Write-Host "ZIP:   $ZipPath"
 Write-Host '============================================================'

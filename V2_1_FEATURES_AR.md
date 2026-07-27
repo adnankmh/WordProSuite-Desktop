@@ -1,4 +1,4 @@
-# WordPro Suite Desktop Pro 2.1 — دليل الميزات
+# WordPro Suite Desktop Pro 2.2 — دليل الميزات
 
 إجمالي الأدوات المسجلة: **259 أداة**.
 

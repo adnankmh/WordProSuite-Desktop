@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -313,6 +313,53 @@ namespace WordProSuite.Desktop.Commands
             A("remove-endnotes", "المراجعة والأمان", "حذف الحواشي الختامية", "حذف جميع Endnotes من المستند.", "endnotes", EnterpriseCommands.RemoveEndnotes);
             A("move-selection-new-document", "الملفات وPDF", "التحديد إلى مستند جديد", "نسخ التحديد مع تنسيقه إلى مستند مستقل.", "مستند جديد", EnterpriseCommands.MoveSelectionToNewDocument);
 
+
+
+            // حزمة الاحتراف والجودة 2.2
+            A("persian-to-arabic-letters", "العربية والاتجاه", "تصحيح الحروف الفارسية", "تحويل ي وك الفارسية إلى الحروف العربية القياسية.", "فارسي ياء كاف", ProfessionalCommands.PersianToArabicLetters);
+            A("digits-persian", "العربية والاتجاه", "أرقام فارسية", "تحويل الأرقام إلى ۰۱۲۳.", "فارسي أرقام", ProfessionalCommands.ToPersianDigits);
+            A("remove-repeated-punctuation", "الجودة والتحرير", "حذف الترقيم المكرر", "اختصار علامات الترقيم المتتابعة المكررة.", "ترقيم مكرر", ProfessionalCommands.RemoveRepeatedPunctuation);
+            A("wrap-arabic-brackets", "العربية والاتجاه", "إحاطة بقوسين عربيين", "إحاطة النص المحدد بعلامتي ﴿ ﴾.", "اقواس", ProfessionalCommands.WrapArabicBrackets);
+            A("reverse-paragraph-order", "الجودة والتحرير", "عكس ترتيب الفقرات", "عكس ترتيب الأسطر والفقرات المحددة.", "عكس فقرات", ProfessionalCommands.ReverseParagraphOrder);
+            A("unique-sorted-lines", "الجودة والتحرير", "أسطر فريدة مرتبة", "حذف التكرار وفرز الأسطر تصاعديًا.", "فريد فرز", ProfessionalCommands.UniqueSortedLines);
+            A("extract-numbers-pro", "الاستخراج والتحليل", "استخراج الأرقام", "استخراج القيم الرقمية الفريدة من النص.", "ارقام استخراج", ProfessionalCommands.ExtractNumbers);
+            A("long-paragraph-report", "الاستخراج والتحليل", "تقرير الفقرات الطويلة", "إنشاء تقرير بالفقرات التي تتجاوز حد الكلمات.", "تقرير فقرات طويلة", ProfessionalCommands.LongParagraphReport);
+            A("word-frequency-report", "الاستخراج والتحليل", "تحليل تكرار الكلمات", "إنشاء تقرير بأكثر 50 كلمة تكرارًا.", "تكرار كلمات تحليل", ProfessionalCommands.WordFrequencyReport);
+
+            A("insert-current-datetime", "إدارة المستند", "إدراج التاريخ والوقت", "إدراج التاريخ والوقت الحاليين بصيغة موحدة.", "وقت تاريخ", ProfessionalCommands.InsertCurrentDateTime);
+            A("insert-document-name", "إدارة المستند", "إدراج اسم المستند", "إدراج اسم الملف الحالي عند المؤشر.", "اسم ملف", ProfessionalCommands.InsertDocumentName);
+            A("insert-document-path", "إدارة المستند", "إدراج مسار المستند", "إدراج المسار الكامل للملف الحالي.", "مسار ملف", ProfessionalCommands.InsertDocumentPath);
+            A("insert-page-break-pro", "إدارة المستند", "إدراج فاصل صفحة", "إدراج Page Break عند المؤشر.", "فاصل صفحة", ProfessionalCommands.InsertPageBreak);
+            A("insert-section-next-page", "إدارة المستند", "مقطع في الصفحة التالية", "إدراج Section Break من نوع Next Page.", "مقطع section", ProfessionalCommands.InsertSectionBreakNextPage);
+            A("lock-all-fields", "الحقول والأتمتة", "قفل جميع الحقول", "منع تحديث جميع حقول المستند مؤقتًا.", "fields lock", ProfessionalCommands.LockAllFields);
+            A("unlock-all-fields", "الحقول والأتمتة", "فتح جميع الحقول", "إتاحة تحديث جميع حقول المستند.", "fields unlock", ProfessionalCommands.UnlockAllFields);
+            A("toggle-field-codes", "الحقول والأتمتة", "إظهار/إخفاء أكواد الحقول", "التبديل بين نتائج الحقول وأكوادها.", "field codes", ProfessionalCommands.ToggleFieldCodes);
+            A("remove-all-bookmarks-pro", "الحقول والأتمتة", "حذف كل الإشارات المرجعية", "حذف جميع Bookmarks من المستند.", "bookmark حذف", ProfessionalCommands.RemoveAllBookmarks);
+
+            A("proofing-language-arabic", "التنسيق والأنماط", "لغة التدقيق العربية", "تعيين لغة التدقيق للنص إلى العربية.", "لغة تدقيق", ProfessionalCommands.SetArabicProofingLanguage);
+            A("proofing-language-english", "التنسيق والأنماط", "لغة التدقيق الإنجليزية", "تعيين لغة التدقيق للنص إلى الإنجليزية.", "لغة تدقيق", ProfessionalCommands.SetEnglishProofingLanguage);
+            A("keep-lines-together", "التنسيق والأنماط", "إبقاء أسطر الفقرة معًا", "منع تقسيم أسطر الفقرة بين الصفحات.", "فقرة صفحة", ProfessionalCommands.KeepLinesTogether);
+            A("widow-control-on", "التنسيق والأنماط", "منع الأرامل واليتامى", "تفعيل Widow/Orphan Control للفقرات.", "widow orphan", ProfessionalCommands.WidowControlOn);
+            A("hanging-indent", "التنسيق والأنماط", "مسافة بادئة معلّقة", "تطبيق Hanging Indent قياسي.", "indent hanging", ProfessionalCommands.HangingIndent);
+            A("highlight-green", "التنسيق والأنماط", "تمييز أخضر", "تمييز النص باللون الأخضر.", "highlight", ProfessionalCommands.HighlightGreen);
+            A("highlight-red", "التنسيق والأنماط", "تمييز أحمر", "تمييز النص باللون الأحمر.", "highlight", ProfessionalCommands.HighlightRed);
+            A("font-color-automatic", "التنسيق والأنماط", "لون خط تلقائي", "إعادة لون الخط إلى اللون التلقائي.", "لون خط", ProfessionalCommands.FontColorAutomatic);
+
+            A("insert-risk-register-pro", "أطر العمل المؤسسية", "سجل مخاطر احترافي", "إدراج سجل مخاطر متكامل بثمانية أعمدة.", "risk مخاطر", ProfessionalCommands.InsertRiskRegister);
+            A("insert-action-tracker-pro", "أطر العمل المؤسسية", "متابعة الإجراءات", "إدراج جدول متابعة إجراءات ومسؤوليات ومواعيد.", "actions متابعة", ProfessionalCommands.InsertActionTracker);
+            A("insert-issue-log-pro", "أطر العمل المؤسسية", "سجل المشكلات", "إدراج جدول لتتبع القضايا والمشكلات حتى الإغلاق.", "issue log", ProfessionalCommands.InsertIssueLog);
+            A("insert-contact-directory-pro", "أطر العمل المؤسسية", "دليل جهات اتصال", "إدراج دليل جهات اتصال منظم.", "contacts دليل", ProfessionalCommands.InsertContactDirectory);
+            A("insert-inventory-table-pro", "أطر العمل المؤسسية", "سجل مخزون", "إدراج جدول مخزون وكميات ومواقع وحالة.", "inventory مخزون", ProfessionalCommands.InsertInventoryTable);
+            A("paragraphs-checkboxes", "الجودة والتحرير", "تحويل إلى قائمة تحقق", "إضافة مربع ☐ في بداية كل فقرة.", "checkbox تحقق", ProfessionalCommands.ParagraphsToCheckboxes);
+            A("paragraphs-checked", "الجودة والتحرير", "تحويل إلى قائمة منجزة", "إضافة علامة ☑ في بداية كل فقرة.", "checked منجز", ProfessionalCommands.ParagraphsToCheckedBoxes);
+            A("strip-list-markers", "الجودة والتحرير", "حذف بادئات القوائم", "إزالة الأرقام والنقاط والشرطات اليدوية من بدايات الفقرات.", "قائمة تنظيف", ProfessionalCommands.StripLeadingListMarkers);
+            A("insert-confidential-banner", "إدارة المستند", "شريط سري", "إدراج شريط تصنيف سري أعلى المستند.", "confidential سري", ProfessionalCommands.InsertConfidentialBanner);
+            A("insert-document-control", "أطر العمل المؤسسية", "بطاقة ضبط المستند", "إدراج بطاقة رقم الإصدار والمالك والمراجعة والاعتماد.", "document control", ProfessionalCommands.InsertDocumentControlBlock);
+            A("insert-approval-table-pro", "أطر العمل المؤسسية", "جدول الاعتماد", "إدراج جدول إعداد ومراجعة واعتماد وتواريخ.", "approval اعتماد", ProfessionalCommands.InsertApprovalTable);
+            A("insert-distribution-list-pro", "أطر العمل المؤسسية", "قائمة التوزيع", "إدراج جدول الجهات المستلمة ووسيلة الإرسال والحالة.", "distribution توزيع", ProfessionalCommands.InsertDistributionList);
+            A("insert-executive-summary", "القوالب والمحتوى", "هيكل ملخص تنفيذي", "إدراج هيكل احترافي للملخص التنفيذي والنتائج والتوصيات.", "executive summary", ProfessionalCommands.InsertExecutiveSummarySkeleton);
+            A("comments-report-pro", "المراجعة والأمان", "تقرير التعليقات", "إنشاء مستند مستقل يحتوي جميع التعليقات وسياقها.", "comments تقرير", ProfessionalCommands.CommentsReport);
+            A("revisions-summary-pro", "المراجعة والأمان", "ملخص التعديلات", "إنشاء ملخص عددي للتعديلات المتعقبة حسب النوع.", "revisions ملخص", ProfessionalCommands.RevisionsSummary);
 
             // النظام والترخيص
             A("command-center", "النظام والترخيص", "مركز الأدوات الاحترافي", "بحث وفئات ومفضلة وآخر استخدام لكل الأدوات.", "مركز", CommandCenterForm.ShowCenter, false);

@@ -9,6 +9,7 @@ $required = @(
     'src\WordProSuite.AddIn\Commands\CommandRouter.cs',
     'src\WordProSuite.AddIn\Commands\AdvancedCommands.cs',
     'src\WordProSuite.AddIn\Commands\EnterpriseCommands.cs',
+    'src\WordProSuite.AddIn\Commands\ProfessionalCommands.cs',
     'src\WordProSuite.AddIn\Ribbon\RibbonXml.cs',
     'src\WordProSuite.SetupLauncher\WordProSuite.SetupLauncher.csproj',
     'src\WordProSuite.SetupLauncher\Program.cs'
@@ -24,8 +25,8 @@ $router = Get-Content $routerPath -Raw
 $idMatches = [regex]::Matches($router, 'A\("([^"]+)"')
 $ids = @($idMatches | ForEach-Object { $_.Groups[1].Value })
 
-if ($ids.Count -lt 250) {
-    throw "Expected at least 250 registered commands, found $($ids.Count)."
+if ($ids.Count -lt 295) {
+    throw "Expected at least 295 registered commands, found $($ids.Count)."
 }
 
 $duplicates = @($ids | Group-Object | Where-Object Count -gt 1)

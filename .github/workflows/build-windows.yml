@@ -1,4 +1,4 @@
-name: Build WordPro Suite Desktop Pro 2.1
+name: Build WordPro Suite Desktop Pro 2.2
 
 on:
   workflow_dispatch:
@@ -36,7 +36,7 @@ jobs:
             ".\release\WordProSuite_Setup.exe",
             ".\release\INSTALL_AR.txt",
             ".\release\SHA256_SETUP.txt",
-            ".\WordProSuite_Desktop_Pro_V2_1_Windows.zip"
+            ".\WordProSuite_Desktop_Pro_V2_2_Windows.zip"
           )
 
           foreach ($file in $files) {
@@ -56,8 +56,8 @@ jobs:
       - name: Upload Windows setup
         uses: actions/upload-artifact@v4
         with:
-          name: WordProSuite-Desktop-Pro-2.1-Windows
+          name: WordProSuite-Desktop-Pro-2.2-Windows
           path: |
             release/**
-            WordProSuite_Desktop_Pro_V2_1_Windows.zip
+            WordProSuite_Desktop_Pro_V2_2_Windows.zip
           if-no-files-found: error
