@@ -2,9 +2,10 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <Product Id="48C141F3-9374-4113-86CB-21F9636EAE54" Name="WordPro Suite Desktop (x64)" Language="1033"
            Version="1.0.0.0" Manufacturer="WordPro Suite" UpgradeCode="28F98D43-C6EF-446E-AFF9-7F3DF1D959A5">
-    <Package InstallerVersion="500" Compressed="yes" InstallScope="perUser" Platform="x64" />
+    <Package InstallerVersion="500" Compressed="yes" InstallScope="perMachine" Platform="x64" />
     <MajorUpgrade DowngradeErrorMessage="A newer version is already installed." />
     <MediaTemplate EmbedCab="yes" />
+
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFiles64Folder">
         <Directory Id="CompanyFolder" Name="WordPro Suite">
@@ -12,10 +13,12 @@
         </Directory>
       </Directory>
     </Directory>
+
     <DirectoryRef Id="INSTALLFOLDER">
-      <Component Id="cmpAddIn" Guid="623E2FFB-D214-478E-9145-7F605F9CAB7A" Win64="yes">
+      <Component Id="cmpAddIn" Guid="C65A764E-6EF4-4BAE-AF00-4FBDB07D65A8" Win64="yes">
         <File Id="filAddIn" Source="$(var.AddInBin)\WordProSuite.AddIn.dll" KeyPath="yes" />
-        <RegistryKey Root="HKCU" Key="Software\Classes\CLSID\{79D9E91D-88D5-4C41-B805-82D64D1348B2}">
+
+        <RegistryKey Root="HKLM" Key="Software\Classes\CLSID\{79D9E91D-88D5-4C41-B805-82D64D1348B2}">
           <RegistryValue Type="string" Value="WordPro Suite Desktop Add-in" />
           <RegistryKey Key="InprocServer32">
             <RegistryValue Type="string" Value="mscoree.dll" />
@@ -31,13 +34,19 @@
               <RegistryValue Name="CodeBase" Type="string" Value="file:///[INSTALLFOLDER]WordProSuite.AddIn.dll" />
             </RegistryKey>
           </RegistryKey>
-          <RegistryKey Key="ProgId"><RegistryValue Type="string" Value="WordProSuite.Desktop.AddIn" /></RegistryKey>
+          <RegistryKey Key="ProgId">
+            <RegistryValue Type="string" Value="WordProSuite.Desktop.AddIn" />
+          </RegistryKey>
         </RegistryKey>
-        <RegistryKey Root="HKCU" Key="Software\Classes\WordProSuite.Desktop.AddIn">
+
+        <RegistryKey Root="HKLM" Key="Software\Classes\WordProSuite.Desktop.AddIn">
           <RegistryValue Type="string" Value="WordPro Suite Desktop Add-in" />
-          <RegistryKey Key="CLSID"><RegistryValue Type="string" Value="{79D9E91D-88D5-4C41-B805-82D64D1348B2}" /></RegistryKey>
+          <RegistryKey Key="CLSID">
+            <RegistryValue Type="string" Value="{79D9E91D-88D5-4C41-B805-82D64D1348B2}" />
+          </RegistryKey>
         </RegistryKey>
-        <RegistryKey Root="HKCU" Key="Software\Microsoft\Office\Word\Addins\WordProSuite.Desktop.AddIn">
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\Office\Word\Addins\WordProSuite.Desktop.AddIn">
           <RegistryValue Name="FriendlyName" Type="string" Value="WordPro Suite Desktop" />
           <RegistryValue Name="Description" Type="string" Value="Professional productivity tools for Microsoft Word." />
           <RegistryValue Name="LoadBehavior" Type="integer" Value="3" />
@@ -45,6 +54,9 @@
         </RegistryKey>
       </Component>
     </DirectoryRef>
-    <Feature Id="MainFeature" Title="WordPro Suite Desktop" Level="1"><ComponentRef Id="cmpAddIn" /></Feature>
+
+    <Feature Id="MainFeature" Title="WordPro Suite Desktop" Level="1">
+      <ComponentRef Id="cmpAddIn" />
+    </Feature>
   </Product>
 </Wix>
