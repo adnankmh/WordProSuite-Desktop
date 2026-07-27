@@ -1,29 +1,82 @@
-param([ValidateSet("Release","Debug")][string]$Configuration="Release")
-$ErrorActionPreference="Stop"
-$Root=Split-Path -Parent $PSScriptRoot
-$Release=Join-Path $Root "release"
-$Installers=Join-Path $Release "Installers"
-if(Test-Path $Release){Remove-Item $Release -Recurse -Force}
-New-Item $Installers -ItemType Directory -Force|Out-Null
+param(
+    [ValidateSet('Release','Debug')]
+    [string]$Configuration = 'Release'
+)
 
-dotnet restore "$Root\WordProSuite.Desktop.sln"
-dotnet build "$Root\WordProSuite.Desktop.sln" -c $Configuration --no-restore
+$ErrorActionPreference = 'Stop'
+Set-StrictMode -Version Latest
 
-$AddInBin=Join-Path $Root "src\WordProSuite.AddIn\bin\$Configuration\net48"
-$LauncherBin=Join-Path $Root "src\WordProSuite.SetupLauncher\bin\$Configuration\net48"
-if(-not(Test-Path "$AddInBin\WordProSuite.AddIn.dll")){throw "Add-in DLL missing"}
+$Root = Split-Path -Parent $PSScriptRoot
+$Release = Join-Path $Root 'release'
+$Installers = Join-Path $Release 'Installers'
+$ZipPath = Join-Path $Root 'WordProSuite_Desktop_V1_Windows.zip'
 
-$Candle=Get-Command candle.exe -ErrorAction SilentlyContinue
-$Light=Get-Command light.exe -ErrorAction SilentlyContinue
-if(-not $Candle -or -not $Light){throw "WiX Toolset 3.14.1 is required"}
+if (Test-Path $Release) { Remove-Item $Release -Recurse -Force }
+if (Test-Path $ZipPath) { Remove-Item $ZipPath -Force }
+New-Item $Installers -ItemType Directory -Force | Out-Null
 
-& $Candle.Source "$Root\installer\x86\Product.wxs" -dAddInBin="$AddInBin" -dProjectRoot="$Root" -arch x86 -out "$Release\WordProSuite.x86.wixobj"
-& $Light.Source "$Release\WordProSuite.x86.wixobj" -out "$Installers\WordProSuite.Desktop.x86.msi"
+Write-Host 'Restoring solution...'
+dotnet restore (Join-Path $Root 'WordProSuite.Desktop.sln')
+if ($LASTEXITCODE -ne 0) { throw "dotnet restore failed: $LASTEXITCODE" }
 
-& $Candle.Source "$Root\installer\x64\Product.wxs" -dAddInBin="$AddInBin" -dProjectRoot="$Root" -arch x64 -out "$Release\WordProSuite.x64.wixobj"
-& $Light.Source "$Release\WordProSuite.x64.wixobj" -out "$Installers\WordProSuite.Desktop.x64.msi"
+Write-Host 'Building solution...'
+dotnet build (Join-Path $Root 'WordProSuite.Desktop.sln') -c $Configuration --no-restore
+if ($LASTEXITCODE -ne 0) { throw "dotnet build failed: $LASTEXITCODE" }
 
-Copy-Item "$LauncherBin\WordProSuite_Setup.exe" "$Release\WordProSuite_Setup.exe"
-Copy-Item "$Root\README_AR.md" "$Release\README_AR.md"
-Compress-Archive -Path "$Release\*" -DestinationPath "$Root\WordProSuite_Desktop_V1_Windows.zip" -Force
-Write-Host "Built: $Root\WordProSuite_Desktop_V1_Windows.zip"
+$AddInBin = Join-Path $Root "src\WordProSuite.AddIn\bin\$Configuration\net48"
+$LauncherBin = Join-Path $Root "src\WordProSuite.SetupLauncher\bin\$Configuration\net48"
+$AddInDll = Join-Path $AddInBin 'WordProSuite.AddIn.dll'
+$LauncherExe = Join-Path $LauncherBin 'WordProSuite_Setup.exe'
+
+if (-not (Test-Path $AddInDll)) { throw "Add-in DLL missing: $AddInDll" }
+if (-not (Test-Path $LauncherExe)) { throw "Setup launcher missing: $LauncherExe" }
+
+function Resolve-Tool([string]$Name) {
+    $cmd = Get-Command $Name -ErrorAction SilentlyContinue
+    if ($cmd) { return $cmd.Source }
+
+    if ($env:WIX_BIN) {
+        $candidate = Join-Path $env:WIX_BIN $Name
+        if (Test-Path $candidate) { return $candidate }
+    }
+
+    throw "$Name was not found. WiX Toolset 3 is required."
+}
+
+$Candle = Resolve-Tool 'candle.exe'
+$Light = Resolve-Tool 'light.exe'
+Write-Host "Using candle: $Candle"
+Write-Host "Using light:  $Light"
+
+$x86Obj = Join-Path $Release 'WordProSuite.x86.wixobj'
+$x64Obj = Join-Path $Release 'WordProSuite.x64.wixobj'
+$x86Msi = Join-Path $Installers 'WordProSuite.Desktop.x86.msi'
+$x64Msi = Join-Path $Installers 'WordProSuite.Desktop.x64.msi'
+
+& $Candle (Join-Path $Root 'installer\x86\Product.wxs') "-dAddInBin=$AddInBin" "-dProjectRoot=$Root" -arch x86 -out $x86Obj
+if ($LASTEXITCODE -ne 0) { throw "WiX candle x86 failed: $LASTEXITCODE" }
+& $Light $x86Obj -out $x86Msi
+if ($LASTEXITCODE -ne 0) { throw "WiX light x86 failed: $LASTEXITCODE" }
+
+& $Candle (Join-Path $Root 'installer\x64\Product.wxs') "-dAddInBin=$AddInBin" "-dProjectRoot=$Root" -arch x64 -out $x64Obj
+if ($LASTEXITCODE -ne 0) { throw "WiX candle x64 failed: $LASTEXITCODE" }
+& $Light $x64Obj -out $x64Msi
+if ($LASTEXITCODE -ne 0) { throw "WiX light x64 failed: $LASTEXITCODE" }
+
+Copy-Item $LauncherExe (Join-Path $Release 'WordProSuite_Setup.exe') -Force
+Copy-Item (Join-Path $Root 'README_AR.md') (Join-Path $Release 'README_AR.md') -Force
+
+Compress-Archive -Path (Join-Path $Release '*') -DestinationPath $ZipPath -Force
+
+$required = @(
+    (Join-Path $Release 'WordProSuite_Setup.exe'),
+    $x86Msi,
+    $x64Msi,
+    $ZipPath
+)
+foreach ($file in $required) {
+    if (-not (Test-Path $file)) { throw "Required release file missing: $file" }
+    if ((Get-Item $file).Length -lt 1024) { throw "Required release file is too small: $file" }
+}
+
+Write-Host "Built successfully: $ZipPath"

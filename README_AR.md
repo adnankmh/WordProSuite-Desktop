@@ -41,3 +41,15 @@ release\Installers\WordProSuite.Desktop.x64.msi
 ## الاختبار الحقيقي
 
 لا يوصف الناتج بأنه نهائي قبل تشغيل Workflow `Test on Office 2024` على جهاز Windows يحتوي Office 2024 فعليًا.
+
+## البناء التلقائي عبر GitHub Actions
+
+بعد رفع محتويات هذا المجلد إلى الفرع `main`، يبدأ Workflow تلقائيًا. عند نجاحه:
+
+1. افتح تبويب **Actions**.
+2. افتح آخر تشغيل ناجح بعلامة خضراء.
+3. من قسم **Artifacts** حمّل `WordProSuite-Desktop-Windows`.
+4. فك الضغط ثم شغّل `WordProSuite_Setup.exe`.
+5. أغلق Microsoft Word وافتحه من جديد بعد التثبيت.
+
+لا يحتاج المستخدم إلى Node.js أو localhost أو نافذة أوامر.

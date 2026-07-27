@@ -1,32 +1,101 @@
 name: Build WordPro Suite Desktop
+
 on:
   workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
+
 jobs:
   build:
     runs-on: windows-2022
-    timeout-minutes: 30
+    timeout-minutes: 35
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: microsoft/setup-msbuild@v2
-      - uses: NuGet/setup-nuget@v2
-      - name: Install WiX
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v2
+
+      - name: Locate or install WiX Toolset 3
         shell: powershell
-        run: choco install wixtoolset --version=3.14.1 -y --no-progress
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          function Find-WixTool([string]$name) {
+            $cmd = Get-Command $name -ErrorAction SilentlyContinue
+            if ($cmd) { return $cmd.Source }
+
+            $roots = @(
+              "${env:ProgramFiles(x86)}\WiX Toolset v3.14\bin",
+              "${env:ProgramFiles(x86)}\WiX Toolset v3.11\bin",
+              "C:\ProgramData\chocolatey\lib\wixtoolset\tools",
+              "C:\ProgramData\chocolatey\bin"
+            ) | Where-Object { $_ -and (Test-Path $_) }
+
+            foreach ($root in $roots) {
+              $found = Get-ChildItem -Path $root -Filter $name -File -Recurse -ErrorAction SilentlyContinue |
+                Select-Object -First 1
+              if ($found) { return $found.FullName }
+            }
+
+            return $null
+          }
+
+          $candle = Find-WixTool 'candle.exe'
+          $light = Find-WixTool 'light.exe'
+
+          if (-not $candle -or -not $light) {
+            choco install wixtoolset -y --no-progress --force
+            if ($LASTEXITCODE -ne 0) {
+              throw "WiX Toolset installation failed with exit code $LASTEXITCODE"
+            }
+            $candle = Find-WixTool 'candle.exe'
+            $light = Find-WixTool 'light.exe'
+          }
+
+          if (-not $candle -or -not $light) {
+            throw 'WiX candle.exe/light.exe could not be located.'
+          }
+
+          $wixBin = Split-Path -Parent $candle
+          $wixBin | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+          "WIX_BIN=$wixBin" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+
+          Write-Host "WiX bin: $wixBin"
+          & $candle -?
+
       - name: Build release
         shell: powershell
         run: .\scripts\build-release.ps1 -Configuration Release
-      - name: Validate files
+
+      - name: Validate release files
         shell: powershell
         run: |
-          $files=@(".\release\WordProSuite_Setup.exe",".\release\Installers\WordProSuite.Desktop.x86.msi",".\release\Installers\WordProSuite.Desktop.x64.msi")
-          foreach($f in $files){if(-not(Test-Path $f)){throw "Missing $f"};if((Get-Item $f).Length-lt 1024){throw "Small $f"}}
-      - uses: actions/upload-artifact@v4
+          $ErrorActionPreference = 'Stop'
+          $files = @(
+            '.\release\WordProSuite_Setup.exe',
+            '.\release\Installers\WordProSuite.Desktop.x86.msi',
+            '.\release\Installers\WordProSuite.Desktop.x64.msi',
+            '.\WordProSuite_Desktop_V1_Windows.zip'
+          )
+
+          foreach ($file in $files) {
+            if (-not (Test-Path $file)) { throw "Missing $file" }
+            if ((Get-Item $file).Length -lt 1024) { throw "Unexpectedly small file: $file" }
+            Write-Host "OK: $file ($((Get-Item $file).Length) bytes)"
+          }
+
+      - name: Upload Windows installer package
+        uses: actions/upload-artifact@v4
         with:
           name: WordProSuite-Desktop-Windows
           path: |
             release/**
             WordProSuite_Desktop_V1_Windows.zip
           if-no-files-found: error
+          retention-days: 30
