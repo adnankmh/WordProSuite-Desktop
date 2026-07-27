@@ -1,0 +1,29 @@
+name: Test on Office 2024
+on:
+  workflow_dispatch:
+    inputs:
+      office_architecture:
+        description: Office architecture
+        required: true
+        type: choice
+        options: [x64, x86]
+jobs:
+  office2024:
+    runs-on: [self-hosted, windows, office2024]
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        shell: powershell
+        run: .\scripts\build-release.ps1 -Configuration Release
+      - name: Test Word
+        shell: powershell
+        run: .\scripts\test-office2024.ps1 -OfficeArchitecture "${{ inputs.office_architecture }}"
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Office2024-test-logs
+          path: |
+            release/**
+            C:\Users\*\AppData\Local\WordProSuite\Logs\**

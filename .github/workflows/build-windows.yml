@@ -1,0 +1,32 @@
+name: Build WordPro Suite Desktop
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+jobs:
+  build:
+    runs-on: windows-2022
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: microsoft/setup-msbuild@v2
+      - uses: NuGet/setup-nuget@v2
+      - name: Install WiX
+        shell: powershell
+        run: choco install wixtoolset --version=3.14.1 -y --no-progress
+      - name: Build release
+        shell: powershell
+        run: .\scripts\build-release.ps1 -Configuration Release
+      - name: Validate files
+        shell: powershell
+        run: |
+          $files=@(".\release\WordProSuite_Setup.exe",".\release\Installers\WordProSuite.Desktop.x86.msi",".\release\Installers\WordProSuite.Desktop.x64.msi")
+          foreach($f in $files){if(-not(Test-Path $f)){throw "Missing $f"};if((Get-Item $f).Length-lt 1024){throw "Small $f"}}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: WordProSuite-Desktop-Windows
+          path: |
+            release/**
+            WordProSuite_Desktop_V1_Windows.zip
+          if-no-files-found: error

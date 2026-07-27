@@ -1,0 +1,471 @@
+[
+  {
+    "id": "rtl",
+    "category": "العربية",
+    "title_ar": "RTL",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "ltr",
+    "category": "العربية",
+    "title_ar": "LTR",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "remove-diacritics",
+    "category": "العربية",
+    "title_ar": "حذف التشكيل",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "remove-tatweel",
+    "category": "العربية",
+    "title_ar": "حذف التطويل",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "normalize-arabic",
+    "category": "العربية",
+    "title_ar": "توحيد الحروف",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "digits-eastern",
+    "category": "العربية",
+    "title_ar": "أرقام عربية",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "digits-western",
+    "category": "العربية",
+    "title_ar": "أرقام غربية",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "arabic-clean-all",
+    "category": "العربية",
+    "title_ar": "تنظيف عربي شامل",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "collapse-spaces",
+    "category": "النص",
+    "title_ar": "تنظيف المسافات",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "remove-empty-paragraphs",
+    "category": "النص",
+    "title_ar": "حذف الفقرات الفارغة",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "tabs-to-spaces",
+    "category": "النص",
+    "title_ar": "Tabs إلى مسافات",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "linebreaks-to-paragraphs",
+    "category": "النص",
+    "title_ar": "الأسطر إلى فقرات",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "remove-duplicate-lines",
+    "category": "النص",
+    "title_ar": "حذف الأسطر المكررة",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "sort-lines-asc",
+    "category": "النص",
+    "title_ar": "فرز تصاعدي",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "sort-lines-desc",
+    "category": "النص",
+    "title_ar": "فرز تنازلي",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "uppercase",
+    "category": "النص",
+    "title_ar": "UPPERCASE",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "lowercase",
+    "category": "النص",
+    "title_ar": "lowercase",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "titlecase",
+    "category": "النص",
+    "title_ar": "Title Case",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "remove-hyperlinks",
+    "category": "النص",
+    "title_ar": "إزالة الروابط",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "font-arial-14",
+    "category": "التنسيق",
+    "title_ar": "Arial 14",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "clear-formatting",
+    "category": "التنسيق",
+    "title_ar": "إزالة التنسيق",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "align-right",
+    "category": "التنسيق",
+    "title_ar": "يمين",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "align-left",
+    "category": "التنسيق",
+    "title_ar": "يسار",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "align-center",
+    "category": "التنسيق",
+    "title_ar": "توسيط",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "align-justify",
+    "category": "التنسيق",
+    "title_ar": "ضبط",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "line-spacing-115",
+    "category": "التنسيق",
+    "title_ar": "تباعد 1.15",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "line-spacing-15",
+    "category": "التنسيق",
+    "title_ar": "تباعد 1.5",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "heading-1",
+    "category": "الأنماط",
+    "title_ar": "عنوان 1",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "heading-2",
+    "category": "الأنماط",
+    "title_ar": "عنوان 2",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "heading-3",
+    "category": "الأنماط",
+    "title_ar": "عنوان 3",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "style-normal",
+    "category": "الأنماط",
+    "title_ar": "عادي",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "format-arabic-report",
+    "category": "التنسيق",
+    "title_ar": "تقرير عربي",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "table-rtl",
+    "category": "الجداول",
+    "title_ar": "جدول RTL",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "table-autofit-window",
+    "category": "الجداول",
+    "title_ar": "ملاءمة الصفحة",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "table-autofit-content",
+    "category": "الجداول",
+    "title_ar": "ملاءمة المحتوى",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "table-distribute-columns",
+    "category": "الجداول",
+    "title_ar": "توزيع الأعمدة",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "table-distribute-rows",
+    "category": "الجداول",
+    "title_ar": "توزيع الصفوف",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "table-repeat-header",
+    "category": "الجداول",
+    "title_ar": "تكرار صف العنوان",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "table-remove-empty-rows",
+    "category": "الجداول",
+    "title_ar": "حذف الصفوف الفارغة",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "table-center-cells",
+    "category": "الجداول",
+    "title_ar": "توسيط الخلايا",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "table-to-text",
+    "category": "الجداول",
+    "title_ar": "تحويل إلى نص",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "update-fields",
+    "category": "المستند",
+    "title_ar": "تحديث الحقول",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "insert-toc",
+    "category": "المستند",
+    "title_ar": "إضافة فهرس",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "page-numbers-add",
+    "category": "المستند",
+    "title_ar": "إضافة أرقام الصفحات",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "page-numbers-remove",
+    "category": "المستند",
+    "title_ar": "حذف أرقام الصفحات",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "page-a4",
+    "category": "المستند",
+    "title_ar": "A4",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "page-portrait",
+    "category": "المستند",
+    "title_ar": "عمودي",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "page-landscape",
+    "category": "المستند",
+    "title_ar": "أفقي",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "margins-normal",
+    "category": "المستند",
+    "title_ar": "هوامش عادية",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "margins-narrow",
+    "category": "المستند",
+    "title_ar": "هوامش ضيقة",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "remove-comments",
+    "category": "المراجعة",
+    "title_ar": "حذف التعليقات",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "accept-revisions",
+    "category": "المراجعة",
+    "title_ar": "قبول التعديلات",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "reject-revisions",
+    "category": "المراجعة",
+    "title_ar": "رفض التعديلات",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "remove-metadata",
+    "category": "الخصوصية",
+    "title_ar": "إزالة البيانات الشخصية",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "save-backup",
+    "category": "الملفات",
+    "title_ar": "نسخة احتياطية",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "export-pdf",
+    "category": "الملفات",
+    "title_ar": "تصدير PDF",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "export-pdfa",
+    "category": "الملفات",
+    "title_ar": "تصدير PDF/A",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "template-agenda",
+    "category": "القوالب",
+    "title_ar": "جدول أعمال",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "template-minutes",
+    "category": "القوالب",
+    "title_ar": "محضر اجتماع",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "template-official-letter",
+    "category": "القوالب",
+    "title_ar": "خطاب رسمي",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "template-medical-report",
+    "category": "القوالب",
+    "title_ar": "تقرير طبي",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "template-project-report",
+    "category": "القوالب",
+    "title_ar": "تقرير مشروع",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "template-handover",
+    "category": "القوالب",
+    "title_ar": "تسليم واستلام",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "workflow-final-delivery",
+    "category": "الأتمتة",
+    "title_ar": "تجهيز نسخة نهائية",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "command-center",
+    "category": "النظام",
+    "title_ar": "مركز الأدوات",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "health-check",
+    "category": "النظام",
+    "title_ar": "فحص الإضافة",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  },
+  {
+    "id": "about",
+    "category": "النظام",
+    "title_ar": "حول",
+    "status": "implemented-in-source",
+    "runtime": "COM/.NET Framework 4.8"
+  }
+]

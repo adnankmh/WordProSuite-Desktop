@@ -1,0 +1,19 @@
+{
+  "name": "WordPro Suite Desktop",
+  "version": "1.0.0-source",
+  "architecture": "Managed COM Add-in",
+  "target_framework": ".NET Framework 4.8",
+  "commands": 67,
+  "runtime_forbidden": [
+    "Node.js",
+    "localhost",
+    "VBA",
+    "DOTM"
+  ],
+  "outputs": [
+    "WordProSuite_Setup.exe",
+    "WordProSuite.Desktop.x86.msi",
+    "WordProSuite.Desktop.x64.msi"
+  ],
+  "office2024_test_required": true
+}

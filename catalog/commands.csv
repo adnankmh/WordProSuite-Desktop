@@ -1,0 +1,68 @@
+﻿id,category,title_ar,status,runtime
+rtl,العربية,RTL,implemented-in-source,COM/.NET Framework 4.8
+ltr,العربية,LTR,implemented-in-source,COM/.NET Framework 4.8
+remove-diacritics,العربية,حذف التشكيل,implemented-in-source,COM/.NET Framework 4.8
+remove-tatweel,العربية,حذف التطويل,implemented-in-source,COM/.NET Framework 4.8
+normalize-arabic,العربية,توحيد الحروف,implemented-in-source,COM/.NET Framework 4.8
+digits-eastern,العربية,أرقام عربية,implemented-in-source,COM/.NET Framework 4.8
+digits-western,العربية,أرقام غربية,implemented-in-source,COM/.NET Framework 4.8
+arabic-clean-all,العربية,تنظيف عربي شامل,implemented-in-source,COM/.NET Framework 4.8
+collapse-spaces,النص,تنظيف المسافات,implemented-in-source,COM/.NET Framework 4.8
+remove-empty-paragraphs,النص,حذف الفقرات الفارغة,implemented-in-source,COM/.NET Framework 4.8
+tabs-to-spaces,النص,Tabs إلى مسافات,implemented-in-source,COM/.NET Framework 4.8
+linebreaks-to-paragraphs,النص,الأسطر إلى فقرات,implemented-in-source,COM/.NET Framework 4.8
+remove-duplicate-lines,النص,حذف الأسطر المكررة,implemented-in-source,COM/.NET Framework 4.8
+sort-lines-asc,النص,فرز تصاعدي,implemented-in-source,COM/.NET Framework 4.8
+sort-lines-desc,النص,فرز تنازلي,implemented-in-source,COM/.NET Framework 4.8
+uppercase,النص,UPPERCASE,implemented-in-source,COM/.NET Framework 4.8
+lowercase,النص,lowercase,implemented-in-source,COM/.NET Framework 4.8
+titlecase,النص,Title Case,implemented-in-source,COM/.NET Framework 4.8
+remove-hyperlinks,النص,إزالة الروابط,implemented-in-source,COM/.NET Framework 4.8
+font-arial-14,التنسيق,Arial 14,implemented-in-source,COM/.NET Framework 4.8
+clear-formatting,التنسيق,إزالة التنسيق,implemented-in-source,COM/.NET Framework 4.8
+align-right,التنسيق,يمين,implemented-in-source,COM/.NET Framework 4.8
+align-left,التنسيق,يسار,implemented-in-source,COM/.NET Framework 4.8
+align-center,التنسيق,توسيط,implemented-in-source,COM/.NET Framework 4.8
+align-justify,التنسيق,ضبط,implemented-in-source,COM/.NET Framework 4.8
+line-spacing-115,التنسيق,تباعد 1.15,implemented-in-source,COM/.NET Framework 4.8
+line-spacing-15,التنسيق,تباعد 1.5,implemented-in-source,COM/.NET Framework 4.8
+heading-1,الأنماط,عنوان 1,implemented-in-source,COM/.NET Framework 4.8
+heading-2,الأنماط,عنوان 2,implemented-in-source,COM/.NET Framework 4.8
+heading-3,الأنماط,عنوان 3,implemented-in-source,COM/.NET Framework 4.8
+style-normal,الأنماط,عادي,implemented-in-source,COM/.NET Framework 4.8
+format-arabic-report,التنسيق,تقرير عربي,implemented-in-source,COM/.NET Framework 4.8
+table-rtl,الجداول,جدول RTL,implemented-in-source,COM/.NET Framework 4.8
+table-autofit-window,الجداول,ملاءمة الصفحة,implemented-in-source,COM/.NET Framework 4.8
+table-autofit-content,الجداول,ملاءمة المحتوى,implemented-in-source,COM/.NET Framework 4.8
+table-distribute-columns,الجداول,توزيع الأعمدة,implemented-in-source,COM/.NET Framework 4.8
+table-distribute-rows,الجداول,توزيع الصفوف,implemented-in-source,COM/.NET Framework 4.8
+table-repeat-header,الجداول,تكرار صف العنوان,implemented-in-source,COM/.NET Framework 4.8
+table-remove-empty-rows,الجداول,حذف الصفوف الفارغة,implemented-in-source,COM/.NET Framework 4.8
+table-center-cells,الجداول,توسيط الخلايا,implemented-in-source,COM/.NET Framework 4.8
+table-to-text,الجداول,تحويل إلى نص,implemented-in-source,COM/.NET Framework 4.8
+update-fields,المستند,تحديث الحقول,implemented-in-source,COM/.NET Framework 4.8
+insert-toc,المستند,إضافة فهرس,implemented-in-source,COM/.NET Framework 4.8
+page-numbers-add,المستند,إضافة أرقام الصفحات,implemented-in-source,COM/.NET Framework 4.8
+page-numbers-remove,المستند,حذف أرقام الصفحات,implemented-in-source,COM/.NET Framework 4.8
+page-a4,المستند,A4,implemented-in-source,COM/.NET Framework 4.8
+page-portrait,المستند,عمودي,implemented-in-source,COM/.NET Framework 4.8
+page-landscape,المستند,أفقي,implemented-in-source,COM/.NET Framework 4.8
+margins-normal,المستند,هوامش عادية,implemented-in-source,COM/.NET Framework 4.8
+margins-narrow,المستند,هوامش ضيقة,implemented-in-source,COM/.NET Framework 4.8
+remove-comments,المراجعة,حذف التعليقات,implemented-in-source,COM/.NET Framework 4.8
+accept-revisions,المراجعة,قبول التعديلات,implemented-in-source,COM/.NET Framework 4.8
+reject-revisions,المراجعة,رفض التعديلات,implemented-in-source,COM/.NET Framework 4.8
+remove-metadata,الخصوصية,إزالة البيانات الشخصية,implemented-in-source,COM/.NET Framework 4.8
+save-backup,الملفات,نسخة احتياطية,implemented-in-source,COM/.NET Framework 4.8
+export-pdf,الملفات,تصدير PDF,implemented-in-source,COM/.NET Framework 4.8
+export-pdfa,الملفات,تصدير PDF/A,implemented-in-source,COM/.NET Framework 4.8
+template-agenda,القوالب,جدول أعمال,implemented-in-source,COM/.NET Framework 4.8
+template-minutes,القوالب,محضر اجتماع,implemented-in-source,COM/.NET Framework 4.8
+template-official-letter,القوالب,خطاب رسمي,implemented-in-source,COM/.NET Framework 4.8
+template-medical-report,القوالب,تقرير طبي,implemented-in-source,COM/.NET Framework 4.8
+template-project-report,القوالب,تقرير مشروع,implemented-in-source,COM/.NET Framework 4.8
+template-handover,القوالب,تسليم واستلام,implemented-in-source,COM/.NET Framework 4.8
+workflow-final-delivery,الأتمتة,تجهيز نسخة نهائية,implemented-in-source,COM/.NET Framework 4.8
+command-center,النظام,مركز الأدوات,implemented-in-source,COM/.NET Framework 4.8
+health-check,النظام,فحص الإضافة,implemented-in-source,COM/.NET Framework 4.8
+about,النظام,حول,implemented-in-source,COM/.NET Framework 4.8
