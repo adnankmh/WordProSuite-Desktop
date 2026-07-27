@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -22,7 +22,7 @@ namespace WordProSuite.Desktop.Licensing
             var header = new Panel { Dock = DockStyle.Top, Height = 92, Padding = new Padding(24, 16, 24, 8) };
             var title = new Label
             {
-                Text = "تفعيل WordPro Suite Desktop Pro",
+                Text = "تفعيل WordPro Suite Desktop Ultimate",
                 Dock = DockStyle.Top,
                 Height = 38,
                 Font = new Font("Segoe UI", 20f, FontStyle.Bold),

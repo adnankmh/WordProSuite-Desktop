@@ -1,4 +1,4 @@
-﻿param(
+param(
     [ValidateSet('Release','Debug')]
     [string]$Configuration = 'Release'
 )
@@ -9,7 +9,7 @@ Set-StrictMode -Version Latest
 $Root = Split-Path -Parent $PSScriptRoot
 $Release = Join-Path $Root 'release'
 $EmbeddedPayload = Join-Path $Root 'src\WordProSuite.SetupLauncher\EmbeddedPayload'
-$ZipPath = Join-Path $Root 'WordProSuite_Desktop_Pro_V2_2_Windows.zip'
+$ZipPath = Join-Path $Root 'WordProSuite_Desktop_Ultimate_V3_Windows.zip'
 
 if (Test-Path $Release) { Remove-Item $Release -Recurse -Force }
 if (Test-Path $EmbeddedPayload) { Remove-Item $EmbeddedPayload -Recurse -Force }
@@ -30,46 +30,52 @@ Write-Host 'Restoring projects...'
 dotnet restore (Join-Path $Root 'WordProSuite.Desktop.sln')
 if ($LASTEXITCODE -ne 0) { throw "dotnet restore failed: $LASTEXITCODE" }
 
-Write-Host 'Building Word add-in...'
+Write-Host 'Building Word add-in with warnings treated as errors...'
 dotnet build (Join-Path $Root 'src\WordProSuite.AddIn\WordProSuite.AddIn.csproj') `
-    -c $Configuration --no-restore
+    -c $Configuration --no-restore -warnaserror
 if ($LASTEXITCODE -ne 0) { throw "Add-in build failed: $LASTEXITCODE" }
 
 $AddInDll = Join-Path $Root "src\WordProSuite.AddIn\bin\$Configuration\net48\WordProSuite.AddIn.dll"
 if (-not (Test-Path $AddInDll)) { throw "Add-in DLL missing: $AddInDll" }
-if ((Get-Item $AddInDll).Length -lt 4096) { throw "Add-in DLL is unexpectedly small." }
+if ((Get-Item $AddInDll).Length -lt 4096) { throw 'Add-in DLL is unexpectedly small.' }
 
 Copy-Item $AddInDll (Join-Path $EmbeddedPayload 'WordProSuite.AddIn.dll') -Force
 
-Write-Host 'Building single-file Setup.exe with embedded add-in payload...'
+Write-Host 'Rebuilding single-file Setup.exe with embedded add-in payload...'
 dotnet build (Join-Path $Root 'src\WordProSuite.SetupLauncher\WordProSuite.SetupLauncher.csproj') `
-    -c $Configuration --no-restore
+    -c $Configuration --no-restore -t:Rebuild -warnaserror
 if ($LASTEXITCODE -ne 0) { throw "Setup build failed: $LASTEXITCODE" }
 
 $SetupExe = Join-Path $Root "src\WordProSuite.SetupLauncher\bin\$Configuration\net48\WordProSuite_Setup.exe"
 if (-not (Test-Path $SetupExe)) { throw "Setup EXE missing: $SetupExe" }
 if ((Get-Item $SetupExe).Length -le (Get-Item $AddInDll).Length) {
-    throw "Setup EXE does not appear to contain the embedded add-in payload."
+    throw 'Setup EXE does not appear to contain the embedded add-in payload.'
+}
+
+$setupAssembly = [Reflection.Assembly]::LoadFile($SetupExe)
+$resourceNames = @($setupAssembly.GetManifestResourceNames())
+if ('WordProSuite.AddIn.dll' -notin $resourceNames) {
+    throw "Embedded add-in resource missing from Setup. Resources: $($resourceNames -join ', ')"
 }
 
 $ReleaseSetup = Join-Path $Release 'WordProSuite_Setup.exe'
 Copy-Item $SetupExe $ReleaseSetup -Force
 
 $install = @'
-WordPro Suite Desktop Pro 2.2
+WordPro Suite Desktop Ultimate 3.0
 
 طريقة الاستخدام:
 1. أغلق Microsoft Word.
 2. شغّل WordProSuite_Setup.exe فقط.
 3. للتجربة اضغط «تثبيت تجريبي».
 4. للتفعيل المباشر الصق Serial Number واضغط «تثبيت وتفعيل».
-5. افتح Word؛ ستظهر تبويبة WordPro Suite Desktop Pro.
+5. افتح Word؛ ستظهر تبويبتان: WordPro Suite Pro وWordPro Enterprise.
 
-لا يحتاج البرنامج إلى Payload أو MSI أو Node.js أو localhost.
+النسخة تحتوي على 500 أداة مسجلة، ولا تحتاج إلى Payload أو MSI أو Node.js أو localhost.
 '@
 Set-Content -Path (Join-Path $Release 'INSTALL_AR.txt') -Value $install -Encoding UTF8
 
-$features = Join-Path $Root 'V2_2_FEATURES_AR.md'
+$features = Join-Path $Root 'V3_FEATURES_AR.md'
 if (Test-Path $features) {
     Copy-Item $features (Join-Path $Release 'FEATURES_AR.md') -Force
 }
@@ -83,12 +89,24 @@ $hash = (Get-FileHash $ReleaseSetup -Algorithm SHA256).Hash
 Set-Content -Path (Join-Path $Release 'SHA256_SETUP.txt') `
     -Value "$hash  WordProSuite_Setup.exe" -Encoding ASCII
 
+$manifest = [ordered]@{
+    product = 'WordPro Suite Desktop Ultimate'
+    version = '3.0.0'
+    commands = 500
+    ribbonTabs = 2
+    setup = 'WordProSuite_Setup.exe'
+    setupSha256 = $hash
+    generatedUtc = [DateTime]::UtcNow.ToString('o')
+}
+$manifest | ConvertTo-Json -Depth 4 | Set-Content (Join-Path $Release 'RELEASE_MANIFEST.json') -Encoding UTF8
+
 Compress-Archive -Path (Join-Path $Release '*') -DestinationPath $ZipPath -Force
 
 $required = @(
     $ReleaseSetup,
     (Join-Path $Release 'INSTALL_AR.txt'),
     (Join-Path $Release 'SHA256_SETUP.txt'),
+    (Join-Path $Release 'RELEASE_MANIFEST.json'),
     $ZipPath
 )
 
@@ -99,7 +117,9 @@ foreach ($file in $required) {
 
 Write-Host ''
 Write-Host '============================================================'
-Write-Host 'WordPro Suite Desktop Pro 2.2 build completed successfully.'
-Write-Host "Setup: $ReleaseSetup"
-Write-Host "ZIP:   $ZipPath"
+Write-Host 'WordPro Suite Desktop Ultimate 3.0 build completed successfully.'
+Write-Host 'Registered tools: 500'
+Write-Host 'Ribbon tabs:      2'
+Write-Host "Setup:            $ReleaseSetup"
+Write-Host "ZIP:              $ZipPath"
 Write-Host '============================================================'

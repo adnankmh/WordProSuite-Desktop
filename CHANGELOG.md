@@ -1,11 +1,24 @@
 # Changelog
 
-## 2.2.0 — 2026-07-27
-- Fixed three CS1977 build errors in AdvancedCommands.
-- Added 53 enterprise-grade commands; total registered commands: 259.
-- Added single-file embedded Setup.exe.
-- Added installation-time serial activation.
-- Added COM activation verification.
-- Added source validation and private-key leak scanning.
-- Added professional feature catalog.
+## 3.0.0 — 2026-07-28
 
+- إصلاح `CS0103` في `EnterpriseCommands.cs` بإضافة namespace الخاص بـ `Prompt`.
+- رفع عدد الأدوات من 300 إلى 500 أداة فريدة.
+- إضافة `UltimateCommands.cs` مع 200 أمر جديد فعلي.
+- إنشاء تبويبتين منظمتين في Ribbon.
+- إضافة 30 قالبًا مؤسسيًا عالميًا.
+- إضافة 24 إعداد خط عالمي و20 إعداد فقرات و20 إعداد تخطيط صفحة.
+- إضافة ذكاء المستند ومساحة العمل والتاريخ والمراجع والقوائم والرموز.
+- تقوية فحص المصدر لمنع تكرار CS0103 وCS1977.
+- بناء كامل مع warnings-as-errors.
+- التحقق برمجيًا من وجود DLL داخل Setup.
+- تحديث Office 2024 integration workflow للعمل مع Setup الواحد.
+
+## 2.2.0 — 2026-07-27
+
+- إصلاح `$LASTEXITCODE` بعد تشغيل سكربت PowerShell داخلي.
+- رفع العدد إلى 300 أداة.
+
+## 2.1.0 — 2026-07-27
+
+- إضافة Setup واحد مع DLL مضمّن ونظام Serial Number.

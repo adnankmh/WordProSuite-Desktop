@@ -10,9 +10,12 @@ $required = @(
     'src\WordProSuite.AddIn\Commands\AdvancedCommands.cs',
     'src\WordProSuite.AddIn\Commands\EnterpriseCommands.cs',
     'src\WordProSuite.AddIn\Commands\ProfessionalCommands.cs',
+    'src\WordProSuite.AddIn\Commands\UltimateCommands.cs',
+    'src\WordProSuite.AddIn\UI\Prompt.cs',
     'src\WordProSuite.AddIn\Ribbon\RibbonXml.cs',
     'src\WordProSuite.SetupLauncher\WordProSuite.SetupLauncher.csproj',
-    'src\WordProSuite.SetupLauncher\Program.cs'
+    'src\WordProSuite.SetupLauncher\Program.cs',
+    'scripts\build-release.ps1'
 )
 
 foreach ($relative in $required) {
@@ -25,8 +28,8 @@ $router = Get-Content $routerPath -Raw
 $idMatches = [regex]::Matches($router, 'A\("([^"]+)"')
 $ids = @($idMatches | ForEach-Object { $_.Groups[1].Value })
 
-if ($ids.Count -lt 295) {
-    throw "Expected at least 295 registered commands, found $($ids.Count)."
+if ($ids.Count -ne 500) {
+    throw "Expected exactly 500 registered commands, found $($ids.Count)."
 }
 
 $duplicates = @($ids | Group-Object | Where-Object Count -gt 1)
@@ -34,22 +37,39 @@ if ($duplicates.Count -gt 0) {
     throw "Duplicate command IDs: $($duplicates.Name -join ', ')"
 }
 
-$advancedPath = Join-Path $Root 'src\WordProSuite.AddIn\Commands\AdvancedCommands.cs'
-$advanced = Get-Content $advancedPath -Raw
-
-$knownDynamicLambdaPattern = 'TextTransforms\.Lines\(Convert\.ToString\(r\.Text\)\)\.Select\s*\('
-if ([regex]::IsMatch($advanced, $knownDynamicLambdaPattern)) {
-    throw 'Known CS1977 dynamic/lambda pattern still exists in AdvancedCommands.cs.'
-}
-
 $ribbonPath = Join-Path $Root 'src\WordProSuite.AddIn\Ribbon\RibbonXml.cs'
 $ribbon = Get-Content $ribbonPath -Raw
+$tabCount = ([regex]::Matches($ribbon, '<tab\s')).Count
+if ($tabCount -ne 2) {
+    throw "Expected exactly two professional Ribbon tabs, found $tabCount."
+}
+
 $tagMatches = [regex]::Matches($ribbon, 'tag=""([^""]+)""')
 $tags = @($tagMatches | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique)
 $missingTags = @($tags | Where-Object { $_ -notin $ids })
-
 if ($missingTags.Count -gt 0) {
     throw "Ribbon tags without registered commands: $($missingTags -join ', ')"
+}
+
+$commandsFolder = Join-Path $Root 'src\WordProSuite.AddIn\Commands'
+$commandFiles = Get-ChildItem $commandsFolder -Filter '*.cs' -File
+$knownDynamicLambdaPatterns = @(
+    'TextTransforms\.Lines\(Convert\.ToString\(r\.Text\)\)\.Select\s*\(',
+    'TextTransforms\.Lines\([^\)]*dynamic[^\)]*\)\.Select\s*\('
+)
+foreach ($file in $commandFiles) {
+    $content = Get-Content $file.FullName -Raw
+    foreach ($pattern in $knownDynamicLambdaPatterns) {
+        if ([regex]::IsMatch($content, $pattern)) {
+            throw "Known CS1977 dynamic/lambda pattern found in $($file.Name)."
+        }
+    }
+}
+
+$enterprisePath = Join-Path $Root 'src\WordProSuite.AddIn\Commands\EnterpriseCommands.cs'
+$enterprise = Get-Content $enterprisePath -Raw
+if ($enterprise -match 'Prompt\.Show' -and $enterprise -notmatch 'using\s+WordProSuite\.Desktop\.UI\s*;') {
+    throw 'EnterpriseCommands.cs uses Prompt.Show without importing WordProSuite.Desktop.UI.'
 }
 
 $setupProject = Get-Content (Join-Path $Root 'src\WordProSuite.SetupLauncher\WordProSuite.SetupLauncher.csproj') -Raw
@@ -63,6 +83,14 @@ if ($setupSource -notmatch 'GetManifestResourceStream\("WordProSuite\.AddIn\.dll
 }
 if ($setupSource -notmatch 'VerifyComActivation') {
     throw 'Setup source does not verify COM activation.'
+}
+if ($setupSource -notmatch 'Ultimate 3\.0') {
+    throw 'Setup branding/version was not updated to Ultimate 3.0.'
+}
+
+$buildSource = Get-Content (Join-Path $Root 'scripts\build-release.ps1') -Raw
+if ($buildSource -match 'validate-source\.ps1''\)\s*\r?\nif \(\$LASTEXITCODE') {
+    throw 'Regression: build script reads LASTEXITCODE after an in-process PowerShell script.'
 }
 
 $privatePatterns = @(
@@ -84,10 +112,13 @@ foreach ($file in $sourceFiles) {
     }
 }
 
-Write-Host "[OK] Required source files"
+Write-Host '[OK] Required source files'
 Write-Host "[OK] Registered commands: $($ids.Count)"
-Write-Host "[OK] Unique command IDs"
-Write-Host "[OK] Ribbon command mapping: $($tags.Count) tags"
-Write-Host "[OK] CS1977 dynamic/lambda regression check"
-Write-Host "[OK] Single-file embedded Setup configuration"
-Write-Host "[OK] Private-key leak scan"
+Write-Host '[OK] Unique command IDs'
+Write-Host "[OK] Ribbon tabs: $tabCount"
+Write-Host "[OK] Ribbon command mapping: $($tags.Count) unique tags"
+Write-Host '[OK] Prompt namespace/import regression check'
+Write-Host '[OK] CS1977 dynamic/lambda regression checks'
+Write-Host '[OK] Single-file embedded Setup configuration'
+Write-Host '[OK] Build-script LASTEXITCODE regression check'
+Write-Host '[OK] Private-key leak scan'

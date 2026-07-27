@@ -1,4 +1,4 @@
-name: Build WordPro Suite Desktop Pro 2.2
+name: Build WordPro Suite Desktop Ultimate 3.0
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: windows-2022
-    timeout-minutes: 30
+    timeout-minutes: 35
 
     steps:
       - name: Checkout source
@@ -21,11 +21,19 @@ jobs:
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v2
 
-      - name: Validate source
+      - name: Validate source architecture
         shell: powershell
         run: .\scripts\validate-source.ps1
 
-      - name: Build single-file professional release
+      - name: Restore solution
+        shell: powershell
+        run: dotnet restore .\WordProSuite.Desktop.sln
+
+      - name: Compile gate with warnings as errors
+        shell: powershell
+        run: dotnet build .\WordProSuite.Desktop.sln -c Release --no-restore -warnaserror
+
+      - name: Build single-file Ultimate release
         shell: powershell
         run: .\scripts\build-release.ps1 -Configuration Release
 
@@ -36,28 +44,33 @@ jobs:
             ".\release\WordProSuite_Setup.exe",
             ".\release\INSTALL_AR.txt",
             ".\release\SHA256_SETUP.txt",
-            ".\WordProSuite_Desktop_Pro_V2_2_Windows.zip"
+            ".\release\RELEASE_MANIFEST.json",
+            ".\WordProSuite_Desktop_Ultimate_V3_Windows.zip"
           )
 
           foreach ($file in $files) {
-            if (-not (Test-Path $file)) {
-              throw "Missing $file"
-            }
-
-            if ((Get-Item $file).Length -lt 32) {
-              throw "File is unexpectedly small: $file"
-            }
+            if (-not (Test-Path $file)) { throw "Missing $file" }
+            if ((Get-Item $file).Length -lt 32) { throw "File is unexpectedly small: $file" }
           }
 
-          if ((Get-Item ".\release\WordProSuite_Setup.exe").Length -lt 50000) {
-            throw "Setup EXE is too small to contain the embedded add-in."
+          if ((Get-Item ".\release\WordProSuite_Setup.exe").Length -lt 75000) {
+            throw "Setup EXE is too small to contain the embedded Ultimate add-in."
           }
+
+          $manifest = Get-Content ".\release\RELEASE_MANIFEST.json" -Raw | ConvertFrom-Json
+          if ($manifest.commands -ne 500) { throw "Manifest command count is not 500." }
+          if ($manifest.ribbonTabs -ne 2) { throw "Manifest Ribbon tab count is not 2." }
+
+          $expected = (Get-Content ".\release\SHA256_SETUP.txt" -Raw).Split()[0]
+          $actual = (Get-FileHash ".\release\WordProSuite_Setup.exe" -Algorithm SHA256).Hash
+          if ($expected -ne $actual) { throw "Setup SHA-256 verification failed." }
 
       - name: Upload Windows setup
         uses: actions/upload-artifact@v4
         with:
-          name: WordProSuite-Desktop-Pro-2.2-Windows
+          name: WordProSuite-Desktop-Ultimate-3.0-Windows
           path: |
             release/**
-            WordProSuite_Desktop_Pro_V2_2_Windows.zip
+            WordProSuite_Desktop_Ultimate_V3_Windows.zip
           if-no-files-found: error
+          retention-days: 30

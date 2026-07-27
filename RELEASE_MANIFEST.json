@@ -1,19 +1,14 @@
 {
-  "name": "WordPro Suite Desktop",
-  "version": "1.0.0-source",
-  "architecture": "Managed COM Add-in",
-  "target_framework": ".NET Framework 4.8",
-  "commands": 67,
-  "runtime_forbidden": [
-    "Node.js",
-    "localhost",
-    "VBA",
-    "DOTM"
-  ],
-  "outputs": [
-    "WordProSuite_Setup.exe",
-    "WordProSuite.Desktop.x86.msi",
-    "WordProSuite.Desktop.x64.msi"
-  ],
-  "office2024_test_required": true
+  "product": "WordPro Suite Desktop Ultimate",
+  "version": "3.0.0",
+  "registered_commands": 500,
+  "categories": 30,
+  "ribbon_tabs": 2,
+  "setup": "WordProSuite_Setup.exe",
+  "artifact": "WordProSuite-Desktop-Ultimate-3.0-Windows",
+  "archive": "WordProSuite_Desktop_Ultimate_V3_Windows.zip",
+  "requires_nodejs": false,
+  "requires_localhost": false,
+  "requires_vba": false,
+  "installer_payload": "embedded"
 }

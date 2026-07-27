@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -21,7 +21,7 @@ namespace WordProSuite.Desktop.UI
 
         private CommandCenterForm()
         {
-            Text = "WordPro Suite Desktop Pro — مركز الأدوات";
+            Text = "WordPro Suite Desktop Ultimate — مركز الأدوات";
             RightToLeft = RightToLeft.Yes;
             RightToLeftLayout = true;
             StartPosition = FormStartPosition.CenterScreen;
@@ -35,7 +35,7 @@ namespace WordProSuite.Desktop.UI
             var hero = new Panel { Dock = DockStyle.Top, Height = 112, BackColor = Color.FromArgb(22, 53, 79), Padding = new Padding(24, 16, 24, 12) };
             var title = new Label
             {
-                Text = "WordPro Suite Desktop Pro",
+                Text = "WordPro Suite Desktop Ultimate — 500 Tools",
                 Dock = DockStyle.Top,
                 Height = 42,
                 ForeColor = Color.White,

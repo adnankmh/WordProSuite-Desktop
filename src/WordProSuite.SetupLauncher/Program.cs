@@ -1,4 +1,4 @@
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using System;
 using System.Diagnostics;
 using System.Drawing;
@@ -72,7 +72,7 @@ namespace WordProSuite.SetupLauncher
 
         internal SetupForm()
         {
-            Text = "WordPro Suite Desktop Pro 2.2 Setup";
+            Text = "WordPro Suite Desktop Ultimate 3.0 Setup";
             RightToLeft = RightToLeft.Yes;
             RightToLeftLayout = true;
             StartPosition = FormStartPosition.CenterScreen;
@@ -91,7 +91,7 @@ namespace WordProSuite.SetupLauncher
 
             var title = new Label
             {
-                Text = "WordPro Suite Desktop Pro 2.2",
+                Text = "WordPro Suite Desktop Ultimate 3.0",
                 Dock = DockStyle.Top,
                 Height = 54,
                 ForeColor = Color.White,
@@ -101,7 +101,7 @@ namespace WordProSuite.SetupLauncher
 
             var subtitle = new Label
             {
-                Text = "مثبت واحد فقط — لا يحتاج Payload أو MSI أو Node.js أو localhost.",
+                Text = "مثبت واحد فقط — 500 أداة، تبويبتان احترافيتان، وتفعيل آمن دون ملفات إضافية.",
                 Dock = DockStyle.Fill,
                 ForeColor = Color.FromArgb(221, 233, 241),
                 Font = new Font("Segoe UI", 12f),
@@ -241,7 +241,7 @@ namespace WordProSuite.SetupLauncher
                 RunOperation(delegate
                 {
                     SetupEngine.Uninstall();
-                    MessageBox.Show("تمت إزالة WordPro Suite Desktop Pro.", "WordPro Suite");
+                    MessageBox.Show("تمت إزالة WordPro Suite Desktop Ultimate.", "WordPro Suite");
                 });
             };
 
@@ -258,7 +258,8 @@ namespace WordProSuite.SetupLauncher
                 Padding = new Padding(10, 16, 10, 0),
                 ForeColor = Color.DimGray,
                 Text = "التثبيت يتم للحساب الحالي ولا يحتاج صلاحيات Administrator.\n"
-                     + "البرنامج ينسخ الإضافة إلى LocalAppData ويسجل COM تلقائيًا ثم يتحقق من إمكانية تشغيلها."
+                     + "البرنامج ينسخ الإضافة إلى LocalAppData ويسجل COM تلقائيًا ثم يتحقق من إمكانية تشغيلها.
+بعد التثبيت تظهر تبويبتا WordPro Suite Pro وWordPro Enterprise داخل Word."
             };
 
             body.Controls.Add(note);
@@ -427,7 +428,7 @@ namespace WordProSuite.SetupLauncher
             {
                 using (RegistryKey clsid = root.CreateSubKey(@"Software\Classes\CLSID\" + Clsid))
                 {
-                    clsid.SetValue(null, "WordPro Suite Desktop Pro Add-in");
+                    clsid.SetValue(null, "WordPro Suite Desktop Ultimate Add-in");
                     using (RegistryKey inproc = clsid.CreateSubKey("InprocServer32"))
                     {
                         inproc.SetValue(null, "mscoree.dll");
@@ -452,14 +453,14 @@ namespace WordProSuite.SetupLauncher
 
                 using (RegistryKey prog = root.CreateSubKey(@"Software\Classes\" + ProgId))
                 {
-                    prog.SetValue(null, "WordPro Suite Desktop Pro Add-in");
+                    prog.SetValue(null, "WordPro Suite Desktop Ultimate Add-in");
                     using (RegistryKey c = prog.CreateSubKey("CLSID"))
                         c.SetValue(null, Clsid);
                 }
 
                 using (RegistryKey addin = root.CreateSubKey(@"Software\Microsoft\Office\Word\Addins\" + ProgId))
                 {
-                    addin.SetValue("FriendlyName", "WordPro Suite Desktop Pro 2.2");
+                    addin.SetValue("FriendlyName", "WordPro Suite Desktop Ultimate 3.0");
                     addin.SetValue("Description", "Professional productivity suite for Microsoft Word.");
                     addin.SetValue("LoadBehavior", 3, RegistryValueKind.DWord);
                     addin.SetValue("CommandLineSafe", 0, RegistryValueKind.DWord);
