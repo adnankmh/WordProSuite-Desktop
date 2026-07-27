@@ -1,19 +1,20 @@
-إصلاح فشل تحميل إضافة Word
+إصلاح جذري لتحميل WordPro Suite Desktop
 
-السبب:
-تم تعريف IDTExtensibility2 وIRibbonExtensibility كواجهات IUnknown، بينما Office يستدعيهما كواجهات Automation/IDispatch.
-هذا يسبب تخطيط v-table غير صحيح وقد يجعل Word يعرض رسالة أن الإضافة سببت مشكلة خطيرة.
+المشكلة السابقة:
+كان ملف MSI يكتب تسجيل COM يدويًا. Word كان يرى اسم الإضافة، لكن CLR لم يكن
+ينشئ الكائن بصورة مستقرة، ولذلك يعود مربع التفعيل إلى غير مفعّل.
 
-ما تم إصلاحه:
-1) استخدام InterfaceIsIDispatch.
-2) إضافة DispId الصحيحة.
-3) إضافة MarshalAs المناسبة.
-4) منع أي استثناء من الخروج من constructor أو OnConnection أو GetCustomUI إلى Word.
+الإصلاح:
+1. توقيع WordProSuite.AddIn.dll بتوقيع Strong Name ثابت.
+2. استخدام RegAsm الحقيقي أثناء تثبيت MSI وإنزال التثبيت، بدل التسجيل اليدوي.
+3. إنشاء تسجيل Word تحت HKCU بقيمة LoadBehavior=3 في مكوّن مستقل.
+4. رفع الإصدار إلى 1.0.1.0 لضمان أن MSI ينفذ ترقية فعلية.
+5. إضافة أداة Repair-WordProSuite لمسح حالة التعطيل القديمة وإعادة التسجيل.
 
-طريقة الاستخدام:
-- انسخ مجلد src فوق مجلد src في المستودع.
+الخطوات:
+- انسخ src وinstaller وtools فوق المجلدات نفسها في المستودع.
 - Commit ثم Push.
-- نزّل Artifact الجديد.
-- أزل الإصدار القديم من Windows.
-- أعد تشغيل الجهاز أو أغلق WINWORD.EXE بالكامل من Task Manager.
-- ثبّت MSI المطابق لبنية Office كمسؤول.
+- بعد نجاح Workflow احذف النسخة القديمة.
+- أعد تشغيل Windows.
+- ثبت MSI المطابق لبنية Office كمسؤول.
+- شغّل tools\Repair-WordProSuite.cmd مرة واحدة كمسؤول عند الحاجة.
