@@ -1,4 +1,4 @@
-name: Test Ultimate 3.0 on Office 2024
+name: Test Ultimate 4.0 on Office 2024
 
 on:
   workflow_dispatch:
@@ -23,7 +23,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: WordProSuite-Ultimate-3.0-Office2024-logs
+          name: WordProSuite-Ultimate-4.0-Office2024-logs
           path: |
             release/**
             C:\Users\*\AppData\Local\WordProSuite\Logs\**

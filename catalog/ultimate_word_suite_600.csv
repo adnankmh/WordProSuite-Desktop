@@ -1,0 +1,601 @@
+﻿referenceNumber,engine,commandId,title,description,sourceDocument,implementation
+1,إدارة التبويبات والمستندات الذكية,workspace-save-session,حفظ مساحة العمل,حفظ قائمة المستندات المفتوحة لاستعادتها لاحقًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+2,إدارة التبويبات والمستندات الذكية,workspace-export-open-docs,تصدير قائمة المستندات المفتوحة,حفظ أسماء ومسارات المستندات المفتوحة في ملف نصي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+3,إدارة التبويبات والمستندات الذكية,workspace-rename-document,إعادة تسمية المستند,حفظ المستند الحالي باسم جديد في المجلد نفسه.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+4,إدارة التبويبات والمستندات الذكية,workspace-restore-session,استعادة مساحة العمل,فتح المستندات المحفوظة في مساحة العمل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+5,إدارة التبويبات والمستندات الذكية,workspace-close-others,إغلاق المستندات الأخرى,إبقاء المستند الحالي وإغلاق بقية المستندات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+6,إدارة التبويبات والمستندات الذكية,workspace-close-unmodified,إغلاق غير المعدّل,إغلاق المستندات المفتوحة التي لا تحتوي تغييرات غير محفوظة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+7,إدارة التبويبات والمستندات الذكية,workspace-split-toggle,تقسيم وإلغاء تقسيم النافذة,تبديل تقسيم نافذة المستند للمراجعة المتوازية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+8,إدارة التبويبات والمستندات الذكية,workspace-compare-file,مقارنة مع ملف,اختيار مستند آخر وتشغيل مقارنة Word.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+9,إدارة التبويبات والمستندات الذكية,workspace-duplicate-document,إنشاء نسخة من المستند,إنشاء نسخة مؤرخة من المستند الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+10,إدارة التبويبات والمستندات الذكية,workspace-arrange-windows,ترتيب النوافذ,ترتيب نوافذ Word المفتوحة جنبًا إلى جنب.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+11,إدارة التبويبات والمستندات الذكية,insert-document-path,إدراج مسار المستند,إدراج المسار الكامل للملف الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+12,إدارة التبويبات والمستندات الذكية,insert-confidential-banner,شريط سري,إدراج شريط تصنيف سري أعلى المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+13,إدارة التبويبات والمستندات الذكية,insert-document-name,إدراج اسم المستند,إدراج اسم الملف الحالي عند المؤشر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+14,إدارة التبويبات والمستندات الذكية,insert-current-datetime,إدراج التاريخ والوقت,إدراج التاريخ والوقت الحاليين بصيغة موحدة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+15,إدارة التبويبات والمستندات الذكية,insert-page-break-pro,إدراج فاصل صفحة,إدراج Page Break عند المؤشر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+16,إدارة التبويبات والمستندات الذكية,insert-section-next-page,مقطع في الصفحة التالية,إدراج Section Break من نوع Next Page.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+17,إدارة التبويبات والمستندات الذكية,zoom-100-pro,تكبير 100%,تعيين مستوى تكبير المستند إلى 100%.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+18,إدارة التبويبات والمستندات الذكية,zoom-110-pro,تكبير 110%,تعيين مستوى تكبير المستند إلى 110%.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+19,إدارة التبويبات والمستندات الذكية,zoom-125-pro,تكبير 125%,تعيين مستوى تكبير المستند إلى 125%.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+20,إدارة التبويبات والمستندات الذكية,zoom-150-pro,تكبير 150%,تعيين مستوى تكبير المستند إلى 150%.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+21,إدارة التبويبات والمستندات الذكية,zoom-75-pro,تكبير 75%,تعيين مستوى تكبير المستند إلى 75%.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+22,إدارة التبويبات والمستندات الذكية,zoom-85-pro,تكبير 85%,تعيين مستوى تكبير المستند إلى 85%.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+23,إدارة التبويبات والمستندات الذكية,formatting-marks-off,إخفاء علامات التنسيق,إخفاء علامات التنسيق غير المطبوعة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+24,إدارة التبويبات والمستندات الذكية,formatting-marks-on,إظهار علامات التنسيق,إظهار الفواصل والمسافات وعلامات الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+25,إدارة التبويبات والمستندات الذكية,rulers-off,إخفاء المساطر,إخفاء المسطرة الأفقية والعمودية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+26,إدارة التبويبات والمستندات الذكية,rulers-on,إظهار المساطر,إظهار المسطرة الأفقية والعمودية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+27,إدارة التبويبات والمستندات الذكية,view-normal-pro,عرض المسودة,التبديل إلى عرض المسودة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+28,إدارة التبويبات والمستندات الذكية,view-outline-pro,عرض المخطط التفصيلي,التبديل إلى عرض المخطط التفصيلي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+29,إدارة التبويبات والمستندات الذكية,view-print-pro,عرض تخطيط الطباعة,التبديل إلى عرض تخطيط الطباعة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+30,إدارة التبويبات والمستندات الذكية,view-reading-pro,عرض القراءة,التبديل إلى عرض القراءة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+31,إدارة التبويبات والمستندات الذكية,view-web-pro,عرض الويب,التبديل إلى عرض الويب.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+32,إدارة التبويبات والمستندات الذكية,document-statistics,إحصاءات المستند,عرض الصفحات والكلمات والجداول والصور.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+33,إدارة التبويبات والمستندات الذكية,insert-cover,إنشاء صفحة غلاف,إضافة غلاف منسق في بداية المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+34,إدارة التبويبات والمستندات الذكية,insert-file-name,إدراج اسم ومسار الملف,إدراج حقل FILENAME مع المسار.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+35,إدارة التبويبات والمستندات الذكية,list-fonts,قائمة خطوط الأنماط,عرض الخطوط المستخدمة في أنماط المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+36,إدارة التبويبات والمستندات الذكية,replace-font,استبدال خط,استبدال خط بآخر في المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+37,إدارة التبويبات والمستندات الذكية,clear-headers-footers,مسح الرؤوس والتذييلات,حذف نصوص الرؤوس والتذييلات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+38,إدارة التبويبات والمستندات الذكية,columns-1,عمود واحد,إرجاع النص إلى عمود واحد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+39,إدارة التبويبات والمستندات الذكية,columns-2,عمودان,تقسيم الصفحة إلى عمودين.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+40,إدارة التبويبات والمستندات الذكية,columns-3,ثلاثة أعمدة,تقسيم الصفحة إلى ثلاثة أعمدة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+41,معالجة وتنظيف النصوص الشاملة,text-comma-to-lines,الفواصل إلى أسطر,تحويل العناصر المفصولة بفواصل إلى أسطر مستقلة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+42,معالجة وتنظيف النصوص الشاملة,text-list-to-plain,تحويل القائمة إلى نص,إزالة التعداد أو الترقيم مع إبقاء المحتوى.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+43,معالجة وتنظيف النصوص الشاملة,text-normalize-tabs,توحيد علامات Tab,توحيد علامات الجدولة المتكررة داخل النص.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+44,معالجة وتنظيف النصوص الشاملة,text-remove-email-quotes,تنظيف اقتباسات البريد,حذف رموز الاقتباس > من بداية الأسطر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+45,معالجة وتنظيف النصوص الشاملة,text-remove-extra-breaks,تنظيف فواصل الأسطر,اختصار فواصل الأسطر والفقرات المتكررة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+46,معالجة وتنظيف النصوص الشاملة,text-trim-document,قص بداية ونهاية النص,إزالة الفراغات والفواصل من طرفي النطاق.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+47,معالجة وتنظيف النصوص الشاملة,text-semicolon-to-paragraph,الفواصل المنقوطة إلى فقرات,تقسيم النص عند الفاصلة المنقوطة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+48,معالجة وتنظيف النصوص الشاملة,text-punctuation-spacing,ضبط مسافات الترقيم,إصلاح المسافات قبل وبعد علامات الترقيم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+49,معالجة وتنظيف النصوص الشاملة,linebreaks-to-paragraphs,فواصل الأسطر إلى فقرات,تحويل line breaks إلى paragraph breaks.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+50,معالجة وتنظيف النصوص الشاملة,collapse-spaces,تنظيف المسافات,حذف المسافات المتكررة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+51,معالجة وتنظيف النصوص الشاملة,join-paragraphs,دمج الفقرات,تحويل الفقرات المحددة إلى فقرة واحدة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+52,معالجة وتنظيف النصوص الشاملة,prefix-lines,إضافة بادئة للأسطر,إضافة نص قبل كل سطر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+53,معالجة وتنظيف النصوص الشاملة,suffix-lines,إضافة لاحقة للأسطر,إضافة نص بعد كل سطر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+54,معالجة وتنظيف النصوص الشاملة,extract-emails,استخراج البريد الإلكتروني,استخراج عناوين البريد من النص.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+55,معالجة وتنظيف النصوص الشاملة,extract-urls,استخراج الروابط,استخراج الروابط من النص.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+56,معالجة وتنظيف النصوص الشاملة,lowercase,lowercase,تحويل الأحرف الإنجليزية إلى صغيرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+57,معالجة وتنظيف النصوص الشاملة,paragraphs-bullets,تحويل إلى نقاط,تحويل الفقرات إلى قائمة نقطية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+58,معالجة وتنظيف النصوص الشاملة,paragraphs-numbers,تحويل إلى ترقيم,تحويل الفقرات إلى قائمة مرقمة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+59,معالجة وتنظيف النصوص الشاملة,paste-plain,لصق كنص فقط,لصق محتوى الحافظة دون تنسيق.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+60,معالجة وتنظيف النصوص الشاملة,remove-duplicate-lines,حذف الأسطر المكررة,الاحتفاظ بأول ظهور لكل سطر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+61,معالجة وتنظيف النصوص الشاملة,remove-duplicate-paragraphs,حذف الفقرات المكررة,حذف الفقرات المتكررة مع تجاهل اختلاف المسافات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+62,معالجة وتنظيف النصوص الشاملة,remove-duplicate-words,حذف الكلمات المتتابعة المكررة,تحويل كلمة كلمة إلى كلمة واحدة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+63,معالجة وتنظيف النصوص الشاملة,remove-hyperlinks,إزالة الروابط,حذف الارتباطات مع إبقاء النص.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+64,معالجة وتنظيف النصوص الشاملة,smart-quotes,اقتباس ذكي,تحويل الاقتباسات المستقيمة إلى ذكية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+65,معالجة وتنظيف النصوص الشاملة,sort-lines-asc,فرز تصاعدي,فرز الأسطر تصاعديًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+66,معالجة وتنظيف النصوص الشاملة,sort-lines-desc,فرز تنازلي,فرز الأسطر تنازليًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+67,معالجة وتنظيف النصوص الشاملة,text-statistics,إحصاءات النص,عرض الكلمات والأحرف والفقرات والجمل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+68,معالجة وتنظيف النصوص الشاملة,trim-lines,قص حواف الأسطر,حذف المسافات من بداية ونهاية كل سطر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+69,معالجة وتنظيف النصوص الشاملة,uppercase,UPPERCASE,تحويل الأحرف الإنجليزية إلى كبيرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+70,معالجة وتنظيف النصوص الشاملة,clear-list,إزالة تنسيق القائمة,إزالة الترقيم أو التعداد من الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+71,معالجة وتنظيف النصوص الشاملة,duplicate-selection,تكرار التحديد,نسخ النص المحدد مباشرة بعده.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+72,معالجة وتنظيف النصوص الشاملة,extract-phones,استخراج أرقام الهواتف,استخراج أرقام الهواتف المحتملة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+73,معالجة وتنظيف النصوص الشاملة,invert-case,Invert Case,عكس حالة الأحرف الكبيرة والصغيرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+74,معالجة وتنظيف النصوص الشاملة,normalize-dashes,توحيد الشرطات,توحيد hyphen وen dash وem dash.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+75,معالجة وتنظيف النصوص الشاملة,remove-empty-paragraphs,حذف الفقرات الفارغة,اختصار الفقرات الفارغة المتكررة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+76,معالجة وتنظيف النصوص الشاملة,remove-leading-spaces,حذف مسافات بداية الأسطر,تنظيف بداية كل سطر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+77,معالجة وتنظيف النصوص الشاملة,remove-nonprinting,حذف المحارف غير المطبوعة,حذف المحارف التحكمية غير المرئية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+78,معالجة وتنظيف النصوص الشاملة,remove-trailing-spaces,حذف مسافات نهاية الأسطر,تنظيف نهاية كل سطر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+79,معالجة وتنظيف النصوص الشاملة,sentence-case,Sentence case,تكبير بداية كل جملة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+80,معالجة وتنظيف النصوص الشاملة,split-by-delimiter,تقسيم حسب فاصل,استبدال فاصل محدد بفواصل فقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+81,الهندسة اللغوية والخطوط العربية,arabic-proofing,لغة تدقيق عربية,تعيين لغة التدقيق العربية للنص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+82,الهندسة اللغوية والخطوط العربية,english-proofing,لغة تدقيق إنجليزية,تعيين لغة التدقيق الإنجليزية للنص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+83,الهندسة اللغوية والخطوط العربية,arabic-decimal-separator,الفاصل العشري العربي,تحويل الفاصل العشري بين الأرقام إلى ٫.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+84,الهندسة اللغوية والخطوط العربية,arabic-normalize-ligatures,توحيد الوصلات العربية,تطبيق Unicode Form KC لتوحيد أشكال الحروف والوصلات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+85,الهندسة اللغوية والخطوط العربية,arabic-thousands-separator,فاصل الآلاف العربي,تحويل فواصل الآلاف إلى ٬.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+86,الهندسة اللغوية والخطوط العربية,arabic-remove-quranic-marks,حذف العلامات القرآنية,إزالة علامات الوقف والزخارف القرآنية مع إبقاء الأحرف.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+87,الهندسة اللغوية والخطوط العربية,auto-direction,اكتشاف الاتجاه تلقائيًا,اختيار RTL أو LTR حسب النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+88,الهندسة اللغوية والخطوط العربية,arabic-clean-all,تنظيف عربي شامل,حذف التشكيل والتطويل وضبط RTL وArial 14.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+89,الهندسة اللغوية والخطوط العربية,normalize-arabic-punctuation,ترقيم عربي ذكي,تحويل الفاصلة والفاصلة المنقوطة وعلامة السؤال إلى العربية وضبط المسافات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+90,الهندسة اللغوية والخطوط العربية,rtl,اتجاه RTL,تطبيق اتجاه الكتابة من اليمين إلى اليسار.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+91,الهندسة اللغوية والخطوط العربية,arabic-quotes,علامات اقتباس عربية,تحويل علامات الاقتباس إلى « ».,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+92,الهندسة اللغوية والخطوط العربية,digits-eastern,أرقام عربية,تحويل الأرقام الغربية إلى ٠١٢٣.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+93,الهندسة اللغوية والخطوط العربية,digits-western,أرقام غربية,تحويل الأرقام العربية والفارسية إلى 0123.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+94,الهندسة اللغوية والخطوط العربية,insert-arabic-date,إدراج التاريخ بالعربية,إدراج التاريخ الميلادي بأسماء الأشهر العربية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+95,الهندسة اللغوية والخطوط العربية,keyboard-ar-to-en,تصحيح كتابة عربية إلى إنجليزية,إصلاح نص كُتب بلوحة مفاتيح عربية بدل الإنجليزية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+96,الهندسة اللغوية والخطوط العربية,keyboard-en-to-ar,تصحيح كتابة إنجليزية إلى عربية,إصلاح نص كُتب بلوحة مفاتيح إنجليزية بدل العربية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+97,الهندسة اللغوية والخطوط العربية,ltr,اتجاه LTR,تطبيق اتجاه الكتابة من اليسار إلى اليمين.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+98,الهندسة اللغوية والخطوط العربية,normalize-arabic,توحيد الحروف العربية,توحيد أشكال الألف والياء والهمزات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+99,الهندسة اللغوية والخطوط العربية,number-arabic-words,رقم إلى كلمات عربية,تحويل الرقم المحدد إلى كلمات عربية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+100,الهندسة اللغوية والخطوط العربية,persian-to-arabic-letters,تصحيح الحروف الفارسية,تحويل ي وك الفارسية إلى الحروف العربية القياسية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+101,الهندسة اللغوية والخطوط العربية,remove-diacritics,حذف التشكيل,حذف الحركات والعلامات العربية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+102,الهندسة اللغوية والخطوط العربية,wrap-arabic-brackets,إحاطة بقوسين عربيين,إحاطة النص المحدد بعلامتي ﴿ ﴾.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+103,الهندسة اللغوية والخطوط العربية,digits-persian,أرقام فارسية,تحويل الأرقام إلى ۰۱۲۳.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+104,الهندسة اللغوية والخطوط العربية,insert-hijri-date,إدراج التاريخ الهجري,إدراج تاريخ أم القرى الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+105,الهندسة اللغوية والخطوط العربية,remove-tatweel,حذف التطويل,حذف الكشيدة ـ من النص.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+106,الهندسة اللغوية والخطوط العربية,remove-zero-width,حذف المحارف المخفية,حذف محارف zero-width وBOM من النص.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+107,الهندسة اللغوية والخطوط العربية,reverse-text,عكس النص,عكس ترتيب الأحرف في النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+108,الهندسة اللغوية والخطوط العربية,font-aptos-11,Aptos 11,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+109,الهندسة اللغوية والخطوط العربية,font-aptos-12,Aptos 12,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+110,الهندسة اللغوية والخطوط العربية,font-arial-10,Arial 10,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+111,الهندسة اللغوية والخطوط العربية,font-arial-12,Arial 12,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+112,الهندسة اللغوية والخطوط العربية,font-arial-16,Arial 16,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+113,الهندسة اللغوية والخطوط العربية,font-calibri-10,Calibri 10,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+114,الهندسة اللغوية والخطوط العربية,font-calibri-12,Calibri 12,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+115,الهندسة اللغوية والخطوط العربية,font-cambria-12,Cambria 12,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+116,الهندسة اللغوية والخطوط العربية,font-century-gothic-11,Century Gothic 11,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+117,الهندسة اللغوية والخطوط العربية,font-consolas-10,Consolas 10,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+118,الهندسة اللغوية والخطوط العربية,font-courier-10,Courier New 10,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+119,الهندسة اللغوية والخطوط العربية,font-dubai-12,Dubai 12,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+120,الهندسة اللغوية والخطوط العربية,font-georgia-12,Georgia 12,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+121,الهندسة اللغوية والخطوط العربية,font-noto-naskh-14,Noto Naskh Arabic 14,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+122,الهندسة اللغوية والخطوط العربية,font-segoe-10,Segoe UI 10,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+123,الهندسة اللغوية والخطوط العربية,font-segoe-12,Segoe UI 12,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+124,الهندسة اللغوية والخطوط العربية,font-simplified-arabic-14,Simplified Arabic 14,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+125,الهندسة اللغوية والخطوط العربية,font-tahoma-10,Tahoma 10,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+126,المساعد الذكي والذكاء الاصطناعي,smart-executive-summary,ملخص تنفيذي ذكي,إنشاء ملخص تنفيذي محلي مع مؤشرات النص.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+127,المساعد الذكي والذكاء الاصطناعي,smart-offline-summary,تلخيص ذكي دون إنترنت,إنشاء ملخص استخراجي محلي من الجمل الأهم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+128,المساعد الذكي والذكاء الاصطناعي,smart-sentiment,تحليل نبرة النص,تحليل محلي تقريبي للكلمات الإيجابية والسلبية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+129,المساعد الذكي والذكاء الاصطناعي,smart-keywords,استخراج الكلمات المفتاحية,استخراج أكثر الكلمات دلالة وتكرارًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+130,المساعد الذكي والذكاء الاصطناعي,smart-outline,مخطط هيكلي ذكي,إنشاء مخطط أولي من الفقرات والعناوين.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+131,المساعد الذكي والذكاء الاصطناعي,smart-readability-advice,اقتراحات قابلية القراءة,تحليل طول الجمل والفقرات وإظهار توصيات عملية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+132,المساعد الذكي والذكاء الاصطناعي,smart-title-suggestions,اقتراح عناوين,توليد عناوين مقترحة من الكلمات المفتاحية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+133,المساعد الذكي والذكاء الاصطناعي,ai-chat-provider,دردشة مع المستند,طرح سؤال على النص المحدد عبر موفر AI اختياري.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+134,المساعد الذكي والذكاء الاصطناعي,ai-provider-settings,إعداد موفر AI,إعداد Ollama أو LM Studio أو OpenAI-Compatible اختياريًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+135,المساعد الذكي والذكاء الاصطناعي,ai-rewrite-provider,إعادة صياغة عبر AI,إرسال النص إلى موفر AI المتوافق وإدراج النتيجة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+136,المساعد الذكي والذكاء الاصطناعي,ai-translate-provider,ترجمة عبر AI,ترجمة النص عبر موفر AI اختياري.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+137,المساعد الذكي والذكاء الاصطناعي,smart-action-items,استخراج إجراءات العمل,استخراج الجمل المحتملة التي تتضمن إجراءات أو تكليفات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+138,المساعد الذكي والذكاء الاصطناعي,smart-decisions,استخراج القرارات,استخراج الجمل التي تبدو قرارات أو اعتمادات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+139,المساعد الذكي والذكاء الاصطناعي,smart-reading-questions,إنشاء أسئلة قراءة,توليد أسئلة مراجعة من عبارات المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+140,المساعد الذكي والذكاء الاصطناعي,calculator,حاسبة التحديد,حساب تعبير رياضي محدد وإدراج النتيجة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+141,المساعد الذكي والذكاء الاصطناعي,insert-checklist,قائمة مهام بمربعات,تحويل بنود إلى قائمة ☐.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+142,المساعد الذكي والذكاء الاصطناعي,insert-guid,إدراج UUID,إدراج معرف فريد عالمي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+143,المساعد الذكي والذكاء الاصطناعي,insert-lorem-arabic,نص عربي تجريبي,إدراج فقرات عربية لتجربة التصميم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+144,المساعد الذكي والذكاء الاصطناعي,metric-words-pro,عدد الكلمات,تحليل المستند وعرض عدد الكلمات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+145,المساعد الذكي والذكاء الاصطناعي,open-log,فتح سجل الإضافة,فتح أحدث ملف Log.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+146,المساعد الذكي والذكاء الاصطناعي,metric-bookmarks-pro,عدد الإشارات المرجعية,تحليل المستند وعرض عدد الإشارات المرجعية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+147,المساعد الذكي والذكاء الاصطناعي,metric-characters-pro,عدد الأحرف,تحليل المستند وعرض عدد الأحرف.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+148,المساعد الذكي والذكاء الاصطناعي,metric-comments-pro,عدد التعليقات,تحليل المستند وعرض عدد التعليقات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+149,المساعد الذكي والذكاء الاصطناعي,metric-fields-pro,عدد الحقول,تحليل المستند وعرض عدد الحقول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+150,المساعد الذكي والذكاء الاصطناعي,metric-footnotes-pro,عدد الحواشي,تحليل المستند وعرض عدد الحواشي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+151,المساعد الذكي والذكاء الاصطناعي,metric-headings-pro,عدد العناوين,تحليل المستند وعرض عدد العناوين.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+152,المساعد الذكي والذكاء الاصطناعي,metric-hyperlinks-pro,عدد الروابط,تحليل المستند وعرض عدد الروابط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+153,المساعد الذكي والذكاء الاصطناعي,metric-images-pro,عدد الصور,تحليل المستند وعرض عدد الصور.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+154,المساعد الذكي والذكاء الاصطناعي,metric-pages-pro,عدد الصفحات,تحليل المستند وعرض عدد الصفحات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+155,المساعد الذكي والذكاء الاصطناعي,metric-paragraphs-pro,عدد الفقرات,تحليل المستند وعرض عدد الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+156,المساعد الذكي والذكاء الاصطناعي,metric-readability-pro,قابلية القراءة,تحليل المستند وعرض قابلية القراءة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+157,المساعد الذكي والذكاء الاصطناعي,metric-revisions-pro,عدد التعديلات,تحليل المستند وعرض عدد التعديلات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+158,المساعد الذكي والذكاء الاصطناعي,metric-sections-pro,عدد المقاطع,تحليل المستند وعرض عدد المقاطع.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+159,المساعد الذكي والذكاء الاصطناعي,metric-tables-pro,عدد الجداول,تحليل المستند وعرض عدد الجداول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+160,المساعد الذكي والذكاء الاصطناعي,document-dashboard,لوحة المستند,عرض الصفحات والكلمات والجداول والصور والروابط والمراجعات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+161,المساعد الذكي والذكاء الاصطناعي,word-frequency-top,أكثر الكلمات تكرارًا,إنشاء تقرير بأعلى الكلمات تكرارًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+162,المساعد الذكي والذكاء الاصطناعي,list-bookmarks,قائمة الإشارات المرجعية,إنشاء قائمة بأسماء Bookmarks.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+163,المساعد الذكي والذكاء الاصطناعي,list-document-headings,قائمة العناوين,إنشاء مستند جديد بجميع العناوين وأنماطها.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+164,المساعد الذكي والذكاء الاصطناعي,word-frequency-report,تحليل تكرار الكلمات,إنشاء تقرير بأكثر 50 كلمة تكرارًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+165,المساعد الذكي والذكاء الاصطناعي,long-paragraph-report,تقرير الفقرات الطويلة,إنشاء تقرير بالفقرات التي تتجاوز حد الكلمات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+166,المساعد الذكي والذكاء الاصطناعي,extract-numbers-pro,استخراج الأرقام,استخراج القيم الرقمية الفريدة من النص.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+167,المساعد الذكي والذكاء الاصطناعي,academic-heading-audit,تدقيق هيكل العناوين,تحليل تسلسل Heading 1–3 واكتشاف القفزات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+168,المساعد الذكي والذكاء الاصطناعي,insert-executive-summary,هيكل ملخص تنفيذي,إدراج هيكل احترافي للملخص التنفيذي والنتائج والتوصيات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+169,المساعد الذكي والذكاء الاصطناعي,insert-pestle-matrix,تحليل PESTLE,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+170,المساعد الذكي والذكاء الاصطناعي,insert-swot-matrix,تحليل SWOT,إدراج جدول نقاط القوة والضعف والفرص والتهديدات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+171,المساعد الذكي والذكاء الاصطناعي,insert-swot-matrix-v3,تحليل SWOT,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+172,المساعد الذكي والذكاء الاصطناعي,legal-highlight-obligations,تمييز الالتزامات,تمييز كلمات الالتزام والوجوب والمسؤولية داخل المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+173,المساعد الذكي والذكاء الاصطناعي,orientation-portrait-pro,اتجاه عمودي احترافي,تعيين اتجاه الصفحة عموديًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+174,المساعد الذكي والذكاء الاصطناعي,productivity-reading-time,زمن القراءة المتوقع,حساب زمن القراءة بناءً على عدد الكلمات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+175,المساعد الذكي والذكاء الاصطناعي,productivity-session-report,تقرير جلسة العمل,عرض مدة الجلسة والكلمات المضافة ومعلومات المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+176,الهندسة الجدولية والحسابات,table-calculation-template,جدول حسابات,إدراج جدول بنود وكميات وأسعار وإجماليات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+177,الهندسة الجدولية والحسابات,table-format-currency,تنسيق العملة,تنسيق القيم الرقمية في الخلايا المحددة كعملة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+178,الهندسة الجدولية والحسابات,table-format-date,تنسيق التاريخ,توحيد التواريخ الموجودة في خلايا الجدول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+179,الهندسة الجدولية والحسابات,table-alternate-columns,تظليل الأعمدة بالتناوب,تطبيق تظليل متبادل على أعمدة الجدول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+180,الهندسة الجدولية والحسابات,table-format-percent,تنسيق النسب المئوية,تنسيق القيم الرقمية في الجدول كنسب مئوية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+181,الهندسة الجدولية والحسابات,table-summary-template,جدول تلخيص بيانات,إدراج قالب تلخيص فئات وقيم ونسب.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+182,الهندسة الجدولية والحسابات,tabs-to-table-smart,Tabs إلى جدول ذكي,تحويل النص المفصول بعلامات Tab إلى جدول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+183,الهندسة الجدولية والحسابات,table-sum-column,مجموع العمود,إضافة صف مجموع للعمود الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+184,الهندسة الجدولية والحسابات,table-average-column,متوسط العمود,إضافة صف متوسط للعمود الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+185,الهندسة الجدولية والحسابات,table-sort-asc,فرز الجدول تصاعديًا,فرز الصفوف حسب العمود الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+186,الهندسة الجدولية والحسابات,table-sort-desc,فرز الجدول تنازليًا,فرز الصفوف تنازليًا حسب العمود الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+187,الهندسة الجدولية والحسابات,table-autofit-window,ملاءمة الصفحة,ملاءمة عرض الجدول للصفحة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+188,الهندسة الجدولية والحسابات,table-banded-rows,صفوف متبادلة,تظليل صفوف الجدول بالتناوب.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+189,الهندسة الجدولية والحسابات,table-center-cells,توسيط الخلايا,توسيط أفقي وعمودي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+190,الهندسة الجدولية والحسابات,table-col-right,عمود يمين,إضافة عمود في نهاية الجدول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+191,الهندسة الجدولية والحسابات,table-number-first-column,ترقيم العمود الأول,إضافة تسلسل رقمي للصفوف.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+192,الهندسة الجدولية والحسابات,table-professional,تنسيق جدول احترافي,حدود وعنوان وتوسيط وملاءمة الصفحة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+193,الهندسة الجدولية والحسابات,table-row-below,صف أسفل,إضافة صف في نهاية الجدول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+194,الهندسة الجدولية والحسابات,table-transpose,تبديل الصفوف والأعمدة,Transpose للجدول الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+195,الهندسة الجدولية والحسابات,table-vertical-bottom,محاذاة عمودية أسفل,محاذاة محتوى الخلايا للأسفل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+196,الهندسة الجدولية والحسابات,table-vertical-middle,محاذاة عمودية وسط,محاذاة محتوى الخلايا للوسط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+197,الهندسة الجدولية والحسابات,table-vertical-top,محاذاة عمودية أعلى,محاذاة محتوى الخلايا للأعلى.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+198,الهندسة الجدولية والحسابات,table-borders-all,كل الحدود,إظهار جميع حدود الجدول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+199,الهندسة الجدولية والحسابات,table-borders-none,بدون حدود,إخفاء حدود الجدول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+200,الهندسة الجدولية والحسابات,table-col-left,عمود يسار,إضافة عمود قبل العمود الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+201,الهندسة الجدولية والحسابات,table-delete-column,حذف العمود,حذف العمود الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+202,الهندسة الجدولية والحسابات,table-delete-row,حذف الصف,حذف الصف الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+203,الهندسة الجدولية والحسابات,table-distribute-rows,توزيع الصفوف,توزيع الصفوف بالتساوي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+204,الهندسة الجدولية والحسابات,table-header-style,تنسيق صف العنوان,تظليل وتغليظ وتكرار الصف الأول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+205,الهندسة الجدولية والحسابات,table-ltr,جدول LTR,اتجاه الجدول من اليسار إلى اليمين.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+206,الهندسة الجدولية والحسابات,table-merge-cells,دمج الخلايا,دمج الخلايا المحددة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+207,الهندسة الجدولية والحسابات,table-remove-duplicate-rows,حذف الصفوف المكررة,حذف الصفوف المتطابقة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+208,الهندسة الجدولية والحسابات,table-remove-empty-rows,حذف الصفوف الفارغة,حذف الصفوف التي لا تحتوي بيانات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+209,الهندسة الجدولية والحسابات,table-repeat-header,تكرار صف العنوان,تكرار الصف الأول في كل صفحة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+210,الهندسة الجدولية والحسابات,table-row-above,صف أعلى,إضافة صف فوق الخلية الحالية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+211,الهندسة الجدولية والحسابات,table-rtl,جدول RTL,اتجاه الجدول من اليمين إلى اليسار.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+212,الهندسة الجدولية والحسابات,table-split-cell,تقسيم الخلية,تقسيم الخلية إلى صفوف وأعمدة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+213,الهندسة الجدولية والحسابات,table-to-text,تحويل جدول إلى نص,تحويل الجدول إلى نص مفصول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+214,الهندسة الجدولية والحسابات,table-trim-cells,تنظيف الخلايا,حذف المسافات الزائدة داخل الخلايا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+215,الهندسة الجدولية والحسابات,text-to-table,تحويل نص إلى جدول,تحويل نص مفصول بعلامات إلى جدول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+216,الهندسة الجدولية والحسابات,table-autofit-content,ملاءمة المحتوى,ملاءمة عرض الأعمدة للمحتوى.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+217,الهندسة الجدولية والحسابات,table-digits-eastern-pro,أرقام الجدول عربية,تحويل أرقام جميع خلايا الجدول إلى ٠١٢٣.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+218,الهندسة الجدولية والحسابات,table-digits-western-pro,أرقام الجدول غربية,تحويل أرقام جميع خلايا الجدول إلى 0123.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+219,الهندسة الجدولية والحسابات,table-distribute-columns,توزيع الأعمدة,توزيع الأعمدة بالتساوي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+220,الهندسة الجدولية والحسابات,table-auto-row-height,ارتفاع صفوف تلقائي,إعادة ارتفاع الصفوف إلى الوضع التلقائي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+221,الميديا والوسائط والأشكال,media-caption-images,إضافة تسميات للصور,إضافة Caption تلقائي لكل صورة مضمنة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+222,الميديا والوسائط والأشكال,media-accessibility-report,تقرير وصول الصور,إظهار الصور التي تفتقد النص البديل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+223,الميديا والوسائط والأشكال,media-center-images,توسيط جميع الصور,توسيط فقرات الصور المضمنة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+224,الميديا والوسائط والأشكال,media-compress-pictures,ضغط الصور,تشغيل أمر Word المدمج لضغط الصور.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+225,الميديا والوسائط والأشكال,media-export-images,تصدير صور المستند,حفظ نسخة HTML لاستخراج صور المستند في مجلد مستقل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+226,الميديا والوسائط والأشكال,media-fit-page,ملاءمة الصور للصفحة,تحديد عرض الصور بما يناسب مساحة الصفحة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+227,الميديا والوسائط والأشكال,media-resize-half,تصغير الصور 50%,تقليل أبعاد جميع الصور المضمنة إلى النصف.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+228,الميديا والوسائط والأشكال,insert-checkbox-symbols,مربعات اختيار جاهزة,إدراج عدد من مربعات الاختيار.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+229,الميديا والوسائط والأشكال,insert-current-time,إدراج الوقت الحالي,إدراج الوقت بصيغة HH:mm.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+230,الميديا والوسائط والأشكال,insert-document-info,كتلة معلومات المستند,إدراج العنوان والمؤلف واسم الملف والتاريخ.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+231,الميديا والوسائط والأشكال,insert-iso-date,إدراج تاريخ ISO,إدراج التاريخ بصيغة yyyy-MM-dd.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+232,الميديا والوسائط والأشكال,insert-page-x-of-y,صفحة X من Y,إضافة ترقيم صفحة من إجمالي الصفحات في التذييل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+233,الميديا والوسائط والأشكال,insert-timestamp,إدراج طابع زمني,إدراج التاريخ والوقت الكامل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+234,الميديا والوسائط والأشكال,font-color-blue-pro,لون أزرق احترافي,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+235,الميديا والوسائط والأشكال,font-color-gray-pro,لون رمادي احترافي,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+236,الميديا والوسائط والأشكال,font-color-green-pro,لون أخضر احترافي,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+237,الميديا والوسائط والأشكال,font-color-red-pro,لون أحمر احترافي,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+238,الميديا والوسائط والأشكال,text-allcaps-off,إلغاء الأحرف الكبيرة,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+239,الميديا والوسائط والأشكال,text-allcaps-on,أحرف كبيرة,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+240,الميديا والوسائط والأشكال,text-bold-off,إلغاء الغامق,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+241,الميديا والوسائط والأشكال,text-bold-on,غامق,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+242,الميديا والوسائط والأشكال,text-italic-off,إلغاء المائل,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+243,الميديا والوسائط والأشكال,text-italic-on,مائل,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+244,الميديا والوسائط والأشكال,text-strike-off,إلغاء يتوسطه خط,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+245,الميديا والوسائط والأشكال,text-strike-on,يتوسطه خط,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+246,الميديا والوسائط والأشكال,text-subscript,منخفض Subscript,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+247,الميديا والوسائط والأشكال,text-superscript,مرتفع Superscript,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+248,الميديا والوسائط والأشكال,text-underline-off,إلغاء التسطير,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+249,الميديا والوسائط والأشكال,text-underline-on,تسطير,تطبيق تأثير نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+250,الميديا والوسائط والأشكال,line-numbers-continuous-pro,ترقيم أسطر مستمر,إظهار أرقام الأسطر بصورة مستمرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+251,الميديا والوسائط والأشكال,clear-highlight-pro,إزالة التمييز,إزالة لون التمييز من التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+252,الميديا والوسائط والأشكال,font-color-automatic,لون خط تلقائي,إعادة لون الخط إلى اللون التلقائي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+253,الميديا والوسائط والأشكال,highlight-clear,إزالة التمييز,إزالة لون التمييز.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+254,الميديا والوسائط والأشكال,highlight-green,تمييز أخضر,تمييز النص باللون الأخضر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+255,الميديا والوسائط والأشكال,highlight-red,تمييز أحمر,تمييز النص باللون الأحمر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+256,الميديا والوسائط والأشكال,highlight-yellow,تمييز أصفر,تمييز النص باللون الأصفر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+257,الميديا والوسائط والأشكال,insert-issue-log-pro,سجل المشكلات,إدراج جدول لتتبع القضايا والمشكلات حتى الإغلاق.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+258,الميديا والوسائط والأشكال,insert-issue-register-v3,سجل المشكلات العالمي,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+259,الميديا والوسائط والأشكال,about,حول WordPro Suite,معلومات الإصدار والتقنية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+260,الميديا والوسائط والأشكال,academic-bibliography-audit,تدقيق قائمة المراجع,فحص قائمة المراجع وإظهار الأسطر المكررة أو الناقصة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+261,أتمتة العمليات المجمعة,batch-accept-revisions,قبول التعديلات دفعيًا,قبول التعديلات المتعقبة في ملفات مجلد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+262,أتمتة العمليات المجمعة,batch-protect-readonly,حماية للقراءة فقط دفعيًا,تطبيق حماية القراءة فقط على ملفات مجلد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+263,أتمتة العمليات المجمعة,batch-remove-comments,حذف التعليقات دفعيًا,حذف تعليقات جميع مستندات Word داخل مجلد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+264,أتمتة العمليات المجمعة,batch-remove-properties,تنظيف الخصائص دفعيًا,إزالة معلومات المستند الشخصية من ملفات مجلد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+265,أتمتة العمليات المجمعة,batch-update-fields,تحديث الحقول دفعيًا,تحديث الحقول في ملفات Word داخل مجلد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+266,أتمتة العمليات المجمعة,batch-export-pdf-v4,تحويل مجلد إلى PDF,تصدير ملفات Word الموجودة في مجلد إلى PDF.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+267,أتمتة العمليات المجمعة,batch-print-documents,طباعة مجلد مستندات,إرسال ملفات Word في مجلد إلى الطابعة الافتراضية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+268,أتمتة العمليات المجمعة,batch-save-docx,تحويل مجلد إلى DOCX,فتح ملفات Word في مجلد وحفظها بصيغة DOCX.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+269,أتمتة العمليات المجمعة,batch-pdf,تحويل مجلد إلى PDF,تحويل ملفات Word داخل مجلد إلى PDF دفعة واحدة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+270,أتمتة العمليات المجمعة,archive-package,حزمة أرشيف,إنشاء مجلد يحتوي نسخة Word وPDF ومعلومات الحزمة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+271,أتمتة العمليات المجمعة,open-document-folder,فتح موقع المستند,فتح Explorer وتحديد الملف الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+272,أتمتة العمليات المجمعة,copy-as-markdown,نسخ كـ Markdown,نسخ التحديد كنص Markdown بسيط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+273,أتمتة العمليات المجمعة,copy-document-path,نسخ مسار المستند,نسخ المسار الكامل إلى الحافظة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+274,أتمتة العمليات المجمعة,export-pdf,تصدير PDF,تصدير المستند إلى PDF.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+275,أتمتة العمليات المجمعة,export-pdfa,تصدير PDF/A,تصدير أرشيفي PDF/A.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+276,أتمتة العمليات المجمعة,export-plain-text,تصدير المستند TXT,تصدير محتوى المستند كنص UTF-8.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+277,أتمتة العمليات المجمعة,export-sections-pdf,كل مقطع PDF مستقل,تصدير كل Section إلى ملف PDF منفصل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+278,أتمتة العمليات المجمعة,export-selection-pdf,تصدير التحديد PDF,تصدير الجزء المحدد فقط إلى PDF.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+279,أتمتة العمليات المجمعة,export-selection-text,تصدير التحديد TXT,حفظ النص المحدد في ملف TXT.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+280,أتمتة العمليات المجمعة,merge-documents,دمج مستندات,إدراج عدة مستندات في المستند الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+281,أتمتة العمليات المجمعة,move-selection-new-document,التحديد إلى مستند جديد,نسخ التحديد مع تنسيقه إلى مستند مستقل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+282,أتمتة العمليات المجمعة,save-all,حفظ كل المستندات,حفظ جميع مستندات Word المفتوحة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+283,أتمتة العمليات المجمعة,save-backup,نسخة احتياطية مؤرخة,حفظ نسخة احتياطية دون تغيير المستند المفتوح.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+284,أتمتة العمليات المجمعة,save-docx-copy,نسخة DOCX,إنشاء نسخة DOCX مستقلة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+285,أتمتة العمليات المجمعة,save-version,حفظ إصدار جديد,حفظ نسخة باسم يحتوي التاريخ والوقت.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+286,أتمتة العمليات المجمعة,lock-all-fields,قفل جميع الحقول,منع تحديث جميع حقول المستند مؤقتًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+287,أتمتة العمليات المجمعة,remove-all-bookmarks-pro,حذف كل الإشارات المرجعية,حذف جميع Bookmarks من المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+288,أتمتة العمليات المجمعة,toggle-field-codes,إظهار/إخفاء أكواد الحقول,التبديل بين نتائج الحقول وأكوادها.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+289,أتمتة العمليات المجمعة,unlock-all-fields,فتح جميع الحقول,إتاحة تحديث جميع حقول المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+290,أتمتة العمليات المجمعة,prefix-folder-pro,قائمة مجلدات,إضافة الرمز 📁 في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+291,أتمتة العمليات المجمعة,academic-extract-citations,استخراج الاستشهادات,استخراج الاستشهادات بين الأقواس إلى تقرير جديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+292,أتمتة العمليات المجمعة,academic-footnote-audit,تدقيق الحواشي,إظهار عدد الحواشي الفارغة أو القصيرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+293,أتمتة العمليات المجمعة,academic-insert-apa,إدراج مرجع APA,إدراج قالب مرجع وفق أسلوب APA.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+294,أتمتة العمليات المجمعة,academic-insert-mla,إدراج مرجع MLA,إدراج قالب مرجع وفق أسلوب MLA.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+295,أتمتة العمليات المجمعة,accept-revisions,قبول كل التعديلات,قبول جميع التغييرات المتعقبة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+296,أتمتة العمليات المجمعة,activate,تفعيل البرنامج,إدخال Serial Number وتفعيل النسخة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+297,أتمتة العمليات المجمعة,align-center,توسيط,توسيط الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+298,أتمتة العمليات المجمعة,align-justify,ضبط كامل,ضبط الفقرات من الطرفين.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+299,أتمتة العمليات المجمعة,align-left,محاذاة يسار,محاذاة الفقرات إلى اليسار.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+300,أتمتة العمليات المجمعة,align-right,محاذاة يمين,محاذاة الفقرات إلى اليمين.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+301,البحث العلمي والمراجع,reference-case,مرجع حالة,إنشاء رقم مرجعي فريد يبدأ بـ CASE.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+302,البحث العلمي والمراجع,reference-doc,مرجع مستند,إنشاء رقم مرجعي فريد يبدأ بـ DOC.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+303,البحث العلمي والمراجع,reference-memo,مرجع مذكرة,إنشاء رقم مرجعي فريد يبدأ بـ MEMO.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+304,البحث العلمي والمراجع,reference-rpt,مرجع تقرير,إنشاء رقم مرجعي فريد يبدأ بـ RPT.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+305,البحث العلمي والمراجع,time-reference,وقت مرجعي,إدراج الوقت الحالي بصيغة HHmmss.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+306,البحث العلمي والمراجع,date-arabic-full,تاريخ عربي كامل,إدراج التاريخ الحالي بالصيغة dddd، d MMMM yyyy.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+307,البحث العلمي والمراجع,date-arabic-long,تاريخ عربي طويل,إدراج التاريخ الحالي بالصيغة d MMMM yyyy.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+308,البحث العلمي والمراجع,date-compact,تاريخ مضغوط,إدراج التاريخ الحالي بالصيغة yyyyMMdd.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+309,البحث العلمي والمراجع,date-day-month-year,يوم/شهر/سنة,إدراج التاريخ الحالي بالصيغة dd/MM/yyyy.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+310,البحث العلمي والمراجع,date-english-short,تاريخ إنجليزي مختصر,إدراج التاريخ الحالي بالصيغة dd-MMM-yyyy.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+311,البحث العلمي والمراجع,date-iso,تاريخ ISO,إدراج التاريخ الحالي بالصيغة yyyy-MM-dd.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+312,البحث العلمي والمراجع,date-month-year,الشهر والسنة,إدراج التاريخ الحالي بالصيغة MMMM yyyy.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+313,البحث العلمي والمراجع,date-simple,تاريخ بسيط,إدراج التاريخ الحالي بالصيغة d/M/yyyy.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+314,البحث العلمي والمراجع,date-slash-iso,تاريخ بشرطات مائلة,إدراج التاريخ الحالي بالصيغة yyyy/MM/dd.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+315,البحث العلمي والمراجع,date-us,تاريخ أمريكي,إدراج التاريخ الحالي بالصيغة MM/dd/yyyy.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+316,البحث العلمي والمراجع,time-12-seconds,وقت 12 مع الثواني,إدراج الوقت الحالي بصيغة hh:mm:ss tt.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+317,البحث العلمي والمراجع,time-12-short,وقت 12 ساعة,إدراج الوقت الحالي بصيغة hh:mm tt.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+318,البحث العلمي والمراجع,time-24-seconds,وقت 24 مع الثواني,إدراج الوقت الحالي بصيغة HH:mm:ss.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+319,البحث العلمي والمراجع,time-24-short,وقت 24 ساعة,إدراج الوقت الحالي بصيغة HH:mm.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+320,البحث العلمي والمراجع,time-compact,وقت مضغوط,إدراج الوقت الحالي بصيغة HHmm.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+321,البحث العلمي والمراجع,format-academic,تنسيق أكاديمي,ضبط الصفحة والخطوط والتباعد لبحث أكاديمي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+322,البحث العلمي والمراجع,catalog-600-center,موسوعة 600 أداة,عرض الأدوات وفق المحركات الخمسة عشر في الدليل المرجعي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+323,البحث العلمي والمراجع,command-center,مركز الأدوات الاحترافي,بحث وفئات ومفضلة وآخر استخدام لكل الأدوات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+324,البحث العلمي والمراجع,find-replace-prompt,بحث واستبدال سريع,بحث واستبدال داخل التحديد أو المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+325,البحث العلمي والمراجع,insert-toc,إضافة فهرس محتويات,إدراج فهرس من العناوين 1 إلى 3.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+326,البحث العلمي والمراجع,margins-academic-pro,هوامش أكاديمية,تطبيق تخطيط هوامش احترافي جاهز.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+327,البحث العلمي والمراجع,remove-bookmarks,حذف الإشارات المرجعية,حذف جميع Bookmarks.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+328,البحث العلمي والمراجع,security-remove-hidden-text,حذف النص المخفي,البحث عن النص المخفي وحذفه من المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+329,البحث العلمي والمراجع,template-tor,شروط مرجعية ToR,إدراج هيكل شروط مرجعية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+330,البحث العلمي والمراجع,border-box,إطار حول النص,إضافة حدود حول الفقرات المحددة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+331,البحث العلمي والمراجع,border-clear,إزالة الحدود,إزالة حدود الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+332,البحث العلمي والمراجع,clean-properties,تنظيف الخصائص المخصصة,حذف البيانات الشخصية والخصائص المخصصة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+333,البحث العلمي والمراجع,clear-formatting,إزالة التنسيق المباشر,إرجاع النص إلى تنسيق النمط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+334,البحث العلمي والمراجع,clipboard-append-collection,إضافة إلى الحافظة المجمعة,إضافة التحديد إلى ملف تجميع نصوص قابل للإدراج لاحقًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+335,البحث العلمي والمراجع,clipboard-clear-snippets,مسح مكتبة المقتطفات,حذف المقتطفات المحلية المحفوظة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+336,البحث العلمي والمراجع,clipboard-insert-snippet,إدراج مقتطف,اختيار مقتطف محفوظ وإدراجه عند المؤشر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+337,البحث العلمي والمراجع,clipboard-save-snippet,حفظ مقتطف,حفظ النص المحدد في مكتبة المقتطفات المحلية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+338,البحث العلمي والمراجع,columns-1-pro,أعمدة الصفحة: 1,تقسيم نص الصفحة إلى 1 أعمدة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+339,البحث العلمي والمراجع,columns-2-pro,أعمدة الصفحة: 2,تقسيم نص الصفحة إلى 2 أعمدة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+340,البحث العلمي والمراجع,columns-3-pro,أعمدة الصفحة: 3,تقسيم نص الصفحة إلى 3 أعمدة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+341,الأمان والتشفير والطمس,security-document-audit,تدقيق أمان المستند,عرض الروابط والتعليقات والتعديلات والبيانات الحساسة المحتملة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+342,الأمان والتشفير والطمس,security-redact-emails,طمس البريد الإلكتروني,استبدال عناوين البريد في النطاق بعلامات طمس.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+343,الأمان والتشفير والطمس,security-redact-identifiers,طمس المعرّفات الرقمية,طمس الأرقام الطويلة التي قد تمثل هويات أو حسابات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+344,الأمان والتشفير والطمس,security-redact-phones,طمس أرقام الهواتف,استبدال أرقام الهواتف المحتملة بعلامات طمس.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+345,الأمان والتشفير والطمس,security-redact-selection,طمس التحديد,استبدال النص المحدد بكتل سوداء مساوية للطول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+346,الأمان والتشفير والطمس,protect-forms,حماية تعبئة النماذج,السماح بتعبئة النماذج فقط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+347,الأمان والتشفير والطمس,protect-readonly,حماية للقراءة فقط,حماية المستند بكلمة مرور ضد التحرير.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+348,الأمان والتشفير والطمس,remove-external-links,فصل الروابط الخارجية,فصل روابط البيانات الخارجية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+349,الأمان والتشفير والطمس,remove-metadata,إزالة البيانات الشخصية,حذف معلومات المستند الشخصية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+350,الأمان والتشفير والطمس,unprotect,إلغاء الحماية,إلغاء حماية المستند بكلمة المرور.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+351,الأمان والتشفير والطمس,workflow-final-share,تنظيف شامل قبل المشاركة,نسخة احتياطية وتنظيف مراجعة وخصوصية ونص مخفي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+352,الأمان والتشفير والطمس,comments-report-pro,تقرير التعليقات,إنشاء مستند مستقل يحتوي جميع التعليقات وسياقها.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+353,الأمان والتشفير والطمس,reject-revisions,رفض كل التعديلات,رفض جميع التغييرات المتعقبة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+354,الأمان والتشفير والطمس,remove-comments,حذف التعليقات,حذف جميع التعليقات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+355,الأمان والتشفير والطمس,remove-endnotes,حذف الحواشي الختامية,حذف جميع Endnotes من المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+356,الأمان والتشفير والطمس,remove-footnotes,حذف الحواشي السفلية,حذف جميع Footnotes من المستند.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+357,الأمان والتشفير والطمس,revisions-summary-pro,ملخص التعديلات,إنشاء ملخص عددي للتعديلات المتعقبة حسب النوع.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+358,الأمان والتشفير والطمس,track-off,إيقاف تعقب التغييرات,إيقاف Track Changes.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+359,الأمان والتشفير والطمس,track-on,تشغيل تعقب التغييرات,تشغيل Track Changes.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+360,الأمان والتشفير والطمس,unlink-selection-fields,فصل حقول التحديد,تحويل الحقول الموجودة في التحديد إلى نص ثابت.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+361,الأمان والتشفير والطمس,workflow-final-delivery,تجهيز نسخة نهائية,نسخة احتياطية ثم قبول التعديلات وحذف التعليقات وتحديث الحقول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+362,الأمان والتشفير والطمس,form-export-controls-csv,تصدير بيانات النموذج CSV,تصدير عناوين وقيم Content Controls إلى CSV.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+363,الأمان والتشفير والطمس,legal-party-table,جدول أطراف العقد,إدراج جدول منظم لبيانات الأطراف والممثلين.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+364,الأمان والتشفير والطمس,remove-hidden-text,حذف النص المخفي,حذف كل النصوص ذات خاصية Hidden.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+365,الأمان والتشفير والطمس,comma-list-bullets,قائمة مفصولة إلى نقاط,تحويل العناصر المفصولة بفواصل إلى قائمة نقطية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+366,الأمان والتشفير والطمس,export-filtered-html,تصدير HTML منقّى,حفظ المستند بصيغة Filtered HTML.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+367,الأمان والتشفير والطمس,export-odt,تصدير OpenDocument,حفظ نسخة بصيغة ODT.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+368,الأمان والتشفير والطمس,export-pdf-page-range,تصدير نطاق صفحات PDF,اختيار أول وآخر صفحة وتصديرهما إلى PDF.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+369,الأمان والتشفير والطمس,export-rtf,تصدير RTF,حفظ نسخة من المستند بصيغة Rich Text Format.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+370,الأمان والتشفير والطمس,extract-hashtags,استخراج الوسوم,استخراج Hashtags إلى مستند جديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+371,الأمان والتشفير والطمس,extract-mentions,استخراج الإشارات,استخراج @mentions إلى مستند جديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+372,الأمان والتشفير والطمس,extract-numbers,استخراج الأرقام,إنشاء مستند جديد بالأرقام الموجودة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+373,الأمان والتشفير والطمس,filter-keep-alphanumeric-pro,الاحتفاظ بالحروف والأرقام,تطبيق مرشح نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+374,الأمان والتشفير والطمس,filter-keep-digits-pro,الاحتفاظ بالأرقام فقط,تطبيق مرشح نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+375,الأمان والتشفير والطمس,filter-keep-letters-pro,الاحتفاظ بالحروف فقط,تطبيق مرشح نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+376,الطباعة والتصدير المتقدم,print-booklet-layout,إعداد طباعة كتيب,تطبيق إعداد Book Fold على المقطع الحالي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+377,الطباعة والتصدير المتقدم,margins-0-75cm,هوامش 0.75 سم,تطبيق هوامش موحدة بقيمة 0.75 سم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+378,الطباعة والتصدير المتقدم,margins-1-5cm,هوامش 1.5 سم,تطبيق هوامش موحدة بقيمة 1.5 سم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+379,الطباعة والتصدير المتقدم,margins-1cm,هوامش 1 سم,تطبيق هوامش موحدة بقيمة 1 سم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+380,الطباعة والتصدير المتقدم,margins-2-5cm,هوامش 2.5 سم,تطبيق هوامش موحدة بقيمة 2.5 سم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+381,الطباعة والتصدير المتقدم,margins-2cm,هوامش 2 سم,تطبيق هوامش موحدة بقيمة 2 سم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+382,الطباعة والتصدير المتقدم,margins-3cm,هوامش 3 سم,تطبيق هوامش موحدة بقيمة 3 سم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+383,الطباعة والتصدير المتقدم,margins-binding-pro,هوامش تجليد,تطبيق تخطيط هوامش احترافي جاهز.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+384,الطباعة والتصدير المتقدم,margins-official-pro,هوامش خطاب رسمي,تطبيق تخطيط هوامش احترافي جاهز.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+385,الطباعة والتصدير المتقدم,orientation-landscape-pro,اتجاه أفقي احترافي,تعيين اتجاه الصفحة أفقيًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+386,الطباعة والتصدير المتقدم,paper-a3-pro,حجم ورق A3,تعيين حجم الورق إلى A3.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+387,الطباعة والتصدير المتقدم,paper-a4-pro,حجم ورق A4,تعيين حجم الورق إلى A4.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+388,الطباعة والتصدير المتقدم,paper-a5-pro,حجم ورق A5,تعيين حجم الورق إلى A5.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+389,الطباعة والتصدير المتقدم,paper-legal-pro,حجم ورق Legal,تعيين حجم الورق إلى Legal.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+390,الطباعة والتصدير المتقدم,paper-letter-pro,حجم ورق Letter,تعيين حجم الورق إلى Letter.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+391,الطباعة والتصدير المتقدم,footer-text,نص تذييل الصفحة,كتابة تذييل موحد في جميع المقاطع.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+392,الطباعة والتصدير المتقدم,format-official-letter,خطاب رسمي,ضبط الصفحة والخط والفقرات لخطاب عربي رسمي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+393,الطباعة والتصدير المتقدم,header-text,نص رأس الصفحة,كتابة رأس موحد في جميع المقاطع.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+394,الطباعة والتصدير المتقدم,insert-page-break,فاصل صفحة,إدراج فاصل صفحة يدوي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+395,الطباعة والتصدير المتقدم,insert-section-next,مقطع صفحة جديدة,إدراج Section Break Next Page.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+396,الطباعة والتصدير المتقدم,keep-lines-together,إبقاء أسطر الفقرة معًا,منع تقسيم أسطر الفقرة بين الصفحات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+397,الطباعة والتصدير المتقدم,keep-with-next,إبقاء مع التالي,منع فصل العنوان عن الفقرة التالية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+398,الطباعة والتصدير المتقدم,margins-narrow,هوامش ضيقة,ضبط الهوامش إلى 1.27 سم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+399,الطباعة والتصدير المتقدم,margins-normal,هوامش عادية,ضبط الهوامش إلى 2.54 سم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+400,الطباعة والتصدير المتقدم,page-a3,حجم A3,ضبط الورق على A3.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+401,الطباعة والتصدير المتقدم,page-a4,حجم A4,ضبط الورق على A4.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+402,الطباعة والتصدير المتقدم,page-break-before,بدء الفقرة في صفحة جديدة,تطبيق Page break before.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+403,الطباعة والتصدير المتقدم,page-landscape,اتجاه أفقي,جعل الصفحة أفقية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+404,الطباعة والتصدير المتقدم,page-letter,حجم Letter,ضبط الورق على Letter.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+405,الطباعة والتصدير المتقدم,page-numbers-add,إضافة أرقام الصفحات,إضافة الترقيم إلى التذييل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+406,الطباعة والتصدير المتقدم,page-numbers-remove,حذف أرقام الصفحات,حذف حقول PAGE من التذييلات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+407,الطباعة والتصدير المتقدم,page-portrait,اتجاه عمودي,جعل الصفحة عمودية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+408,الطباعة والتصدير المتقدم,filter-remove-arabic-pro,حذف الأحرف العربية,تطبيق مرشح نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+409,الطباعة والتصدير المتقدم,filter-remove-brackets-pro,حذف جميع الأقواس,تطبيق مرشح نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+410,الطباعة والتصدير المتقدم,filter-remove-digits-pro,حذف الأرقام,تطبيق مرشح نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+411,الحافظة والأتمتة والاختصارات,prefix-arrow-pro,أسهم تنفيذ,إضافة الرمز ➜ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+412,الحافظة والأتمتة والاختصارات,prefix-bullet-pro,نقاط,إضافة الرمز • في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+413,الحافظة والأتمتة والاختصارات,prefix-calendar-pro,قائمة مواعيد,إضافة الرمز 📅 في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+414,الحافظة والأتمتة والاختصارات,prefix-check-done-pro,قائمة منجزة,إضافة الرمز ☑ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+415,الحافظة والأتمتة والاختصارات,prefix-check-empty-pro,قائمة تحقق فارغة,إضافة الرمز ☐ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+416,الحافظة والأتمتة والاختصارات,prefix-circle-pro,دوائر,إضافة الرمز ○ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+417,الحافظة والأتمتة والاختصارات,prefix-clock-pro,قائمة أوقات,إضافة الرمز ⏱ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+418,الحافظة والأتمتة والاختصارات,prefix-dash-pro,شرطة طويلة,إضافة الرمز — في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+419,الحافظة والأتمتة والاختصارات,prefix-email-pro,قائمة بريد,إضافة الرمز ✉ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+420,الحافظة والأتمتة والاختصارات,prefix-file-pro,قائمة ملفات,إضافة الرمز 📄 في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+421,الحافظة والأتمتة والاختصارات,prefix-flag-pro,قائمة أولويات,إضافة الرمز ⚑ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+422,الحافظة والأتمتة والاختصارات,prefix-info-pro,معلومات,إضافة الرمز ℹ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+423,الحافظة والأتمتة والاختصارات,prefix-link-pro,قائمة روابط,إضافة الرمز 🔗 في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+424,الحافظة والأتمتة والاختصارات,prefix-phone-pro,قائمة هواتف,إضافة الرمز ☎ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+425,الحافظة والأتمتة والاختصارات,prefix-pin-pro,ملاحظات مثبتة,إضافة الرمز 📌 في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+426,الحافظة والأتمتة والاختصارات,prefix-square-pro,مربعات,إضافة الرمز ▪ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+427,الحافظة والأتمتة والاختصارات,prefix-star-pro,نجوم,إضافة الرمز ★ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+428,الحافظة والأتمتة والاختصارات,prefix-user-pro,قائمة أشخاص,إضافة الرمز 👤 في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+429,الحافظة والأتمتة والاختصارات,prefix-warning-pro,تحذيرات,إضافة الرمز ⚠ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+430,الحافظة والأتمتة والاختصارات,form-date-control,حقل تاريخ تفاعلي,إدراج Date Picker عند المؤشر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+431,الحافظة والأتمتة والاختصارات,form-text-control,حقل نص تفاعلي,إدراج Content Control نصي عند المؤشر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+432,الحافظة والأتمتة والاختصارات,form-checkbox-control,مربع اختيار تفاعلي,إدراج Checkbox Content Control.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+433,الحافظة والأتمتة والاختصارات,insert-action-log-v3,سجل الإجراءات,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+434,الحافظة والأتمتة والاختصارات,insert-action-tracker-pro,متابعة الإجراءات,إدراج جدول متابعة إجراءات ومسؤوليات ومواعيد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+435,الحافظة والأتمتة والاختصارات,insert-approval-table-pro,جدول الاعتماد,إدراج جدول إعداد ومراجعة واعتماد وتواريخ.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+436,الحافظة والأتمتة والاختصارات,insert-asset-register,سجل الأصول,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+437,الحافظة والأتمتة والاختصارات,insert-attendance-sheet-v3,كشف حضور عالمي,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+438,الحافظة والأتمتة والاختصارات,insert-audit-findings,نتائج التدقيق,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+439,الحافظة والأتمتة والاختصارات,insert-budget-table,جدول ميزانية,إدراج جدول ميزانية تفصيلي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+440,الحافظة والأتمتة والاختصارات,insert-budget-tracker,متابعة الميزانية,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+441,الحافظة والأتمتة والاختصارات,insert-change-request,طلبات التغيير,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+442,الحافظة والأتمتة والاختصارات,insert-communication-plan,خطة الاتصالات,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+443,الحافظة والأتمتة والاختصارات,insert-contact-directory-pro,دليل جهات اتصال,إدراج دليل جهات اتصال منظم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+444,الحافظة والأتمتة والاختصارات,insert-contract-tracker,متابعة العقود,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+445,الحافظة والأتمتة والاختصارات,insert-date-time,إدراج تاريخ ووقت,إدراج التاريخ والوقت الحاليين.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+446,التدقيق القانوني والعقود,legal-clause-checklist,قائمة فحص بنود العقد,إدراج قائمة تدقيق للبنود الأساسية والمخاطر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+447,التدقيق القانوني والعقود,legal-highlight-dates,تمييز التواريخ والمدد,تمييز الأنماط المحتملة للتواريخ والمدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+448,التدقيق القانوني والعقود,insert-decision-log,سجل القرارات,إدراج جدول احترافي لتوثيق القرارات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+449,التدقيق القانوني والعقود,insert-distribution-list-pro,قائمة التوزيع,إدراج جدول الجهات المستلمة ووسيلة الإرسال والحالة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+450,التدقيق القانوني والعقود,insert-document-control,بطاقة ضبط المستند,إدراج بطاقة رقم الإصدار والمالك والمراجعة والاعتماد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+451,التدقيق القانوني والعقود,insert-inventory-table-pro,سجل مخزون,إدراج جدول مخزون وكميات ومواقع وحالة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+452,التدقيق القانوني والعقود,insert-kpi-table,جدول مؤشرات KPI,إدراج إطار مؤشرات أداء ونتائج.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+453,التدقيق القانوني والعقود,insert-raci-matrix,مصفوفة RACI,إدراج جدول توزيع المسؤوليات RACI.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+454,التدقيق القانوني والعقود,insert-risk-register-pro,سجل مخاطر احترافي,إدراج سجل مخاطر متكامل بثمانية أعمدة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+455,التدقيق القانوني والعقود,insert-timeline-table,جدول زمني,إدراج جدول أنشطة ومواعيد ومسؤوليات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+456,التدقيق القانوني والعقود,insert-yes-no-table,قائمة تحقق نعم/لا,إدراج جدول Checklist مؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+457,التدقيق القانوني والعقود,insert-decision-log-v3,سجل القرارات,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+458,التدقيق القانوني والعقود,insert-document-register-v3,سجل الوثائق,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+459,التدقيق القانوني والعقود,insert-donor-results,مصفوفة نتائج مانح,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+460,التدقيق القانوني والعقود,insert-incident-register,سجل الحوادث,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+461,التدقيق القانوني والعقود,insert-inventory-register-v3,سجل المخزون المتقدم,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+462,التدقيق القانوني والعقود,insert-kpi-dashboard,لوحة مؤشرات KPI,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+463,التدقيق القانوني والعقود,insert-leave-tracker,متابعة الإجازات,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+464,التدقيق القانوني والعقود,insert-lessons-learned,الدروس المستفادة,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+465,التدقيق القانوني والعقود,insert-medical-triage,نموذج فرز طبي,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+466,التدقيق القانوني والعقود,insert-meeting-agenda,جدول أعمال اجتماع,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+467,التدقيق القانوني والعقود,insert-meeting-minutes,محضر اجتماع تنفيذي,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+468,التدقيق القانوني والعقود,insert-milestone-register,سجل المعالم,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+469,التدقيق القانوني والعقود,insert-procurement-plan,خطة المشتريات,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+470,التدقيق القانوني والعقود,insert-project-timeline,الجدول الزمني للمشروع,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+471,التدقيق القانوني والعقود,insert-quality-checklist,قائمة فحص الجودة,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+472,التدقيق القانوني والعقود,insert-raci-matrix-v3,مصفوفة RACI,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+473,التدقيق القانوني والعقود,insert-risk-register-v3,سجل المخاطر العالمي,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+474,التدقيق القانوني والعقود,insert-stakeholder-register,سجل أصحاب المصلحة,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+475,التدقيق القانوني والعقود,insert-training-matrix,مصفوفة التدريب,إدراج جدول احترافي جاهز للاستخدام المؤسسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+476,التدقيق القانوني والعقود,filter-remove-latin-pro,حذف الأحرف اللاتينية,تطبيق مرشح نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+477,التدقيق القانوني والعقود,filter-slashes-to-dashes-pro,تحويل الشرطات المائلة إلى شرطات,تطبيق مرشح نص احترافي على التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+478,التدقيق القانوني والعقود,font-arial-14,Arial 14,تطبيق Arial 14 عربي وإنجليزي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+479,التدقيق القانوني والعقود,font-calibri-11,Calibri 11,تطبيق Calibri 11.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+480,التدقيق القانوني والعقود,font-tahoma-12,Tahoma 12,تطبيق Tahoma 12.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+481,إدارة المشاريع والمهام,project-weekly-status,تقرير الحالة الأسبوعي,إدراج قالب حالة أسبوعية للمشروع.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+482,إدارة المشاريع والمهام,project-deliverables-register,سجل المخرجات,إدراج سجل للمخرجات والمواعيد والقبول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+483,إدارة المشاريع والمهام,project-gantt-table,جدول Gantt مبسط,إدراج جدول زمني للمهام والتقدم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+484,إدارة المشاريع والمهام,project-task-board,لوحة المهام,إدراج جدول To Do / Doing / Done.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+485,إدارة المشاريع والمهام,template-concept-note,مذكرة مفاهيمية,إدراج هيكل Concept Note.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+486,إدارة المشاريع والمهام,template-project-report,تقرير مشروع,إدراج قالب تقرير مشروع.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+487,إدارة المشاريع والمهام,template-risk-register,سجل مخاطر,إدراج جدول سجل مخاطر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+488,إدارة المشاريع والمهام,template-sop,إجراء تشغيلي SOP,إدراج هيكل SOP.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+489,إدارة المشاريع والمهام,template-action-plan,خطة عمل,إدراج جدول خطة عمل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+490,إدارة المشاريع والمهام,template-agenda,جدول أعمال,إدراج قالب جدول أعمال اجتماع.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+491,إدارة المشاريع والمهام,template-attendance,كشف حضور,إدراج كشف حضور.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+492,إدارة المشاريع والمهام,template-certificate,شهادة تقدير,إدراج قالب شهادة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+493,إدارة المشاريع والمهام,template-cover-letter,خطاب تغطية,إدراج قالب Cover Letter عربي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+494,إدارة المشاريع والمهام,template-donor-report,تقرير جهة مانحة,إدراج هيكل تقرير مانحين.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+495,إدارة المشاريع والمهام,template-handover,تسليم واستلام,إدراج محضر تسليم واستلام.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+496,إدارة المشاريع والمهام,template-invoice,فاتورة,إدراج قالب فاتورة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+497,إدارة المشاريع والمهام,template-medical-report,تقرير طبي,إدراج قالب تقرير طبي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+498,إدارة المشاريع والمهام,template-memo,مذكرة داخلية,إدراج قالب مذكرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+499,إدارة المشاريع والمهام,template-minutes,محضر اجتماع,إدراج قالب محضر اجتماع.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+500,إدارة المشاريع والمهام,template-official-letter,خطاب رسمي,إدراج قالب خطاب رسمي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+501,إدارة المشاريع والمهام,template-quotation,عرض سعر,إدراج قالب عرض سعر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+502,إدارة المشاريع والمهام,font-tahoma-14,Tahoma 14,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+503,إدارة المشاريع والمهام,font-times-11,Times New Roman 11,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+504,إدارة المشاريع والمهام,font-times-12,Times New Roman 12,تطبيق Times New Roman 12.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+505,إدارة المشاريع والمهام,font-times-14,Times New Roman 14,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+506,إدارة المشاريع والمهام,font-traditional-arabic-16,Traditional Arabic 16,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+507,إدارة المشاريع والمهام,font-trebuchet-11,Trebuchet MS 11,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+508,إدارة المشاريع والمهام,font-verdana-10,Verdana 10,تطبيق إعداد خط عالمي جاهز على النص المحدد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+509,إدارة المشاريع والمهام,format-apply,تطبيق لقطة التنسيق,تطبيق آخر تنسيق محفوظ.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+510,إدارة المشاريع والمهام,format-arabic-report,تقرير عربي,تنسيق تقرير عربي احترافي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+511,إدارة المشاريع والمهام,format-copy,حفظ لقطة تنسيق,حفظ تنسيق النص الحالي داخل الجلسة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+512,إدارة المشاريع والمهام,hanging-indent,مسافة بادئة معلّقة,تطبيق Hanging Indent قياسي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+513,إدارة المشاريع والمهام,heading-1,عنوان 1,تطبيق Heading 1.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+514,إدارة المشاريع والمهام,heading-2,عنوان 2,تطبيق Heading 2.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+515,إدارة المشاريع والمهام,heading-3,عنوان 3,تطبيق Heading 3.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+516,إدارة المشاريع والمهام,health-check,فحص الإضافة,عرض حالة الاتصال وإصدار Word والسجل.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+517,إدارة المشاريع والمهام,highlight-term,تمييز كلمة أو عبارة,تمييز جميع مرات ظهور النص.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+518,إدارة المشاريع والمهام,indent-first-0-5cm,مسافة بادئة السطر الأول 0.5 سم,تطبيق مسافة بادئة دقيقة على الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+519,إدارة المشاريع والمهام,indent-first-1cm,مسافة بادئة السطر الأول 1 سم,تطبيق مسافة بادئة دقيقة على الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+520,إدارة المشاريع والمهام,indent-first-line,مسافة بادئة للسطر الأول,تطبيق مسافة بادئة 0.75 سم.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+521,إدارة النماذج وإدخال البيانات,indent-hanging-0-5cm,مسافة بادئة معلّقة 0.5 سم,تطبيق مسافة بادئة دقيقة على الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+522,إدارة النماذج وإدخال البيانات,indent-hanging-1cm,مسافة بادئة معلّقة 1 سم,تطبيق مسافة بادئة دقيقة على الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+523,إدارة النماذج وإدخال البيانات,indent-left-0-5cm,مسافة بادئة يسار 0.5 سم,تطبيق مسافة بادئة دقيقة على الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+524,إدارة النماذج وإدخال البيانات,indent-left-1cm,مسافة بادئة يسار 1 سم,تطبيق مسافة بادئة دقيقة على الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+525,إدارة النماذج وإدخال البيانات,indent-remove,إزالة المسافات البادئة,إزالة إزاحات الفقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+526,إدارة النماذج وإدخال البيانات,indent-right-0-5cm,مسافة بادئة يمين 0.5 سم,تطبيق مسافة بادئة دقيقة على الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+527,إدارة النماذج وإدخال البيانات,indent-right-1cm,مسافة بادئة يمين 1 سم,تطبيق مسافة بادئة دقيقة على الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+528,إدارة النماذج وإدخال البيانات,insert-section-continuous,مقطع مستمر,إدراج Section Break Continuous.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+529,إدارة النماذج وإدخال البيانات,insert-signature,كتلة توقيع,إدراج اسم وصفة وتوقيع وتاريخ.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+530,إدارة النماذج وإدخال البيانات,license-info,حالة الترخيص,عرض حالة الترخيص ومعرّف الجهاز.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+531,إدارة النماذج وإدخال البيانات,line-exact-12,تباعد ثابت 12 نقطة,تعيين تباعد أسطر ثابت بدقة 12 نقطة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+532,إدارة النماذج وإدخال البيانات,line-exact-14,تباعد ثابت 14 نقطة,تعيين تباعد أسطر ثابت بدقة 14 نقطة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+533,إدارة النماذج وإدخال البيانات,line-exact-16,تباعد ثابت 16 نقطة,تعيين تباعد أسطر ثابت بدقة 16 نقطة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+534,إدارة النماذج وإدخال البيانات,line-exact-18,تباعد ثابت 18 نقطة,تعيين تباعد أسطر ثابت بدقة 18 نقطة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+535,إدارة النماذج وإدخال البيانات,line-numbers-off,إيقاف أرقام الأسطر,إخفاء ترقيم الأسطر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+536,إدارة النماذج وإدخال البيانات,line-numbers-on,تشغيل أرقام الأسطر,إظهار ترقيم الأسطر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+537,إدارة النماذج وإدخال البيانات,line-spacing-1,تباعد مفرد,تباعد أسطر مفرد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+538,إدارة النماذج وإدخال البيانات,line-spacing-115,تباعد 1.15,تباعد أسطر 1.15.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+539,إدارة النماذج وإدخال البيانات,line-spacing-15,تباعد 1.5,تباعد أسطر 1.5.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+540,إدارة النماذج وإدخال البيانات,line-spacing-2,تباعد مزدوج,تباعد أسطر مزدوج.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+541,إدارة النماذج وإدخال البيانات,machine-id,نسخ معرّف الجهاز,نسخ Machine ID لإرساله إلى مالك البرنامج.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+542,إدارة النماذج وإدخال البيانات,normalize-unicode-spaces,توحيد المسافات Unicode,تحويل المسافات غير القياسية إلى مسافات عادية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+543,إدارة النماذج وإدخال البيانات,paragraph-after-0-pro,مسافة بعد 0,تعيين المسافة بعد الفقرة إلى 0 نقاط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+544,إدارة النماذج وإدخال البيانات,paragraph-after-12-pro,مسافة بعد 12,تعيين المسافة بعد الفقرة إلى 12 نقاط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+545,إدارة النماذج وإدخال البيانات,paragraph-after-3-pro,مسافة بعد 3,تعيين المسافة بعد الفقرة إلى 3 نقاط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+546,إدارة النماذج وإدخال البيانات,paragraph-after-6-pro,مسافة بعد 6,تعيين المسافة بعد الفقرة إلى 6 نقاط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+547,إدارة النماذج وإدخال البيانات,paragraph-before-0,مسافة قبل 0,تعيين المسافة قبل الفقرة إلى 0 نقاط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+548,إدارة النماذج وإدخال البيانات,paragraph-before-12,مسافة قبل 12,تعيين المسافة قبل الفقرة إلى 12 نقاط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+549,إدارة النماذج وإدخال البيانات,paragraph-before-3,مسافة قبل 3,تعيين المسافة قبل الفقرة إلى 3 نقاط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+550,إدارة النماذج وإدخال البيانات,paragraph-before-6,مسافة قبل 6,تعيين المسافة قبل الفقرة إلى 6 نقاط.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+551,إدارة النماذج وإدخال البيانات,paragraphs-checkboxes,تحويل إلى قائمة تحقق,إضافة مربع ☐ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+552,إدارة النماذج وإدخال البيانات,paragraphs-checked,تحويل إلى قائمة منجزة,إضافة علامة ☑ في بداية كل فقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+553,إدارة النماذج وإدخال البيانات,paragraphs-semicolon-list,الفقرات إلى قائمة منقوطة,دمج الفقرات بفواصل منقوطة عربية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+554,إدارة النماذج وإدخال البيانات,productivity-focus-mode,وضع التركيز,تقليل عناصر الواجهة وإخفاء علامات التنسيق للكتابة المركزة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+555,إدارة النماذج وإدخال البيانات,productivity-restore-view,استعادة واجهة العمل,إظهار المساطر وشريط الحالة وعلامات العرض الأساسية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+556,إدارة النماذج وإدخال البيانات,productivity-word-goal,هدف الكلمات,تحديد هدف كلمات وعرض نسبة الإنجاز الحالية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+557,إدارة النماذج وإدخال البيانات,productivity-writing-session,بدء جلسة كتابة,تسجيل بداية جلسة كتابة ومقارنة عدد الكلمات لاحقًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+558,إدارة النماذج وإدخال البيانات,proofing-language-arabic,لغة التدقيق العربية,تعيين لغة التدقيق للنص إلى العربية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+559,إدارة النماذج وإدخال البيانات,proofing-language-english,لغة التدقيق الإنجليزية,تعيين لغة التدقيق للنص إلى الإنجليزية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+560,إدارة النماذج وإدخال البيانات,remove-all-blank-paragraphs,حذف كل الفقرات الفارغة,إزالة جميع الفقرات الخالية من التحديد.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+561,التخصيص والأداء والإنتاجية,table-column-width-prompt,عرض أعمدة مخصص,ضبط عرض الأعمدة بالسنتيمتر.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+562,التخصيص والأداء والإنتاجية,titlecase,Title Case,تكبير بدايات الكلمات الإنجليزية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+563,التخصيص والأداء والإنتاجية,remove-page-breaks,حذف فواصل الصفحات,حذف جميع فواصل الصفحات اليدوية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+564,التخصيص والأداء والإنتاجية,remove-repeated-punctuation,حذف الترقيم المكرر,اختصار علامات الترقيم المتتابعة المكررة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+565,التخصيص والأداء والإنتاجية,remove-section-breaks,حذف فواصل المقاطع,حذف جميع فواصل المقاطع.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+566,التخصيص والأداء والإنتاجية,remove-short-paragraphs,حذف الفقرات القصيرة,حذف الفقرات الأقل من عدد أحرف تختاره.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+567,التخصيص والأداء والإنتاجية,reverse-paragraph-order,عكس ترتيب الفقرات,عكس ترتيب الأسطر والفقرات المحددة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+568,التخصيص والأداء والإنتاجية,sentences-to-paragraphs,الجمل إلى فقرات,وضع كل جملة في فقرة مستقلة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+569,التخصيص والأداء والإنتاجية,sort-paragraphs-length,فرز الفقرات حسب الطول,ترتيب الفقرات من الأقصر إلى الأطول.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+570,التخصيص والأداء والإنتاجية,space-after-0,مسافة بعد 0,إلغاء المسافة بعد الفقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+571,التخصيص والأداء والإنتاجية,space-after-12,مسافة بعد 12,تعيين 12 نقطة بعد الفقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+572,التخصيص والأداء والإنتاجية,space-after-6,مسافة بعد 6,تعيين 6 نقاط بعد الفقرة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+573,التخصيص والأداء والإنتاجية,strip-html-tags,حذف وسوم HTML,إزالة وسوم HTML وفك الكيانات النصية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+574,التخصيص والأداء والإنتاجية,strip-list-markers,حذف بادئات القوائم,إزالة الأرقام والنقاط والشرطات اليدوية من بدايات الفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+575,التخصيص والأداء والإنتاجية,style-normal,نمط عادي,تطبيق Normal.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+576,التخصيص والأداء والإنتاجية,table-bold-first-row,صف أول بارز,تغليظ الصف الأول وتكراره كرأس.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+577,التخصيص والأداء والإنتاجية,table-currency-format,تنسيق خلايا كعملة,تنسيق القيم الرقمية برمز عملة تختاره.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+578,التخصيص والأداء والإنتاجية,table-percentage-format,تنسيق خلايا كنسبة,تنسيق الأرقام كنسب مئوية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+579,التخصيص والأداء والإنتاجية,table-remove-cell-breaks,حذف فواصل الخلايا,إزالة فواصل الأسطر من داخل الخلايا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+580,التخصيص والأداء والإنتاجية,tabs-to-spaces,Tabs إلى مسافات,استبدال علامات الجدولة بمسافات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+581,التخصيص والأداء والإنتاجية,unique-sorted-lines,أسطر فريدة مرتبة,حذف التكرار وفرز الأسطر تصاعديًا.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+582,التخصيص والأداء والإنتاجية,unique-words-only,الكلمات الفريدة فقط,الاحتفاظ بأول ظهور لكل كلمة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+583,التخصيص والأداء والإنتاجية,unlink-fields,تحويل الحقول إلى نص,إلغاء ارتباط الحقول مع إبقاء النتائج.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+584,التخصيص والأداء والإنتاجية,update-fields,تحديث جميع الحقول,تحديث الحقول والفهارس.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+585,التخصيص والأداء والإنتاجية,widow-control-on,منع الأرامل واليتامى,تفعيل Widow/Orphan Control للفقرات.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+586,التخصيص والأداء والإنتاجية,wrap-angles-pro,أقواس زاوية,إحاطة النص المحدد بنمط أقواس زاوية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+587,التخصيص والأداء والإنتاجية,wrap-arabic-brackets-pro,أقواس عربية مزخرفة,إحاطة النص المحدد بنمط أقواس عربية مزخرفة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+588,التخصيص والأداء والإنتاجية,wrap-arabic-quotes,إحاطة باقتباس عربي,إحاطة التحديد بعلامتي « ».,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+589,التخصيص والأداء والإنتاجية,wrap-arabic-quotes-pro,اقتباس عربي,إحاطة النص المحدد بنمط اقتباس عربي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+590,التخصيص والأداء والإنتاجية,wrap-braces-pro,أقواس معقوفة,إحاطة النص المحدد بنمط أقواس معقوفة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+591,التخصيص والأداء والإنتاجية,wrap-brackets,إحاطة بأقواس مربعة,إحاطة التحديد بـ [ ].,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+592,التخصيص والأداء والإنتاجية,wrap-brackets-pro,أقواس مربعة,إحاطة النص المحدد بنمط أقواس مربعة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+593,التخصيص والأداء والإنتاجية,wrap-double-parentheses-pro,أقواس مزدوجة,إحاطة النص المحدد بنمط أقواس مزدوجة.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+594,التخصيص والأداء والإنتاجية,wrap-parentheses,إحاطة بأقواس,إحاطة التحديد بقوسين.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+595,التخصيص والأداء والإنتاجية,wrap-parentheses-pro,أقواس دائرية,إحاطة النص المحدد بنمط أقواس دائرية.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+596,التخصيص والأداء والإنتاجية,wrap-pipes-pro,شرطتان رأسيّتان,إحاطة النص المحدد بنمط شرطتان رأسيّتان.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+597,التخصيص والأداء والإنتاجية,wrap-slashes-pro,شرطتان مائلتان,إحاطة النص المحدد بنمط شرطتان مائلتان.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+598,التخصيص والأداء والإنتاجية,wrap-smart-double-pro,اقتباس مزدوج ذكي,إحاطة النص المحدد بنمط اقتباس مزدوج ذكي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+599,التخصيص والأداء والإنتاجية,wrap-smart-single-pro,اقتباس مفرد ذكي,إحاطة النص المحدد بنمط اقتباس مفرد ذكي.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command
+600,التخصيص والأداء والإنتاجية,wrap-underscores-pro,شرطتا تسطير,إحاطة النص المحدد بنمط شرطتا تسطير.,Ultimate_MS_Word_Addin_600_Features_Pro.docx,working-command

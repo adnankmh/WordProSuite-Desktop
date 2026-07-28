@@ -72,7 +72,7 @@ namespace WordProSuite.SetupLauncher
 
         internal SetupForm()
         {
-            Text = "WordPro Suite Desktop Ultimate 3.0 Setup";
+            Text = "WordPro Suite Desktop Ultimate 4.0 Setup";
             RightToLeft = RightToLeft.Yes;
             RightToLeftLayout = true;
             StartPosition = FormStartPosition.CenterScreen;
@@ -91,7 +91,7 @@ namespace WordProSuite.SetupLauncher
 
             var title = new Label
             {
-                Text = "WordPro Suite Desktop Ultimate 3.0",
+                Text = "WordPro Suite Desktop Ultimate 4.0",
                 Dock = DockStyle.Top,
                 Height = 54,
                 ForeColor = Color.White,
@@ -101,7 +101,7 @@ namespace WordProSuite.SetupLauncher
 
             var subtitle = new Label
             {
-                Text = "مثبت واحد فقط — 500 أداة، تبويبتان احترافيتان، وتفعيل آمن دون ملفات إضافية.",
+                Text = "مثبت واحد فقط — 600 أداة، ثلاثة تبويبات احترافية، وتفعيل آمن دون ملفات إضافية.",
                 Dock = DockStyle.Fill,
                 ForeColor = Color.FromArgb(221, 233, 241),
                 Font = new Font("Segoe UI", 12f),
@@ -257,9 +257,9 @@ namespace WordProSuite.SetupLauncher
                 TextAlign = ContentAlignment.TopCenter,
                 Padding = new Padding(10, 16, 10, 0),
                 ForeColor = Color.DimGray,
-                Text = "التثبيت يتم للحساب الحالي ولا يحتاج صلاحيات Administrator.\n"
-                     + "البرنامج ينسخ الإضافة إلى LocalAppData ويسجل COM تلقائيًا ثم يتحقق من إمكانية تشغيلها.
-بعد التثبيت تظهر تبويبتا WordPro Suite Pro وWordPro Enterprise داخل Word."
+                Text = "التثبيت يتم للحساب الحالي ولا يحتاج صلاحيات Administrator.\n" +
+                       "البرنامج ينسخ الإضافة إلى LocalAppData ويسجل COM تلقائيًا ثم يتحقق من إمكانية تشغيلها.\n" +
+                       "بعد التثبيت تظهر تبويبات WordPro Suite Pro وWordPro Enterprise وUltra 600 AI داخل Word."
             };
 
             body.Controls.Add(note);
@@ -460,7 +460,7 @@ namespace WordProSuite.SetupLauncher
 
                 using (RegistryKey addin = root.CreateSubKey(@"Software\Microsoft\Office\Word\Addins\" + ProgId))
                 {
-                    addin.SetValue("FriendlyName", "WordPro Suite Desktop Ultimate 3.0");
+                    addin.SetValue("FriendlyName", "WordPro Suite Desktop Ultimate 4.0");
                     addin.SetValue("Description", "Professional productivity suite for Microsoft Word.");
                     addin.SetValue("LoadBehavior", 3, RegistryValueKind.DWord);
                     addin.SetValue("CommandLineSafe", 0, RegistryValueKind.DWord);

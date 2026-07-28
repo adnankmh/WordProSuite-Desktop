@@ -35,7 +35,7 @@ namespace WordProSuite.Desktop.UI
             var hero = new Panel { Dock = DockStyle.Top, Height = 112, BackColor = Color.FromArgb(22, 53, 79), Padding = new Padding(24, 16, 24, 12) };
             var title = new Label
             {
-                Text = "WordPro Suite Desktop Ultimate — 500 Tools",
+                Text = "WordPro Suite Desktop Ultimate — 600 Tools",
                 Dock = DockStyle.Top,
                 Height = 42,
                 ForeColor = Color.White,

@@ -362,7 +362,7 @@ namespace WordProSuite.Desktop.Commands
             A("revisions-summary-pro", "المراجعة والأمان", "ملخص التعديلات", "إنشاء ملخص عددي للتعديلات المتعقبة حسب النوع.", "revisions ملخص", ProfessionalCommands.RevisionsSummary);
 
             // =============================================================
-            // WordPro Suite Ultimate 3.0 — 200 additional professional tools
+            // WordPro Suite Ultimate 4.0 — expanded professional engine
             // =============================================================
             A("font-aptos-11", "الخطوط العالمية", "Aptos 11", "تطبيق إعداد خط عالمي جاهز على النص المحدد.", "font خط preset", () => UltimateCommands.ApplyFontPreset("Aptos", 11));
             A("font-aptos-12", "الخطوط العالمية", "Aptos 12", "تطبيق إعداد خط عالمي جاهز على النص المحدد.", "font خط preset", () => UltimateCommands.ApplyFontPreset("Aptos", 12));
@@ -564,6 +564,108 @@ namespace WordProSuite.Desktop.Commands
             A("formatting-marks-off", "مساحة العمل", "إخفاء علامات التنسيق", "إخفاء علامات التنسيق غير المطبوعة.", "hide علامات", () => UltimateCommands.SetFormattingMarks(false));
             A("rulers-on", "مساحة العمل", "إظهار المساطر", "إظهار المسطرة الأفقية والعمودية.", "ruler مسطرة", () => UltimateCommands.SetRulers(true));
             A("rulers-off", "مساحة العمل", "إخفاء المساطر", "إخفاء المسطرة الأفقية والعمودية.", "ruler مسطرة", () => UltimateCommands.SetRulers(false));
+
+            // موسوعة Ultra Word Suite 600 — محركات الدليل المرجعي
+            A("catalog-600-center", "النظام والترخيص", "موسوعة 600 أداة", "عرض الأدوات وفق المحركات الخمسة عشر في الدليل المرجعي.", "600 موسوعة محركات", Catalog600Form.ShowCenter, false);
+            A("workspace-save-session", "إدارة التبويبات والمستندات الذكية", "حفظ مساحة العمل", "حفظ قائمة المستندات المفتوحة لاستعادتها لاحقًا.", "جلسة تبويبات", () => Suite600Commands.Workspace("save-session"), true);
+            A("workspace-restore-session", "إدارة التبويبات والمستندات الذكية", "استعادة مساحة العمل", "فتح المستندات المحفوظة في مساحة العمل.", "جلسة استعادة", () => Suite600Commands.Workspace("restore-session"), true);
+            A("workspace-export-open-docs", "إدارة التبويبات والمستندات الذكية", "تصدير قائمة المستندات المفتوحة", "حفظ أسماء ومسارات المستندات المفتوحة في ملف نصي.", "مستندات مفتوحة", () => Suite600Commands.Workspace("export-open"), true);
+            A("workspace-close-unmodified", "إدارة التبويبات والمستندات الذكية", "إغلاق غير المعدّل", "إغلاق المستندات المفتوحة التي لا تحتوي تغييرات غير محفوظة.", "إغلاق تبويبات", () => Suite600Commands.Workspace("close-unmodified"), true);
+            A("workspace-close-others", "إدارة التبويبات والمستندات الذكية", "إغلاق المستندات الأخرى", "إبقاء المستند الحالي وإغلاق بقية المستندات.", "إغلاق تبويبات", () => Suite600Commands.Workspace("close-others"), true);
+            A("workspace-rename-document", "إدارة التبويبات والمستندات الذكية", "إعادة تسمية المستند", "حفظ المستند الحالي باسم جديد في المجلد نفسه.", "تسمية ملف", () => Suite600Commands.Workspace("rename"), true);
+            A("workspace-duplicate-document", "إدارة التبويبات والمستندات الذكية", "إنشاء نسخة من المستند", "إنشاء نسخة مؤرخة من المستند الحالي.", "نسخة مستند", () => Suite600Commands.Workspace("duplicate"), true);
+            A("workspace-compare-file", "إدارة التبويبات والمستندات الذكية", "مقارنة مع ملف", "اختيار مستند آخر وتشغيل مقارنة Word.", "مقارنة مستندات", () => Suite600Commands.Workspace("compare"), true);
+            A("workspace-arrange-windows", "إدارة التبويبات والمستندات الذكية", "ترتيب النوافذ", "ترتيب نوافذ Word المفتوحة جنبًا إلى جنب.", "نوافذ ترتيب", () => Suite600Commands.Workspace("arrange"), true);
+            A("workspace-split-toggle", "إدارة التبويبات والمستندات الذكية", "تقسيم وإلغاء تقسيم النافذة", "تبديل تقسيم نافذة المستند للمراجعة المتوازية.", "تقسيم شاشة", () => Suite600Commands.Workspace("split-toggle"), true);
+            A("text-remove-extra-breaks", "معالجة وتنظيف النصوص الشاملة", "تنظيف فواصل الأسطر", "اختصار فواصل الأسطر والفقرات المتكررة.", "تنظيف فواصل", () => Suite600Commands.Text("extra-breaks"), true);
+            A("text-normalize-tabs", "معالجة وتنظيف النصوص الشاملة", "توحيد علامات Tab", "توحيد علامات الجدولة المتكررة داخل النص.", "tabs تنظيف", () => Suite600Commands.Text("tabs"), true);
+            A("text-trim-document", "معالجة وتنظيف النصوص الشاملة", "قص بداية ونهاية النص", "إزالة الفراغات والفواصل من طرفي النطاق.", "trim تنظيف", () => Suite600Commands.Text("trim-document"), true);
+            A("text-punctuation-spacing", "معالجة وتنظيف النصوص الشاملة", "ضبط مسافات الترقيم", "إصلاح المسافات قبل وبعد علامات الترقيم.", "ترقيم مسافات", () => Suite600Commands.Text("punctuation-spacing"), true);
+            A("text-remove-email-quotes", "معالجة وتنظيف النصوص الشاملة", "تنظيف اقتباسات البريد", "حذف رموز الاقتباس > من بداية الأسطر.", "email quotes", () => Suite600Commands.Text("email-quotes"), true);
+            A("text-list-to-plain", "معالجة وتنظيف النصوص الشاملة", "تحويل القائمة إلى نص", "إزالة التعداد أو الترقيم مع إبقاء المحتوى.", "قائمة نص", () => Suite600Commands.Text("list-plain"), true);
+            A("text-semicolon-to-paragraph", "معالجة وتنظيف النصوص الشاملة", "الفواصل المنقوطة إلى فقرات", "تقسيم النص عند الفاصلة المنقوطة.", "تقسيم فقرات", () => Suite600Commands.Text("semicolon-paragraph"), true);
+            A("text-comma-to-lines", "معالجة وتنظيف النصوص الشاملة", "الفواصل إلى أسطر", "تحويل العناصر المفصولة بفواصل إلى أسطر مستقلة.", "فواصل أسطر", () => Suite600Commands.Text("comma-lines"), true);
+            A("arabic-proofing", "الهندسة اللغوية والخطوط العربية", "لغة تدقيق عربية", "تعيين لغة التدقيق العربية للنص المحدد.", "تدقيق عربي", () => Suite600Commands.Arabic("proof-ar"), true);
+            A("english-proofing", "الهندسة اللغوية والخطوط العربية", "لغة تدقيق إنجليزية", "تعيين لغة التدقيق الإنجليزية للنص المحدد.", "تدقيق انجليزي", () => Suite600Commands.Arabic("proof-en"), true);
+            A("arabic-decimal-separator", "الهندسة اللغوية والخطوط العربية", "الفاصل العشري العربي", "تحويل الفاصل العشري بين الأرقام إلى ٫.", "أرقام عربي", () => Suite600Commands.Arabic("decimal"), true);
+            A("arabic-thousands-separator", "الهندسة اللغوية والخطوط العربية", "فاصل الآلاف العربي", "تحويل فواصل الآلاف إلى ٬.", "أرقام آلاف", () => Suite600Commands.Arabic("thousands"), true);
+            A("arabic-normalize-ligatures", "الهندسة اللغوية والخطوط العربية", "توحيد الوصلات العربية", "تطبيق Unicode Form KC لتوحيد أشكال الحروف والوصلات.", "Unicode عربي", () => Suite600Commands.Arabic("ligatures"), true);
+            A("arabic-remove-quranic-marks", "الهندسة اللغوية والخطوط العربية", "حذف العلامات القرآنية", "إزالة علامات الوقف والزخارف القرآنية مع إبقاء الأحرف.", "قرآن علامات", () => Suite600Commands.Arabic("quranic"), true);
+            A("smart-offline-summary", "المساعد الذكي والذكاء الاصطناعي", "تلخيص ذكي دون إنترنت", "إنشاء ملخص استخراجي محلي من الجمل الأهم.", "AI تلخيص offline", () => Suite600Commands.Smart("offline-summary"), true);
+            A("smart-executive-summary", "المساعد الذكي والذكاء الاصطناعي", "ملخص تنفيذي ذكي", "إنشاء ملخص تنفيذي محلي مع مؤشرات النص.", "AI تنفيذي", () => Suite600Commands.Smart("executive-summary"), true);
+            A("smart-keywords", "المساعد الذكي والذكاء الاصطناعي", "استخراج الكلمات المفتاحية", "استخراج أكثر الكلمات دلالة وتكرارًا.", "AI كلمات", () => Suite600Commands.Smart("keywords"), true);
+            A("smart-action-items", "المساعد الذكي والذكاء الاصطناعي", "استخراج إجراءات العمل", "استخراج الجمل المحتملة التي تتضمن إجراءات أو تكليفات.", "AI إجراءات", () => Suite600Commands.Smart("actions"), true);
+            A("smart-decisions", "المساعد الذكي والذكاء الاصطناعي", "استخراج القرارات", "استخراج الجمل التي تبدو قرارات أو اعتمادات.", "AI قرارات", () => Suite600Commands.Smart("decisions"), true);
+            A("smart-reading-questions", "المساعد الذكي والذكاء الاصطناعي", "إنشاء أسئلة قراءة", "توليد أسئلة مراجعة من عبارات المستند.", "AI أسئلة", () => Suite600Commands.Smart("questions"), true);
+            A("smart-sentiment", "المساعد الذكي والذكاء الاصطناعي", "تحليل نبرة النص", "تحليل محلي تقريبي للكلمات الإيجابية والسلبية.", "AI نبرة", () => Suite600Commands.Smart("sentiment"), true);
+            A("smart-readability-advice", "المساعد الذكي والذكاء الاصطناعي", "اقتراحات قابلية القراءة", "تحليل طول الجمل والفقرات وإظهار توصيات عملية.", "AI قراءة", () => Suite600Commands.Smart("readability"), true);
+            A("smart-title-suggestions", "المساعد الذكي والذكاء الاصطناعي", "اقتراح عناوين", "توليد عناوين مقترحة من الكلمات المفتاحية.", "AI عناوين", () => Suite600Commands.Smart("titles"), true);
+            A("smart-outline", "المساعد الذكي والذكاء الاصطناعي", "مخطط هيكلي ذكي", "إنشاء مخطط أولي من الفقرات والعناوين.", "AI مخطط", () => Suite600Commands.Smart("outline"), true);
+            A("ai-provider-settings", "المساعد الذكي والذكاء الاصطناعي", "إعداد موفر AI", "إعداد Ollama أو LM Studio أو OpenAI-Compatible اختياريًا.", "AI settings ollama", () => Suite600Commands.Smart("settings"), false);
+            A("ai-rewrite-provider", "المساعد الذكي والذكاء الاصطناعي", "إعادة صياغة عبر AI", "إرسال النص إلى موفر AI المتوافق وإدراج النتيجة.", "AI rewrite", () => Suite600Commands.Smart("provider-rewrite"), true);
+            A("ai-translate-provider", "المساعد الذكي والذكاء الاصطناعي", "ترجمة عبر AI", "ترجمة النص عبر موفر AI اختياري.", "AI translate", () => Suite600Commands.Smart("provider-translate"), true);
+            A("ai-chat-provider", "المساعد الذكي والذكاء الاصطناعي", "دردشة مع المستند", "طرح سؤال على النص المحدد عبر موفر AI اختياري.", "AI chat document", () => Suite600Commands.Smart("provider-chat"), true);
+            A("table-calculation-template", "الهندسة الجدولية والحسابات", "جدول حسابات", "إدراج جدول بنود وكميات وأسعار وإجماليات.", "جدول حساب", () => Suite600Commands.Table("calculation"), true);
+            A("table-summary-template", "الهندسة الجدولية والحسابات", "جدول تلخيص بيانات", "إدراج قالب تلخيص فئات وقيم ونسب.", "جدول summary", () => Suite600Commands.Table("summary"), true);
+            A("table-format-percent", "الهندسة الجدولية والحسابات", "تنسيق النسب المئوية", "تنسيق القيم الرقمية في الجدول كنسب مئوية.", "جدول نسبة", () => Suite600Commands.Table("percent"), true);
+            A("table-format-currency", "الهندسة الجدولية والحسابات", "تنسيق العملة", "تنسيق القيم الرقمية في الخلايا المحددة كعملة.", "جدول عملة", () => Suite600Commands.Table("currency"), true);
+            A("table-format-date", "الهندسة الجدولية والحسابات", "تنسيق التاريخ", "توحيد التواريخ الموجودة في خلايا الجدول.", "جدول تاريخ", () => Suite600Commands.Table("date"), true);
+            A("table-alternate-columns", "الهندسة الجدولية والحسابات", "تظليل الأعمدة بالتناوب", "تطبيق تظليل متبادل على أعمدة الجدول.", "جدول أعمدة", () => Suite600Commands.Table("alternate-columns"), true);
+            A("tabs-to-table-smart", "الهندسة الجدولية والحسابات", "Tabs إلى جدول ذكي", "تحويل النص المفصول بعلامات Tab إلى جدول.", "جدول تحويل", () => Suite600Commands.Table("tabs-to-table"), true);
+            A("media-export-images", "الميديا والوسائط والأشكال", "تصدير صور المستند", "حفظ نسخة HTML لاستخراج صور المستند في مجلد مستقل.", "صور تصدير", () => Suite600Commands.Media("export-images"), true);
+            A("media-resize-half", "الميديا والوسائط والأشكال", "تصغير الصور 50%", "تقليل أبعاد جميع الصور المضمنة إلى النصف.", "صور حجم", () => Suite600Commands.Media("resize-half"), true);
+            A("media-fit-page", "الميديا والوسائط والأشكال", "ملاءمة الصور للصفحة", "تحديد عرض الصور بما يناسب مساحة الصفحة.", "صور صفحة", () => Suite600Commands.Media("fit-page"), true);
+            A("media-center-images", "الميديا والوسائط والأشكال", "توسيط جميع الصور", "توسيط فقرات الصور المضمنة.", "صور توسيط", () => Suite600Commands.Media("center"), true);
+            A("media-caption-images", "الميديا والوسائط والأشكال", "إضافة تسميات للصور", "إضافة Caption تلقائي لكل صورة مضمنة.", "صور caption", () => Suite600Commands.Media("captions"), true);
+            A("media-compress-pictures", "الميديا والوسائط والأشكال", "ضغط الصور", "تشغيل أمر Word المدمج لضغط الصور.", "صور ضغط", () => Suite600Commands.Media("compress"), true);
+            A("media-accessibility-report", "الميديا والوسائط والأشكال", "تقرير وصول الصور", "إظهار الصور التي تفتقد النص البديل.", "صور accessibility", () => Suite600Commands.Media("accessibility"), true);
+            A("batch-save-docx", "أتمتة العمليات المجمعة", "تحويل مجلد إلى DOCX", "فتح ملفات Word في مجلد وحفظها بصيغة DOCX.", "batch docx", () => Suite600Commands.Batch("docx"), true);
+            A("batch-export-pdf-v4", "أتمتة العمليات المجمعة", "تحويل مجلد إلى PDF", "تصدير ملفات Word الموجودة في مجلد إلى PDF.", "batch pdf", () => Suite600Commands.Batch("pdf"), true);
+            A("batch-remove-comments", "أتمتة العمليات المجمعة", "حذف التعليقات دفعيًا", "حذف تعليقات جميع مستندات Word داخل مجلد.", "batch comments", () => Suite600Commands.Batch("remove-comments"), true);
+            A("batch-accept-revisions", "أتمتة العمليات المجمعة", "قبول التعديلات دفعيًا", "قبول التعديلات المتعقبة في ملفات مجلد.", "batch revisions", () => Suite600Commands.Batch("accept-revisions"), true);
+            A("batch-update-fields", "أتمتة العمليات المجمعة", "تحديث الحقول دفعيًا", "تحديث الحقول في ملفات Word داخل مجلد.", "batch fields", () => Suite600Commands.Batch("update-fields"), true);
+            A("batch-protect-readonly", "أتمتة العمليات المجمعة", "حماية للقراءة فقط دفعيًا", "تطبيق حماية القراءة فقط على ملفات مجلد.", "batch protect", () => Suite600Commands.Batch("protect"), true);
+            A("batch-remove-properties", "أتمتة العمليات المجمعة", "تنظيف الخصائص دفعيًا", "إزالة معلومات المستند الشخصية من ملفات مجلد.", "batch metadata", () => Suite600Commands.Batch("metadata"), true);
+            A("batch-print-documents", "أتمتة العمليات المجمعة", "طباعة مجلد مستندات", "إرسال ملفات Word في مجلد إلى الطابعة الافتراضية.", "batch print", () => Suite600Commands.Batch("print"), true);
+            A("academic-insert-apa", "البحث العلمي والمراجع", "إدراج مرجع APA", "إدراج قالب مرجع وفق أسلوب APA.", "APA مرجع", () => Suite600Commands.Academic("apa"), true);
+            A("academic-insert-mla", "البحث العلمي والمراجع", "إدراج مرجع MLA", "إدراج قالب مرجع وفق أسلوب MLA.", "MLA مرجع", () => Suite600Commands.Academic("mla"), true);
+            A("academic-bibliography-audit", "البحث العلمي والمراجع", "تدقيق قائمة المراجع", "فحص قائمة المراجع وإظهار الأسطر المكررة أو الناقصة.", "مراجع audit", () => Suite600Commands.Academic("bibliography-audit"), true);
+            A("academic-footnote-audit", "البحث العلمي والمراجع", "تدقيق الحواشي", "إظهار عدد الحواشي الفارغة أو القصيرة.", "حواشي audit", () => Suite600Commands.Academic("footnotes"), true);
+            A("academic-heading-audit", "البحث العلمي والمراجع", "تدقيق هيكل العناوين", "تحليل تسلسل Heading 1–3 واكتشاف القفزات.", "عناوين بحث", () => Suite600Commands.Academic("headings"), true);
+            A("academic-extract-citations", "البحث العلمي والمراجع", "استخراج الاستشهادات", "استخراج الاستشهادات بين الأقواس إلى تقرير جديد.", "citations استخراج", () => Suite600Commands.Academic("extract"), true);
+            A("security-redact-emails", "الأمان والتشفير والطمس", "طمس البريد الإلكتروني", "استبدال عناوين البريد في النطاق بعلامات طمس.", "redact email", () => Suite600Commands.Security("emails"), true);
+            A("security-redact-phones", "الأمان والتشفير والطمس", "طمس أرقام الهواتف", "استبدال أرقام الهواتف المحتملة بعلامات طمس.", "redact phone", () => Suite600Commands.Security("phones"), true);
+            A("security-redact-identifiers", "الأمان والتشفير والطمس", "طمس المعرّفات الرقمية", "طمس الأرقام الطويلة التي قد تمثل هويات أو حسابات.", "redact id", () => Suite600Commands.Security("identifiers"), true);
+            A("security-redact-selection", "الأمان والتشفير والطمس", "طمس التحديد", "استبدال النص المحدد بكتل سوداء مساوية للطول.", "redact selection", () => Suite600Commands.Security("selection"), true);
+            A("security-document-audit", "الأمان والتشفير والطمس", "تدقيق أمان المستند", "عرض الروابط والتعليقات والتعديلات والبيانات الحساسة المحتملة.", "security audit", () => Suite600Commands.Security("audit"), true);
+            A("security-remove-hidden-text", "الأمان والتشفير والطمس", "حذف النص المخفي", "البحث عن النص المخفي وحذفه من المستند.", "hidden text", () => Suite600Commands.Security("hidden"), true);
+            A("export-filtered-html", "الطباعة والتصدير المتقدم", "تصدير HTML منقّى", "حفظ المستند بصيغة Filtered HTML.", "HTML export", () => Suite600Commands.Export("html"), true);
+            A("export-rtf", "الطباعة والتصدير المتقدم", "تصدير RTF", "حفظ نسخة من المستند بصيغة Rich Text Format.", "RTF export", () => Suite600Commands.Export("rtf"), true);
+            A("export-odt", "الطباعة والتصدير المتقدم", "تصدير OpenDocument", "حفظ نسخة بصيغة ODT.", "ODT export", () => Suite600Commands.Export("odt"), true);
+            A("export-pdf-page-range", "الطباعة والتصدير المتقدم", "تصدير نطاق صفحات PDF", "اختيار أول وآخر صفحة وتصديرهما إلى PDF.", "PDF pages", () => Suite600Commands.Export("pdf-range"), true);
+            A("print-booklet-layout", "الطباعة والتصدير المتقدم", "إعداد طباعة كتيب", "تطبيق إعداد Book Fold على المقطع الحالي.", "booklet print", () => Suite600Commands.Export("booklet"), true);
+            A("clipboard-save-snippet", "الحافظة والأتمتة والاختصارات", "حفظ مقتطف", "حفظ النص المحدد في مكتبة المقتطفات المحلية.", "clipboard snippet", () => Suite600Commands.ClipboardTools("save"), true);
+            A("clipboard-insert-snippet", "الحافظة والأتمتة والاختصارات", "إدراج مقتطف", "اختيار مقتطف محفوظ وإدراجه عند المؤشر.", "clipboard insert", () => Suite600Commands.ClipboardTools("insert"), true);
+            A("clipboard-clear-snippets", "الحافظة والأتمتة والاختصارات", "مسح مكتبة المقتطفات", "حذف المقتطفات المحلية المحفوظة.", "clipboard clear", () => Suite600Commands.ClipboardTools("clear"), true);
+            A("clipboard-append-collection", "الحافظة والأتمتة والاختصارات", "إضافة إلى الحافظة المجمعة", "إضافة التحديد إلى ملف تجميع نصوص قابل للإدراج لاحقًا.", "clipboard multi", () => Suite600Commands.ClipboardTools("append"), true);
+            A("legal-clause-checklist", "التدقيق القانوني والعقود", "قائمة فحص بنود العقد", "إدراج قائمة تدقيق للبنود الأساسية والمخاطر.", "legal contract", () => Suite600Commands.Legal("checklist"), true);
+            A("legal-highlight-obligations", "التدقيق القانوني والعقود", "تمييز الالتزامات", "تمييز كلمات الالتزام والوجوب والمسؤولية داخل المستند.", "legal obligations", () => Suite600Commands.Legal("obligations"), true);
+            A("legal-highlight-dates", "التدقيق القانوني والعقود", "تمييز التواريخ والمدد", "تمييز الأنماط المحتملة للتواريخ والمدد.", "legal dates", () => Suite600Commands.Legal("dates"), true);
+            A("legal-party-table", "التدقيق القانوني والعقود", "جدول أطراف العقد", "إدراج جدول منظم لبيانات الأطراف والممثلين.", "legal parties", () => Suite600Commands.Legal("parties"), true);
+            A("project-gantt-table", "إدارة المشاريع والمهام", "جدول Gantt مبسط", "إدراج جدول زمني للمهام والتقدم.", "project gantt", () => Suite600Commands.Project("gantt"), true);
+            A("project-task-board", "إدارة المشاريع والمهام", "لوحة المهام", "إدراج جدول To Do / Doing / Done.", "project kanban", () => Suite600Commands.Project("board"), true);
+            A("project-weekly-status", "إدارة المشاريع والمهام", "تقرير الحالة الأسبوعي", "إدراج قالب حالة أسبوعية للمشروع.", "project status", () => Suite600Commands.Project("weekly"), true);
+            A("project-deliverables-register", "إدارة المشاريع والمهام", "سجل المخرجات", "إدراج سجل للمخرجات والمواعيد والقبول.", "project deliverables", () => Suite600Commands.Project("deliverables"), true);
+            A("form-text-control", "إدارة النماذج وإدخال البيانات", "حقل نص تفاعلي", "إدراج Content Control نصي عند المؤشر.", "form text", () => Suite600Commands.Forms("text"), true);
+            A("form-date-control", "إدارة النماذج وإدخال البيانات", "حقل تاريخ تفاعلي", "إدراج Date Picker عند المؤشر.", "form date", () => Suite600Commands.Forms("date"), true);
+            A("form-checkbox-control", "إدارة النماذج وإدخال البيانات", "مربع اختيار تفاعلي", "إدراج Checkbox Content Control.", "form checkbox", () => Suite600Commands.Forms("checkbox"), true);
+            A("form-export-controls-csv", "إدارة النماذج وإدخال البيانات", "تصدير بيانات النموذج CSV", "تصدير عناوين وقيم Content Controls إلى CSV.", "form csv", () => Suite600Commands.Forms("export"), true);
+            A("productivity-focus-mode", "التخصيص والأداء والإنتاجية", "وضع التركيز", "تقليل عناصر الواجهة وإخفاء علامات التنسيق للكتابة المركزة.", "focus zen", () => Suite600Commands.Productivity("focus"), true);
+            A("productivity-restore-view", "التخصيص والأداء والإنتاجية", "استعادة واجهة العمل", "إظهار المساطر وشريط الحالة وعلامات العرض الأساسية.", "restore UI", () => Suite600Commands.Productivity("restore"), true);
+            A("productivity-writing-session", "التخصيص والأداء والإنتاجية", "بدء جلسة كتابة", "تسجيل بداية جلسة كتابة ومقارنة عدد الكلمات لاحقًا.", "writing timer", () => Suite600Commands.Productivity("session"), true);
+            A("productivity-word-goal", "التخصيص والأداء والإنتاجية", "هدف الكلمات", "تحديد هدف كلمات وعرض نسبة الإنجاز الحالية.", "word goal", () => Suite600Commands.Productivity("goal"), true);
+            A("productivity-reading-time", "التخصيص والأداء والإنتاجية", "زمن القراءة المتوقع", "حساب زمن القراءة بناءً على عدد الكلمات.", "reading time", () => Suite600Commands.Productivity("reading-time"), true);
+            A("productivity-session-report", "التخصيص والأداء والإنتاجية", "تقرير جلسة العمل", "عرض مدة الجلسة والكلمات المضافة ومعلومات المستند.", "session report", () => Suite600Commands.Productivity("report"), true);
 
             // النظام والترخيص
             A("command-center", "النظام والترخيص", "مركز الأدوات الاحترافي", "بحث وفئات ومفضلة وآخر استخدام لكل الأدوات.", "مركز", CommandCenterForm.ShowCenter, false);

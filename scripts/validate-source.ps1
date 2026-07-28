@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 $Root = Split-Path -Parent $PSScriptRoot
@@ -11,10 +11,15 @@ $required = @(
     'src\WordProSuite.AddIn\Commands\EnterpriseCommands.cs',
     'src\WordProSuite.AddIn\Commands\ProfessionalCommands.cs',
     'src\WordProSuite.AddIn\Commands\UltimateCommands.cs',
+    'src\WordProSuite.AddIn\Commands\Suite600Commands.cs',
+    'src\WordProSuite.AddIn\Commands\FeatureReferenceCatalog.cs',
     'src\WordProSuite.AddIn\UI\Prompt.cs',
+    'src\WordProSuite.AddIn\UI\Catalog600Form.cs',
     'src\WordProSuite.AddIn\Ribbon\RibbonXml.cs',
     'src\WordProSuite.SetupLauncher\WordProSuite.SetupLauncher.csproj',
     'src\WordProSuite.SetupLauncher\Program.cs',
+    'catalog\ultimate_word_suite_600.json',
+    'catalog\ultimate_word_suite_600.csv',
     'scripts\build-release.ps1'
 )
 
@@ -28,8 +33,8 @@ $router = Get-Content $routerPath -Raw
 $idMatches = [regex]::Matches($router, 'A\("([^"]+)"')
 $ids = @($idMatches | ForEach-Object { $_.Groups[1].Value })
 
-if ($ids.Count -ne 500) {
-    throw "Expected exactly 500 registered commands, found $($ids.Count)."
+if ($ids.Count -ne 600) {
+    throw "Expected exactly 600 registered commands, found $($ids.Count)."
 }
 
 $duplicates = @($ids | Group-Object | Where-Object Count -gt 1)
@@ -37,11 +42,39 @@ if ($duplicates.Count -gt 0) {
     throw "Duplicate command IDs: $($duplicates.Name -join ', ')"
 }
 
+$catalogPath = Join-Path $Root 'catalog\ultimate_word_suite_600.json'
+$catalog = @(Get-Content $catalogPath -Raw | ConvertFrom-Json)
+if ($catalog.Count -ne 600) {
+    throw "Expected 600 reference catalog entries, found $($catalog.Count)."
+}
+
+$catalogNumbers = @($catalog | ForEach-Object { [int]$_.referenceNumber })
+$missingNumbers = @(1..600 | Where-Object { $_ -notin $catalogNumbers })
+if ($missingNumbers.Count -gt 0) {
+    throw "Reference catalog is missing numbers: $($missingNumbers -join ', ')"
+}
+
+$catalogIds = @($catalog | ForEach-Object { [string]$_.commandId })
+$catalogDuplicateIds = @($catalogIds | Group-Object | Where-Object Count -gt 1)
+if ($catalogDuplicateIds.Count -gt 0) {
+    throw "Reference catalog contains duplicate command IDs: $($catalogDuplicateIds.Name -join ', ')"
+}
+
+$catalogUnknown = @($catalogIds | Where-Object { $_ -notin $ids })
+if ($catalogUnknown.Count -gt 0) {
+    throw "Reference catalog points to unknown commands: $($catalogUnknown -join ', ')"
+}
+
+$engineCount = @($catalog | Select-Object -ExpandProperty engine -Unique).Count
+if ($engineCount -ne 15) {
+    throw "Expected exactly 15 reference engines, found $engineCount."
+}
+
 $ribbonPath = Join-Path $Root 'src\WordProSuite.AddIn\Ribbon\RibbonXml.cs'
 $ribbon = Get-Content $ribbonPath -Raw
 $tabCount = ([regex]::Matches($ribbon, '<tab\s')).Count
-if ($tabCount -ne 2) {
-    throw "Expected exactly two professional Ribbon tabs, found $tabCount."
+if ($tabCount -ne 3) {
+    throw "Expected exactly three professional Ribbon tabs, found $tabCount."
 }
 
 $tagMatches = [regex]::Matches($ribbon, 'tag=""([^""]+)""')
@@ -84,8 +117,14 @@ if ($setupSource -notmatch 'GetManifestResourceStream\("WordProSuite\.AddIn\.dll
 if ($setupSource -notmatch 'VerifyComActivation') {
     throw 'Setup source does not verify COM activation.'
 }
-if ($setupSource -notmatch 'Ultimate 3\.0') {
-    throw 'Setup branding/version was not updated to Ultimate 3.0.'
+if ($setupSource -notmatch 'Ultimate 4\.0') {
+    throw 'Setup branding/version was not updated to Ultimate 4.0.'
+}
+if ($setupSource -match 'إمكانية تشغيلها\.\s*\r?\n\s*بعد التثبيت') {
+    throw 'Regression: Setup Program.cs contains a physical newline inside a regular C# string literal.'
+}
+if ($setupSource -notmatch 'ثلاثة تبويبات احترافية') {
+    throw 'Setup description does not advertise the three-tab release.'
 }
 
 $buildSource = Get-Content (Join-Path $Root 'scripts\build-release.ps1') -Raw
@@ -115,10 +154,12 @@ foreach ($file in $sourceFiles) {
 Write-Host '[OK] Required source files'
 Write-Host "[OK] Registered commands: $($ids.Count)"
 Write-Host '[OK] Unique command IDs'
+Write-Host "[OK] Reference catalog: $($catalog.Count) tools / $engineCount engines"
 Write-Host "[OK] Ribbon tabs: $tabCount"
 Write-Host "[OK] Ribbon command mapping: $($tags.Count) unique tags"
 Write-Host '[OK] Prompt namespace/import regression check'
 Write-Host '[OK] CS1977 dynamic/lambda regression checks'
+Write-Host '[OK] Setup multiline-string regression check'
 Write-Host '[OK] Single-file embedded Setup configuration'
 Write-Host '[OK] Build-script LASTEXITCODE regression check'
 Write-Host '[OK] Private-key leak scan'

@@ -1,14 +1,17 @@
 {
   "product": "WordPro Suite Desktop Ultimate",
-  "version": "3.0.0",
-  "registered_commands": 500,
-  "categories": 30,
-  "ribbon_tabs": 2,
+  "version": "4.0.0",
+  "commands": 600,
+  "referenceCatalogEntries": 600,
+  "engines": 15,
+  "ribbonTabs": 3,
   "setup": "WordProSuite_Setup.exe",
-  "artifact": "WordProSuite-Desktop-Ultimate-3.0-Windows",
-  "archive": "WordProSuite_Desktop_Ultimate_V3_Windows.zip",
-  "requires_nodejs": false,
-  "requires_localhost": false,
-  "requires_vba": false,
-  "installer_payload": "embedded"
+  "targetFramework": "net48",
+  "officeTarget": "Microsoft Word 2024",
+  "installerMode": "single EXE, per-user COM registration",
+  "aiModes": [
+    "offline heuristic tools",
+    "optional Ollama/LM Studio/OpenAI-Compatible"
+  ],
+  "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx"
 }

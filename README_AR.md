@@ -1,77 +1,41 @@
-# WordPro Suite Desktop Ultimate 3.0
+# WordPro Suite Desktop Ultimate 4.0
 
-إضافة COM مكتبية أصلية لبرنامج Microsoft Word، تعمل محليًا بالكامل دون Node.js أو localhost أو VBA. يحتوي الإصدار على **500 أداة فريدة** موزعة على **30 قسمًا**، مع تبويبتين دائمتين في Ribbon:
+إضافة COM مكتبية لـ Microsoft Word 2024 مبنية على .NET Framework 4.8، تعمل دون VBA أو Office.js أو Node.js أو localhost.
 
-- **WordPro Suite Pro** للأدوات اليومية والتحرير والتنسيق والجداول والملفات.
-- **WordPro Enterprise** لأطر العمل المؤسسية والتحليل والقوالب العالمية ومساحة العمل والترخيص.
+## الإصدار
 
-## التثبيت
-
-بعد نجاح GitHub Actions نزّل Artifact باسم:
-
-```text
-WordProSuite-Desktop-Ultimate-3.0-Windows
-```
-
-ثم شغّل الملف الوحيد:
-
-```text
-WordProSuite_Setup.exe
-```
-
-لا يحتاج المستخدم إلى MSI أو Payload أو تشغيل PowerShell يدويًا. يقوم Setup باستخراج DLL المضمّن، وتسجيل COM لكل مستخدم، وضبط Word، والتحقق من إنشاء كائن COM قبل إعلان نجاح التثبيت.
-
-## التفعيل
-
-يدعم البرنامج:
-
-- تجربة محلية محدودة.
-- Serial Number دائم.
-- Serial Number بتاريخ انتهاء.
-- ربط الترخيص بجهاز واحد بواسطة Machine ID.
-- إصدارات PRO وENTERPRISE وULTIMATE.
-- إصلاح وإزالة وإعادة تثبيت من شاشة Setup نفسها.
-
-المفتاح الخاص بإنشاء الأرقام لا يوجد في المشروع العام ولا داخل Setup.
-
-## أهم المجموعات
-
-- العربية والاتجاه والكتابة ثنائية اللغة.
-- النص والتحرير والتنظيف والاستخراج.
-- الخطوط العالمية والتنسيق والألوان.
-- الفقرات الدقيقة وتخطيط الصفحة المتقدم.
-- الجداول والجداول المتقدمة وقوالب المؤسسات.
-- المستند والصفحات والحقول والأتمتة.
-- المراجعة والأمان والخصوصية.
-- الملفات وPDF والنسخ الاحتياطية.
-- ذكاء المستند والتحليل والإحصاء.
-- 30 قالبًا مؤسسيًا عالميًا جديدًا.
+- 600 أمر مسجّل وفريد.
+- 15 محركًا تخصصيًا.
+- 3 تبويبات Ribbon: `WordPro Suite Pro` و`WordPro Enterprise` و`Ultra 600 AI`.
+- ملف تثبيت واحد: `WordProSuite_Setup.exe`.
+- تثبيت لكل مستخدم داخل LocalAppData مع تسجيل COM تحت HKCU.
+- تجربة وتفعيل وإصلاح وإزالة من واجهة Setup واحدة.
+- نظام Serial Number بمفتاح عام داخل البرنامج ومفتاح خاص منفصل لدى المالك.
 
 ## البناء
 
-```powershell
-.\scripts\validate-source.ps1
-.\scripts\build-release.ps1 -Configuration Release
-```
-
-ينتج البناء:
+شغّل GitHub Actions، ثم نزّل Artifact:
 
 ```text
-release\WordProSuite_Setup.exe
-release\INSTALL_AR.txt
-release\SHA256_SETUP.txt
-release\RELEASE_MANIFEST.json
-WordProSuite_Desktop_Ultimate_V3_Windows.zip
+WordProSuite-Desktop-Ultimate-4.0-Windows
 ```
 
-## بوابات الجودة
+يحتوي على:
 
-- 500 Command IDs فريدة.
-- تبويبتان Ribbon.
-- كل Ribbon tag مرتبط بأمر مسجل.
-- فحص مشكلة CS1977 الخاصة بـ dynamic/lambda.
-- فحص Prompt namespace لمنع CS0103.
-- بناء مع `-warnaserror`.
-- فحص تضمين DLL فعليًا داخل Setup.
-- التحقق من SHA-256 للحزمة.
-- فحص عدم تسرب المفتاح الخاص.
+```text
+WordProSuite_Setup.exe
+INSTALL_AR.txt
+FEATURES_AR.md
+ULTIMATE_600_CATALOG.json
+ULTIMATE_600_CATALOG.csv
+RELEASE_MANIFEST.json
+SHA256_SETUP.txt
+```
+
+## الذكاء الاصطناعي
+
+الأدوات الذكية المحلية مثل التلخيص والكلمات المفتاحية واستخراج القرارات والأسئلة تعمل دون إنترنت. أدوات التوليد والترجمة والدردشة الحقيقية تدعم موفرًا اختياريًا متوافقًا مع OpenAI مثل Ollama أو LM Studio أو خادم OpenAI-Compatible. لا يتم تضمين مفتاح API أو نموذج مدفوع داخل البرنامج.
+
+## ملاحظة هندسية
+
+الدليل المرجعي المرفق يذكر 600 موضع ميزة، لكنه يستخدم وصفًا عامًا متكررًا في عدد كبير منها. تم تحويل هذه المواضع العامة إلى أدوات فعلية محددة وقابلة للتشغيل بدل إنشاء أزرار شكلية أو أوامر غير منفذة.

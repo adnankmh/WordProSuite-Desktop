@@ -13,7 +13,7 @@ namespace WordProSuite.Desktop.Commands
         {
             MessageBox.Show(
                 "WordPro Suite Desktop Ultimate\n" +
-                "Version 3.0.0\n\n" +
+                "Version 4.0.0\n\n" +
                 "إضافة COM مكتبية احترافية لـ Microsoft Word\n" +
                 "تعمل دون Node.js أو localhost أو VBA.\n\n" +
                 "الأدوات المسجلة: " + CommandRouter.All.Count().ToString() + "\n" +
@@ -25,7 +25,7 @@ namespace WordProSuite.Desktop.Commands
         {
             var b = new StringBuilder();
             b.AppendLine("WordPro Suite Desktop Ultimate Health Check");
-            b.AppendLine("Version: 3.0.0");
+            b.AppendLine("Version: 4.0.0");
             b.AppendLine("Process: " + (Environment.Is64BitProcess ? "64-bit" : "32-bit"));
             b.AppendLine("OS: " + (Environment.Is64BitOperatingSystem ? "64-bit" : "32-bit"));
             b.AppendLine("Connected: " + (WordContext.Application != null));

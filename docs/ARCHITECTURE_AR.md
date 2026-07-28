@@ -1,9 +1,9 @@
-# المعمارية التقنية — Ultimate 3.0
+# المعمارية التقنية — Ultimate 4.0
 
 1. Managed COM Add-in مكتوب بـ C# و.NET Framework 4.8.
 2. `IDTExtensibility2` لدورة حياة الإضافة.
-3. `IRibbonExtensibility` لتوفير تبويبتين Ribbon.
-4. `CommandRouter` يسجل 500 أمر فريد.
+3. `IRibbonExtensibility` لتوفير ثلاثة تبويبات Ribbon.
+4. `CommandRouter` يسجل 600 أمر فريد.
 5. `AdvancedCommands` و`EnterpriseCommands` و`ProfessionalCommands` و`UltimateCommands` تفصل مجالات الوظائف.
 6. Word COM dynamic يقلل الاعتماد على Office PIAs أثناء البناء.
 7. WinForms Command Center للبحث والفئات والمفضلة وآخر استخدام.

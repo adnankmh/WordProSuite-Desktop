@@ -1,0 +1,5402 @@
+[
+  {
+    "referenceNumber": 1,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "workspace-save-session",
+    "title": "حفظ مساحة العمل",
+    "description": "حفظ قائمة المستندات المفتوحة لاستعادتها لاحقًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 2,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "workspace-export-open-docs",
+    "title": "تصدير قائمة المستندات المفتوحة",
+    "description": "حفظ أسماء ومسارات المستندات المفتوحة في ملف نصي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 3,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "workspace-rename-document",
+    "title": "إعادة تسمية المستند",
+    "description": "حفظ المستند الحالي باسم جديد في المجلد نفسه.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 4,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "workspace-restore-session",
+    "title": "استعادة مساحة العمل",
+    "description": "فتح المستندات المحفوظة في مساحة العمل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 5,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "workspace-close-others",
+    "title": "إغلاق المستندات الأخرى",
+    "description": "إبقاء المستند الحالي وإغلاق بقية المستندات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 6,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "workspace-close-unmodified",
+    "title": "إغلاق غير المعدّل",
+    "description": "إغلاق المستندات المفتوحة التي لا تحتوي تغييرات غير محفوظة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 7,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "workspace-split-toggle",
+    "title": "تقسيم وإلغاء تقسيم النافذة",
+    "description": "تبديل تقسيم نافذة المستند للمراجعة المتوازية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 8,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "workspace-compare-file",
+    "title": "مقارنة مع ملف",
+    "description": "اختيار مستند آخر وتشغيل مقارنة Word.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 9,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "workspace-duplicate-document",
+    "title": "إنشاء نسخة من المستند",
+    "description": "إنشاء نسخة مؤرخة من المستند الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 10,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "workspace-arrange-windows",
+    "title": "ترتيب النوافذ",
+    "description": "ترتيب نوافذ Word المفتوحة جنبًا إلى جنب.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 11,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "insert-document-path",
+    "title": "إدراج مسار المستند",
+    "description": "إدراج المسار الكامل للملف الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 12,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "insert-confidential-banner",
+    "title": "شريط سري",
+    "description": "إدراج شريط تصنيف سري أعلى المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 13,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "insert-document-name",
+    "title": "إدراج اسم المستند",
+    "description": "إدراج اسم الملف الحالي عند المؤشر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 14,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "insert-current-datetime",
+    "title": "إدراج التاريخ والوقت",
+    "description": "إدراج التاريخ والوقت الحاليين بصيغة موحدة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 15,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "insert-page-break-pro",
+    "title": "إدراج فاصل صفحة",
+    "description": "إدراج Page Break عند المؤشر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 16,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "insert-section-next-page",
+    "title": "مقطع في الصفحة التالية",
+    "description": "إدراج Section Break من نوع Next Page.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 17,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "zoom-100-pro",
+    "title": "تكبير 100%",
+    "description": "تعيين مستوى تكبير المستند إلى 100%.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 18,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "zoom-110-pro",
+    "title": "تكبير 110%",
+    "description": "تعيين مستوى تكبير المستند إلى 110%.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 19,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "zoom-125-pro",
+    "title": "تكبير 125%",
+    "description": "تعيين مستوى تكبير المستند إلى 125%.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 20,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "zoom-150-pro",
+    "title": "تكبير 150%",
+    "description": "تعيين مستوى تكبير المستند إلى 150%.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 21,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "zoom-75-pro",
+    "title": "تكبير 75%",
+    "description": "تعيين مستوى تكبير المستند إلى 75%.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 22,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "zoom-85-pro",
+    "title": "تكبير 85%",
+    "description": "تعيين مستوى تكبير المستند إلى 85%.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 23,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "formatting-marks-off",
+    "title": "إخفاء علامات التنسيق",
+    "description": "إخفاء علامات التنسيق غير المطبوعة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 24,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "formatting-marks-on",
+    "title": "إظهار علامات التنسيق",
+    "description": "إظهار الفواصل والمسافات وعلامات الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 25,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "rulers-off",
+    "title": "إخفاء المساطر",
+    "description": "إخفاء المسطرة الأفقية والعمودية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 26,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "rulers-on",
+    "title": "إظهار المساطر",
+    "description": "إظهار المسطرة الأفقية والعمودية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 27,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "view-normal-pro",
+    "title": "عرض المسودة",
+    "description": "التبديل إلى عرض المسودة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 28,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "view-outline-pro",
+    "title": "عرض المخطط التفصيلي",
+    "description": "التبديل إلى عرض المخطط التفصيلي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 29,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "view-print-pro",
+    "title": "عرض تخطيط الطباعة",
+    "description": "التبديل إلى عرض تخطيط الطباعة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 30,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "view-reading-pro",
+    "title": "عرض القراءة",
+    "description": "التبديل إلى عرض القراءة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 31,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "view-web-pro",
+    "title": "عرض الويب",
+    "description": "التبديل إلى عرض الويب.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 32,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "document-statistics",
+    "title": "إحصاءات المستند",
+    "description": "عرض الصفحات والكلمات والجداول والصور.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 33,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "insert-cover",
+    "title": "إنشاء صفحة غلاف",
+    "description": "إضافة غلاف منسق في بداية المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 34,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "insert-file-name",
+    "title": "إدراج اسم ومسار الملف",
+    "description": "إدراج حقل FILENAME مع المسار.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 35,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "list-fonts",
+    "title": "قائمة خطوط الأنماط",
+    "description": "عرض الخطوط المستخدمة في أنماط المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 36,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "replace-font",
+    "title": "استبدال خط",
+    "description": "استبدال خط بآخر في المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 37,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "clear-headers-footers",
+    "title": "مسح الرؤوس والتذييلات",
+    "description": "حذف نصوص الرؤوس والتذييلات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 38,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "columns-1",
+    "title": "عمود واحد",
+    "description": "إرجاع النص إلى عمود واحد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 39,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "columns-2",
+    "title": "عمودان",
+    "description": "تقسيم الصفحة إلى عمودين.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 40,
+    "engine": "إدارة التبويبات والمستندات الذكية",
+    "commandId": "columns-3",
+    "title": "ثلاثة أعمدة",
+    "description": "تقسيم الصفحة إلى ثلاثة أعمدة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 41,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "text-comma-to-lines",
+    "title": "الفواصل إلى أسطر",
+    "description": "تحويل العناصر المفصولة بفواصل إلى أسطر مستقلة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 42,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "text-list-to-plain",
+    "title": "تحويل القائمة إلى نص",
+    "description": "إزالة التعداد أو الترقيم مع إبقاء المحتوى.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 43,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "text-normalize-tabs",
+    "title": "توحيد علامات Tab",
+    "description": "توحيد علامات الجدولة المتكررة داخل النص.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 44,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "text-remove-email-quotes",
+    "title": "تنظيف اقتباسات البريد",
+    "description": "حذف رموز الاقتباس > من بداية الأسطر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 45,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "text-remove-extra-breaks",
+    "title": "تنظيف فواصل الأسطر",
+    "description": "اختصار فواصل الأسطر والفقرات المتكررة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 46,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "text-trim-document",
+    "title": "قص بداية ونهاية النص",
+    "description": "إزالة الفراغات والفواصل من طرفي النطاق.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 47,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "text-semicolon-to-paragraph",
+    "title": "الفواصل المنقوطة إلى فقرات",
+    "description": "تقسيم النص عند الفاصلة المنقوطة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 48,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "text-punctuation-spacing",
+    "title": "ضبط مسافات الترقيم",
+    "description": "إصلاح المسافات قبل وبعد علامات الترقيم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 49,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "linebreaks-to-paragraphs",
+    "title": "فواصل الأسطر إلى فقرات",
+    "description": "تحويل line breaks إلى paragraph breaks.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 50,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "collapse-spaces",
+    "title": "تنظيف المسافات",
+    "description": "حذف المسافات المتكررة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 51,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "join-paragraphs",
+    "title": "دمج الفقرات",
+    "description": "تحويل الفقرات المحددة إلى فقرة واحدة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 52,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "prefix-lines",
+    "title": "إضافة بادئة للأسطر",
+    "description": "إضافة نص قبل كل سطر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 53,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "suffix-lines",
+    "title": "إضافة لاحقة للأسطر",
+    "description": "إضافة نص بعد كل سطر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 54,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "extract-emails",
+    "title": "استخراج البريد الإلكتروني",
+    "description": "استخراج عناوين البريد من النص.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 55,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "extract-urls",
+    "title": "استخراج الروابط",
+    "description": "استخراج الروابط من النص.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 56,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "lowercase",
+    "title": "lowercase",
+    "description": "تحويل الأحرف الإنجليزية إلى صغيرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 57,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "paragraphs-bullets",
+    "title": "تحويل إلى نقاط",
+    "description": "تحويل الفقرات إلى قائمة نقطية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 58,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "paragraphs-numbers",
+    "title": "تحويل إلى ترقيم",
+    "description": "تحويل الفقرات إلى قائمة مرقمة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 59,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "paste-plain",
+    "title": "لصق كنص فقط",
+    "description": "لصق محتوى الحافظة دون تنسيق.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 60,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "remove-duplicate-lines",
+    "title": "حذف الأسطر المكررة",
+    "description": "الاحتفاظ بأول ظهور لكل سطر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 61,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "remove-duplicate-paragraphs",
+    "title": "حذف الفقرات المكررة",
+    "description": "حذف الفقرات المتكررة مع تجاهل اختلاف المسافات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 62,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "remove-duplicate-words",
+    "title": "حذف الكلمات المتتابعة المكررة",
+    "description": "تحويل كلمة كلمة إلى كلمة واحدة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 63,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "remove-hyperlinks",
+    "title": "إزالة الروابط",
+    "description": "حذف الارتباطات مع إبقاء النص.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 64,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "smart-quotes",
+    "title": "اقتباس ذكي",
+    "description": "تحويل الاقتباسات المستقيمة إلى ذكية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 65,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "sort-lines-asc",
+    "title": "فرز تصاعدي",
+    "description": "فرز الأسطر تصاعديًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 66,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "sort-lines-desc",
+    "title": "فرز تنازلي",
+    "description": "فرز الأسطر تنازليًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 67,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "text-statistics",
+    "title": "إحصاءات النص",
+    "description": "عرض الكلمات والأحرف والفقرات والجمل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 68,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "trim-lines",
+    "title": "قص حواف الأسطر",
+    "description": "حذف المسافات من بداية ونهاية كل سطر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 69,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "uppercase",
+    "title": "UPPERCASE",
+    "description": "تحويل الأحرف الإنجليزية إلى كبيرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 70,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "clear-list",
+    "title": "إزالة تنسيق القائمة",
+    "description": "إزالة الترقيم أو التعداد من الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 71,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "duplicate-selection",
+    "title": "تكرار التحديد",
+    "description": "نسخ النص المحدد مباشرة بعده.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 72,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "extract-phones",
+    "title": "استخراج أرقام الهواتف",
+    "description": "استخراج أرقام الهواتف المحتملة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 73,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "invert-case",
+    "title": "Invert Case",
+    "description": "عكس حالة الأحرف الكبيرة والصغيرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 74,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "normalize-dashes",
+    "title": "توحيد الشرطات",
+    "description": "توحيد hyphen وen dash وem dash.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 75,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "remove-empty-paragraphs",
+    "title": "حذف الفقرات الفارغة",
+    "description": "اختصار الفقرات الفارغة المتكررة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 76,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "remove-leading-spaces",
+    "title": "حذف مسافات بداية الأسطر",
+    "description": "تنظيف بداية كل سطر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 77,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "remove-nonprinting",
+    "title": "حذف المحارف غير المطبوعة",
+    "description": "حذف المحارف التحكمية غير المرئية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 78,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "remove-trailing-spaces",
+    "title": "حذف مسافات نهاية الأسطر",
+    "description": "تنظيف نهاية كل سطر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 79,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "sentence-case",
+    "title": "Sentence case",
+    "description": "تكبير بداية كل جملة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 80,
+    "engine": "معالجة وتنظيف النصوص الشاملة",
+    "commandId": "split-by-delimiter",
+    "title": "تقسيم حسب فاصل",
+    "description": "استبدال فاصل محدد بفواصل فقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 81,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "arabic-proofing",
+    "title": "لغة تدقيق عربية",
+    "description": "تعيين لغة التدقيق العربية للنص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 82,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "english-proofing",
+    "title": "لغة تدقيق إنجليزية",
+    "description": "تعيين لغة التدقيق الإنجليزية للنص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 83,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "arabic-decimal-separator",
+    "title": "الفاصل العشري العربي",
+    "description": "تحويل الفاصل العشري بين الأرقام إلى ٫.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 84,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "arabic-normalize-ligatures",
+    "title": "توحيد الوصلات العربية",
+    "description": "تطبيق Unicode Form KC لتوحيد أشكال الحروف والوصلات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 85,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "arabic-thousands-separator",
+    "title": "فاصل الآلاف العربي",
+    "description": "تحويل فواصل الآلاف إلى ٬.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 86,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "arabic-remove-quranic-marks",
+    "title": "حذف العلامات القرآنية",
+    "description": "إزالة علامات الوقف والزخارف القرآنية مع إبقاء الأحرف.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 87,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "auto-direction",
+    "title": "اكتشاف الاتجاه تلقائيًا",
+    "description": "اختيار RTL أو LTR حسب النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 88,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "arabic-clean-all",
+    "title": "تنظيف عربي شامل",
+    "description": "حذف التشكيل والتطويل وضبط RTL وArial 14.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 89,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "normalize-arabic-punctuation",
+    "title": "ترقيم عربي ذكي",
+    "description": "تحويل الفاصلة والفاصلة المنقوطة وعلامة السؤال إلى العربية وضبط المسافات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 90,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "rtl",
+    "title": "اتجاه RTL",
+    "description": "تطبيق اتجاه الكتابة من اليمين إلى اليسار.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 91,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "arabic-quotes",
+    "title": "علامات اقتباس عربية",
+    "description": "تحويل علامات الاقتباس إلى « ».",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 92,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "digits-eastern",
+    "title": "أرقام عربية",
+    "description": "تحويل الأرقام الغربية إلى ٠١٢٣.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 93,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "digits-western",
+    "title": "أرقام غربية",
+    "description": "تحويل الأرقام العربية والفارسية إلى 0123.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 94,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "insert-arabic-date",
+    "title": "إدراج التاريخ بالعربية",
+    "description": "إدراج التاريخ الميلادي بأسماء الأشهر العربية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 95,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "keyboard-ar-to-en",
+    "title": "تصحيح كتابة عربية إلى إنجليزية",
+    "description": "إصلاح نص كُتب بلوحة مفاتيح عربية بدل الإنجليزية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 96,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "keyboard-en-to-ar",
+    "title": "تصحيح كتابة إنجليزية إلى عربية",
+    "description": "إصلاح نص كُتب بلوحة مفاتيح إنجليزية بدل العربية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 97,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "ltr",
+    "title": "اتجاه LTR",
+    "description": "تطبيق اتجاه الكتابة من اليسار إلى اليمين.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 98,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "normalize-arabic",
+    "title": "توحيد الحروف العربية",
+    "description": "توحيد أشكال الألف والياء والهمزات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 99,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "number-arabic-words",
+    "title": "رقم إلى كلمات عربية",
+    "description": "تحويل الرقم المحدد إلى كلمات عربية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 100,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "persian-to-arabic-letters",
+    "title": "تصحيح الحروف الفارسية",
+    "description": "تحويل ي وك الفارسية إلى الحروف العربية القياسية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 101,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "remove-diacritics",
+    "title": "حذف التشكيل",
+    "description": "حذف الحركات والعلامات العربية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 102,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "wrap-arabic-brackets",
+    "title": "إحاطة بقوسين عربيين",
+    "description": "إحاطة النص المحدد بعلامتي ﴿ ﴾.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 103,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "digits-persian",
+    "title": "أرقام فارسية",
+    "description": "تحويل الأرقام إلى ۰۱۲۳.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 104,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "insert-hijri-date",
+    "title": "إدراج التاريخ الهجري",
+    "description": "إدراج تاريخ أم القرى الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 105,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "remove-tatweel",
+    "title": "حذف التطويل",
+    "description": "حذف الكشيدة ـ من النص.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 106,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "remove-zero-width",
+    "title": "حذف المحارف المخفية",
+    "description": "حذف محارف zero-width وBOM من النص.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 107,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "reverse-text",
+    "title": "عكس النص",
+    "description": "عكس ترتيب الأحرف في النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 108,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-aptos-11",
+    "title": "Aptos 11",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 109,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-aptos-12",
+    "title": "Aptos 12",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 110,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-arial-10",
+    "title": "Arial 10",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 111,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-arial-12",
+    "title": "Arial 12",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 112,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-arial-16",
+    "title": "Arial 16",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 113,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-calibri-10",
+    "title": "Calibri 10",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 114,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-calibri-12",
+    "title": "Calibri 12",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 115,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-cambria-12",
+    "title": "Cambria 12",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 116,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-century-gothic-11",
+    "title": "Century Gothic 11",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 117,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-consolas-10",
+    "title": "Consolas 10",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 118,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-courier-10",
+    "title": "Courier New 10",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 119,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-dubai-12",
+    "title": "Dubai 12",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 120,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-georgia-12",
+    "title": "Georgia 12",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 121,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-noto-naskh-14",
+    "title": "Noto Naskh Arabic 14",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 122,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-segoe-10",
+    "title": "Segoe UI 10",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 123,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-segoe-12",
+    "title": "Segoe UI 12",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 124,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-simplified-arabic-14",
+    "title": "Simplified Arabic 14",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 125,
+    "engine": "الهندسة اللغوية والخطوط العربية",
+    "commandId": "font-tahoma-10",
+    "title": "Tahoma 10",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 126,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "smart-executive-summary",
+    "title": "ملخص تنفيذي ذكي",
+    "description": "إنشاء ملخص تنفيذي محلي مع مؤشرات النص.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 127,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "smart-offline-summary",
+    "title": "تلخيص ذكي دون إنترنت",
+    "description": "إنشاء ملخص استخراجي محلي من الجمل الأهم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 128,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "smart-sentiment",
+    "title": "تحليل نبرة النص",
+    "description": "تحليل محلي تقريبي للكلمات الإيجابية والسلبية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 129,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "smart-keywords",
+    "title": "استخراج الكلمات المفتاحية",
+    "description": "استخراج أكثر الكلمات دلالة وتكرارًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 130,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "smart-outline",
+    "title": "مخطط هيكلي ذكي",
+    "description": "إنشاء مخطط أولي من الفقرات والعناوين.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 131,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "smart-readability-advice",
+    "title": "اقتراحات قابلية القراءة",
+    "description": "تحليل طول الجمل والفقرات وإظهار توصيات عملية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 132,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "smart-title-suggestions",
+    "title": "اقتراح عناوين",
+    "description": "توليد عناوين مقترحة من الكلمات المفتاحية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 133,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "ai-chat-provider",
+    "title": "دردشة مع المستند",
+    "description": "طرح سؤال على النص المحدد عبر موفر AI اختياري.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 134,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "ai-provider-settings",
+    "title": "إعداد موفر AI",
+    "description": "إعداد Ollama أو LM Studio أو OpenAI-Compatible اختياريًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 135,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "ai-rewrite-provider",
+    "title": "إعادة صياغة عبر AI",
+    "description": "إرسال النص إلى موفر AI المتوافق وإدراج النتيجة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 136,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "ai-translate-provider",
+    "title": "ترجمة عبر AI",
+    "description": "ترجمة النص عبر موفر AI اختياري.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 137,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "smart-action-items",
+    "title": "استخراج إجراءات العمل",
+    "description": "استخراج الجمل المحتملة التي تتضمن إجراءات أو تكليفات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 138,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "smart-decisions",
+    "title": "استخراج القرارات",
+    "description": "استخراج الجمل التي تبدو قرارات أو اعتمادات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 139,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "smart-reading-questions",
+    "title": "إنشاء أسئلة قراءة",
+    "description": "توليد أسئلة مراجعة من عبارات المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 140,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "calculator",
+    "title": "حاسبة التحديد",
+    "description": "حساب تعبير رياضي محدد وإدراج النتيجة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 141,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "insert-checklist",
+    "title": "قائمة مهام بمربعات",
+    "description": "تحويل بنود إلى قائمة ☐.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 142,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "insert-guid",
+    "title": "إدراج UUID",
+    "description": "إدراج معرف فريد عالمي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 143,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "insert-lorem-arabic",
+    "title": "نص عربي تجريبي",
+    "description": "إدراج فقرات عربية لتجربة التصميم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 144,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-words-pro",
+    "title": "عدد الكلمات",
+    "description": "تحليل المستند وعرض عدد الكلمات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 145,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "open-log",
+    "title": "فتح سجل الإضافة",
+    "description": "فتح أحدث ملف Log.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 146,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-bookmarks-pro",
+    "title": "عدد الإشارات المرجعية",
+    "description": "تحليل المستند وعرض عدد الإشارات المرجعية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 147,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-characters-pro",
+    "title": "عدد الأحرف",
+    "description": "تحليل المستند وعرض عدد الأحرف.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 148,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-comments-pro",
+    "title": "عدد التعليقات",
+    "description": "تحليل المستند وعرض عدد التعليقات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 149,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-fields-pro",
+    "title": "عدد الحقول",
+    "description": "تحليل المستند وعرض عدد الحقول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 150,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-footnotes-pro",
+    "title": "عدد الحواشي",
+    "description": "تحليل المستند وعرض عدد الحواشي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 151,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-headings-pro",
+    "title": "عدد العناوين",
+    "description": "تحليل المستند وعرض عدد العناوين.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 152,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-hyperlinks-pro",
+    "title": "عدد الروابط",
+    "description": "تحليل المستند وعرض عدد الروابط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 153,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-images-pro",
+    "title": "عدد الصور",
+    "description": "تحليل المستند وعرض عدد الصور.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 154,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-pages-pro",
+    "title": "عدد الصفحات",
+    "description": "تحليل المستند وعرض عدد الصفحات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 155,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-paragraphs-pro",
+    "title": "عدد الفقرات",
+    "description": "تحليل المستند وعرض عدد الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 156,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-readability-pro",
+    "title": "قابلية القراءة",
+    "description": "تحليل المستند وعرض قابلية القراءة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 157,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-revisions-pro",
+    "title": "عدد التعديلات",
+    "description": "تحليل المستند وعرض عدد التعديلات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 158,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-sections-pro",
+    "title": "عدد المقاطع",
+    "description": "تحليل المستند وعرض عدد المقاطع.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 159,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "metric-tables-pro",
+    "title": "عدد الجداول",
+    "description": "تحليل المستند وعرض عدد الجداول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 160,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "document-dashboard",
+    "title": "لوحة المستند",
+    "description": "عرض الصفحات والكلمات والجداول والصور والروابط والمراجعات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 161,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "word-frequency-top",
+    "title": "أكثر الكلمات تكرارًا",
+    "description": "إنشاء تقرير بأعلى الكلمات تكرارًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 162,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "list-bookmarks",
+    "title": "قائمة الإشارات المرجعية",
+    "description": "إنشاء قائمة بأسماء Bookmarks.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 163,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "list-document-headings",
+    "title": "قائمة العناوين",
+    "description": "إنشاء مستند جديد بجميع العناوين وأنماطها.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 164,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "word-frequency-report",
+    "title": "تحليل تكرار الكلمات",
+    "description": "إنشاء تقرير بأكثر 50 كلمة تكرارًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 165,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "long-paragraph-report",
+    "title": "تقرير الفقرات الطويلة",
+    "description": "إنشاء تقرير بالفقرات التي تتجاوز حد الكلمات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 166,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "extract-numbers-pro",
+    "title": "استخراج الأرقام",
+    "description": "استخراج القيم الرقمية الفريدة من النص.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 167,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "academic-heading-audit",
+    "title": "تدقيق هيكل العناوين",
+    "description": "تحليل تسلسل Heading 1–3 واكتشاف القفزات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 168,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "insert-executive-summary",
+    "title": "هيكل ملخص تنفيذي",
+    "description": "إدراج هيكل احترافي للملخص التنفيذي والنتائج والتوصيات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 169,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "insert-pestle-matrix",
+    "title": "تحليل PESTLE",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 170,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "insert-swot-matrix",
+    "title": "تحليل SWOT",
+    "description": "إدراج جدول نقاط القوة والضعف والفرص والتهديدات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 171,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "insert-swot-matrix-v3",
+    "title": "تحليل SWOT",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 172,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "legal-highlight-obligations",
+    "title": "تمييز الالتزامات",
+    "description": "تمييز كلمات الالتزام والوجوب والمسؤولية داخل المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 173,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "orientation-portrait-pro",
+    "title": "اتجاه عمودي احترافي",
+    "description": "تعيين اتجاه الصفحة عموديًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 174,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "productivity-reading-time",
+    "title": "زمن القراءة المتوقع",
+    "description": "حساب زمن القراءة بناءً على عدد الكلمات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 175,
+    "engine": "المساعد الذكي والذكاء الاصطناعي",
+    "commandId": "productivity-session-report",
+    "title": "تقرير جلسة العمل",
+    "description": "عرض مدة الجلسة والكلمات المضافة ومعلومات المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 176,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-calculation-template",
+    "title": "جدول حسابات",
+    "description": "إدراج جدول بنود وكميات وأسعار وإجماليات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 177,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-format-currency",
+    "title": "تنسيق العملة",
+    "description": "تنسيق القيم الرقمية في الخلايا المحددة كعملة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 178,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-format-date",
+    "title": "تنسيق التاريخ",
+    "description": "توحيد التواريخ الموجودة في خلايا الجدول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 179,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-alternate-columns",
+    "title": "تظليل الأعمدة بالتناوب",
+    "description": "تطبيق تظليل متبادل على أعمدة الجدول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 180,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-format-percent",
+    "title": "تنسيق النسب المئوية",
+    "description": "تنسيق القيم الرقمية في الجدول كنسب مئوية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 181,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-summary-template",
+    "title": "جدول تلخيص بيانات",
+    "description": "إدراج قالب تلخيص فئات وقيم ونسب.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 182,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "tabs-to-table-smart",
+    "title": "Tabs إلى جدول ذكي",
+    "description": "تحويل النص المفصول بعلامات Tab إلى جدول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 183,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-sum-column",
+    "title": "مجموع العمود",
+    "description": "إضافة صف مجموع للعمود الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 184,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-average-column",
+    "title": "متوسط العمود",
+    "description": "إضافة صف متوسط للعمود الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 185,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-sort-asc",
+    "title": "فرز الجدول تصاعديًا",
+    "description": "فرز الصفوف حسب العمود الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 186,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-sort-desc",
+    "title": "فرز الجدول تنازليًا",
+    "description": "فرز الصفوف تنازليًا حسب العمود الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 187,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-autofit-window",
+    "title": "ملاءمة الصفحة",
+    "description": "ملاءمة عرض الجدول للصفحة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 188,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-banded-rows",
+    "title": "صفوف متبادلة",
+    "description": "تظليل صفوف الجدول بالتناوب.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 189,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-center-cells",
+    "title": "توسيط الخلايا",
+    "description": "توسيط أفقي وعمودي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 190,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-col-right",
+    "title": "عمود يمين",
+    "description": "إضافة عمود في نهاية الجدول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 191,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-number-first-column",
+    "title": "ترقيم العمود الأول",
+    "description": "إضافة تسلسل رقمي للصفوف.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 192,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-professional",
+    "title": "تنسيق جدول احترافي",
+    "description": "حدود وعنوان وتوسيط وملاءمة الصفحة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 193,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-row-below",
+    "title": "صف أسفل",
+    "description": "إضافة صف في نهاية الجدول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 194,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-transpose",
+    "title": "تبديل الصفوف والأعمدة",
+    "description": "Transpose للجدول الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 195,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-vertical-bottom",
+    "title": "محاذاة عمودية أسفل",
+    "description": "محاذاة محتوى الخلايا للأسفل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 196,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-vertical-middle",
+    "title": "محاذاة عمودية وسط",
+    "description": "محاذاة محتوى الخلايا للوسط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 197,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-vertical-top",
+    "title": "محاذاة عمودية أعلى",
+    "description": "محاذاة محتوى الخلايا للأعلى.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 198,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-borders-all",
+    "title": "كل الحدود",
+    "description": "إظهار جميع حدود الجدول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 199,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-borders-none",
+    "title": "بدون حدود",
+    "description": "إخفاء حدود الجدول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 200,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-col-left",
+    "title": "عمود يسار",
+    "description": "إضافة عمود قبل العمود الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 201,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-delete-column",
+    "title": "حذف العمود",
+    "description": "حذف العمود الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 202,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-delete-row",
+    "title": "حذف الصف",
+    "description": "حذف الصف الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 203,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-distribute-rows",
+    "title": "توزيع الصفوف",
+    "description": "توزيع الصفوف بالتساوي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 204,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-header-style",
+    "title": "تنسيق صف العنوان",
+    "description": "تظليل وتغليظ وتكرار الصف الأول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 205,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-ltr",
+    "title": "جدول LTR",
+    "description": "اتجاه الجدول من اليسار إلى اليمين.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 206,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-merge-cells",
+    "title": "دمج الخلايا",
+    "description": "دمج الخلايا المحددة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 207,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-remove-duplicate-rows",
+    "title": "حذف الصفوف المكررة",
+    "description": "حذف الصفوف المتطابقة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 208,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-remove-empty-rows",
+    "title": "حذف الصفوف الفارغة",
+    "description": "حذف الصفوف التي لا تحتوي بيانات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 209,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-repeat-header",
+    "title": "تكرار صف العنوان",
+    "description": "تكرار الصف الأول في كل صفحة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 210,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-row-above",
+    "title": "صف أعلى",
+    "description": "إضافة صف فوق الخلية الحالية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 211,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-rtl",
+    "title": "جدول RTL",
+    "description": "اتجاه الجدول من اليمين إلى اليسار.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 212,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-split-cell",
+    "title": "تقسيم الخلية",
+    "description": "تقسيم الخلية إلى صفوف وأعمدة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 213,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-to-text",
+    "title": "تحويل جدول إلى نص",
+    "description": "تحويل الجدول إلى نص مفصول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 214,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-trim-cells",
+    "title": "تنظيف الخلايا",
+    "description": "حذف المسافات الزائدة داخل الخلايا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 215,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "text-to-table",
+    "title": "تحويل نص إلى جدول",
+    "description": "تحويل نص مفصول بعلامات إلى جدول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 216,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-autofit-content",
+    "title": "ملاءمة المحتوى",
+    "description": "ملاءمة عرض الأعمدة للمحتوى.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 217,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-digits-eastern-pro",
+    "title": "أرقام الجدول عربية",
+    "description": "تحويل أرقام جميع خلايا الجدول إلى ٠١٢٣.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 218,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-digits-western-pro",
+    "title": "أرقام الجدول غربية",
+    "description": "تحويل أرقام جميع خلايا الجدول إلى 0123.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 219,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-distribute-columns",
+    "title": "توزيع الأعمدة",
+    "description": "توزيع الأعمدة بالتساوي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 220,
+    "engine": "الهندسة الجدولية والحسابات",
+    "commandId": "table-auto-row-height",
+    "title": "ارتفاع صفوف تلقائي",
+    "description": "إعادة ارتفاع الصفوف إلى الوضع التلقائي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 221,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "media-caption-images",
+    "title": "إضافة تسميات للصور",
+    "description": "إضافة Caption تلقائي لكل صورة مضمنة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 222,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "media-accessibility-report",
+    "title": "تقرير وصول الصور",
+    "description": "إظهار الصور التي تفتقد النص البديل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 223,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "media-center-images",
+    "title": "توسيط جميع الصور",
+    "description": "توسيط فقرات الصور المضمنة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 224,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "media-compress-pictures",
+    "title": "ضغط الصور",
+    "description": "تشغيل أمر Word المدمج لضغط الصور.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 225,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "media-export-images",
+    "title": "تصدير صور المستند",
+    "description": "حفظ نسخة HTML لاستخراج صور المستند في مجلد مستقل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 226,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "media-fit-page",
+    "title": "ملاءمة الصور للصفحة",
+    "description": "تحديد عرض الصور بما يناسب مساحة الصفحة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 227,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "media-resize-half",
+    "title": "تصغير الصور 50%",
+    "description": "تقليل أبعاد جميع الصور المضمنة إلى النصف.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 228,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "insert-checkbox-symbols",
+    "title": "مربعات اختيار جاهزة",
+    "description": "إدراج عدد من مربعات الاختيار.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 229,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "insert-current-time",
+    "title": "إدراج الوقت الحالي",
+    "description": "إدراج الوقت بصيغة HH:mm.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 230,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "insert-document-info",
+    "title": "كتلة معلومات المستند",
+    "description": "إدراج العنوان والمؤلف واسم الملف والتاريخ.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 231,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "insert-iso-date",
+    "title": "إدراج تاريخ ISO",
+    "description": "إدراج التاريخ بصيغة yyyy-MM-dd.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 232,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "insert-page-x-of-y",
+    "title": "صفحة X من Y",
+    "description": "إضافة ترقيم صفحة من إجمالي الصفحات في التذييل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 233,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "insert-timestamp",
+    "title": "إدراج طابع زمني",
+    "description": "إدراج التاريخ والوقت الكامل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 234,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "font-color-blue-pro",
+    "title": "لون أزرق احترافي",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 235,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "font-color-gray-pro",
+    "title": "لون رمادي احترافي",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 236,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "font-color-green-pro",
+    "title": "لون أخضر احترافي",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 237,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "font-color-red-pro",
+    "title": "لون أحمر احترافي",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 238,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-allcaps-off",
+    "title": "إلغاء الأحرف الكبيرة",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 239,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-allcaps-on",
+    "title": "أحرف كبيرة",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 240,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-bold-off",
+    "title": "إلغاء الغامق",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 241,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-bold-on",
+    "title": "غامق",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 242,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-italic-off",
+    "title": "إلغاء المائل",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 243,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-italic-on",
+    "title": "مائل",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 244,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-strike-off",
+    "title": "إلغاء يتوسطه خط",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 245,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-strike-on",
+    "title": "يتوسطه خط",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 246,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-subscript",
+    "title": "منخفض Subscript",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 247,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-superscript",
+    "title": "مرتفع Superscript",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 248,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-underline-off",
+    "title": "إلغاء التسطير",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 249,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "text-underline-on",
+    "title": "تسطير",
+    "description": "تطبيق تأثير نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 250,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "line-numbers-continuous-pro",
+    "title": "ترقيم أسطر مستمر",
+    "description": "إظهار أرقام الأسطر بصورة مستمرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 251,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "clear-highlight-pro",
+    "title": "إزالة التمييز",
+    "description": "إزالة لون التمييز من التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 252,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "font-color-automatic",
+    "title": "لون خط تلقائي",
+    "description": "إعادة لون الخط إلى اللون التلقائي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 253,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "highlight-clear",
+    "title": "إزالة التمييز",
+    "description": "إزالة لون التمييز.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 254,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "highlight-green",
+    "title": "تمييز أخضر",
+    "description": "تمييز النص باللون الأخضر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 255,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "highlight-red",
+    "title": "تمييز أحمر",
+    "description": "تمييز النص باللون الأحمر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 256,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "highlight-yellow",
+    "title": "تمييز أصفر",
+    "description": "تمييز النص باللون الأصفر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 257,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "insert-issue-log-pro",
+    "title": "سجل المشكلات",
+    "description": "إدراج جدول لتتبع القضايا والمشكلات حتى الإغلاق.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 258,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "insert-issue-register-v3",
+    "title": "سجل المشكلات العالمي",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 259,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "about",
+    "title": "حول WordPro Suite",
+    "description": "معلومات الإصدار والتقنية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 260,
+    "engine": "الميديا والوسائط والأشكال",
+    "commandId": "academic-bibliography-audit",
+    "title": "تدقيق قائمة المراجع",
+    "description": "فحص قائمة المراجع وإظهار الأسطر المكررة أو الناقصة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 261,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "batch-accept-revisions",
+    "title": "قبول التعديلات دفعيًا",
+    "description": "قبول التعديلات المتعقبة في ملفات مجلد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 262,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "batch-protect-readonly",
+    "title": "حماية للقراءة فقط دفعيًا",
+    "description": "تطبيق حماية القراءة فقط على ملفات مجلد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 263,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "batch-remove-comments",
+    "title": "حذف التعليقات دفعيًا",
+    "description": "حذف تعليقات جميع مستندات Word داخل مجلد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 264,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "batch-remove-properties",
+    "title": "تنظيف الخصائص دفعيًا",
+    "description": "إزالة معلومات المستند الشخصية من ملفات مجلد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 265,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "batch-update-fields",
+    "title": "تحديث الحقول دفعيًا",
+    "description": "تحديث الحقول في ملفات Word داخل مجلد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 266,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "batch-export-pdf-v4",
+    "title": "تحويل مجلد إلى PDF",
+    "description": "تصدير ملفات Word الموجودة في مجلد إلى PDF.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 267,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "batch-print-documents",
+    "title": "طباعة مجلد مستندات",
+    "description": "إرسال ملفات Word في مجلد إلى الطابعة الافتراضية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 268,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "batch-save-docx",
+    "title": "تحويل مجلد إلى DOCX",
+    "description": "فتح ملفات Word في مجلد وحفظها بصيغة DOCX.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 269,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "batch-pdf",
+    "title": "تحويل مجلد إلى PDF",
+    "description": "تحويل ملفات Word داخل مجلد إلى PDF دفعة واحدة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 270,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "archive-package",
+    "title": "حزمة أرشيف",
+    "description": "إنشاء مجلد يحتوي نسخة Word وPDF ومعلومات الحزمة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 271,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "open-document-folder",
+    "title": "فتح موقع المستند",
+    "description": "فتح Explorer وتحديد الملف الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 272,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "copy-as-markdown",
+    "title": "نسخ كـ Markdown",
+    "description": "نسخ التحديد كنص Markdown بسيط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 273,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "copy-document-path",
+    "title": "نسخ مسار المستند",
+    "description": "نسخ المسار الكامل إلى الحافظة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 274,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "export-pdf",
+    "title": "تصدير PDF",
+    "description": "تصدير المستند إلى PDF.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 275,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "export-pdfa",
+    "title": "تصدير PDF/A",
+    "description": "تصدير أرشيفي PDF/A.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 276,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "export-plain-text",
+    "title": "تصدير المستند TXT",
+    "description": "تصدير محتوى المستند كنص UTF-8.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 277,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "export-sections-pdf",
+    "title": "كل مقطع PDF مستقل",
+    "description": "تصدير كل Section إلى ملف PDF منفصل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 278,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "export-selection-pdf",
+    "title": "تصدير التحديد PDF",
+    "description": "تصدير الجزء المحدد فقط إلى PDF.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 279,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "export-selection-text",
+    "title": "تصدير التحديد TXT",
+    "description": "حفظ النص المحدد في ملف TXT.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 280,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "merge-documents",
+    "title": "دمج مستندات",
+    "description": "إدراج عدة مستندات في المستند الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 281,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "move-selection-new-document",
+    "title": "التحديد إلى مستند جديد",
+    "description": "نسخ التحديد مع تنسيقه إلى مستند مستقل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 282,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "save-all",
+    "title": "حفظ كل المستندات",
+    "description": "حفظ جميع مستندات Word المفتوحة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 283,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "save-backup",
+    "title": "نسخة احتياطية مؤرخة",
+    "description": "حفظ نسخة احتياطية دون تغيير المستند المفتوح.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 284,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "save-docx-copy",
+    "title": "نسخة DOCX",
+    "description": "إنشاء نسخة DOCX مستقلة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 285,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "save-version",
+    "title": "حفظ إصدار جديد",
+    "description": "حفظ نسخة باسم يحتوي التاريخ والوقت.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 286,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "lock-all-fields",
+    "title": "قفل جميع الحقول",
+    "description": "منع تحديث جميع حقول المستند مؤقتًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 287,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "remove-all-bookmarks-pro",
+    "title": "حذف كل الإشارات المرجعية",
+    "description": "حذف جميع Bookmarks من المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 288,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "toggle-field-codes",
+    "title": "إظهار/إخفاء أكواد الحقول",
+    "description": "التبديل بين نتائج الحقول وأكوادها.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 289,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "unlock-all-fields",
+    "title": "فتح جميع الحقول",
+    "description": "إتاحة تحديث جميع حقول المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 290,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "prefix-folder-pro",
+    "title": "قائمة مجلدات",
+    "description": "إضافة الرمز 📁 في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 291,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "academic-extract-citations",
+    "title": "استخراج الاستشهادات",
+    "description": "استخراج الاستشهادات بين الأقواس إلى تقرير جديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 292,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "academic-footnote-audit",
+    "title": "تدقيق الحواشي",
+    "description": "إظهار عدد الحواشي الفارغة أو القصيرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 293,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "academic-insert-apa",
+    "title": "إدراج مرجع APA",
+    "description": "إدراج قالب مرجع وفق أسلوب APA.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 294,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "academic-insert-mla",
+    "title": "إدراج مرجع MLA",
+    "description": "إدراج قالب مرجع وفق أسلوب MLA.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 295,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "accept-revisions",
+    "title": "قبول كل التعديلات",
+    "description": "قبول جميع التغييرات المتعقبة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 296,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "activate",
+    "title": "تفعيل البرنامج",
+    "description": "إدخال Serial Number وتفعيل النسخة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 297,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "align-center",
+    "title": "توسيط",
+    "description": "توسيط الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 298,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "align-justify",
+    "title": "ضبط كامل",
+    "description": "ضبط الفقرات من الطرفين.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 299,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "align-left",
+    "title": "محاذاة يسار",
+    "description": "محاذاة الفقرات إلى اليسار.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 300,
+    "engine": "أتمتة العمليات المجمعة",
+    "commandId": "align-right",
+    "title": "محاذاة يمين",
+    "description": "محاذاة الفقرات إلى اليمين.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 301,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "reference-case",
+    "title": "مرجع حالة",
+    "description": "إنشاء رقم مرجعي فريد يبدأ بـ CASE.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 302,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "reference-doc",
+    "title": "مرجع مستند",
+    "description": "إنشاء رقم مرجعي فريد يبدأ بـ DOC.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 303,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "reference-memo",
+    "title": "مرجع مذكرة",
+    "description": "إنشاء رقم مرجعي فريد يبدأ بـ MEMO.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 304,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "reference-rpt",
+    "title": "مرجع تقرير",
+    "description": "إنشاء رقم مرجعي فريد يبدأ بـ RPT.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 305,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "time-reference",
+    "title": "وقت مرجعي",
+    "description": "إدراج الوقت الحالي بصيغة HHmmss.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 306,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "date-arabic-full",
+    "title": "تاريخ عربي كامل",
+    "description": "إدراج التاريخ الحالي بالصيغة dddd، d MMMM yyyy.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 307,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "date-arabic-long",
+    "title": "تاريخ عربي طويل",
+    "description": "إدراج التاريخ الحالي بالصيغة d MMMM yyyy.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 308,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "date-compact",
+    "title": "تاريخ مضغوط",
+    "description": "إدراج التاريخ الحالي بالصيغة yyyyMMdd.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 309,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "date-day-month-year",
+    "title": "يوم/شهر/سنة",
+    "description": "إدراج التاريخ الحالي بالصيغة dd/MM/yyyy.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 310,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "date-english-short",
+    "title": "تاريخ إنجليزي مختصر",
+    "description": "إدراج التاريخ الحالي بالصيغة dd-MMM-yyyy.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 311,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "date-iso",
+    "title": "تاريخ ISO",
+    "description": "إدراج التاريخ الحالي بالصيغة yyyy-MM-dd.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 312,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "date-month-year",
+    "title": "الشهر والسنة",
+    "description": "إدراج التاريخ الحالي بالصيغة MMMM yyyy.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 313,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "date-simple",
+    "title": "تاريخ بسيط",
+    "description": "إدراج التاريخ الحالي بالصيغة d/M/yyyy.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 314,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "date-slash-iso",
+    "title": "تاريخ بشرطات مائلة",
+    "description": "إدراج التاريخ الحالي بالصيغة yyyy/MM/dd.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 315,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "date-us",
+    "title": "تاريخ أمريكي",
+    "description": "إدراج التاريخ الحالي بالصيغة MM/dd/yyyy.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 316,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "time-12-seconds",
+    "title": "وقت 12 مع الثواني",
+    "description": "إدراج الوقت الحالي بصيغة hh:mm:ss tt.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 317,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "time-12-short",
+    "title": "وقت 12 ساعة",
+    "description": "إدراج الوقت الحالي بصيغة hh:mm tt.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 318,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "time-24-seconds",
+    "title": "وقت 24 مع الثواني",
+    "description": "إدراج الوقت الحالي بصيغة HH:mm:ss.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 319,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "time-24-short",
+    "title": "وقت 24 ساعة",
+    "description": "إدراج الوقت الحالي بصيغة HH:mm.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 320,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "time-compact",
+    "title": "وقت مضغوط",
+    "description": "إدراج الوقت الحالي بصيغة HHmm.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 321,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "format-academic",
+    "title": "تنسيق أكاديمي",
+    "description": "ضبط الصفحة والخطوط والتباعد لبحث أكاديمي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 322,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "catalog-600-center",
+    "title": "موسوعة 600 أداة",
+    "description": "عرض الأدوات وفق المحركات الخمسة عشر في الدليل المرجعي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 323,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "command-center",
+    "title": "مركز الأدوات الاحترافي",
+    "description": "بحث وفئات ومفضلة وآخر استخدام لكل الأدوات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 324,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "find-replace-prompt",
+    "title": "بحث واستبدال سريع",
+    "description": "بحث واستبدال داخل التحديد أو المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 325,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "insert-toc",
+    "title": "إضافة فهرس محتويات",
+    "description": "إدراج فهرس من العناوين 1 إلى 3.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 326,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "margins-academic-pro",
+    "title": "هوامش أكاديمية",
+    "description": "تطبيق تخطيط هوامش احترافي جاهز.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 327,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "remove-bookmarks",
+    "title": "حذف الإشارات المرجعية",
+    "description": "حذف جميع Bookmarks.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 328,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "security-remove-hidden-text",
+    "title": "حذف النص المخفي",
+    "description": "البحث عن النص المخفي وحذفه من المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 329,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "template-tor",
+    "title": "شروط مرجعية ToR",
+    "description": "إدراج هيكل شروط مرجعية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 330,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "border-box",
+    "title": "إطار حول النص",
+    "description": "إضافة حدود حول الفقرات المحددة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 331,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "border-clear",
+    "title": "إزالة الحدود",
+    "description": "إزالة حدود الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 332,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "clean-properties",
+    "title": "تنظيف الخصائص المخصصة",
+    "description": "حذف البيانات الشخصية والخصائص المخصصة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 333,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "clear-formatting",
+    "title": "إزالة التنسيق المباشر",
+    "description": "إرجاع النص إلى تنسيق النمط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 334,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "clipboard-append-collection",
+    "title": "إضافة إلى الحافظة المجمعة",
+    "description": "إضافة التحديد إلى ملف تجميع نصوص قابل للإدراج لاحقًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 335,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "clipboard-clear-snippets",
+    "title": "مسح مكتبة المقتطفات",
+    "description": "حذف المقتطفات المحلية المحفوظة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 336,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "clipboard-insert-snippet",
+    "title": "إدراج مقتطف",
+    "description": "اختيار مقتطف محفوظ وإدراجه عند المؤشر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 337,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "clipboard-save-snippet",
+    "title": "حفظ مقتطف",
+    "description": "حفظ النص المحدد في مكتبة المقتطفات المحلية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 338,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "columns-1-pro",
+    "title": "أعمدة الصفحة: 1",
+    "description": "تقسيم نص الصفحة إلى 1 أعمدة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 339,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "columns-2-pro",
+    "title": "أعمدة الصفحة: 2",
+    "description": "تقسيم نص الصفحة إلى 2 أعمدة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 340,
+    "engine": "البحث العلمي والمراجع",
+    "commandId": "columns-3-pro",
+    "title": "أعمدة الصفحة: 3",
+    "description": "تقسيم نص الصفحة إلى 3 أعمدة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 341,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "security-document-audit",
+    "title": "تدقيق أمان المستند",
+    "description": "عرض الروابط والتعليقات والتعديلات والبيانات الحساسة المحتملة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 342,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "security-redact-emails",
+    "title": "طمس البريد الإلكتروني",
+    "description": "استبدال عناوين البريد في النطاق بعلامات طمس.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 343,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "security-redact-identifiers",
+    "title": "طمس المعرّفات الرقمية",
+    "description": "طمس الأرقام الطويلة التي قد تمثل هويات أو حسابات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 344,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "security-redact-phones",
+    "title": "طمس أرقام الهواتف",
+    "description": "استبدال أرقام الهواتف المحتملة بعلامات طمس.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 345,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "security-redact-selection",
+    "title": "طمس التحديد",
+    "description": "استبدال النص المحدد بكتل سوداء مساوية للطول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 346,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "protect-forms",
+    "title": "حماية تعبئة النماذج",
+    "description": "السماح بتعبئة النماذج فقط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 347,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "protect-readonly",
+    "title": "حماية للقراءة فقط",
+    "description": "حماية المستند بكلمة مرور ضد التحرير.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 348,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "remove-external-links",
+    "title": "فصل الروابط الخارجية",
+    "description": "فصل روابط البيانات الخارجية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 349,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "remove-metadata",
+    "title": "إزالة البيانات الشخصية",
+    "description": "حذف معلومات المستند الشخصية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 350,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "unprotect",
+    "title": "إلغاء الحماية",
+    "description": "إلغاء حماية المستند بكلمة المرور.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 351,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "workflow-final-share",
+    "title": "تنظيف شامل قبل المشاركة",
+    "description": "نسخة احتياطية وتنظيف مراجعة وخصوصية ونص مخفي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 352,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "comments-report-pro",
+    "title": "تقرير التعليقات",
+    "description": "إنشاء مستند مستقل يحتوي جميع التعليقات وسياقها.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 353,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "reject-revisions",
+    "title": "رفض كل التعديلات",
+    "description": "رفض جميع التغييرات المتعقبة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 354,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "remove-comments",
+    "title": "حذف التعليقات",
+    "description": "حذف جميع التعليقات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 355,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "remove-endnotes",
+    "title": "حذف الحواشي الختامية",
+    "description": "حذف جميع Endnotes من المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 356,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "remove-footnotes",
+    "title": "حذف الحواشي السفلية",
+    "description": "حذف جميع Footnotes من المستند.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 357,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "revisions-summary-pro",
+    "title": "ملخص التعديلات",
+    "description": "إنشاء ملخص عددي للتعديلات المتعقبة حسب النوع.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 358,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "track-off",
+    "title": "إيقاف تعقب التغييرات",
+    "description": "إيقاف Track Changes.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 359,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "track-on",
+    "title": "تشغيل تعقب التغييرات",
+    "description": "تشغيل Track Changes.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 360,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "unlink-selection-fields",
+    "title": "فصل حقول التحديد",
+    "description": "تحويل الحقول الموجودة في التحديد إلى نص ثابت.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 361,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "workflow-final-delivery",
+    "title": "تجهيز نسخة نهائية",
+    "description": "نسخة احتياطية ثم قبول التعديلات وحذف التعليقات وتحديث الحقول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 362,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "form-export-controls-csv",
+    "title": "تصدير بيانات النموذج CSV",
+    "description": "تصدير عناوين وقيم Content Controls إلى CSV.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 363,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "legal-party-table",
+    "title": "جدول أطراف العقد",
+    "description": "إدراج جدول منظم لبيانات الأطراف والممثلين.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 364,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "remove-hidden-text",
+    "title": "حذف النص المخفي",
+    "description": "حذف كل النصوص ذات خاصية Hidden.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 365,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "comma-list-bullets",
+    "title": "قائمة مفصولة إلى نقاط",
+    "description": "تحويل العناصر المفصولة بفواصل إلى قائمة نقطية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 366,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "export-filtered-html",
+    "title": "تصدير HTML منقّى",
+    "description": "حفظ المستند بصيغة Filtered HTML.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 367,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "export-odt",
+    "title": "تصدير OpenDocument",
+    "description": "حفظ نسخة بصيغة ODT.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 368,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "export-pdf-page-range",
+    "title": "تصدير نطاق صفحات PDF",
+    "description": "اختيار أول وآخر صفحة وتصديرهما إلى PDF.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 369,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "export-rtf",
+    "title": "تصدير RTF",
+    "description": "حفظ نسخة من المستند بصيغة Rich Text Format.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 370,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "extract-hashtags",
+    "title": "استخراج الوسوم",
+    "description": "استخراج Hashtags إلى مستند جديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 371,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "extract-mentions",
+    "title": "استخراج الإشارات",
+    "description": "استخراج @mentions إلى مستند جديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 372,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "extract-numbers",
+    "title": "استخراج الأرقام",
+    "description": "إنشاء مستند جديد بالأرقام الموجودة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 373,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "filter-keep-alphanumeric-pro",
+    "title": "الاحتفاظ بالحروف والأرقام",
+    "description": "تطبيق مرشح نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 374,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "filter-keep-digits-pro",
+    "title": "الاحتفاظ بالأرقام فقط",
+    "description": "تطبيق مرشح نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 375,
+    "engine": "الأمان والتشفير والطمس",
+    "commandId": "filter-keep-letters-pro",
+    "title": "الاحتفاظ بالحروف فقط",
+    "description": "تطبيق مرشح نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 376,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "print-booklet-layout",
+    "title": "إعداد طباعة كتيب",
+    "description": "تطبيق إعداد Book Fold على المقطع الحالي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 377,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "margins-0-75cm",
+    "title": "هوامش 0.75 سم",
+    "description": "تطبيق هوامش موحدة بقيمة 0.75 سم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 378,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "margins-1-5cm",
+    "title": "هوامش 1.5 سم",
+    "description": "تطبيق هوامش موحدة بقيمة 1.5 سم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 379,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "margins-1cm",
+    "title": "هوامش 1 سم",
+    "description": "تطبيق هوامش موحدة بقيمة 1 سم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 380,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "margins-2-5cm",
+    "title": "هوامش 2.5 سم",
+    "description": "تطبيق هوامش موحدة بقيمة 2.5 سم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 381,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "margins-2cm",
+    "title": "هوامش 2 سم",
+    "description": "تطبيق هوامش موحدة بقيمة 2 سم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 382,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "margins-3cm",
+    "title": "هوامش 3 سم",
+    "description": "تطبيق هوامش موحدة بقيمة 3 سم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 383,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "margins-binding-pro",
+    "title": "هوامش تجليد",
+    "description": "تطبيق تخطيط هوامش احترافي جاهز.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 384,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "margins-official-pro",
+    "title": "هوامش خطاب رسمي",
+    "description": "تطبيق تخطيط هوامش احترافي جاهز.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 385,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "orientation-landscape-pro",
+    "title": "اتجاه أفقي احترافي",
+    "description": "تعيين اتجاه الصفحة أفقيًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 386,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "paper-a3-pro",
+    "title": "حجم ورق A3",
+    "description": "تعيين حجم الورق إلى A3.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 387,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "paper-a4-pro",
+    "title": "حجم ورق A4",
+    "description": "تعيين حجم الورق إلى A4.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 388,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "paper-a5-pro",
+    "title": "حجم ورق A5",
+    "description": "تعيين حجم الورق إلى A5.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 389,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "paper-legal-pro",
+    "title": "حجم ورق Legal",
+    "description": "تعيين حجم الورق إلى Legal.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 390,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "paper-letter-pro",
+    "title": "حجم ورق Letter",
+    "description": "تعيين حجم الورق إلى Letter.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 391,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "footer-text",
+    "title": "نص تذييل الصفحة",
+    "description": "كتابة تذييل موحد في جميع المقاطع.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 392,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "format-official-letter",
+    "title": "خطاب رسمي",
+    "description": "ضبط الصفحة والخط والفقرات لخطاب عربي رسمي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 393,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "header-text",
+    "title": "نص رأس الصفحة",
+    "description": "كتابة رأس موحد في جميع المقاطع.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 394,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "insert-page-break",
+    "title": "فاصل صفحة",
+    "description": "إدراج فاصل صفحة يدوي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 395,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "insert-section-next",
+    "title": "مقطع صفحة جديدة",
+    "description": "إدراج Section Break Next Page.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 396,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "keep-lines-together",
+    "title": "إبقاء أسطر الفقرة معًا",
+    "description": "منع تقسيم أسطر الفقرة بين الصفحات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 397,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "keep-with-next",
+    "title": "إبقاء مع التالي",
+    "description": "منع فصل العنوان عن الفقرة التالية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 398,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "margins-narrow",
+    "title": "هوامش ضيقة",
+    "description": "ضبط الهوامش إلى 1.27 سم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 399,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "margins-normal",
+    "title": "هوامش عادية",
+    "description": "ضبط الهوامش إلى 2.54 سم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 400,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "page-a3",
+    "title": "حجم A3",
+    "description": "ضبط الورق على A3.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 401,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "page-a4",
+    "title": "حجم A4",
+    "description": "ضبط الورق على A4.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 402,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "page-break-before",
+    "title": "بدء الفقرة في صفحة جديدة",
+    "description": "تطبيق Page break before.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 403,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "page-landscape",
+    "title": "اتجاه أفقي",
+    "description": "جعل الصفحة أفقية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 404,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "page-letter",
+    "title": "حجم Letter",
+    "description": "ضبط الورق على Letter.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 405,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "page-numbers-add",
+    "title": "إضافة أرقام الصفحات",
+    "description": "إضافة الترقيم إلى التذييل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 406,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "page-numbers-remove",
+    "title": "حذف أرقام الصفحات",
+    "description": "حذف حقول PAGE من التذييلات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 407,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "page-portrait",
+    "title": "اتجاه عمودي",
+    "description": "جعل الصفحة عمودية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 408,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "filter-remove-arabic-pro",
+    "title": "حذف الأحرف العربية",
+    "description": "تطبيق مرشح نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 409,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "filter-remove-brackets-pro",
+    "title": "حذف جميع الأقواس",
+    "description": "تطبيق مرشح نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 410,
+    "engine": "الطباعة والتصدير المتقدم",
+    "commandId": "filter-remove-digits-pro",
+    "title": "حذف الأرقام",
+    "description": "تطبيق مرشح نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 411,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-arrow-pro",
+    "title": "أسهم تنفيذ",
+    "description": "إضافة الرمز ➜ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 412,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-bullet-pro",
+    "title": "نقاط",
+    "description": "إضافة الرمز • في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 413,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-calendar-pro",
+    "title": "قائمة مواعيد",
+    "description": "إضافة الرمز 📅 في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 414,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-check-done-pro",
+    "title": "قائمة منجزة",
+    "description": "إضافة الرمز ☑ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 415,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-check-empty-pro",
+    "title": "قائمة تحقق فارغة",
+    "description": "إضافة الرمز ☐ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 416,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-circle-pro",
+    "title": "دوائر",
+    "description": "إضافة الرمز ○ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 417,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-clock-pro",
+    "title": "قائمة أوقات",
+    "description": "إضافة الرمز ⏱ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 418,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-dash-pro",
+    "title": "شرطة طويلة",
+    "description": "إضافة الرمز — في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 419,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-email-pro",
+    "title": "قائمة بريد",
+    "description": "إضافة الرمز ✉ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 420,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-file-pro",
+    "title": "قائمة ملفات",
+    "description": "إضافة الرمز 📄 في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 421,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-flag-pro",
+    "title": "قائمة أولويات",
+    "description": "إضافة الرمز ⚑ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 422,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-info-pro",
+    "title": "معلومات",
+    "description": "إضافة الرمز ℹ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 423,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-link-pro",
+    "title": "قائمة روابط",
+    "description": "إضافة الرمز 🔗 في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 424,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-phone-pro",
+    "title": "قائمة هواتف",
+    "description": "إضافة الرمز ☎ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 425,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-pin-pro",
+    "title": "ملاحظات مثبتة",
+    "description": "إضافة الرمز 📌 في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 426,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-square-pro",
+    "title": "مربعات",
+    "description": "إضافة الرمز ▪ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 427,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-star-pro",
+    "title": "نجوم",
+    "description": "إضافة الرمز ★ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 428,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-user-pro",
+    "title": "قائمة أشخاص",
+    "description": "إضافة الرمز 👤 في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 429,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "prefix-warning-pro",
+    "title": "تحذيرات",
+    "description": "إضافة الرمز ⚠ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 430,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "form-date-control",
+    "title": "حقل تاريخ تفاعلي",
+    "description": "إدراج Date Picker عند المؤشر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 431,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "form-text-control",
+    "title": "حقل نص تفاعلي",
+    "description": "إدراج Content Control نصي عند المؤشر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 432,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "form-checkbox-control",
+    "title": "مربع اختيار تفاعلي",
+    "description": "إدراج Checkbox Content Control.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 433,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-action-log-v3",
+    "title": "سجل الإجراءات",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 434,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-action-tracker-pro",
+    "title": "متابعة الإجراءات",
+    "description": "إدراج جدول متابعة إجراءات ومسؤوليات ومواعيد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 435,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-approval-table-pro",
+    "title": "جدول الاعتماد",
+    "description": "إدراج جدول إعداد ومراجعة واعتماد وتواريخ.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 436,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-asset-register",
+    "title": "سجل الأصول",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 437,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-attendance-sheet-v3",
+    "title": "كشف حضور عالمي",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 438,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-audit-findings",
+    "title": "نتائج التدقيق",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 439,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-budget-table",
+    "title": "جدول ميزانية",
+    "description": "إدراج جدول ميزانية تفصيلي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 440,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-budget-tracker",
+    "title": "متابعة الميزانية",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 441,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-change-request",
+    "title": "طلبات التغيير",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 442,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-communication-plan",
+    "title": "خطة الاتصالات",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 443,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-contact-directory-pro",
+    "title": "دليل جهات اتصال",
+    "description": "إدراج دليل جهات اتصال منظم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 444,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-contract-tracker",
+    "title": "متابعة العقود",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 445,
+    "engine": "الحافظة والأتمتة والاختصارات",
+    "commandId": "insert-date-time",
+    "title": "إدراج تاريخ ووقت",
+    "description": "إدراج التاريخ والوقت الحاليين.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 446,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "legal-clause-checklist",
+    "title": "قائمة فحص بنود العقد",
+    "description": "إدراج قائمة تدقيق للبنود الأساسية والمخاطر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 447,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "legal-highlight-dates",
+    "title": "تمييز التواريخ والمدد",
+    "description": "تمييز الأنماط المحتملة للتواريخ والمدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 448,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-decision-log",
+    "title": "سجل القرارات",
+    "description": "إدراج جدول احترافي لتوثيق القرارات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 449,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-distribution-list-pro",
+    "title": "قائمة التوزيع",
+    "description": "إدراج جدول الجهات المستلمة ووسيلة الإرسال والحالة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 450,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-document-control",
+    "title": "بطاقة ضبط المستند",
+    "description": "إدراج بطاقة رقم الإصدار والمالك والمراجعة والاعتماد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 451,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-inventory-table-pro",
+    "title": "سجل مخزون",
+    "description": "إدراج جدول مخزون وكميات ومواقع وحالة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 452,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-kpi-table",
+    "title": "جدول مؤشرات KPI",
+    "description": "إدراج إطار مؤشرات أداء ونتائج.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 453,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-raci-matrix",
+    "title": "مصفوفة RACI",
+    "description": "إدراج جدول توزيع المسؤوليات RACI.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 454,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-risk-register-pro",
+    "title": "سجل مخاطر احترافي",
+    "description": "إدراج سجل مخاطر متكامل بثمانية أعمدة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 455,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-timeline-table",
+    "title": "جدول زمني",
+    "description": "إدراج جدول أنشطة ومواعيد ومسؤوليات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 456,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-yes-no-table",
+    "title": "قائمة تحقق نعم/لا",
+    "description": "إدراج جدول Checklist مؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 457,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-decision-log-v3",
+    "title": "سجل القرارات",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 458,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-document-register-v3",
+    "title": "سجل الوثائق",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 459,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-donor-results",
+    "title": "مصفوفة نتائج مانح",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 460,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-incident-register",
+    "title": "سجل الحوادث",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 461,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-inventory-register-v3",
+    "title": "سجل المخزون المتقدم",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 462,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-kpi-dashboard",
+    "title": "لوحة مؤشرات KPI",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 463,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-leave-tracker",
+    "title": "متابعة الإجازات",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 464,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-lessons-learned",
+    "title": "الدروس المستفادة",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 465,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-medical-triage",
+    "title": "نموذج فرز طبي",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 466,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-meeting-agenda",
+    "title": "جدول أعمال اجتماع",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 467,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-meeting-minutes",
+    "title": "محضر اجتماع تنفيذي",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 468,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-milestone-register",
+    "title": "سجل المعالم",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 469,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-procurement-plan",
+    "title": "خطة المشتريات",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 470,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-project-timeline",
+    "title": "الجدول الزمني للمشروع",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 471,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-quality-checklist",
+    "title": "قائمة فحص الجودة",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 472,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-raci-matrix-v3",
+    "title": "مصفوفة RACI",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 473,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-risk-register-v3",
+    "title": "سجل المخاطر العالمي",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 474,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-stakeholder-register",
+    "title": "سجل أصحاب المصلحة",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 475,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "insert-training-matrix",
+    "title": "مصفوفة التدريب",
+    "description": "إدراج جدول احترافي جاهز للاستخدام المؤسسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 476,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "filter-remove-latin-pro",
+    "title": "حذف الأحرف اللاتينية",
+    "description": "تطبيق مرشح نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 477,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "filter-slashes-to-dashes-pro",
+    "title": "تحويل الشرطات المائلة إلى شرطات",
+    "description": "تطبيق مرشح نص احترافي على التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 478,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "font-arial-14",
+    "title": "Arial 14",
+    "description": "تطبيق Arial 14 عربي وإنجليزي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 479,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "font-calibri-11",
+    "title": "Calibri 11",
+    "description": "تطبيق Calibri 11.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 480,
+    "engine": "التدقيق القانوني والعقود",
+    "commandId": "font-tahoma-12",
+    "title": "Tahoma 12",
+    "description": "تطبيق Tahoma 12.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 481,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "project-weekly-status",
+    "title": "تقرير الحالة الأسبوعي",
+    "description": "إدراج قالب حالة أسبوعية للمشروع.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 482,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "project-deliverables-register",
+    "title": "سجل المخرجات",
+    "description": "إدراج سجل للمخرجات والمواعيد والقبول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 483,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "project-gantt-table",
+    "title": "جدول Gantt مبسط",
+    "description": "إدراج جدول زمني للمهام والتقدم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 484,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "project-task-board",
+    "title": "لوحة المهام",
+    "description": "إدراج جدول To Do / Doing / Done.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 485,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-concept-note",
+    "title": "مذكرة مفاهيمية",
+    "description": "إدراج هيكل Concept Note.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 486,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-project-report",
+    "title": "تقرير مشروع",
+    "description": "إدراج قالب تقرير مشروع.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 487,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-risk-register",
+    "title": "سجل مخاطر",
+    "description": "إدراج جدول سجل مخاطر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 488,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-sop",
+    "title": "إجراء تشغيلي SOP",
+    "description": "إدراج هيكل SOP.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 489,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-action-plan",
+    "title": "خطة عمل",
+    "description": "إدراج جدول خطة عمل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 490,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-agenda",
+    "title": "جدول أعمال",
+    "description": "إدراج قالب جدول أعمال اجتماع.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 491,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-attendance",
+    "title": "كشف حضور",
+    "description": "إدراج كشف حضور.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 492,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-certificate",
+    "title": "شهادة تقدير",
+    "description": "إدراج قالب شهادة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 493,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-cover-letter",
+    "title": "خطاب تغطية",
+    "description": "إدراج قالب Cover Letter عربي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 494,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-donor-report",
+    "title": "تقرير جهة مانحة",
+    "description": "إدراج هيكل تقرير مانحين.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 495,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-handover",
+    "title": "تسليم واستلام",
+    "description": "إدراج محضر تسليم واستلام.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 496,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-invoice",
+    "title": "فاتورة",
+    "description": "إدراج قالب فاتورة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 497,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-medical-report",
+    "title": "تقرير طبي",
+    "description": "إدراج قالب تقرير طبي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 498,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-memo",
+    "title": "مذكرة داخلية",
+    "description": "إدراج قالب مذكرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 499,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-minutes",
+    "title": "محضر اجتماع",
+    "description": "إدراج قالب محضر اجتماع.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 500,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-official-letter",
+    "title": "خطاب رسمي",
+    "description": "إدراج قالب خطاب رسمي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 501,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "template-quotation",
+    "title": "عرض سعر",
+    "description": "إدراج قالب عرض سعر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 502,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "font-tahoma-14",
+    "title": "Tahoma 14",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 503,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "font-times-11",
+    "title": "Times New Roman 11",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 504,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "font-times-12",
+    "title": "Times New Roman 12",
+    "description": "تطبيق Times New Roman 12.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 505,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "font-times-14",
+    "title": "Times New Roman 14",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 506,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "font-traditional-arabic-16",
+    "title": "Traditional Arabic 16",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 507,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "font-trebuchet-11",
+    "title": "Trebuchet MS 11",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 508,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "font-verdana-10",
+    "title": "Verdana 10",
+    "description": "تطبيق إعداد خط عالمي جاهز على النص المحدد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 509,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "format-apply",
+    "title": "تطبيق لقطة التنسيق",
+    "description": "تطبيق آخر تنسيق محفوظ.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 510,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "format-arabic-report",
+    "title": "تقرير عربي",
+    "description": "تنسيق تقرير عربي احترافي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 511,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "format-copy",
+    "title": "حفظ لقطة تنسيق",
+    "description": "حفظ تنسيق النص الحالي داخل الجلسة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 512,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "hanging-indent",
+    "title": "مسافة بادئة معلّقة",
+    "description": "تطبيق Hanging Indent قياسي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 513,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "heading-1",
+    "title": "عنوان 1",
+    "description": "تطبيق Heading 1.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 514,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "heading-2",
+    "title": "عنوان 2",
+    "description": "تطبيق Heading 2.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 515,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "heading-3",
+    "title": "عنوان 3",
+    "description": "تطبيق Heading 3.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 516,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "health-check",
+    "title": "فحص الإضافة",
+    "description": "عرض حالة الاتصال وإصدار Word والسجل.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 517,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "highlight-term",
+    "title": "تمييز كلمة أو عبارة",
+    "description": "تمييز جميع مرات ظهور النص.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 518,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "indent-first-0-5cm",
+    "title": "مسافة بادئة السطر الأول 0.5 سم",
+    "description": "تطبيق مسافة بادئة دقيقة على الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 519,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "indent-first-1cm",
+    "title": "مسافة بادئة السطر الأول 1 سم",
+    "description": "تطبيق مسافة بادئة دقيقة على الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 520,
+    "engine": "إدارة المشاريع والمهام",
+    "commandId": "indent-first-line",
+    "title": "مسافة بادئة للسطر الأول",
+    "description": "تطبيق مسافة بادئة 0.75 سم.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 521,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "indent-hanging-0-5cm",
+    "title": "مسافة بادئة معلّقة 0.5 سم",
+    "description": "تطبيق مسافة بادئة دقيقة على الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 522,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "indent-hanging-1cm",
+    "title": "مسافة بادئة معلّقة 1 سم",
+    "description": "تطبيق مسافة بادئة دقيقة على الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 523,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "indent-left-0-5cm",
+    "title": "مسافة بادئة يسار 0.5 سم",
+    "description": "تطبيق مسافة بادئة دقيقة على الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 524,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "indent-left-1cm",
+    "title": "مسافة بادئة يسار 1 سم",
+    "description": "تطبيق مسافة بادئة دقيقة على الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 525,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "indent-remove",
+    "title": "إزالة المسافات البادئة",
+    "description": "إزالة إزاحات الفقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 526,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "indent-right-0-5cm",
+    "title": "مسافة بادئة يمين 0.5 سم",
+    "description": "تطبيق مسافة بادئة دقيقة على الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 527,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "indent-right-1cm",
+    "title": "مسافة بادئة يمين 1 سم",
+    "description": "تطبيق مسافة بادئة دقيقة على الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 528,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "insert-section-continuous",
+    "title": "مقطع مستمر",
+    "description": "إدراج Section Break Continuous.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 529,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "insert-signature",
+    "title": "كتلة توقيع",
+    "description": "إدراج اسم وصفة وتوقيع وتاريخ.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 530,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "license-info",
+    "title": "حالة الترخيص",
+    "description": "عرض حالة الترخيص ومعرّف الجهاز.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 531,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "line-exact-12",
+    "title": "تباعد ثابت 12 نقطة",
+    "description": "تعيين تباعد أسطر ثابت بدقة 12 نقطة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 532,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "line-exact-14",
+    "title": "تباعد ثابت 14 نقطة",
+    "description": "تعيين تباعد أسطر ثابت بدقة 14 نقطة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 533,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "line-exact-16",
+    "title": "تباعد ثابت 16 نقطة",
+    "description": "تعيين تباعد أسطر ثابت بدقة 16 نقطة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 534,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "line-exact-18",
+    "title": "تباعد ثابت 18 نقطة",
+    "description": "تعيين تباعد أسطر ثابت بدقة 18 نقطة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 535,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "line-numbers-off",
+    "title": "إيقاف أرقام الأسطر",
+    "description": "إخفاء ترقيم الأسطر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 536,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "line-numbers-on",
+    "title": "تشغيل أرقام الأسطر",
+    "description": "إظهار ترقيم الأسطر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 537,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "line-spacing-1",
+    "title": "تباعد مفرد",
+    "description": "تباعد أسطر مفرد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 538,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "line-spacing-115",
+    "title": "تباعد 1.15",
+    "description": "تباعد أسطر 1.15.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 539,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "line-spacing-15",
+    "title": "تباعد 1.5",
+    "description": "تباعد أسطر 1.5.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 540,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "line-spacing-2",
+    "title": "تباعد مزدوج",
+    "description": "تباعد أسطر مزدوج.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 541,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "machine-id",
+    "title": "نسخ معرّف الجهاز",
+    "description": "نسخ Machine ID لإرساله إلى مالك البرنامج.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 542,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "normalize-unicode-spaces",
+    "title": "توحيد المسافات Unicode",
+    "description": "تحويل المسافات غير القياسية إلى مسافات عادية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 543,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "paragraph-after-0-pro",
+    "title": "مسافة بعد 0",
+    "description": "تعيين المسافة بعد الفقرة إلى 0 نقاط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 544,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "paragraph-after-12-pro",
+    "title": "مسافة بعد 12",
+    "description": "تعيين المسافة بعد الفقرة إلى 12 نقاط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 545,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "paragraph-after-3-pro",
+    "title": "مسافة بعد 3",
+    "description": "تعيين المسافة بعد الفقرة إلى 3 نقاط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 546,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "paragraph-after-6-pro",
+    "title": "مسافة بعد 6",
+    "description": "تعيين المسافة بعد الفقرة إلى 6 نقاط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 547,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "paragraph-before-0",
+    "title": "مسافة قبل 0",
+    "description": "تعيين المسافة قبل الفقرة إلى 0 نقاط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 548,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "paragraph-before-12",
+    "title": "مسافة قبل 12",
+    "description": "تعيين المسافة قبل الفقرة إلى 12 نقاط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 549,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "paragraph-before-3",
+    "title": "مسافة قبل 3",
+    "description": "تعيين المسافة قبل الفقرة إلى 3 نقاط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 550,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "paragraph-before-6",
+    "title": "مسافة قبل 6",
+    "description": "تعيين المسافة قبل الفقرة إلى 6 نقاط.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 551,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "paragraphs-checkboxes",
+    "title": "تحويل إلى قائمة تحقق",
+    "description": "إضافة مربع ☐ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 552,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "paragraphs-checked",
+    "title": "تحويل إلى قائمة منجزة",
+    "description": "إضافة علامة ☑ في بداية كل فقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 553,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "paragraphs-semicolon-list",
+    "title": "الفقرات إلى قائمة منقوطة",
+    "description": "دمج الفقرات بفواصل منقوطة عربية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 554,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "productivity-focus-mode",
+    "title": "وضع التركيز",
+    "description": "تقليل عناصر الواجهة وإخفاء علامات التنسيق للكتابة المركزة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 555,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "productivity-restore-view",
+    "title": "استعادة واجهة العمل",
+    "description": "إظهار المساطر وشريط الحالة وعلامات العرض الأساسية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 556,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "productivity-word-goal",
+    "title": "هدف الكلمات",
+    "description": "تحديد هدف كلمات وعرض نسبة الإنجاز الحالية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 557,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "productivity-writing-session",
+    "title": "بدء جلسة كتابة",
+    "description": "تسجيل بداية جلسة كتابة ومقارنة عدد الكلمات لاحقًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 558,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "proofing-language-arabic",
+    "title": "لغة التدقيق العربية",
+    "description": "تعيين لغة التدقيق للنص إلى العربية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 559,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "proofing-language-english",
+    "title": "لغة التدقيق الإنجليزية",
+    "description": "تعيين لغة التدقيق للنص إلى الإنجليزية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 560,
+    "engine": "إدارة النماذج وإدخال البيانات",
+    "commandId": "remove-all-blank-paragraphs",
+    "title": "حذف كل الفقرات الفارغة",
+    "description": "إزالة جميع الفقرات الخالية من التحديد.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 561,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "table-column-width-prompt",
+    "title": "عرض أعمدة مخصص",
+    "description": "ضبط عرض الأعمدة بالسنتيمتر.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 562,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "titlecase",
+    "title": "Title Case",
+    "description": "تكبير بدايات الكلمات الإنجليزية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 563,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "remove-page-breaks",
+    "title": "حذف فواصل الصفحات",
+    "description": "حذف جميع فواصل الصفحات اليدوية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 564,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "remove-repeated-punctuation",
+    "title": "حذف الترقيم المكرر",
+    "description": "اختصار علامات الترقيم المتتابعة المكررة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 565,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "remove-section-breaks",
+    "title": "حذف فواصل المقاطع",
+    "description": "حذف جميع فواصل المقاطع.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 566,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "remove-short-paragraphs",
+    "title": "حذف الفقرات القصيرة",
+    "description": "حذف الفقرات الأقل من عدد أحرف تختاره.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 567,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "reverse-paragraph-order",
+    "title": "عكس ترتيب الفقرات",
+    "description": "عكس ترتيب الأسطر والفقرات المحددة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 568,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "sentences-to-paragraphs",
+    "title": "الجمل إلى فقرات",
+    "description": "وضع كل جملة في فقرة مستقلة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 569,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "sort-paragraphs-length",
+    "title": "فرز الفقرات حسب الطول",
+    "description": "ترتيب الفقرات من الأقصر إلى الأطول.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 570,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "space-after-0",
+    "title": "مسافة بعد 0",
+    "description": "إلغاء المسافة بعد الفقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 571,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "space-after-12",
+    "title": "مسافة بعد 12",
+    "description": "تعيين 12 نقطة بعد الفقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 572,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "space-after-6",
+    "title": "مسافة بعد 6",
+    "description": "تعيين 6 نقاط بعد الفقرة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 573,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "strip-html-tags",
+    "title": "حذف وسوم HTML",
+    "description": "إزالة وسوم HTML وفك الكيانات النصية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 574,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "strip-list-markers",
+    "title": "حذف بادئات القوائم",
+    "description": "إزالة الأرقام والنقاط والشرطات اليدوية من بدايات الفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 575,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "style-normal",
+    "title": "نمط عادي",
+    "description": "تطبيق Normal.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 576,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "table-bold-first-row",
+    "title": "صف أول بارز",
+    "description": "تغليظ الصف الأول وتكراره كرأس.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 577,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "table-currency-format",
+    "title": "تنسيق خلايا كعملة",
+    "description": "تنسيق القيم الرقمية برمز عملة تختاره.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 578,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "table-percentage-format",
+    "title": "تنسيق خلايا كنسبة",
+    "description": "تنسيق الأرقام كنسب مئوية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 579,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "table-remove-cell-breaks",
+    "title": "حذف فواصل الخلايا",
+    "description": "إزالة فواصل الأسطر من داخل الخلايا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 580,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "tabs-to-spaces",
+    "title": "Tabs إلى مسافات",
+    "description": "استبدال علامات الجدولة بمسافات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 581,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "unique-sorted-lines",
+    "title": "أسطر فريدة مرتبة",
+    "description": "حذف التكرار وفرز الأسطر تصاعديًا.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 582,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "unique-words-only",
+    "title": "الكلمات الفريدة فقط",
+    "description": "الاحتفاظ بأول ظهور لكل كلمة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 583,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "unlink-fields",
+    "title": "تحويل الحقول إلى نص",
+    "description": "إلغاء ارتباط الحقول مع إبقاء النتائج.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 584,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "update-fields",
+    "title": "تحديث جميع الحقول",
+    "description": "تحديث الحقول والفهارس.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 585,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "widow-control-on",
+    "title": "منع الأرامل واليتامى",
+    "description": "تفعيل Widow/Orphan Control للفقرات.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 586,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-angles-pro",
+    "title": "أقواس زاوية",
+    "description": "إحاطة النص المحدد بنمط أقواس زاوية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 587,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-arabic-brackets-pro",
+    "title": "أقواس عربية مزخرفة",
+    "description": "إحاطة النص المحدد بنمط أقواس عربية مزخرفة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 588,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-arabic-quotes",
+    "title": "إحاطة باقتباس عربي",
+    "description": "إحاطة التحديد بعلامتي « ».",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 589,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-arabic-quotes-pro",
+    "title": "اقتباس عربي",
+    "description": "إحاطة النص المحدد بنمط اقتباس عربي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 590,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-braces-pro",
+    "title": "أقواس معقوفة",
+    "description": "إحاطة النص المحدد بنمط أقواس معقوفة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 591,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-brackets",
+    "title": "إحاطة بأقواس مربعة",
+    "description": "إحاطة التحديد بـ [ ].",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 592,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-brackets-pro",
+    "title": "أقواس مربعة",
+    "description": "إحاطة النص المحدد بنمط أقواس مربعة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 593,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-double-parentheses-pro",
+    "title": "أقواس مزدوجة",
+    "description": "إحاطة النص المحدد بنمط أقواس مزدوجة.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 594,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-parentheses",
+    "title": "إحاطة بأقواس",
+    "description": "إحاطة التحديد بقوسين.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 595,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-parentheses-pro",
+    "title": "أقواس دائرية",
+    "description": "إحاطة النص المحدد بنمط أقواس دائرية.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 596,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-pipes-pro",
+    "title": "شرطتان رأسيّتان",
+    "description": "إحاطة النص المحدد بنمط شرطتان رأسيّتان.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 597,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-slashes-pro",
+    "title": "شرطتان مائلتان",
+    "description": "إحاطة النص المحدد بنمط شرطتان مائلتان.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 598,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-smart-double-pro",
+    "title": "اقتباس مزدوج ذكي",
+    "description": "إحاطة النص المحدد بنمط اقتباس مزدوج ذكي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 599,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-smart-single-pro",
+    "title": "اقتباس مفرد ذكي",
+    "description": "إحاطة النص المحدد بنمط اقتباس مفرد ذكي.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  },
+  {
+    "referenceNumber": 600,
+    "engine": "التخصيص والأداء والإنتاجية",
+    "commandId": "wrap-underscores-pro",
+    "title": "شرطتا تسطير",
+    "description": "إحاطة النص المحدد بنمط شرطتا تسطير.",
+    "sourceDocument": "Ultimate_MS_Word_Addin_600_Features_Pro.docx",
+    "implementation": "working-command"
+  }
+]

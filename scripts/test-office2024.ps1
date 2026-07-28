@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $Root = Split-Path -Parent $PSScriptRoot
 $Setup = Join-Path $Root 'release\WordProSuite_Setup.exe'
 $Log = Join-Path $env:LOCALAPPDATA 'WordProSuite\Logs\WordProSuite.log'
@@ -27,4 +27,4 @@ $word.Quit()
 [Runtime.InteropServices.Marshal]::FinalReleaseComObject($word) | Out-Null
 
 Start-Process $Setup -ArgumentList '/remove /silent' -Wait
-Write-Host 'Office 2024 integration test passed for WordPro Suite Desktop Ultimate 3.0.'
+Write-Host 'Office 2024 integration test passed for WordPro Suite Desktop Ultimate 4.0.'

@@ -1,4 +1,4 @@
-param(
+﻿param(
     [ValidateSet('Release','Debug')]
     [string]$Configuration = 'Release'
 )
@@ -9,7 +9,7 @@ Set-StrictMode -Version Latest
 $Root = Split-Path -Parent $PSScriptRoot
 $Release = Join-Path $Root 'release'
 $EmbeddedPayload = Join-Path $Root 'src\WordProSuite.SetupLauncher\EmbeddedPayload'
-$ZipPath = Join-Path $Root 'WordProSuite_Desktop_Ultimate_V3_Windows.zip'
+$ZipPath = Join-Path $Root 'WordProSuite_Desktop_Ultimate_V4_Windows.zip'
 
 if (Test-Path $Release) { Remove-Item $Release -Recurse -Force }
 if (Test-Path $EmbeddedPayload) { Remove-Item $EmbeddedPayload -Recurse -Force }
@@ -62,20 +62,20 @@ $ReleaseSetup = Join-Path $Release 'WordProSuite_Setup.exe'
 Copy-Item $SetupExe $ReleaseSetup -Force
 
 $install = @'
-WordPro Suite Desktop Ultimate 3.0
+WordPro Suite Desktop Ultimate 4.0
 
 طريقة الاستخدام:
 1. أغلق Microsoft Word.
 2. شغّل WordProSuite_Setup.exe فقط.
 3. للتجربة اضغط «تثبيت تجريبي».
 4. للتفعيل المباشر الصق Serial Number واضغط «تثبيت وتفعيل».
-5. افتح Word؛ ستظهر تبويبتان: WordPro Suite Pro وWordPro Enterprise.
+5. افتح Word؛ ستظهر ثلاثة تبويبات: WordPro Suite Pro وWordPro Enterprise وUltra 600 AI.
 
-النسخة تحتوي على 500 أداة مسجلة، ولا تحتاج إلى Payload أو MSI أو Node.js أو localhost.
+النسخة تحتوي على 600 أداة مسجلة ومقسمة على 15 محركًا، ولا تحتاج إلى Payload أو MSI أو Node.js أو localhost.
 '@
 Set-Content -Path (Join-Path $Release 'INSTALL_AR.txt') -Value $install -Encoding UTF8
 
-$features = Join-Path $Root 'V3_FEATURES_AR.md'
+$features = Join-Path $Root 'V4_FEATURES_AR.md'
 if (Test-Path $features) {
     Copy-Item $features (Join-Path $Release 'FEATURES_AR.md') -Force
 }
@@ -85,15 +85,18 @@ if (Test-Path $readme) {
     Copy-Item $readme (Join-Path $Release 'README_AR.md') -Force
 }
 
+Copy-Item (Join-Path $Root 'catalog\ultimate_word_suite_600.json') (Join-Path $Release 'ULTIMATE_600_CATALOG.json') -Force
+Copy-Item (Join-Path $Root 'catalog\ultimate_word_suite_600.csv') (Join-Path $Release 'ULTIMATE_600_CATALOG.csv') -Force
+
 $hash = (Get-FileHash $ReleaseSetup -Algorithm SHA256).Hash
 Set-Content -Path (Join-Path $Release 'SHA256_SETUP.txt') `
     -Value "$hash  WordProSuite_Setup.exe" -Encoding ASCII
 
 $manifest = [ordered]@{
     product = 'WordPro Suite Desktop Ultimate'
-    version = '3.0.0'
-    commands = 500
-    ribbonTabs = 2
+    version = '4.0.0'
+    commands = 600
+    ribbonTabs = 3
     setup = 'WordProSuite_Setup.exe'
     setupSha256 = $hash
     generatedUtc = [DateTime]::UtcNow.ToString('o')
@@ -107,6 +110,8 @@ $required = @(
     (Join-Path $Release 'INSTALL_AR.txt'),
     (Join-Path $Release 'SHA256_SETUP.txt'),
     (Join-Path $Release 'RELEASE_MANIFEST.json'),
+    (Join-Path $Release 'ULTIMATE_600_CATALOG.json'),
+    (Join-Path $Release 'ULTIMATE_600_CATALOG.csv'),
     $ZipPath
 )
 
@@ -117,9 +122,9 @@ foreach ($file in $required) {
 
 Write-Host ''
 Write-Host '============================================================'
-Write-Host 'WordPro Suite Desktop Ultimate 3.0 build completed successfully.'
-Write-Host 'Registered tools: 500'
-Write-Host 'Ribbon tabs:      2'
+Write-Host 'WordPro Suite Desktop Ultimate 4.0 build completed successfully.'
+Write-Host 'Registered tools: 600'
+Write-Host 'Ribbon tabs:      3'
 Write-Host "Setup:            $ReleaseSetup"
 Write-Host "ZIP:              $ZipPath"
 Write-Host '============================================================'

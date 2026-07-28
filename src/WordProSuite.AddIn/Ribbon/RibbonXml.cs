@@ -1,4 +1,4 @@
-namespace WordProSuite.Desktop.Ribbon
+﻿namespace WordProSuite.Desktop.Ribbon
 {
     internal static class RibbonXml
     {
@@ -8,7 +8,7 @@ namespace WordProSuite.Desktop.Ribbon
     <tabs>
       <tab id=""tabWordProCore"" label=""WordPro Suite Pro"">
         <group id=""grpCoreMain"" label=""الرئيسية"">
-          <button id=""btnCommandCenter"" tag=""command-center"" label=""مركز 500 أداة"" size=""large"" imageMso=""AddInManager"" onAction=""RibbonOnAction""/>
+          <button id=""btnCommandCenter"" tag=""command-center"" label=""مركز 600 أداة"" size=""large"" imageMso=""AddInManager"" onAction=""RibbonOnAction""/>
           <button id=""btnHealth"" tag=""health-check"" label=""فحص الإضافة"" size=""large"" imageMso=""HappyFace"" onAction=""RibbonOnAction""/>
           <button id=""btnAbout"" tag=""about"" label=""حول"" imageMso=""Info"" onAction=""RibbonOnAction""/>
         </group>
@@ -217,6 +217,125 @@ namespace WordProSuite.Desktop.Ribbon
           <button id=""btnActivate"" tag=""activate"" label=""تفعيل"" size=""large"" imageMso=""HappyFace"" onAction=""RibbonOnAction""/>
           <button id=""btnLicense"" tag=""license-info"" label=""حالة الترخيص"" imageMso=""Info"" onAction=""RibbonOnAction""/>
           <button id=""btnMachine"" tag=""machine-id"" label=""Machine ID"" imageMso=""AddInManager"" onAction=""RibbonOnAction""/>
+        </group>
+      </tab>
+
+      <tab id=""tabUltra600AI"" label=""Ultra 600 AI"">
+        <group id=""grpUltraMain"" label=""موسوعة الأدوات"">
+          <button id=""btnUltraCatalog"" tag=""catalog-600-center"" label=""موسوعة 600 أداة"" size=""large"" imageMso=""AddInManager"" onAction=""RibbonOnAction""/>
+          <button id=""btnUltraCenter"" tag=""command-center"" label=""بحث كل الأدوات"" size=""large"" imageMso=""RefreshAll"" onAction=""RibbonOnAction""/>
+          <button id=""btnUltraHealth"" tag=""health-check"" label=""فحص النظام"" imageMso=""HappyFace"" onAction=""RibbonOnAction""/>
+        </group>
+
+        <group id=""grpUltraWorkspace"" label=""المستندات الذكية"">
+          <button id=""btnWorkspaceSave"" tag=""workspace-save-session"" label=""حفظ مساحة العمل"" size=""large"" imageMso=""FileSaveAs"" onAction=""RibbonOnAction""/>
+          <button id=""btnWorkspaceRestore"" tag=""workspace-restore-session"" label=""استعادة المساحة"" size=""large"" imageMso=""FileOpen"" onAction=""RibbonOnAction""/>
+          <menu id=""menuWorkspaceUltra"" label=""إدارة المستندات"" imageMso=""PageSetupDialog"">
+            <button id=""btnWorkspaceExport"" tag=""workspace-export-open-docs"" label=""تصدير المستندات المفتوحة"" onAction=""RibbonOnAction""/>
+            <button id=""btnWorkspaceCloseClean"" tag=""workspace-close-unmodified"" label=""إغلاق غير المعدّل"" onAction=""RibbonOnAction""/>
+            <button id=""btnWorkspaceCloseOthers"" tag=""workspace-close-others"" label=""إغلاق المستندات الأخرى"" onAction=""RibbonOnAction""/>
+            <button id=""btnWorkspaceRename"" tag=""workspace-rename-document"" label=""إعادة تسمية المستند"" onAction=""RibbonOnAction""/>
+            <button id=""btnWorkspaceDuplicate"" tag=""workspace-duplicate-document"" label=""إنشاء نسخة"" onAction=""RibbonOnAction""/>
+            <button id=""btnWorkspaceCompare"" tag=""workspace-compare-file"" label=""مقارنة مع ملف"" onAction=""RibbonOnAction""/>
+            <button id=""btnWorkspaceArrange"" tag=""workspace-arrange-windows"" label=""ترتيب النوافذ"" onAction=""RibbonOnAction""/>
+            <button id=""btnWorkspaceSplit"" tag=""workspace-split-toggle"" label=""تقسيم النافذة"" onAction=""RibbonOnAction""/>
+          </menu>
+        </group>
+
+        <group id=""grpUltraSmart"" label=""الذكاء المحلي وAI"">
+          <button id=""btnOfflineSummary"" tag=""smart-offline-summary"" label=""تلخيص دون إنترنت"" size=""large"" imageMso=""RefreshAll"" onAction=""RibbonOnAction""/>
+          <button id=""btnExecutiveSmart"" tag=""smart-executive-summary"" label=""ملخص تنفيذي"" size=""large"" imageMso=""RefreshAll"" onAction=""RibbonOnAction""/>
+          <menu id=""menuSmartOffline"" label=""تحليل ذكي محلي"" imageMso=""RefreshAll"">
+            <button id=""btnSmartKeywords"" tag=""smart-keywords"" label=""الكلمات المفتاحية"" onAction=""RibbonOnAction""/>
+            <button id=""btnSmartActions"" tag=""smart-action-items"" label=""إجراءات العمل"" onAction=""RibbonOnAction""/>
+            <button id=""btnSmartDecisions"" tag=""smart-decisions"" label=""القرارات"" onAction=""RibbonOnAction""/>
+            <button id=""btnSmartQuestions"" tag=""smart-reading-questions"" label=""أسئلة قراءة"" onAction=""RibbonOnAction""/>
+            <button id=""btnSmartSentiment"" tag=""smart-sentiment"" label=""تحليل النبرة"" onAction=""RibbonOnAction""/>
+            <button id=""btnSmartReadability"" tag=""smart-readability-advice"" label=""قابلية القراءة"" onAction=""RibbonOnAction""/>
+            <button id=""btnSmartTitles"" tag=""smart-title-suggestions"" label=""اقتراح عناوين"" onAction=""RibbonOnAction""/>
+            <button id=""btnSmartOutline"" tag=""smart-outline"" label=""مخطط هيكلي"" onAction=""RibbonOnAction""/>
+          </menu>
+          <menu id=""menuAiProvider"" label=""موفر AI اختياري"" imageMso=""RefreshAll"">
+            <button id=""btnAiSettings"" tag=""ai-provider-settings"" label=""إعداد الموفر"" onAction=""RibbonOnAction""/>
+            <button id=""btnAiRewrite"" tag=""ai-rewrite-provider"" label=""إعادة صياغة"" onAction=""RibbonOnAction""/>
+            <button id=""btnAiTranslate"" tag=""ai-translate-provider"" label=""ترجمة"" onAction=""RibbonOnAction""/>
+            <button id=""btnAiChat"" tag=""ai-chat-provider"" label=""دردشة مع المستند"" onAction=""RibbonOnAction""/>
+          </menu>
+        </group>
+
+        <group id=""grpUltraBatchMedia"" label=""الميديا والدفعات"">
+          <menu id=""menuUltraMedia"" label=""الصور والوسائط"" size=""large"" imageMso=""FileOpen"">
+            <button id=""btnMediaExport"" tag=""media-export-images"" label=""تصدير الصور"" onAction=""RibbonOnAction""/>
+            <button id=""btnMediaHalf"" tag=""media-resize-half"" label=""تصغير 50%"" onAction=""RibbonOnAction""/>
+            <button id=""btnMediaFit"" tag=""media-fit-page"" label=""ملاءمة الصفحة"" onAction=""RibbonOnAction""/>
+            <button id=""btnMediaCenter"" tag=""media-center-images"" label=""توسيط الصور"" onAction=""RibbonOnAction""/>
+            <button id=""btnMediaCaptions"" tag=""media-caption-images"" label=""إضافة تسميات"" onAction=""RibbonOnAction""/>
+            <button id=""btnMediaCompress"" tag=""media-compress-pictures"" label=""ضغط الصور"" onAction=""RibbonOnAction""/>
+            <button id=""btnMediaAccess"" tag=""media-accessibility-report"" label=""تقرير الوصول"" onAction=""RibbonOnAction""/>
+          </menu>
+          <menu id=""menuUltraBatch"" label=""عمليات دفعية"" size=""large"" imageMso=""FileSaveAsPdfOrXps"">
+            <button id=""btnBatchDocx"" tag=""batch-save-docx"" label=""مجلد إلى DOCX"" onAction=""RibbonOnAction""/>
+            <button id=""btnBatchPdf"" tag=""batch-export-pdf-v4"" label=""مجلد إلى PDF"" onAction=""RibbonOnAction""/>
+            <button id=""btnBatchComments"" tag=""batch-remove-comments"" label=""حذف التعليقات"" onAction=""RibbonOnAction""/>
+            <button id=""btnBatchRevisions"" tag=""batch-accept-revisions"" label=""قبول التعديلات"" onAction=""RibbonOnAction""/>
+            <button id=""btnBatchFields"" tag=""batch-update-fields"" label=""تحديث الحقول"" onAction=""RibbonOnAction""/>
+            <button id=""btnBatchMetadata"" tag=""batch-remove-properties"" label=""تنظيف الخصائص"" onAction=""RibbonOnAction""/>
+            <button id=""btnBatchPrint"" tag=""batch-print-documents"" label=""طباعة المجلد"" onAction=""RibbonOnAction""/>
+          </menu>
+        </group>
+
+        <group id=""grpUltraSecurityAcademic"" label=""الأبحاث والأمان"">
+          <menu id=""menuUltraAcademic"" label=""بحث ومراجع"" size=""large"" imageMso=""TableOfContentsAddTextGallery"">
+            <button id=""btnApa"" tag=""academic-insert-apa"" label=""مرجع APA"" onAction=""RibbonOnAction""/>
+            <button id=""btnMla"" tag=""academic-insert-mla"" label=""مرجع MLA"" onAction=""RibbonOnAction""/>
+            <button id=""btnBibAudit"" tag=""academic-bibliography-audit"" label=""تدقيق المراجع"" onAction=""RibbonOnAction""/>
+            <button id=""btnFootAudit"" tag=""academic-footnote-audit"" label=""تدقيق الحواشي"" onAction=""RibbonOnAction""/>
+            <button id=""btnHeadingAudit"" tag=""academic-heading-audit"" label=""تدقيق العناوين"" onAction=""RibbonOnAction""/>
+            <button id=""btnExtractCitations"" tag=""academic-extract-citations"" label=""استخراج الاستشهادات"" onAction=""RibbonOnAction""/>
+          </menu>
+          <menu id=""menuUltraSecurity"" label=""الطمس والأمان"" size=""large"" imageMso=""Info"">
+            <button id=""btnRedactEmail"" tag=""security-redact-emails"" label=""طمس البريد"" onAction=""RibbonOnAction""/>
+            <button id=""btnRedactPhone"" tag=""security-redact-phones"" label=""طمس الهواتف"" onAction=""RibbonOnAction""/>
+            <button id=""btnRedactId"" tag=""security-redact-identifiers"" label=""طمس المعرّفات"" onAction=""RibbonOnAction""/>
+            <button id=""btnRedactSelection"" tag=""security-redact-selection"" label=""طمس التحديد"" onAction=""RibbonOnAction""/>
+            <button id=""btnSecurityAudit"" tag=""security-document-audit"" label=""تدقيق الأمان"" onAction=""RibbonOnAction""/>
+            <button id=""btnHiddenDelete"" tag=""security-remove-hidden-text"" label=""حذف النص المخفي"" onAction=""RibbonOnAction""/>
+          </menu>
+        </group>
+
+        <group id=""grpUltraProjectsForms"" label=""المشاريع والنماذج"">
+          <menu id=""menuUltraProjects"" label=""إدارة المشاريع"" size=""large"" imageMso=""TableInsertDialogWord"">
+            <button id=""btnGantt"" tag=""project-gantt-table"" label=""Gantt مبسط"" onAction=""RibbonOnAction""/>
+            <button id=""btnTaskBoard"" tag=""project-task-board"" label=""لوحة المهام"" onAction=""RibbonOnAction""/>
+            <button id=""btnWeeklyStatus"" tag=""project-weekly-status"" label=""حالة أسبوعية"" onAction=""RibbonOnAction""/>
+            <button id=""btnDeliverables"" tag=""project-deliverables-register"" label=""سجل المخرجات"" onAction=""RibbonOnAction""/>
+            <button id=""btnLegalChecklist"" tag=""legal-clause-checklist"" label=""فحص العقد"" onAction=""RibbonOnAction""/>
+            <button id=""btnLegalParties"" tag=""legal-party-table"" label=""أطراف العقد"" onAction=""RibbonOnAction""/>
+          </menu>
+          <menu id=""menuUltraForms"" label=""نماذج تفاعلية"" size=""large"" imageMso=""NewDocumentOrTemplate"">
+            <button id=""btnFormText"" tag=""form-text-control"" label=""حقل نص"" onAction=""RibbonOnAction""/>
+            <button id=""btnFormDate"" tag=""form-date-control"" label=""حقل تاريخ"" onAction=""RibbonOnAction""/>
+            <button id=""btnFormCheck"" tag=""form-checkbox-control"" label=""مربع اختيار"" onAction=""RibbonOnAction""/>
+            <button id=""btnFormExport"" tag=""form-export-controls-csv"" label=""تصدير CSV"" onAction=""RibbonOnAction""/>
+          </menu>
+        </group>
+
+        <group id=""grpUltraProductivity"" label=""الإنتاجية والتصدير"">
+          <button id=""btnFocusMode"" tag=""productivity-focus-mode"" label=""وضع التركيز"" size=""large"" imageMso=""PageSetupDialog"" onAction=""RibbonOnAction""/>
+          <button id=""btnWordGoal"" tag=""productivity-word-goal"" label=""هدف الكلمات"" size=""large"" imageMso=""HappyFace"" onAction=""RibbonOnAction""/>
+          <menu id=""menuProductivityUltra"" label=""الجلسة"" imageMso=""RefreshAll"">
+            <button id=""btnSessionStart"" tag=""productivity-writing-session"" label=""بدء جلسة كتابة"" onAction=""RibbonOnAction""/>
+            <button id=""btnSessionReport"" tag=""productivity-session-report"" label=""تقرير الجلسة"" onAction=""RibbonOnAction""/>
+            <button id=""btnReadingTime"" tag=""productivity-reading-time"" label=""زمن القراءة"" onAction=""RibbonOnAction""/>
+            <button id=""btnRestoreView"" tag=""productivity-restore-view"" label=""استعادة الواجهة"" onAction=""RibbonOnAction""/>
+          </menu>
+          <menu id=""menuExportUltra"" label=""تصدير متقدم"" imageMso=""FileSaveAs"">
+            <button id=""btnHtmlV4"" tag=""export-filtered-html"" label=""HTML"" onAction=""RibbonOnAction""/>
+            <button id=""btnRtfV4"" tag=""export-rtf"" label=""RTF"" onAction=""RibbonOnAction""/>
+            <button id=""btnOdtV4"" tag=""export-odt"" label=""ODT"" onAction=""RibbonOnAction""/>
+            <button id=""btnPdfRangeV4"" tag=""export-pdf-page-range"" label=""نطاق PDF"" onAction=""RibbonOnAction""/>
+            <button id=""btnBookletV4"" tag=""print-booklet-layout"" label=""إعداد كتيب"" onAction=""RibbonOnAction""/>
+          </menu>
         </group>
       </tab>
     </tabs>

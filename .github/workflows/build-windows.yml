@@ -1,4 +1,4 @@
-name: Build WordPro Suite Desktop Ultimate 3.0
+name: Build WordPro Suite Desktop Ultimate 4.0
 
 on:
   workflow_dispatch:
@@ -45,7 +45,9 @@ jobs:
             ".\release\INSTALL_AR.txt",
             ".\release\SHA256_SETUP.txt",
             ".\release\RELEASE_MANIFEST.json",
-            ".\WordProSuite_Desktop_Ultimate_V3_Windows.zip"
+            ".\release\ULTIMATE_600_CATALOG.json",
+            ".\release\ULTIMATE_600_CATALOG.csv",
+            ".\WordProSuite_Desktop_Ultimate_V4_Windows.zip"
           )
 
           foreach ($file in $files) {
@@ -58,8 +60,8 @@ jobs:
           }
 
           $manifest = Get-Content ".\release\RELEASE_MANIFEST.json" -Raw | ConvertFrom-Json
-          if ($manifest.commands -ne 500) { throw "Manifest command count is not 500." }
-          if ($manifest.ribbonTabs -ne 2) { throw "Manifest Ribbon tab count is not 2." }
+          if ($manifest.commands -ne 600) { throw "Manifest command count is not 600." }
+          if ($manifest.ribbonTabs -ne 3) { throw "Manifest Ribbon tab count is not 3." }
 
           $expected = (Get-Content ".\release\SHA256_SETUP.txt" -Raw).Split()[0]
           $actual = (Get-FileHash ".\release\WordProSuite_Setup.exe" -Algorithm SHA256).Hash
@@ -68,9 +70,9 @@ jobs:
       - name: Upload Windows setup
         uses: actions/upload-artifact@v4
         with:
-          name: WordProSuite-Desktop-Ultimate-3.0-Windows
+          name: WordProSuite-Desktop-Ultimate-4.0-Windows
           path: |
             release/**
-            WordProSuite_Desktop_Ultimate_V3_Windows.zip
+            WordProSuite_Desktop_Ultimate_V4_Windows.zip
           if-no-files-found: error
           retention-days: 30
