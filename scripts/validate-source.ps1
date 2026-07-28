@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 $Root = Split-Path -Parent $PSScriptRoot
@@ -43,9 +43,21 @@ if ($duplicates.Count -gt 0) {
 }
 
 $catalogPath = Join-Path $Root 'catalog\ultimate_word_suite_600.json'
-$catalog = @(Get-Content $catalogPath -Raw | ConvertFrom-Json)
+$catalogJson = Get-Content $catalogPath -Raw
+$catalogRaw = $catalogJson | ConvertFrom-Json
+
+# Windows PowerShell 5.1 can preserve a top-level JSON array as one pipeline
+# object when it is wrapped directly with @(...). Enumerate it explicitly so
+# the validation behaves identically on Windows PowerShell 5.1 and PowerShell 7.
+$catalogList = New-Object 'System.Collections.Generic.List[object]'
+foreach ($entry in $catalogRaw) {
+    [void]$catalogList.Add($entry)
+}
+$catalog = $catalogList.ToArray()
+
 if ($catalog.Count -ne 600) {
-    throw "Expected 600 reference catalog entries, found $($catalog.Count)."
+    $referenceTokenCount = ([regex]::Matches($catalogJson, '"referenceNumber"\s*:')).Count
+    throw "Expected 600 reference catalog entries, found $($catalog.Count) after JSON parsing (raw referenceNumber tokens: $referenceTokenCount)."
 }
 
 $catalogNumbers = @($catalog | ForEach-Object { [int]$_.referenceNumber })

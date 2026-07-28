@@ -1,3 +1,7 @@
+## 4.0.1
+- Fixed Windows PowerShell 5.1 top-level JSON array enumeration in validate-source.ps1.
+- Catalog validation now reports both parsed entry count and raw referenceNumber token count.
+
 # Changelog
 
 ## 4.0.0
