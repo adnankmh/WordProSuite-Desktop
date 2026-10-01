@@ -1,0 +1,68 @@
+name: temp-pro-chess-apk
+on:
+  push:
+    branches:
+      - tmp-pro-chess-apk-build-20261001
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore source
+        shell: bash
+        run: |
+          cat .tmp-pro-chess/part_* > source.b64
+          base64 -d source.b64 > source.zip
+          unzip -q source.zip
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK packages
+        shell: bash
+        run: |
+          yes | sdkmanager --licenses >/dev/null || true
+          sdkmanager "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Install dependencies and generate Android project
+        working-directory: pro_chess_apk_source_min
+        shell: bash
+        run: |
+          npm config set registry https://registry.npmjs.org/
+          rm -f package-lock.json
+          npm install --no-audit --no-fund
+          npx cap add android
+          npx cap sync android
+
+      - name: Build APK
+        working-directory: pro_chess_apk_source_min/android
+        shell: bash
+        run: |
+          chmod +x gradlew
+          ./gradlew --no-daemon assembleDebug
+
+      - name: Collect APK
+        shell: bash
+        run: |
+          mkdir -p out
+          cp pro_chess_apk_source_min/android/app/build/outputs/apk/debug/app-debug.apk out/ProChessArena-v2.3-debug.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ProChessArena-v2.3-debug-apk
+          path: out/ProChessArena-v2.3-debug.apk
+          if-no-files-found: error
