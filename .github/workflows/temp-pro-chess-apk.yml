@@ -20,17 +20,21 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import base64
-          parts = sorted(Path('.tmp-pro-chess').glob('part_*'))
+          names = [
+              'part_00','part_01','part_02a','part_02b','part_03','part_04',
+              'part_05','part_06','part_07','part_08','part_09','part_10'
+          ]
           alphabet = set('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=')
           chunks = []
-          for p in parts:
+          for name in names:
+              p = Path('.tmp-pro-chess') / name
               s = p.read_text(encoding='utf-8')
               bad = sorted(set(s) - alphabet)
-              print(p.name, 'length=', len(s), 'bad=', repr(bad))
+              print(name, 'length=', len(s), 'bad=', repr(bad))
               chunks.append(s)
           raw = ''.join(chunks)
           clean = ''.join(ch for ch in raw if ch in alphabet)
-          print('parts=', len(parts), 'raw=', len(raw), 'clean=', len(clean), 'mod4=', len(clean) % 4)
+          print('parts=', len(names), 'raw=', len(raw), 'clean=', len(clean), 'mod4=', len(clean) % 4)
           data = base64.b64decode(clean, validate=True)
           Path('source.zip').write_bytes(data)
           print('decoded bytes=', len(data))
