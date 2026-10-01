@@ -17,8 +17,25 @@ jobs:
       - name: Restore source
         shell: bash
         run: |
-          cat .tmp-pro-chess/part_* > source.b64
-          base64 -d source.b64 > source.zip
+          python - <<'PY'
+          from pathlib import Path
+          import base64
+          parts = sorted(Path('.tmp-pro-chess').glob('part_*'))
+          alphabet = set('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=')
+          chunks = []
+          for p in parts:
+              s = p.read_text(encoding='utf-8')
+              bad = sorted(set(s) - alphabet)
+              print(p.name, 'length=', len(s), 'bad=', repr(bad))
+              chunks.append(s)
+          raw = ''.join(chunks)
+          clean = ''.join(ch for ch in raw if ch in alphabet)
+          print('parts=', len(parts), 'raw=', len(raw), 'clean=', len(clean), 'mod4=', len(clean) % 4)
+          data = base64.b64decode(clean, validate=True)
+          Path('source.zip').write_bytes(data)
+          print('decoded bytes=', len(data))
+          PY
+          unzip -t source.zip
           unzip -q source.zip
 
       - uses: actions/setup-java@v4
