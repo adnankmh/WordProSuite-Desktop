@@ -74,15 +74,29 @@ jobs:
         shell: bash
         run: |
           chmod +x gradlew
-          ./gradlew --no-daemon assembleDebug
+          set +e
+          ./gradlew --no-daemon assembleDebug --stacktrace 2>&1 | tee ../../gradle-build.log
+          status=${PIPESTATUS[0]}
+          exit $status
+
+      - name: Upload Gradle log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pro-chess-gradle-log
+          path: gradle-build.log
+          if-no-files-found: warn
 
       - name: Collect APK
+        if: success()
         shell: bash
         run: |
           mkdir -p out
           cp pro_chess_apk_source_min/android/app/build/outputs/apk/debug/app-debug.apk out/ProChessArena-v2.3-debug.apk
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload APK
+        if: success()
+        uses: actions/upload-artifact@v4
         with:
           name: ProChessArena-v2.3-debug-apk
           path: out/ProChessArena-v2.3-debug.apk
